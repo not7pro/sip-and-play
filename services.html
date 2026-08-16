@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sip & Play Services — Technical consultation, spatial load design, tier-1 equipment supply, certified installation, and lifecycle maintenance contracts." />
+  <title>Engineering Services — Sip & Play Commercial Kitchen Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    .svc-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:1px; background:var(--border-light); border:1px solid var(--border-light); margin-bottom:clamp(4rem,8vw,8rem); }
+    .svc-card { background:var(--white-pure); padding:var(--sp-10) var(--sp-8); transition:background var(--med) var(--ease-cinematic), transform var(--med) var(--ease-cinematic); }
+    .svc-card:hover { background:var(--off-white-warm); transform:translateY(-3px); }
+    .svc-card__num { font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.2em; color:var(--stone-mid); display:block; margin-bottom:var(--sp-4); }
+    .svc-card__title { font-family:var(--font-display); font-size:var(--t-2xl); font-weight:500; letter-spacing:0.02em; text-transform:uppercase; color:var(--black-pure); margin-bottom:var(--sp-4); }
+    .svc-card__desc { font-size:var(--t-base); color:var(--text-light-secondary); line-height:1.85; margin-bottom:var(--sp-6); }
+    .svc-card__points { display:flex; flex-direction:column; gap:var(--sp-2); border-top:1px solid var(--border-light); padding-top:var(--sp-5); }
+    .svc-card__point { font-family:var(--font-mono); font-size:0.65rem; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-light-muted); display:flex; align-items:center; gap:var(--sp-3); }
+    .svc-card__point::before { content:'—'; color:var(--black-pure); }
+    @media(max-width:768px){ .svc-grid{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body class="theme-light">
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="index.html">SIP <em>&amp;</em> PLAY</a>
+      <div class="nav__links">
+        <a class="nav__link" href="solutions.html">Solutions</a>
+        <a class="nav__link" href="equipment.html">Equipment</a>
+        <a class="nav__link" href="brands.html">Brands</a>
+        <a class="nav__link" href="services.html" aria-current="page">Services</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </div>
+      <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a Quote <span class="arrow">→</span></a>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-nav" id="mobNav">
+    <nav class="mob-nav__links">
+      <a class="mob-nav__link" href="solutions.html">Solutions <span>→</span></a>
+      <a class="mob-nav__link" href="equipment.html">Equipment <span>→</span></a>
+      <a class="mob-nav__link" href="brands.html">Brands <span>→</span></a>
+      <a class="mob-nav__link" href="services.html">Services <span>→</span></a>
+      <a class="mob-nav__link" href="about.html">About <span>→</span></a>
+      <a class="mob-nav__link" href="contact.html">Contact <span>→</span></a>
+    </nav>
+    <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a Quote →</a>
+    <div class="mob-nav__bottom">
+      <span class="mob-nav__bottom-label">© 2026 Sip &amp; Play</span>
+      <span class="mob-nav__bottom-label">Commercial Kitchen Solutions</span>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero theme-dark">
+      <div class="container page-hero__inner">
+        <div>
+          <span class="section-label">01 — Full Lifecycle Services</span>
+          <h1 class="page-hero__title">ENGINEERING<br>&amp; CONSULTATION.</h1>
+        </div>
+        <p class="page-hero__desc">From spatial equipment schedules and MEP load modeling to factory-certified commissioning and lifecycle service level agreements.</p>
+      </div>
+      <span class="page-hero__num" aria-hidden="true">04</span>
+    </section>
+
+    <!-- 4 PILLARS -->
+    <section class="section-pad theme-light">
+      <div class="container">
+        <div class="reveal" style="margin-bottom:clamp(3.5rem,6vw,6rem);">
+          <span class="section-label">02 — Service Pillars</span>
+          <h2 style="font-family:var(--font-display);font-size:var(--t-4xl);font-weight:500;line-height:.95;letter-spacing:0.01em;color:var(--black-pure);text-transform:uppercase;">FULL LIFECYCLE<br>CAPABILITY.</h2>
+        </div>
+
+        <div class="svc-grid">
+          <!-- 1 -->
+          <div class="svc-card reveal d1">
+            <span class="svc-card__num">PILLAR 01</span>
+            <h2 class="svc-card__title">Specification &amp; MEP Consultation</h2>
+            <p class="svc-card__desc">Detailed operational analysis correlating menu engineering with electrical kilowatt requirements, water hardness filtration, gas supply loads, and extract ventilation.</p>
+            <div class="svc-card__points">
+              <span class="svc-card__point">Utility Load &amp; Connection Schedules</span>
+              <span class="svc-card__point">Spatial Workflow Ergonomics</span>
+              <span class="svc-card__point">Architectural Plan Equipment Placement</span>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="svc-card reveal d2">
+            <span class="svc-card__num">PILLAR 02</span>
+            <h2 class="svc-card__title">Procurement &amp; Consolidation</h2>
+            <p class="svc-card__desc">Consolidated freight and single-point billing across dozens of international European and global manufacturers, managing build lead times to match project milestones.</p>
+            <div class="svc-card__points">
+              <span class="svc-card__point">Direct Tier-1 Factory Ordering</span>
+              <span class="svc-card__point">Custom Voltage &amp; Gas Pressure Verification</span>
+              <span class="svc-card__point">Single-Shipment Site Delivery</span>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="svc-card reveal d3">
+            <span class="svc-card__num">PILLAR 03</span>
+            <h2 class="svc-card__title">Installation &amp; Commissioning</h2>
+            <p class="svc-card__desc">Certified technical engineers manage mechanical positioning, water connection balance, gas safety testing, electrical isolation, and digital controller calibration.</p>
+            <div class="svc-card__points">
+              <span class="svc-card__point">Manufacturer-Certified Installers</span>
+              <span class="svc-card__point">Thermal Probe &amp; PID Calibration</span>
+              <span class="svc-card__point">Operational Handover &amp; Team Briefing</span>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="svc-card reveal d4">
+            <span class="svc-card__num">PILLAR 04</span>
+            <h2 class="svc-card__title">Preventative Maintenance &amp; SLAs</h2>
+            <p class="svc-card__desc">Protect your commercial investment with proactive descaling schedules, gasket renewal, compressor performance checks, and rapid OEM replacement parts deployment.</p>
+            <div class="svc-card__points">
+              <span class="svc-card__point">Guaranteed Response Time SLAs</span>
+              <span class="svc-card__point">OEM Genuine Spare Parts Inventory</span>
+              <span class="svc-card__point">Annual Safety &amp; Gas Compliance Audits</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STATEMENT CTA -->
+    <section class="cta-statement section-pad theme-black">
+      <div class="container">
+        <div class="cta-statement__inner">
+          <div class="reveal-left">
+            <span class="section-label">Engage Engineers</span>
+            <h2 class="cta-statement__title">HAVE A PROJECT<br>REQUIREMENT?</h2>
+            <p class="cta-statement__sub">Discuss your project with our engineering consultants to ensure the right capacity, footprint, and utility planning from day one.</p>
+          </div>
+          <div class="reveal-right cta-statement__actions">
+            <a class="btn btn--primary btn--lg" href="contact.html#quote">Book Engineering Consultation <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer theme-black">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__logo">SIP <em>&amp;</em> PLAY</div>
+          <p class="footer__tagline">ENGINEERED FOR<br>PERFORMANCE.</p>
+          <p class="footer__desc">Commercial kitchen equipment and solutions for professional hospitality and food-service operations.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <div class="footer__col">
+            <span class="footer__col-title">Solutions</span>
+            <a href="solutions.html">Coffee Systems</a>
+            <a href="solutions.html">Cold Storage</a>
+            <a href="solutions.html">Thermal Processing</a>
+            <a href="solutions.html">Kitchen Fit-Out</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-title">Company</span>
+            <a href="about.html">About</a>
+            <a href="brands.html">Brands</a>
+            <a href="services.html">Services</a>
+            <a href="equipment.html">Equipment</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-title">Direct Engagement</span>
+            <a href="contact.html">London • Dubai • Singapore</a>
+            <a href="mailto:specifications@sipandplay.com">specifications@sipandplay.com</a>
+            <a href="contact.html#quote" style="margin-top:0.5rem; text-decoration:underline;">Request a Quote →</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Sip &amp; Play. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+        <span class="footer__statement">PRECISION. PERFORMANCE. PRESENCE.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

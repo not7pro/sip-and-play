@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sip & Play Equipment Catalogue — Explore 500+ commercial kitchen units including multi-boiler espresso machines, combi steamers, blast chillers, and warewashing systems." />
+  <title>500+ Commercial Equipment Catalogue — Sip & Play</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body class="theme-light">
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="index.html">SIP <em>&amp;</em> PLAY</a>
+      <div class="nav__links">
+        <a class="nav__link" href="solutions.html">Solutions</a>
+        <a class="nav__link" href="equipment.html" aria-current="page">Equipment</a>
+        <a class="nav__link" href="brands.html">Brands</a>
+        <a class="nav__link" href="services.html">Services</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </div>
+      <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a Quote <span class="arrow">→</span></a>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-nav" id="mobNav">
+    <nav class="mob-nav__links">
+      <a class="mob-nav__link" href="solutions.html">Solutions <span>→</span></a>
+      <a class="mob-nav__link" href="equipment.html">Equipment <span>→</span></a>
+      <a class="mob-nav__link" href="brands.html">Brands <span>→</span></a>
+      <a class="mob-nav__link" href="services.html">Services <span>→</span></a>
+      <a class="mob-nav__link" href="about.html">About <span>→</span></a>
+      <a class="mob-nav__link" href="contact.html">Contact <span>→</span></a>
+    </nav>
+    <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a Quote →</a>
+    <div class="mob-nav__bottom">
+      <span class="mob-nav__bottom-label">© 2026 Sip &amp; Play</span>
+      <span class="mob-nav__bottom-label">Commercial Kitchen Solutions</span>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero theme-dark">
+      <div class="container page-hero__inner">
+        <div>
+          <span class="section-label">01 — Commercial Equipment Index</span>
+          <h1 class="page-hero__title">COMMERCIAL<br>EQUIPMENT CATALOGUE.</h1>
+        </div>
+        <p class="page-hero__desc">500+ industrial-grade commercial units indexed for hospitality architects, operators, and executive culinary teams. Filter by discipline, power, and manufacturer.</p>
+      </div>
+      <span class="page-hero__num" aria-hidden="true">500</span>
+    </section>
+
+    <!-- 500-PRODUCT CATALOGUE SECTION -->
+    <section class="cat-section" id="catalogueView">
+      <div class="container">
+
+        <!-- Top Search & Filter Bar -->
+        <div class="cat-header-bar">
+          <div class="cat-search-box">
+            <span class="cat-search-icon">🔍</span>
+            <input type="search" class="cat-search-input" id="catSearch" placeholder="Search 500+ products by name, SKU, brand, or kW..." aria-label="Search commercial equipment" />
+          </div>
+
+          <div class="cat-selects">
+            <select class="cat-select" id="brandSelect" aria-label="Filter by Manufacturer">
+              <option value="all">All Manufacturers</option>
+            </select>
+
+            <select class="cat-select" id="powerSelect" aria-label="Filter by Power/Utility">
+              <option value="all">All Power / Utilities</option>
+              <option value="400V">400V 3-Phase</option>
+              <option value="230V">230V Single Phase</option>
+              <option value="Gas">Gas (Natural / LPG)</option>
+            </select>
+
+            <select class="cat-select" id="sortSelect" aria-label="Sort products">
+              <option value="featured">Sort: Featured</option>
+              <option value="name-asc">Name: A to Z</option>
+              <option value="brand-asc">Manufacturer: A to Z</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Discipline Category Pills with live item count -->
+        <div class="cat-pills" id="catFilters" role="group" aria-label="Filter by category">
+          <!-- Populated by catalogue.js with live counts -->
+        </div>
+
+        <!-- Result Info -->
+        <div class="cat-result-info">
+          <span id="catResultCount">Showing commercial units...</span>
+          <span>AISI 304 Stainless Specification Standard</span>
+        </div>
+
+        <!-- 500-Item Dynamic Product Grid -->
+        <div class="cat-grid" id="catGrid">
+          <!-- Rendered dynamically by catalogue.js -->
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="cat-pagination" id="catPagination">
+          <!-- Rendered dynamically by catalogue.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STATEMENT CTA -->
+    <section class="cta-statement section-pad theme-black">
+      <div class="container">
+        <div class="cta-statement__inner">
+          <div class="reveal-left">
+            <span class="section-label">Bespoke Procurement</span>
+            <h2 class="cta-statement__title">CAN'T FIND A<br>SPECIFIC UNIT?</h2>
+            <p class="cta-statement__sub">If you have specific equipment schedules on architectural drawings, our procurement engineering team can source directly from global manufacturers.</p>
+          </div>
+          <div class="reveal-right cta-statement__actions">
+            <a class="btn btn--primary btn--lg" href="contact.html#quote">Submit Equipment Schedule <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- TECHNICAL SPECIFICATION MODAL -->
+  <div class="spec-modal" id="specModal" role="dialog" aria-modal="true" aria-label="Equipment Specifications">
+    <div class="spec-modal-container">
+      <button class="spec-modal-close" id="specModalClose" aria-label="Close specification modal">✕</button>
+      <div id="specModalBody">
+        <!-- Rendered by catalogue.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING SPECIFICATION SCHEDULE BAR (Quote Builder) -->
+  <div class="schedule-bar" id="scheduleBar">
+    <span class="schedule-bar__title">Project Schedule</span>
+    <span class="schedule-bar__badge" id="scheduleCount">0</span>
+  </div>
+
+  <!-- PROJECT SPECIFICATION SCHEDULE DRAWER -->
+  <div class="schedule-drawer" id="scheduleDrawer">
+    <div class="schedule-drawer__header">
+      <h3 class="schedule-drawer__title">PROJECT SCHEDULE</h3>
+      <button class="schedule-drawer__close" id="scheduleDrawerClose" aria-label="Close schedule drawer">✕</button>
+    </div>
+
+    <div class="schedule-items-list" id="scheduleItemsList">
+      <!-- Populated dynamically -->
+    </div>
+
+    <form class="lux-form" id="scheduleForm" style="border-top:1px solid var(--border-dark); padding-top:var(--sp-6);">
+      <div class="lux-form__field">
+        <label class="lux-form__label" for="rfqName">Your Name</label>
+        <input class="lux-form__input" type="text" id="rfqName" required placeholder="Marcus Vance" style="padding:0.75rem 1rem;" />
+      </div>
+      <div class="lux-form__field">
+        <label class="lux-form__label" for="rfqEmail">Work Email</label>
+        <input class="lux-form__input" type="email" id="rfqEmail" required placeholder="marcus@vancegroup.com" style="padding:0.75rem 1rem;" />
+      </div>
+      <button class="btn btn--primary" type="submit" style="width:100%; justify-content:center; margin-top:var(--sp-2);">
+        Submit Multi-Item RFQ <span class="arrow">→</span>
+      </button>
+    </form>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer theme-black">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__logo">SIP <em>&amp;</em> PLAY</div>
+          <p class="footer__tagline">ENGINEERED FOR<br>PERFORMANCE.</p>
+          <p class="footer__desc">Commercial kitchen equipment and solutions for professional hospitality and food-service operations.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <div class="footer__col">
+            <span class="footer__col-title">Solutions</span>
+            <a href="solutions.html">Coffee Systems</a>
+            <a href="solutions.html">Cold Storage</a>
+            <a href="solutions.html">Thermal Processing</a>
+            <a href="solutions.html">Kitchen Fit-Out</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-title">Company</span>
+            <a href="about.html">About</a>
+            <a href="brands.html">Brands</a>
+            <a href="services.html">Services</a>
+            <a href="equipment.html">Equipment</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-title">Direct Engagement</span>
+            <a href="contact.html">London • Dubai • Singapore</a>
+            <a href="mailto:specifications@sipandplay.com">specifications@sipandplay.com</a>
+            <a href="contact.html#quote" style="margin-top:0.5rem; text-decoration:underline;">Request a Quote →</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Sip &amp; Play. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+        <span class="footer__statement">PRECISION. PERFORMANCE. PRESENCE.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script src="products-data.js" defer></script>
+  <script src="catalogue.js" defer></script>
+</body>
+</html>

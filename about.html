@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Sip & Play — Precision commercial kitchen engineering, equipment specification, and turnkey culinary architecture for professional hospitality groups." />
+  <title>About Us — Sip & Play Commercial Kitchen Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    .values { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--border-light); border-bottom:1px solid var(--border-light); margin-top:clamp(4rem,7vw,7rem); }
+    .value-item { padding:var(--sp-10) var(--sp-8) var(--sp-10) 0; border-right:1px solid var(--border-light); }
+    .value-item:last-child { border-right:none; }
+    .value-item__num { font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.2em; color:var(--stone-mid); display:block; margin-bottom:var(--sp-4); }
+    .value-item__title { font-family:var(--font-display); font-size:var(--t-lg); font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:var(--black-pure); margin-bottom:var(--sp-3); }
+    .value-item__desc { font-size:0.88rem; color:var(--text-light-secondary); line-height:1.8; }
+    @media(max-width:768px){ .values{ grid-template-columns:1fr; } .value-item{ border-right:none; border-bottom:1px solid var(--border-light); } .value-item:last-child{ border-bottom:none; } }
+
+    .who-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--border-light); border:1px solid var(--border-light); margin-top:var(--sp-12); }
+    .who-item { background:var(--white-pure); padding:var(--sp-8); display:flex; flex-direction:column; gap:var(--sp-3); }
+    .who-item__tag { font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--stone-mid); }
+    .who-item__title { font-family:var(--font-display); font-size:var(--t-base); font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:var(--black-pure); }
+    .who-item__desc { font-size:0.82rem; color:var(--text-light-secondary); line-height:1.7; }
+    @media(max-width:1024px){ .who-grid{ grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:640px){ .who-grid{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body class="theme-light">
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="index.html">SIP <em>&amp;</em> PLAY</a>
+      <div class="nav__links">
+        <a class="nav__link" href="solutions.html">Solutions</a>
+        <a class="nav__link" href="equipment.html">Equipment</a>
+        <a class="nav__link" href="brands.html">Brands</a>
+        <a class="nav__link" href="services.html">Services</a>
+        <a class="nav__link" href="about.html" aria-current="page">About</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </div>
+      <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a Quote <span class="arrow">→</span></a>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-nav" id="mobNav">
+    <nav class="mob-nav__links">
+      <a class="mob-nav__link" href="solutions.html">Solutions <span>→</span></a>
+      <a class="mob-nav__link" href="equipment.html">Equipment <span>→</span></a>
+      <a class="mob-nav__link" href="brands.html">Brands <span>→</span></a>
+      <a class="mob-nav__link" href="services.html">Services <span>→</span></a>
+      <a class="mob-nav__link" href="about.html">About <span>→</span></a>
+      <a class="mob-nav__link" href="contact.html">Contact <span>→</span></a>
+    </nav>
+    <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a Quote →</a>
+    <div class="mob-nav__bottom">
+      <span class="mob-nav__bottom-label">© 2026 Sip &amp; Play</span>
+      <span class="mob-nav__bottom-label">Commercial Kitchen Solutions</span>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero theme-dark">
+      <div class="container page-hero__inner">
+        <div>
+          <span class="section-label">01 — Company Profile</span>
+          <h1 class="page-hero__title">BUILT AROUND<br>PERFORMANCE.</h1>
+        </div>
+        <p class="page-hero__desc">We exist to elevate commercial hospitality through rigorous equipment engineering, direct manufacturer relationships, and uncompromised technical support.</p>
+      </div>
+      <span class="page-hero__num" aria-hidden="true">05</span>
+    </section>
+
+    <!-- ABOUT STORY -->
+    <section class="about section-pad theme-light">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__content reveal-left">
+            <span class="section-label">02 — Engineering Ethos</span>
+            <h2 class="about__title">TECHNICAL RIGOR.<br>NO SHORTCUTS.</h2>
+            <p class="about__body">A commercial kitchen is a punishing operating environment. Systems run at maximum thermal capacity for 16+ hours a day, handling grease, extreme temperature deltas, and intense physical use.</p>
+            <p class="about__body">Sip &amp; Play engineers commercial kitchen solutions that hold calibration under continuous load. We work closely with hospitality groups, executive chefs, procurement leads, and architects to guarantee that every piece of machinery fulfills its spatial and thermal promise.</p>
+            <a class="btn btn--primary" href="contact.html#quote">Discuss Your Project With Us <span class="arrow">→</span></a>
+          </div>
+          <div class="about__media reveal-right">
+            <div class="about__img-wrap">
+              <img class="about__img" src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=85" alt="Professional kitchen environment — precision and performance" loading="lazy" />
+              <div class="about__img-ann" aria-hidden="true">
+                <span>STANDARD — GASTRONORM ARCHITECTURE</span>
+                <span>CALIBRATION — PRECISION TOLERANCE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VALUES -->
+        <div class="values">
+          <div class="value-item reveal d1">
+            <span class="value-item__num">01 / INTEGRITY</span>
+            <h3 class="value-item__title">Operational Precision</h3>
+            <p class="value-item__desc">We refuse to specify underpowered machinery that leads to kitchen bottlenecks or premature component failure.</p>
+          </div>
+          <div class="value-item reveal d2">
+            <span class="value-item__num">02 / PROVENANCE</span>
+            <h3 class="value-item__title">Authentic Manufacture</h3>
+            <p class="value-item__desc">Every piece of equipment is backed by authorized factory distribution, original documentation, and full warranty governance.</p>
+          </div>
+          <div class="value-item reveal d3">
+            <span class="value-item__num">03 / CONTINUITY</span>
+            <h3 class="value-item__title">Lifecycle Support</h3>
+            <p class="value-item__desc">Our responsibility extends well beyond handover through active spare parts logistics and preventative maintenance.</p>
+          </div>
+        </div>
+
+        <!-- WHO WE SERVE -->
+        <div class="reveal" style="margin-top:clamp(4rem, 7vw, 7rem);">
+          <span class="section-label">03 — Sectors Served</span>
+          <h2 style="font-family:var(--font-display);font-size:var(--t-4xl);font-weight:500;line-height:.95;letter-spacing:0.01em;color:var(--black-pure);text-transform:uppercase;">SECTORS OF<br>EXCELLENCE.</h2>
+        </div>
+
+        <div class="who-grid reveal">
+          <div class="who-item">
+            <span class="who-item__tag">SECTOR 01</span>
+            <h3 class="who-item__title">Luxury Hotels &amp; Resorts</h3>
+            <p class="who-item__desc">Central production galleys, banquet thermal suites, and all-day dining beverage stations.</p>
+          </div>
+          <div class="who-item">
+            <span class="who-item__tag">SECTOR 02</span>
+            <h3 class="who-item__title">Fine Dining &amp; High-Volume</h3>
+            <p class="who-item__desc">High-precision induction cooking suites, combi-steamer arrays, and custom stainless pass passes.</p>
+          </div>
+          <div class="who-item">
+            <span class="who-item__tag">SECTOR 03</span>
+            <h3 class="who-item__title">Specialty Roasteries &amp; Cafés</h3>
+            <p class="who-item__desc">Multi-boiler espresso hubs, batch brew lines, and reverse-osmosis mineral treatment.</p>
+          </div>
+          <div class="who-item">
+            <span class="who-item__tag">SECTOR 04</span>
+            <h3 class="who-item__title">Private Clubs &amp; Venues</h3>
+            <p class="who-item__desc">Architectural back-of-house fit-outs, high-capacity glasswashing, and modular cold-room architectures.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STATEMENT CTA -->
+    <section class="cta-statement section-pad theme-black">
+      <div class="container">
+        <div class="cta-statement__inner">
+          <div class="reveal-left">
+            <span class="section-label">Collaboration</span>
+            <h2 class="cta-statement__title">WORK WITH<br>SIP &amp; PLAY.</h2>
+            <p class="cta-statement__sub">Partner with an engineering-focused kitchen equipment supplier that understands high-level hospitality.</p>
+          </div>
+          <div class="reveal-right cta-statement__actions">
+            <a class="btn btn--primary btn--lg" href="contact.html#quote">Initiate Project Discussion <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer theme-black">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__logo">SIP <em>&amp;</em> PLAY</div>
+          <p class="footer__tagline">ENGINEERED FOR<br>PERFORMANCE.</p>
+          <p class="footer__desc">Commercial kitchen equipment and solutions for professional hospitality and food-service operations.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <div class="footer__col">
+            <span class="footer__col-title">Solutions</span>
+            <a href="solutions.html">Coffee Systems</a>
+            <a href="solutions.html">Cold Storage</a>
+            <a href="solutions.html">Thermal Processing</a>
+            <a href="solutions.html">Kitchen Fit-Out</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-title">Company</span>
+            <a href="about.html">About</a>
+            <a href="brands.html">Brands</a>
+            <a href="services.html">Services</a>
+            <a href="equipment.html">Equipment</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-title">Direct Engagement</span>
+            <a href="contact.html">London • Dubai • Singapore</a>
+            <a href="mailto:specifications@sipandplay.com">specifications@sipandplay.com</a>
+            <a href="contact.html#quote" style="margin-top:0.5rem; text-decoration:underline;">Request a Quote →</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Sip &amp; Play. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+        <span class="footer__statement">PRECISION. PERFORMANCE. PRESENCE.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
