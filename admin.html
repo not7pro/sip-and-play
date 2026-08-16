@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin Portal — Product Management | Sip & Play Sri Lanka</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Admin Portal — Supabase Commercial Inventory Engine | Sip & Play</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <style>
-    .admin-wrapper { padding-top: calc(var(--nav-h) + var(--sp-8)); padding-bottom: var(--sp-20); background: var(--off-white); min-height: 100vh; }
-    .admin-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--sp-10); border-bottom: 1px solid var(--border-light); padding-bottom: var(--sp-6); flex-wrap: wrap; gap: var(--sp-4); }
+    .admin-nav { background: var(--black-pure); color: var(--white-pure); padding: 1.25rem 0; border-bottom: 1px solid var(--border-dark); position: sticky; top: 0; z-index: 1000; }
+    .admin-nav__inner { display: flex; justify-content: space-between; align-items: center; }
+    .admin-nav__logo { font-family: var(--font-display); font-size: 1.1rem; letter-spacing: 0.12em; color: var(--white-pure); text-decoration: none; font-weight: 500; }
+    .admin-nav__logo span { font-family: var(--font-mono); font-size: 0.65rem; color: #00ff88; margin-left: 8px; letter-spacing: 0.18em; }
+    .admin-wrapper { padding-top: var(--sp-8); padding-bottom: var(--sp-20); background: var(--off-white); min-height: 100vh; }
+    
+    .admin-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--sp-8); border-bottom: 1px solid var(--border-light); padding-bottom: var(--sp-6); flex-wrap: wrap; gap: var(--sp-4); }
     .admin-title { font-family: var(--font-display); font-size: var(--t-3xl); font-weight: 500; text-transform: uppercase; color: var(--black-pure); }
-    .admin-stats { display: flex; gap: var(--sp-4); font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--stone-mid); }
+    .admin-stats { display: flex; gap: var(--sp-4); font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--stone-mid); flex-wrap: wrap; }
     .admin-stats span { color: var(--black-pure); font-weight: 700; }
     
     .admin-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: var(--sp-10); align-items: start; margin-bottom: var(--sp-16); }
@@ -20,7 +26,7 @@
     .admin-card { background: var(--white-pure); border: 1px solid var(--border-light); padding: clamp(1.5rem, 4vw, 2.5rem); box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
     .admin-card__title { font-family: var(--font-display); font-size: var(--t-xl); font-weight: 500; letter-spacing: 0.02em; text-transform: uppercase; color: var(--black-pure); margin-bottom: var(--sp-6); border-bottom: 1px solid var(--border-light); padding-bottom: var(--sp-3); display: flex; justify-content: space-between; align-items: center; }
     
-    .preview-sticky { position: sticky; top: calc(var(--nav-h) + 2rem); }
+    .preview-sticky { position: sticky; top: 6rem; }
     
     .admin-table-wrap { overflow-x: auto; background: var(--white-pure); border: 1px solid var(--border-light); }
     .admin-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; text-align: left; }
@@ -32,44 +38,34 @@
     .admin-btn-action:hover { background: var(--black-pure); color: var(--white-pure); }
     .admin-btn-del:hover { background: #990000; color: #ffffff; border-color: #990000; }
 
-    .export-banner { background: var(--black-pure); color: var(--white-pure); padding: var(--sp-6) var(--sp-8); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-4); margin-bottom: var(--sp-10); border: 1px solid var(--border-dark); }
+    .supabase-banner { background: var(--black-deep); color: var(--white-pure); padding: var(--sp-6) var(--sp-8); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-4); margin-bottom: var(--sp-8); border: 1px solid var(--border-dark); border-left: 4px solid #3ecf8e; }
+    .badge-status { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 3px 8px; background: rgba(62, 207, 142, 0.15); color: #3ecf8e; border: 1px solid rgba(62, 207, 142, 0.3); }
+    .badge-status.offline { background: rgba(255, 100, 100, 0.15); color: #ff8888; border-color: rgba(255, 100, 100, 0.3); }
+
+    /* Supabase Settings Modal */
+    .supa-modal { position: fixed; inset: 0; z-index: 99999; background: rgba(0,0,0,0.8); backdrop-filter: blur(8px); display: none; align-items: center; justify-content: center; padding: var(--gutter); }
+    .supa-modal.open { display: flex; }
+    .supa-modal__box { background: var(--white-pure); width: 100%; max-width: 680px; padding: clamp(2rem, 4vw, 3rem); border: 1px solid var(--border-light); position: relative; max-height: 90vh; overflow-y: auto; box-shadow: 0 24px 60px rgba(0,0,0,0.4); }
   </style>
 </head>
 <body class="theme-light">
 
-  <!-- NAVIGATION -->
-  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__inner container">
-      <a class="nav__logo" href="index.html">SIP <em>&amp;</em> PLAY</a>
-      <div class="nav__links">
-        <a class="nav__link" href="solutions.html">Solutions</a>
-        <a class="nav__link" href="equipment.html">Equipment (Catalogue)</a>
-        <a class="nav__link" href="brands.html">Brands</a>
-        <a class="nav__link" href="services.html">Services</a>
-        <a class="nav__link" href="about.html">About</a>
-        <a class="nav__link" href="contact.html">Contact</a>
-        <a class="nav__link" href="admin.html" aria-current="page" style="color:var(--black-pure); font-weight:700;">★ Admin Portal</a>
+  <!-- STANDALONE ADMIN HEADER (Private, No Public Links) -->
+  <header class="admin-nav">
+    <div class="container admin-nav__inner">
+      <a class="admin-nav__logo" href="admin.html">
+        SIP <em>&amp;</em> PLAY <span>[PRIVATE ADMIN CONSOLE]</span>
+      </a>
+      <div style="display:flex; gap:var(--sp-4); align-items:center;">
+        <button class="btn btn--outline-light btn--sm" id="btnOpenSupaSettings" style="font-size:0.65rem; padding:0.5rem 1rem;">
+          ⚙ Supabase Database Settings
+        </button>
+        <a class="btn btn--primary btn--sm" href="index.html" style="font-size:0.65rem; padding:0.5rem 1rem;" target="_blank">
+          View Live Website ↗
+        </a>
       </div>
-      <a class="btn btn--primary nav__cta" href="equipment.html">View Live Catalogue <span class="arrow">→</span></a>
-      <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
-  </nav>
-
-  <!-- MOBILE MENU -->
-  <div class="mob-nav" id="mobNav">
-    <nav class="mob-nav__links">
-      <a class="mob-nav__link" href="solutions.html">Solutions <span>→</span></a>
-      <a class="mob-nav__link" href="equipment.html">Equipment <span>→</span></a>
-      <a class="mob-nav__link" href="brands.html">Brands <span>→</span></a>
-      <a class="mob-nav__link" href="services.html">Services <span>→</span></a>
-      <a class="mob-nav__link" href="about.html">About <span>→</span></a>
-      <a class="mob-nav__link" href="contact.html">Contact <span>→</span></a>
-      <a class="mob-nav__link" href="admin.html">★ Admin Portal <span>→</span></a>
-    </nav>
-    <a class="btn btn--primary" href="equipment.html" style="width:100%; justify-content:center;">View Live Catalogue →</a>
-  </div>
+  </header>
 
   <main class="admin-wrapper">
     <div class="container">
@@ -82,20 +78,28 @@
         </div>
         <div class="admin-stats">
           <div>TOTAL UNITS: <span id="statTotalCount">500</span></div>
-          <div>CUSTOM UPLOADS: <span id="statCustomCount">0</span></div>
-          <div>STATUS: <span style="color:#008800;">LIVE SYNC ACTIVE</span></div>
+          <div>DATABASE ENGINE: <span id="statEngineBadge" class="badge-status">SUPABASE CLOUD</span></div>
         </div>
       </div>
 
-      <!-- EXPORT / SYNC BANNER -->
-      <div class="export-banner">
+      <!-- SUPABASE STATUS BANNER -->
+      <div class="supabase-banner">
         <div>
-          <span style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--stone-mid); display:block; margin-bottom:2px;">DATASET PERSISTENCE</span>
-          <strong style="font-family:var(--font-display); font-size:var(--t-base); text-transform:uppercase; letter-spacing:0.04em;">Changes are automatically synced live with equipment.html</strong>
+          <div style="display:flex; align-items:center; gap:var(--sp-3); margin-bottom:4px;">
+            <span class="badge-status" id="supaStatusBadge">● SUPABASE CLOUD ACTIVE</span>
+            <span style="font-family:var(--font-mono); font-size:0.65rem; color:var(--stone-mid);" id="supaUrlDisplay">Database: Connected</span>
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-dark-secondary); margin:0;">
+            All product uploads, edits, and deletions sync with your Supabase table and appear immediately on <a href="equipment.html" target="_blank" style="color:#3ecf8e; text-decoration:underline;">equipment.html</a>.
+          </p>
         </div>
         <div style="display:flex; gap:var(--sp-3); flex-wrap:wrap;">
-          <button class="btn btn--outline-light" id="btnExportData" title="Download updated products-data.js for repository">Export products-data.js ↓</button>
-          <button class="btn btn--outline-light" id="btnResetData" style="border-color:#660000; color:#ff8888;">Reset to Default (500)</button>
+          <button class="btn btn--outline-light btn--sm" id="btnSeedSupabase" style="border-color:#3ecf8e; color:#3ecf8e;">
+            ⚡ Seed 500 Products to Supabase
+          </button>
+          <button class="btn btn--outline-light btn--sm" id="btnExportData">
+            Export JSON / JS ↓
+          </button>
         </div>
       </div>
 
@@ -161,7 +165,7 @@
               </div>
 
               <div class="lux-form__field">
-                <label class="lux-form__label" for="prodPower">Power / Voltage *</label>
+                <label class="lux-form__label" for="prodPower">Power / Voltage (Sri Lanka Standard) *</label>
                 <select class="lux-form__select" id="prodPower" required style="background:#fff; color:#000; border:1px solid #ccc;">
                   <option value="400V / 3-Phase">400V / 3-Phase (50Hz Ceylon Standard)</option>
                   <option value="230V / Single-Phase">230V / Single-Phase (50Hz)</option>
@@ -187,7 +191,7 @@
               </div>
 
               <div class="lux-form__field">
-                <label class="lux-form__label" for="prodImage">Image URL or Preset</label>
+                <label class="lux-form__label" for="prodImage">Image URL</label>
                 <input class="lux-form__input" type="url" id="prodImage" placeholder="https://images.unsplash.com/..." style="background:#fff; color:#000; border:1px solid #ccc;" />
               </div>
 
@@ -206,7 +210,7 @@
 
             <div style="display:flex; gap:var(--sp-3); margin-top:var(--sp-4);">
               <button class="btn btn--primary" type="submit" id="btnSaveProduct" style="flex:1; justify-content:center;">
-                Save Product to Catalogue <span class="arrow">→</span>
+                Save to Supabase Database <span class="arrow">→</span>
               </button>
               <button class="btn btn--outline" type="button" id="btnCancelEdit" style="display:none;">
                 Cancel
@@ -260,11 +264,11 @@
       <div class="admin-card">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:var(--sp-6); flex-wrap:wrap; gap:var(--sp-4);">
           <div>
-            <span class="section-label">Inventory Database</span>
-            <h2 style="font-family:var(--font-display); font-size:var(--t-2xl); text-transform:uppercase; color:var(--black-pure); margin-top:4px;">Catalogue Units</h2>
+            <span class="section-label">Cloud Database Table</span>
+            <h2 style="font-family:var(--font-display); font-size:var(--t-2xl); text-transform:uppercase; color:var(--black-pure); margin-top:4px;">Catalogue Inventory</h2>
           </div>
           <div style="display:flex; gap:var(--sp-3); flex:1; max-width:400px;">
-            <input type="search" id="tableSearch" class="cat-search-input" placeholder="Search table by name, SKU, or brand..." style="padding:0.65rem 1rem;" />
+            <input type="search" id="tableSearch" class="cat-search-input" placeholder="Search database by name, SKU, or brand..." style="padding:0.65rem 1rem;" />
           </div>
         </div>
 
@@ -288,7 +292,7 @@
         </div>
 
         <div style="display:flex; justify-content:space-between; align-items:center; margin-top:var(--sp-4); font-family:var(--font-mono); font-size:0.68rem; color:var(--stone-mid);">
-          <span id="tableCountInfo">Showing units...</span>
+          <span id="tableCountInfo">Loading database units...</span>
           <div style="display:flex; gap:6px;" id="tablePagination"></div>
         </div>
       </div>
@@ -296,48 +300,69 @@
     </div>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer theme-black">
-    <div class="container">
-      <div class="footer__top">
-        <div>
-          <div class="footer__logo">SIP <em>&amp;</em> PLAY</div>
-          <p class="footer__tagline">ENGINEERED FOR<br>PERFORMANCE.</p>
-          <p class="footer__desc">Commercial kitchen engineering and equipment solutions based in Colombo, Sri Lanka. Serving premier hotels, resorts, and culinary destinations.</p>
-        </div>
-        <nav class="footer__nav" aria-label="Footer navigation">
-          <div class="footer__col">
-            <span class="footer__col-title">Locations</span>
-            <span>Headquarters: Colombo 07, Sri Lanka</span>
-            <span>Regional Coverage: Galle • Kandy • Bentota</span>
-            <a href="mailto:specifications@sipandplay.lk">specifications@sipandplay.lk</a>
-            <a href="tel:+94112345678">+94 (0) 11 234 5678</a>
-          </div>
-          <div class="footer__col">
-            <span class="footer__col-title">Navigation</span>
-            <a href="index.html">Home</a>
-            <a href="equipment.html">500+ Equipment Catalogue</a>
-            <a href="solutions.html">Solutions</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-          </div>
-          <div class="footer__col">
-            <span class="footer__col-title">Management</span>
-            <a href="admin.html">★ Product Upload Portal</a>
-            <a href="contact.html#quote" style="margin-top:0.5rem; text-decoration:underline;">Request a Quote →</a>
-          </div>
-        </nav>
+  <!-- SUPABASE CONFIGURATION MODAL -->
+  <div class="supa-modal" id="supaModal">
+    <div class="supa-modal__box">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:var(--sp-6); border-bottom:1px solid var(--border-light); padding-bottom:var(--sp-3);">
+        <h3 style="font-family:var(--font-display); font-size:var(--t-xl); text-transform:uppercase; margin:0;">Supabase Database Configuration</h3>
+        <button id="btnCloseSupaModal" style="font-size:1.2rem; cursor:pointer; background:none; border:none;">✕</button>
       </div>
-      <div class="footer__bottom">
-        <p class="footer__copy">© 2026 Sip &amp; Play Sri Lanka (Pvt) Ltd. All rights reserved.</p>
-        <span class="footer__statement">COLOMBO • GALLE • KANDY</span>
+
+      <p style="font-size:0.85rem; color:var(--text-light-secondary); line-height:1.7; margin-bottom:var(--sp-6);">
+        Connect your Supabase PostgreSQL database to enable real-time cloud inventory storage. Obtain your project credentials from your Supabase Dashboard under <strong>Project Settings -> API</strong>.
+      </p>
+
+      <form id="supaConfigForm" class="lux-form">
+        <div class="lux-form__field">
+          <label class="lux-form__label" for="cfgSupaUrl">Supabase Project URL *</label>
+          <input class="lux-form__input" type="url" id="cfgSupaUrl" required placeholder="https://your-project-ref.supabase.co" style="background:#fff; color:#000; border:1px solid #ccc;" />
+        </div>
+
+        <div class="lux-form__field">
+          <label class="lux-form__label" for="cfgSupaKey">Supabase Anon / Public API Key *</label>
+          <input class="lux-form__input" type="password" id="cfgSupaKey" required placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6..." style="background:#fff; color:#000; border:1px solid #ccc;" />
+        </div>
+
+        <div style="display:flex; gap:var(--sp-3); margin-top:var(--sp-4);">
+          <button class="btn btn--primary" type="submit" style="flex:1; justify-content:center;">
+            Save &amp; Test Connection <span class="arrow">→</span>
+          </button>
+          <button class="btn btn--outline" type="button" id="btnDisconnectSupa" style="border-color:#990000; color:#990000;">
+            Disconnect
+          </button>
+        </div>
+      </form>
+
+      <div style="margin-top:var(--sp-8); border-top:1px solid var(--border-light); padding-top:var(--sp-6);">
+        <h4 style="font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.16em; text-transform:uppercase; margin-bottom:8px;">Database Setup SQL (Run in Supabase SQL Editor)</h4>
+        <textarea readonly style="width:100%; height:120px; font-family:var(--font-mono); font-size:0.68rem; background:#f4f4f4; border:1px solid #ddd; padding:8px; resize:none;">CREATE TABLE IF NOT EXISTS public.products (
+  id BIGINT PRIMARY KEY GENERATED BY DEFAULT AS IDENTITY,
+  sku TEXT UNIQUE NOT NULL,
+  name TEXT NOT NULL,
+  brand TEXT NOT NULL,
+  category TEXT NOT NULL,
+  sub_category TEXT,
+  power TEXT NOT NULL,
+  power_kw TEXT,
+  dimensions TEXT,
+  origin TEXT,
+  material TEXT DEFAULT 'AISI 304 High-Tensile Stainless Steel',
+  description TEXT,
+  image TEXT,
+  featured BOOLEAN DEFAULT FALSE,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+ALTER TABLE public.products ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Public Read Products" ON public.products FOR SELECT USING (true);
+CREATE POLICY "Allow All For Anon Key" ON public.products FOR ALL USING (true) WITH CHECK (true);</textarea>
       </div>
     </div>
-  </footer>
+  </div>
 
   <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="products-data.js"></script>
+  <script src="supabase-config.js"></script>
   <script src="admin.js" defer></script>
 </body>
 </html>

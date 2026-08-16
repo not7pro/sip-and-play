@@ -5,13 +5,13 @@
 
 'use strict';
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   if (!window.SIP_PRODUCTS || !Array.isArray(window.SIP_PRODUCTS)) {
     console.error('SIP_PRODUCTS dataset not loaded.');
     return;
   }
 
-  // Load base products and merge with custom uploads from admin
+  // Load base products
   const baseProducts = window.SIP_PRODUCTS;
   const customProducts = JSON.parse(localStorage.getItem('sip_custom_products') || '[]');
   const deletedIds = JSON.parse(localStorage.getItem('sip_deleted_ids') || '[]');
@@ -25,6 +25,36 @@ document.addEventListener('DOMContentLoaded', () => {
       allProducts.unshift(c);
     }
   });
+
+  // Check if Supabase Cloud is configured
+  if (window.SipSupabase && window.SipSupabase.isConfigured()) {
+    const client = window.SipSupabase.getClient();
+    if (client) {
+      try {
+        const { data, error } = await client.from('products').select('*').order('id', { ascending: false });
+        if (!error && data && data.length > 0) {
+          allProducts = data.map(d => ({
+            id: d.id,
+            sku: d.sku,
+            name: d.name,
+            brand: d.brand,
+            category: d.category,
+            subCategory: d.sub_category || d.category,
+            power: d.power,
+            powerKw: d.power_kw,
+            dimensions: d.dimensions,
+            origin: d.origin,
+            material: d.material || 'AISI 304 High-Tensile Stainless Steel',
+            description: d.description,
+            image: d.image,
+            featured: Boolean(d.featured)
+          }));
+        }
+      } catch (err) {
+        console.warn('Supabase catalogue sync notice, using local cache:', err);
+      }
+    }
+  }
 
   let filteredProducts = [...allProducts];
   let currentPage = 1;
