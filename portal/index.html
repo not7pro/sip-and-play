@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Enterprise Commercial Inventory &amp; Stock Analytics — Sip &amp; Play</title>
+  <link rel="stylesheet" href="portal.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    // Route guard
+    if (sessionStorage.getItem('sip_portal_auth') !== 'true') {
+      window.location.replace('login.html');
+    }
+  </script>
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <a class="sidebar__logo" href="index.html">
+          SIP <em>&amp;</em> PLAY <span>PRO</span>
+        </a>
+      </div>
+
+      <nav class="sidebar__nav">
+        <a class="nav-item active" href="#dashboardSection">
+          <span class="nav-item__icon">📊</span> Stock Analytics
+        </a>
+        <a class="nav-item" href="#inventorySection">
+          <span class="nav-item__icon">📦</span> Equipment Assets (500+)
+        </a>
+        <a class="nav-item" href="#uploadSection" id="btnSidebarUpload">
+          <span class="nav-item__icon">➕</span> Upload Equipment
+        </a>
+        <a class="nav-item" href="#supabaseSettings" id="btnSidebarSettings">
+          <span class="nav-item__icon">⚙</span> Supabase Cloud Sync
+        </a>
+      </nav>
+
+      <div class="sidebar__footer">
+        <span id="portalUserDisplay">USER: ADMIN</span>
+        <button id="btnPortalLogout" style="background:none; border:none; color:var(--accent-rose); cursor:pointer; font-family:var(--font-mono); font-size:0.65rem;">
+          LOGOUT ⎋
+        </button>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+      <!-- TOPBAR -->
+      <header class="topbar">
+        <div class="topbar__title">Commercial Stock &amp; Valuation Console</div>
+        <div class="topbar__actions">
+          <span class="badge-cloud" id="cloudStatusBadge">● SUPABASE CLOUD ACTIVE</span>
+          <button class="btn-portal btn-portal--emerald btn-portal--sm" id="btnQuickSeed">
+            ⚡ Seed 500 to Supabase
+          </button>
+          <button class="btn-portal btn-portal--primary btn-portal--sm" id="btnOpenUploadModal">
+            + New Equipment
+          </button>
+        </div>
+      </header>
+
+      <!-- DASHBOARD BODY -->
+      <main class="dashboard-body">
+
+        <!-- KPI STATS CARDS -->
+        <section class="kpi-grid" id="dashboardSection">
+          <!-- KPI 1 -->
+          <div class="kpi-card">
+            <div class="kpi-card__header">
+              <span class="kpi-card__label">Total Inventory Valuation</span>
+              <span class="kpi-card__badge">LKR / CE</span>
+            </div>
+            <div class="kpi-card__val" id="kpiValuation">LKR 425.8M</div>
+            <div class="kpi-card__sub">
+              <span class="trend-up">↑ +14.2%</span> asset coverage vs Q3
+            </div>
+          </div>
+
+          <!-- KPI 2 -->
+          <div class="kpi-card">
+            <div class="kpi-card__header">
+              <span class="kpi-card__label">Catalogued SKUs</span>
+              <span class="kpi-card__badge">UNITS</span>
+            </div>
+            <div class="kpi-card__val" id="kpiTotalCount">500+</div>
+            <div class="kpi-card__sub">Across 8 commercial disciplines</div>
+          </div>
+
+          <!-- KPI 3 -->
+          <div class="kpi-card">
+            <div class="kpi-card__header">
+              <span class="kpi-card__label">Colombo Stock Index</span>
+              <span class="kpi-card__badge">AVAILABILITY</span>
+            </div>
+            <div class="kpi-card__val" id="kpiStockHealth">88.4%</div>
+            <div class="kpi-card__sub">Ready for 48h island deployment</div>
+          </div>
+
+          <!-- KPI 4 -->
+          <div class="kpi-card">
+            <div class="kpi-card__header">
+              <span class="kpi-card__label">Specification Pipeline</span>
+              <span class="kpi-card__badge">ACTIVE RFQ</span>
+            </div>
+            <div class="kpi-card__val" id="kpiActiveQuotes">28 Projects</div>
+            <div class="kpi-card__sub">Resort &amp; hotel schedules</div>
+          </div>
+        </section>
+
+        <!-- INTERACTIVE STOCK & CATEGORY CHARTS -->
+        <section class="charts-grid">
+          <!-- Valuation & Stock Trend Chart -->
+          <div class="chart-card">
+            <div class="chart-card__header">
+              <div>
+                <h2 class="chart-card__title">Inventory Stock Valuation &amp; Asset Velocity</h2>
+                <span class="chart-card__period">Monthly Asset Value (LKR Millions) • 2026 Fiscal</span>
+              </div>
+            </div>
+            <div class="chart-container">
+              <canvas id="valuationChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Category Asset Distribution Chart -->
+          <div class="chart-card">
+            <div class="chart-card__header">
+              <div>
+                <h2 class="chart-card__title">Category Asset Allocation</h2>
+                <span class="chart-card__period">Discipline Distribution</span>
+              </div>
+            </div>
+            <div class="chart-container">
+              <canvas id="categoryChart"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- INVENTORY DATA TABLE & CONTROLS -->
+        <section class="portal-card" id="inventorySection">
+          <div class="portal-card__header">
+            <div>
+              <h2 class="portal-card__title">Commercial Equipment Database</h2>
+              <span style="font-family:var(--font-mono); font-size:0.68rem; color:var(--text-muted);">
+                LIVE SYNCHRONIZATION WITH SUPABASE POSTGRESQL TABLE
+              </span>
+            </div>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+              <button class="btn-portal btn-portal--outline" id="btnExportJson">
+                Export JSON / JS ↓
+              </button>
+            </div>
+          </div>
+
+          <!-- Search & Filter Controls -->
+          <div class="controls-bar">
+            <div class="search-box">
+              <span class="search-box__icon">🔍</span>
+              <input type="search" id="portalSearch" placeholder="Search by SKU, Model Name, Manufacturer..." />
+            </div>
+
+            <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+              <select class="form-select" id="filterCategory" style="padding:0.6rem 0.8rem; font-size:0.75rem;">
+                <option value="all">All Categories</option>
+                <option value="Coffee & Beverage">Coffee &amp; Beverage</option>
+                <option value="Cold Storage & Refrigeration">Cold Storage &amp; Refrigeration</option>
+                <option value="Thermal Processing & Cooking">Thermal Processing &amp; Cooking</option>
+                <option value="Warewashing Systems">Warewashing Systems</option>
+                <option value="Food Preparation & Bakery">Food Preparation &amp; Bakery</option>
+                <option value="Commercial Ice Systems">Commercial Ice Systems</option>
+                <option value="Heated Holding & Servery">Heated Holding &amp; Servery</option>
+                <option value="Stainless Modular Fabrication">Stainless Modular Fabrication</option>
+              </select>
+
+              <select class="form-select" id="filterStatus" style="padding:0.6rem 0.8rem; font-size:0.75rem;">
+                <option value="all">All Stock Statuses</option>
+                <option value="In Stock (Colombo)">In Stock (Colombo)</option>
+                <option value="Low Stock">Low Stock</option>
+                <option value="Direct Factory Import">Direct Factory Import</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Table -->
+          <div class="data-table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>SKU Code</th>
+                  <th>Equipment Description</th>
+                  <th>Manufacturer</th>
+                  <th>Category</th>
+                  <th>Power Spec</th>
+                  <th>Stock Status</th>
+                  <th>Est. Unit Value (LKR)</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="inventoryTableBody">
+                <!-- Rendered by portal.js -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Pagination Footer -->
+          <div style="display:flex; justify-content:space-between; align-items:center; font-family:var(--font-mono); font-size:0.7rem; color:var(--text-muted); flex-wrap:wrap; gap:1rem;">
+            <span id="tableInfo">Loading inventory records...</span>
+            <div id="tablePagination" style="display:flex; gap:4px;"></div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- UPLOAD / EDIT EQUIPMENT MODAL -->
+  <div class="portal-modal" id="uploadModal">
+    <div class="portal-modal__box">
+      <div class="modal-header">
+        <h3 class="portal-card__title" id="modalFormTitle">Upload New Equipment Spec</h3>
+        <button class="modal-close" id="btnCloseUploadModal">✕</button>
+      </div>
+
+      <form id="equipmentForm">
+        <input type="hidden" id="formEditId" value="" />
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="inpName">Equipment Name *</label>
+            <input class="form-input" type="text" id="inpName" required placeholder="e.g. La Marzocco Strada EP 3-Group" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inpSku">SKU Code *</label>
+            <input class="form-input" type="text" id="inpSku" required placeholder="e.g. SP-LM-STR3" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inpBrand">Manufacturer Brand *</label>
+            <input class="form-input" type="text" id="inpBrand" required placeholder="e.g. La Marzocco" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inpCategory">Category *</label>
+            <select class="form-select" id="inpCategory" required>
+              <option value="Coffee & Beverage">Coffee &amp; Beverage</option>
+              <option value="Cold Storage & Refrigeration">Cold Storage &amp; Refrigeration</option>
+              <option value="Thermal Processing & Cooking">Thermal Processing &amp; Cooking</option>
+              <option value="Warewashing Systems">Warewashing Systems</option>
+              <option value="Food Preparation & Bakery">Food Preparation &amp; Bakery</option>
+              <option value="Commercial Ice Systems">Commercial Ice Systems</option>
+              <option value="Heated Holding & Servery">Heated Holding &amp; Servery</option>
+              <option value="Stainless Modular Fabrication">Stainless Modular Fabrication</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inpPower">Power Standard *</label>
+            <select class="form-select" id="inpPower" required>
+              <option value="400V / 3-Phase">400V / 3-Phase (50Hz CE)</option>
+              <option value="230V / Single-Phase">230V / Single-Phase (50Hz)</option>
+              <option value="Natural Gas (20mbar)">Natural Gas (20mbar)</option>
+              <option value="LPG Gas">LPG Gas</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inpStatus">Stock Availability *</label>
+            <select class="form-select" id="inpStatus" required>
+              <option value="In Stock (Colombo)">In Stock (Colombo)</option>
+              <option value="Low Stock">Low Stock</option>
+              <option value="Direct Factory Import">Direct Factory Import</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inpPrice">Est. Unit Price (LKR) *</label>
+            <input class="form-input" type="number" id="inpPrice" required placeholder="850000" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inpDimensions">Dimensions (W × D × H)</label>
+            <input class="form-input" type="text" id="inpDimensions" placeholder="1000 × 675 × 475 mm" />
+          </div>
+
+          <div class="form-group form-grid--full">
+            <label class="form-label" for="inpImage">Image URL</label>
+            <input class="form-input" type="url" id="inpImage" placeholder="https://images.unsplash.com/..." />
+          </div>
+
+          <div class="form-group form-grid--full">
+            <label class="form-label" for="inpDesc">Technical Description</label>
+            <textarea class="form-textarea" id="inpDesc" rows="3" placeholder="Specify AISI 304 construction, PID controllers, and thermal tolerances..."></textarea>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:flex-end; gap:0.75rem; margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-subtle);">
+          <button class="btn-portal btn-portal--outline" type="button" id="btnCancelForm">Cancel</button>
+          <button class="btn-portal btn-portal--primary" type="submit" id="btnSubmitForm">Save to Supabase Database →</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- SUPABASE SETTINGS MODAL -->
+  <div class="portal-modal" id="settingsModal">
+    <div class="portal-modal__box">
+      <div class="modal-header">
+        <h3 class="portal-card__title">Supabase Database Credentials</h3>
+        <button class="modal-close" id="btnCloseSettingsModal">✕</button>
+      </div>
+
+      <form id="supaCredForm">
+        <div class="form-group" style="margin-bottom:1.25rem;">
+          <label class="form-label" for="supaUrlInput">Supabase Project URL</label>
+          <input class="form-input" type="url" id="supaUrlInput" required placeholder="https://your-project.supabase.co" />
+        </div>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label class="form-label" for="supaKeyInput">Supabase Anon / Public API Key</label>
+          <input class="form-input" type="password" id="supaKeyInput" required placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6..." />
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <button class="btn-portal btn-portal--outline" type="button" id="btnDisconnectCloud" style="color:var(--accent-rose); border-color:rgba(255,71,87,0.3);">
+            Disconnect Cloud
+          </button>
+          <button class="btn-portal btn-portal--primary" type="submit">
+            Save &amp; Test Connection →
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../products-data.js"></script>
+  <script src="../supabase-config.js"></script>
+  <script src="portal.js"></script>
+</body>
+</html>
