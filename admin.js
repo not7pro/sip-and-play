@@ -480,6 +480,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     URL.revokeObjectURL(url);
   });
 
+  // Logout
+  const btnLogout = document.getElementById('btnLogout');
+  if (btnLogout) {
+    btnLogout.addEventListener('click', () => {
+      if (confirm('Are you sure you want to end your admin session and log out?')) {
+        sessionStorage.removeItem('sip_admin_session');
+        sessionStorage.removeItem('sip_admin_user');
+        window.location.replace('login.html');
+      }
+    });
+  }
+
   // Initial Run
   updateLivePreview();
   await refreshConnectionStatus();

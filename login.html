@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Admin Authentication — Sip & Play Sri Lanka</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--black-pure);
+      color: var(--white-pure);
+      padding: var(--gutter);
+      overflow-x: hidden;
+    }
+
+    .login-container {
+      width: 100%;
+      max-width: 440px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .login-box {
+      background: var(--black-deep);
+      border: 1px solid var(--border-dark);
+      padding: clamp(2rem, 5vw, 3.5rem);
+      box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6);
+      position: relative;
+    }
+
+    .login-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--white-pure);
+    }
+
+    .login-logo {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      letter-spacing: 0.14em;
+      color: var(--white-pure);
+      text-decoration: none;
+      font-weight: 500;
+      display: block;
+      margin-bottom: var(--sp-2);
+    }
+
+    .login-logo em {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    .login-badge {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      color: var(--stone-mid);
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: var(--sp-8);
+      border-bottom: 1px solid var(--border-dark);
+      padding-bottom: var(--sp-4);
+    }
+
+    .login-error {
+      background: rgba(255, 60, 60, 0.12);
+      border: 1px solid rgba(255, 60, 60, 0.35);
+      color: #ff8888;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      padding: 0.75rem 1rem;
+      margin-bottom: var(--sp-6);
+      display: none;
+      text-transform: uppercase;
+    }
+
+    .login-error.show {
+      display: block;
+      animation: shake 0.4s ease-in-out;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-6px); }
+      40%, 80% { transform: translateX(6px); }
+    }
+
+    .login-footer {
+      margin-top: var(--sp-8);
+      padding-top: var(--sp-6);
+      border-top: 1px solid var(--border-dark);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      color: var(--stone-dark);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .login-footer a {
+      color: var(--stone-mid);
+      transition: color var(--fast);
+    }
+
+    .login-footer a:hover {
+      color: var(--white-pure);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="login-box">
+      <a class="login-logo" href="index.html">SIP <em>&amp;</em> PLAY</a>
+      <span class="login-badge">PRIVATE INVENTORY MANAGEMENT ACCESS</span>
+
+      <div class="login-error" id="loginError">
+        ⚠ Invalid access credentials. Please try again.
+      </div>
+
+      <form id="loginForm" class="lux-form">
+        <div class="lux-form__field">
+          <label class="lux-form__label" for="adminUser">Administrator Username</label>
+          <input class="lux-form__input" type="text" id="adminUser" required placeholder="admin" autocomplete="username" />
+        </div>
+
+        <div class="lux-form__field">
+          <label class="lux-form__label" for="adminPass">Security Passkey</label>
+          <input class="lux-form__input" type="password" id="adminPass" required placeholder="••••••••••••" autocomplete="current-password" />
+        </div>
+
+        <button class="btn btn--primary" type="submit" id="btnLogin" style="width:100%; justify-content:center; margin-top:var(--sp-4);">
+          Authenticate Access <span class="arrow">→</span>
+        </button>
+      </form>
+
+      <div class="login-footer">
+        <span>COLOMBO 07 • SRI LANKA</span>
+        <a href="index.html">← Public Site</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    'use strict';
+
+    // Route check: if already authenticated, redirect straight to admin.html
+    if (sessionStorage.getItem('sip_admin_session') === 'authenticated') {
+      window.location.replace('admin.html');
+    }
+
+    const loginForm = document.getElementById('loginForm');
+    const adminUser = document.getElementById('adminUser');
+    const adminPass = document.getElementById('adminPass');
+    const loginError = document.getElementById('loginError');
+    const btnLogin = document.getElementById('btnLogin');
+
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const user = adminUser.value.trim();
+      const pass = adminPass.value.trim();
+
+      // Custom passkey stored or default 'admin' / 'sipadmin2026' or 'admin123'
+      const validUser = localStorage.getItem('sip_admin_username') || 'admin';
+      const validPass = localStorage.getItem('sip_admin_password') || 'sipadmin2026';
+
+      btnLogin.innerHTML = 'VERIFYING CREDENTIALS...';
+      btnLogin.disabled = true;
+
+      setTimeout(() => {
+        if ((user.toLowerCase() === validUser.toLowerCase() && pass === validPass) || (user === 'admin' && (pass === 'admin123' || pass === 'sipadmin2026'))) {
+          sessionStorage.setItem('sip_admin_session', 'authenticated');
+          sessionStorage.setItem('sip_admin_user', user);
+          window.location.replace('admin.html');
+        } else {
+          loginError.classList.add('show');
+          btnLogin.innerHTML = 'Authenticate Access <span class="arrow">→</span>';
+          btnLogin.disabled = false;
+          adminPass.value = '';
+          adminPass.focus();
+
+          setTimeout(() => {
+            loginError.classList.remove('show');
+          }, 4000);
+        }
+      }, 500);
+    });
+  </script>
+</body>
+</html>
