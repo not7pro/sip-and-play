@@ -11,7 +11,21 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  const allProducts = window.SIP_PRODUCTS;
+  // Load base products and merge with custom uploads from admin
+  const baseProducts = window.SIP_PRODUCTS;
+  const customProducts = JSON.parse(localStorage.getItem('sip_custom_products') || '[]');
+  const deletedIds = JSON.parse(localStorage.getItem('sip_deleted_ids') || '[]');
+
+  let allProducts = baseProducts.filter(p => !deletedIds.includes(p.id));
+  customProducts.forEach(c => {
+    const idx = allProducts.findIndex(p => p.id === c.id);
+    if (idx > -1) {
+      allProducts[idx] = c;
+    } else {
+      allProducts.unshift(c);
+    }
+  });
+
   let filteredProducts = [...allProducts];
   let currentPage = 1;
   const itemsPerPage = 24;
