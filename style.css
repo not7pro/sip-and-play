@@ -245,17 +245,34 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
   align-items: center;
   gap: 8px;
   font-family: var(--font-mono);
-  font-size: var(--t-label);
-  letter-spacing: 0.18em;
+  font-size: 0.72rem; /* strictly small */
+  letter-spacing: 0.16em; /* controlled spacing */
   text-transform: uppercase;
   color: var(--stone-mid);
   margin-bottom: var(--sp-4);
-  font-weight: 500;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 8px;
 }
 
 .theme-dark .section-tag,
 .theme-charcoal .section-tag {
   color: var(--stone-light);
+  border-bottom-color: var(--border-dark);
+}
+
+/* UCODE Architectural Panel */
+.arch-panel {
+  border: 1px solid var(--border-light);
+  background: var(--card-bg-light);
+  padding: var(--sp-8);
+  border-radius: 0; /* Strict specification sheet look */
+  box-shadow: none; /* No heavy shadows */
+}
+
+.theme-dark .arch-panel,
+.theme-charcoal .arch-panel {
+  border-color: var(--border-dark);
+  background: transparent;
 }
 
 .section-tag::before {
@@ -1383,4 +1400,365 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
     transform: none !important;
     transition: none !important;
   }
+}
+
+/* ============================================================
+   COMMERCIAL EQUIPMENT CATALOGUE (UCODE STYLING)
+   ============================================================ */
+
+/* Top Controls */
+.cat-search-input {
+  border: 1px solid var(--border-light);
+  background: var(--card-bg-light);
+  color: var(--ink-pure);
+  border-radius: 0;
+  appearance: none;
+}
+.cat-search-input:focus {
+  border-color: var(--ink-pure);
+  outline: none;
+}
+
+.cat-select {
+  border: 1px solid var(--border-light);
+  background: var(--card-bg-light);
+  color: var(--ink-pure);
+  border-radius: 0;
+  appearance: none;
+  cursor: pointer;
+  transition: border-color var(--fast) var(--ease-editorial);
+}
+.cat-select:focus,
+.cat-select:hover {
+  border-color: var(--ink-pure);
+  outline: none;
+}
+
+/* Discipline Filter Pills */
+.cat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--stone-dark);
+  border: 1px solid var(--border-light);
+  cursor: pointer;
+  border-radius: 0;
+  transition: all var(--fast) var(--ease-editorial);
+}
+.cat-pill:hover {
+  border-color: var(--ink-pure);
+  color: var(--ink-pure);
+}
+.cat-pill.active {
+  background: var(--ink-pure);
+  color: var(--paper-ivory);
+  border-color: var(--ink-pure);
+}
+.cat-pill__count {
+  opacity: 0.5;
+}
+
+/* Catalogue Grid */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Architectural Specification Card */
+.cat-card {
+  background: var(--card-bg-light);
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--med) var(--ease-editorial), border-color var(--med) var(--ease-editorial);
+}
+.cat-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--ink-pure);
+}
+
+.cat-card__btn-spec {
+  background: transparent;
+  border: 1px solid var(--border-light);
+  color: var(--ink-pure);
+  padding: 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--fast) var(--ease-editorial);
+}
+.cat-card:hover .cat-card__btn-spec {
+  background: var(--ink-pure);
+  color: var(--paper-ivory);
+  border-color: var(--ink-pure);
+}
+
+.cat-card__btn-add {
+  background: transparent;
+  border: 1px solid var(--ink-pure);
+  color: var(--ink-pure);
+  padding: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--fast) var(--ease-editorial);
+}
+.cat-card:hover .cat-card__btn-add:not(.added) {
+  background: var(--ink-pure) !important;
+  color: var(--paper-ivory) !important;
+}
+
+/* Pagination */
+.cat-page-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: transparent;
+  border: 1px solid var(--border-light);
+  color: var(--ink-pure);
+  cursor: pointer;
+  transition: all var(--fast) var(--ease-editorial);
+  border-radius: 0;
+}
+.cat-page-btn:hover {
+  border-color: var(--ink-pure);
+}
+.cat-page-btn.active {
+  background: var(--ink-pure);
+  color: var(--paper-ivory);
+  border-color: var(--ink-pure);
+}
+
+/* Empty State */
+.cat-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--card-bg-warm);
+  border: 1px dashed var(--border-light);
+}
+.cat-empty__icon {
+  font-size: 3rem;
+  color: var(--stone-light);
+  display: block;
+  margin-bottom: 1rem;
+}
+.cat-empty__title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--ink-pure);
+  margin-bottom: 0.5rem;
+}
+
+/* Specification Modal */
+.spec-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(252, 251, 247, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--med) var(--ease-editorial);
+}
+.spec-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.spec-modal-container {
+  background: var(--card-bg-light);
+  width: 100%;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid var(--ink-pure);
+  position: relative;
+  transform: translateY(20px);
+  transition: transform var(--med) var(--ease-editorial);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.1);
+}
+.spec-modal.active .spec-modal-container {
+  transform: translateY(0);
+}
+.spec-modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--stone-mid);
+  cursor: pointer;
+  z-index: 10;
+  transition: color var(--fast);
+}
+.spec-modal-close:hover {
+  color: var(--ink-pure);
+}
+
+/* ============================================================
+   PROJECT SCHEDULE DRAWER (UCODE STYLING)
+   ============================================================ */
+.schedule-bar {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--ink-pure);
+  color: var(--paper-ivory);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  z-index: 900;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: transform var(--fast) var(--ease-editorial), opacity var(--fast) var(--ease-editorial);
+  border: 1px solid var(--ink-pure);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+.schedule-bar.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.schedule-bar:hover {
+  transform: translateY(-4px);
+}
+.schedule-bar__title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.schedule-bar__badge {
+  background: var(--paper-ivory);
+  color: var(--ink-pure);
+  padding: 0.2rem 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.schedule-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 480px;
+  height: 100vh;
+  background: var(--card-bg-warm);
+  border-left: 1px solid var(--border-light);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  transition: right var(--med) var(--ease-editorial);
+  box-shadow: -10px 0 40px rgba(0,0,0,0.1);
+}
+.schedule-drawer.open {
+  right: 0;
+}
+
+.schedule-drawer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--ink-pure);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+.schedule-drawer__title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--ink-pure);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.schedule-drawer__close {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--stone-mid);
+  cursor: pointer;
+  transition: color var(--fast);
+}
+.schedule-drawer__close:hover {
+  color: var(--ink-pure);
+}
+
+.schedule-items-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 2rem;
+}
+
+.schedule-empty {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--stone-mid);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.25rem 0;
+  border-bottom: 1px dashed var(--border-light);
+}
+.schedule-item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.schedule-item__name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink-pure);
+  line-height: 1.2;
+}
+.schedule-item__sku {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--stone-mid);
+  letter-spacing: 0.1em;
+}
+.schedule-item__meta {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--stone-dark);
+}
+.schedule-item__remove {
+  background: transparent;
+  border: none;
+  color: var(--stone-light);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  transition: color var(--fast);
+}
+.schedule-item__remove:hover {
+  color: var(--ink-pure);
 }

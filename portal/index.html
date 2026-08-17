@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="portal.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
@@ -26,28 +26,29 @@
     <aside class="sidebar">
       <div class="sidebar__header">
         <a class="sidebar__logo" href="index.html">
-          SIP <em>&amp;</em> PLAY <span>PRO</span>
+          Sip <em>&amp;</em> Play
+          <span>Engineering Portal</span>
         </a>
       </div>
 
       <nav class="sidebar__nav">
         <a class="nav-item active" href="#dashboardSection">
-          <span class="nav-item__icon">📊</span> Stock Analytics
+          <span class="nav-item__num">01</span> Stock Analytics
         </a>
         <a class="nav-item" href="#inventorySection">
-          <span class="nav-item__icon">📦</span> Equipment Assets (500+)
+          <span class="nav-item__num">02</span> Equipment Assets
         </a>
         <a class="nav-item" href="#uploadSection" id="btnSidebarUpload">
-          <span class="nav-item__icon">➕</span> Upload Equipment
+          <span class="nav-item__num">03</span> New Specification
         </a>
         <a class="nav-item" href="#supabaseSettings" id="btnSidebarSettings">
-          <span class="nav-item__icon">⚙</span> Supabase Cloud Sync
+          <span class="nav-item__num">04</span> Cloud Sync
         </a>
       </nav>
 
       <div class="sidebar__footer">
         <span id="portalUserDisplay">USER: ADMIN</span>
-        <button id="btnPortalLogout" style="background:none; border:none; color:var(--accent-rose); cursor:pointer; font-family:var(--font-mono); font-size:0.65rem;">
+        <button id="btnPortalLogout" style="background:none; border:none; color:var(--text-dim); cursor:pointer; font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.1em; transition:color 0.2s;">
           LOGOUT ⎋
         </button>
       </div>
@@ -60,11 +61,11 @@
       <header class="topbar">
         <div class="topbar__title">Commercial Stock &amp; Valuation Console</div>
         <div class="topbar__actions">
-          <span class="badge-cloud" id="cloudStatusBadge">● SUPABASE CLOUD ACTIVE</span>
-          <button class="btn-portal btn-portal--emerald btn-portal--sm" id="btnQuickSeed">
-            ⚡ Seed 500 to Supabase
+          <span class="badge" id="cloudStatusBadge" style="background:#e0e0e0; color:var(--text-main);">SUPABASE CLOUD ACTIVE</span>
+          <button class="btn-portal btn-portal--dark" id="btnQuickSeed" style="padding:0.5rem 1rem; font-size:0.75rem;">
+            Seed Supabase
           </button>
-          <button class="btn-portal btn-portal--primary btn-portal--sm" id="btnOpenUploadModal">
+          <button class="btn-portal" id="btnOpenUploadModal" style="padding:0.5rem 1rem; font-size:0.75rem;">
             + New Equipment
           </button>
         </div>
@@ -79,11 +80,11 @@
           <div class="kpi-card">
             <div class="kpi-card__header">
               <span class="kpi-card__label">Total Inventory Valuation</span>
-              <span class="kpi-card__badge">LKR / CE</span>
+              <span class="badge">LKR / CE</span>
             </div>
             <div class="kpi-card__val" id="kpiValuation">LKR 425.8M</div>
             <div class="kpi-card__sub">
-              <span class="trend-up">↑ +14.2%</span> asset coverage vs Q3
+              Asset coverage vs Q3
             </div>
           </div>
 
@@ -91,7 +92,7 @@
           <div class="kpi-card">
             <div class="kpi-card__header">
               <span class="kpi-card__label">Catalogued SKUs</span>
-              <span class="kpi-card__badge">UNITS</span>
+              <span class="badge">UNITS</span>
             </div>
             <div class="kpi-card__val" id="kpiTotalCount">500+</div>
             <div class="kpi-card__sub">Across 8 commercial disciplines</div>
@@ -101,7 +102,7 @@
           <div class="kpi-card">
             <div class="kpi-card__header">
               <span class="kpi-card__label">Colombo Stock Index</span>
-              <span class="kpi-card__badge">AVAILABILITY</span>
+              <span class="badge">AVAILABILITY</span>
             </div>
             <div class="kpi-card__val" id="kpiStockHealth">88.4%</div>
             <div class="kpi-card__sub">Ready for 48h island deployment</div>
@@ -111,7 +112,7 @@
           <div class="kpi-card">
             <div class="kpi-card__header">
               <span class="kpi-card__label">Specification Pipeline</span>
-              <span class="kpi-card__badge">ACTIVE RFQ</span>
+              <span class="badge">ACTIVE RFQ</span>
             </div>
             <div class="kpi-card__val" id="kpiActiveQuotes">28 Projects</div>
             <div class="kpi-card__sub">Resort &amp; hotel schedules</div>
@@ -119,59 +120,50 @@
         </section>
 
         <!-- INTERACTIVE STOCK & CATEGORY CHARTS -->
-        <section class="charts-grid">
+        <section style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-bottom:3rem;">
           <!-- Valuation & Stock Trend Chart -->
-          <div class="chart-card">
-            <div class="chart-card__header">
-              <div>
-                <h2 class="chart-card__title">Inventory Stock Valuation &amp; Asset Velocity</h2>
-                <span class="chart-card__period">Monthly Asset Value (LKR Millions) • 2026 Fiscal</span>
-              </div>
-            </div>
-            <div class="chart-container">
+          <div class="arch-card">
+            <h2 class="form-label" style="margin-bottom:0.25rem;">Inventory Stock Valuation</h2>
+            <span style="font-size:0.85rem; color:var(--text-muted); display:block; margin-bottom:1.5rem;">Monthly Asset Value (LKR Millions) • 2026 Fiscal</span>
+            <div style="height:250px; position:relative;">
               <canvas id="valuationChart"></canvas>
             </div>
           </div>
 
           <!-- Category Asset Distribution Chart -->
-          <div class="chart-card">
-            <div class="chart-card__header">
-              <div>
-                <h2 class="chart-card__title">Category Asset Allocation</h2>
-                <span class="chart-card__period">Discipline Distribution</span>
-              </div>
-            </div>
-            <div class="chart-container">
+          <div class="arch-card">
+            <h2 class="form-label" style="margin-bottom:0.25rem;">Category Asset Allocation</h2>
+            <span style="font-size:0.85rem; color:var(--text-muted); display:block; margin-bottom:1.5rem;">Discipline Distribution</span>
+            <div style="height:250px; position:relative;">
               <canvas id="categoryChart"></canvas>
             </div>
           </div>
         </section>
 
         <!-- INVENTORY DATA TABLE & CONTROLS -->
-        <section class="portal-card" id="inventorySection">
-          <div class="portal-card__header">
+        <section class="arch-card" id="inventorySection" style="padding:0;">
+          <div style="padding:2rem; border-bottom:1px solid var(--border-light); display:flex; justify-content:space-between; align-items:flex-start;">
             <div>
-              <h2 class="portal-card__title">Commercial Equipment Database</h2>
+              <h2 class="form-label" style="font-size:1.1rem; color:var(--text-main); margin-bottom:0.5rem;">Commercial Equipment Database</h2>
               <span style="font-family:var(--font-mono); font-size:0.68rem; color:var(--text-muted);">
                 LIVE SYNCHRONIZATION WITH SUPABASE POSTGRESQL TABLE
               </span>
             </div>
-            <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-              <button class="btn-portal btn-portal--outline" id="btnExportJson">
+            <div>
+              <button class="btn-portal" id="btnExportJson" style="padding:0.5rem 1rem; font-size:0.75rem;">
                 Export JSON / JS ↓
               </button>
             </div>
           </div>
 
           <!-- Search & Filter Controls -->
-          <div class="controls-bar">
-            <div class="search-box">
-              <span class="search-box__icon">🔍</span>
-              <input type="search" id="portalSearch" placeholder="Search by SKU, Model Name, Manufacturer..." />
+          <div style="padding:1.5rem 2rem; border-bottom:1px solid var(--border-light); display:flex; gap:1.5rem; align-items:center; background:#f9f9f9;">
+            <div style="flex:1;">
+              <input class="form-input" type="search" id="portalSearch" placeholder="Search by SKU, Model Name, Manufacturer..." style="background:#fff;" />
             </div>
 
-            <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
-              <select class="form-select" id="filterCategory" style="padding:0.6rem 0.8rem; font-size:0.75rem;">
+            <div style="display:flex; gap:0.75rem;">
+              <select class="form-input" id="filterCategory" style="padding:0.8rem; font-size:0.85rem; background:#fff; cursor:pointer;">
                 <option value="all">All Categories</option>
                 <option value="Coffee & Beverage">Coffee &amp; Beverage</option>
                 <option value="Cold Storage & Refrigeration">Cold Storage &amp; Refrigeration</option>
@@ -183,7 +175,7 @@
                 <option value="Stainless Modular Fabrication">Stainless Modular Fabrication</option>
               </select>
 
-              <select class="form-select" id="filterStatus" style="padding:0.6rem 0.8rem; font-size:0.75rem;">
+              <select class="form-input" id="filterStatus" style="padding:0.8rem; font-size:0.85rem; background:#fff; cursor:pointer;">
                 <option value="all">All Stock Statuses</option>
                 <option value="In Stock (Colombo)">In Stock (Colombo)</option>
                 <option value="Low Stock">Low Stock</option>
@@ -193,7 +185,7 @@
           </div>
 
           <!-- Table -->
-          <div class="data-table-wrap">
+          <div style="overflow-x:auto;">
             <table class="data-table">
               <thead>
                 <tr>
@@ -203,7 +195,7 @@
                   <th>Category</th>
                   <th>Power Spec</th>
                   <th>Stock Status</th>
-                  <th>Est. Unit Value (LKR)</th>
+                  <th>Est. Value (LKR)</th>
                   <th>Actions</th>
                 </tr>
               </thead>
@@ -214,9 +206,9 @@
           </div>
 
           <!-- Pagination Footer -->
-          <div style="display:flex; justify-content:space-between; align-items:center; font-family:var(--font-mono); font-size:0.7rem; color:var(--text-muted); flex-wrap:wrap; gap:1rem;">
+          <div style="padding:1.5rem 2rem; display:flex; justify-content:space-between; align-items:center; font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); border-top:1px solid var(--border-light);">
             <span id="tableInfo">Loading inventory records...</span>
-            <div id="tablePagination" style="display:flex; gap:4px;"></div>
+            <div id="tablePagination" style="display:flex; gap:0.25rem;"></div>
           </div>
         </section>
 
@@ -225,17 +217,17 @@
   </div>
 
   <!-- UPLOAD / EDIT EQUIPMENT MODAL -->
-  <div class="portal-modal" id="uploadModal">
-    <div class="portal-modal__box">
+  <div class="modal-overlay" id="uploadModal">
+    <div class="modal-box">
       <div class="modal-header">
-        <h3 class="portal-card__title" id="modalFormTitle">Upload New Equipment Spec</h3>
-        <button class="modal-close" id="btnCloseUploadModal">✕</button>
+        <h3 class="form-label" style="font-size:1.1rem; color:var(--text-main); margin:0;" id="modalFormTitle">Upload New Equipment Spec</h3>
+        <button id="btnCloseUploadModal" style="background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--text-muted);">&times;</button>
       </div>
 
       <form id="equipmentForm">
         <input type="hidden" id="formEditId" value="" />
 
-        <div class="form-grid">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
           <div class="form-group">
             <label class="form-label" for="inpName">Equipment Name *</label>
             <input class="form-input" type="text" id="inpName" required placeholder="e.g. La Marzocco Strada EP 3-Group" />
@@ -253,7 +245,7 @@
 
           <div class="form-group">
             <label class="form-label" for="inpCategory">Category *</label>
-            <select class="form-select" id="inpCategory" required>
+            <select class="form-input" id="inpCategory" required>
               <option value="Coffee & Beverage">Coffee &amp; Beverage</option>
               <option value="Cold Storage & Refrigeration">Cold Storage &amp; Refrigeration</option>
               <option value="Thermal Processing & Cooking">Thermal Processing &amp; Cooking</option>
@@ -267,7 +259,7 @@
 
           <div class="form-group">
             <label class="form-label" for="inpPower">Power Standard *</label>
-            <select class="form-select" id="inpPower" required>
+            <select class="form-input" id="inpPower" required>
               <option value="400V / 3-Phase">400V / 3-Phase (50Hz CE)</option>
               <option value="230V / Single-Phase">230V / Single-Phase (50Hz)</option>
               <option value="Natural Gas (20mbar)">Natural Gas (20mbar)</option>
@@ -277,7 +269,7 @@
 
           <div class="form-group">
             <label class="form-label" for="inpStatus">Stock Availability *</label>
-            <select class="form-select" id="inpStatus" required>
+            <select class="form-input" id="inpStatus" required>
               <option value="In Stock (Colombo)">In Stock (Colombo)</option>
               <option value="Low Stock">Low Stock</option>
               <option value="Direct Factory Import">Direct Factory Import</option>
@@ -294,31 +286,31 @@
             <input class="form-input" type="text" id="inpDimensions" placeholder="1000 × 675 × 475 mm" />
           </div>
 
-          <div class="form-group form-grid--full">
+          <div class="form-group" style="grid-column:1/-1;">
             <label class="form-label" for="inpImage">Image URL</label>
             <input class="form-input" type="url" id="inpImage" placeholder="https://images.unsplash.com/..." />
           </div>
 
-          <div class="form-group form-grid--full">
+          <div class="form-group" style="grid-column:1/-1;">
             <label class="form-label" for="inpDesc">Technical Description</label>
-            <textarea class="form-textarea" id="inpDesc" rows="3" placeholder="Specify AISI 304 construction, PID controllers, and thermal tolerances..."></textarea>
+            <textarea class="form-input" id="inpDesc" rows="3" placeholder="Specify AISI 304 construction, PID controllers, and thermal tolerances..."></textarea>
           </div>
         </div>
 
-        <div style="display:flex; justify-content:flex-end; gap:0.75rem; margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-subtle);">
-          <button class="btn-portal btn-portal--outline" type="button" id="btnCancelForm">Cancel</button>
-          <button class="btn-portal btn-portal--primary" type="submit" id="btnSubmitForm">Save to Supabase Database →</button>
+        <div style="display:flex; justify-content:flex-end; gap:0.75rem; margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-light);">
+          <button class="btn-portal" type="button" id="btnCancelForm">Cancel</button>
+          <button class="btn-portal btn-portal--dark" type="submit" id="btnSubmitForm">Save to Database →</button>
         </div>
       </form>
     </div>
   </div>
 
   <!-- SUPABASE SETTINGS MODAL -->
-  <div class="portal-modal" id="settingsModal">
-    <div class="portal-modal__box">
+  <div class="modal-overlay" id="settingsModal">
+    <div class="modal-box">
       <div class="modal-header">
-        <h3 class="portal-card__title">Supabase Database Credentials</h3>
-        <button class="modal-close" id="btnCloseSettingsModal">✕</button>
+        <h3 class="form-label" style="font-size:1.1rem; color:var(--text-main); margin:0;">Supabase Database Credentials</h3>
+        <button id="btnCloseSettingsModal" style="background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--text-muted);">&times;</button>
       </div>
 
       <form id="supaCredForm">
@@ -333,10 +325,10 @@
         </div>
 
         <div style="display:flex; justify-content:space-between; align-items:center;">
-          <button class="btn-portal btn-portal--outline" type="button" id="btnDisconnectCloud" style="color:var(--accent-rose); border-color:rgba(255,71,87,0.3);">
+          <button class="btn-portal" type="button" id="btnDisconnectCloud" style="color:#cc0000; border-color:#cc0000;">
             Disconnect Cloud
           </button>
-          <button class="btn-portal btn-portal--primary" type="submit">
+          <button class="btn-portal btn-portal--dark" type="submit">
             Save &amp; Test Connection →
           </button>
         </div>
