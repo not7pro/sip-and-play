@@ -1,20 +1,32 @@
 /* ============================================================
-   SIP & PLAY — EDITORIAL & CINEMATIC UX INTERACTIONS
+   SIP & PLAY — ARCHITECTURAL & EDITORIAL MOTION SYSTEM
+   Refined luxury animations, number counters, and scroll reveals
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Scroll Progress Bar
+  
+  // 1. Hero Entrance Animation Sequence
+  const heroSection = document.getElementById('heroSection');
+  if (heroSection) {
+    // Trigger loaded state for clip-path and subtle scale down
+    setTimeout(() => {
+      heroSection.classList.add('loaded');
+    }, 100);
+  }
+
+  // 2. Scroll Progress Bar & Sticky Header
   const progressBar = document.getElementById('scrollProgress');
+  const nav = document.getElementById('nav');
+
   window.addEventListener('scroll', () => {
     const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrolled = (winScroll / height) * 100;
+    
     if (progressBar) {
       progressBar.style.width = scrolled + '%';
     }
 
-    // Nav background blur shift
-    const nav = document.getElementById('nav');
     if (nav) {
       if (winScroll > 40) {
         nav.classList.add('scrolled');
@@ -24,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, { passive: true });
 
-  // 2. Fullscreen Mobile Navigation
+  // 3. Fullscreen Luxury Mobile Navigation
   const burger = document.getElementById('burger');
   const mobNav = document.getElementById('mobNav');
 
@@ -45,16 +57,66 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Smooth Hero Reveal
-  const heroTitle = document.querySelector('.hero-cinematic__title');
-  if (heroTitle) {
-    heroTitle.style.opacity = '0';
-    heroTitle.style.transform = 'translateY(24px)';
-    heroTitle.style.transition = 'opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1)';
-    
-    setTimeout(() => {
-      heroTitle.style.opacity = '1';
-      heroTitle.style.transform = 'translateY(0)';
-    }, 150);
+  // 4. IntersectionObserver for Scroll Reveals
+  const revealElements = document.querySelectorAll('.reveal-on-scroll');
+  if ('IntersectionObserver' in window && revealElements.length > 0) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  } else {
+    revealElements.forEach(el => el.classList.add('is-visible'));
   }
+
+  // 5. Animated Number Counter for Verified Statistics
+  const countElements = document.querySelectorAll('.count-up');
+  if ('IntersectionObserver' in window && countElements.length > 0) {
+    const countObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.getAttribute('data-target'), 10);
+          if (!isNaN(target)) {
+            animateNumber(el, target, 1600);
+          }
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    countElements.forEach(el => countObserver.observe(el));
+  }
+
+  function animateNumber(element, target, duration) {
+    let startTimestamp = null;
+    const isLarge = target >= 1000;
+    
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      // Ease out cubic
+      const easeProgress = 1 - Math.pow(1 - progress, 3);
+      const current = Math.floor(easeProgress * target);
+      
+      element.textContent = isLarge ? current.toLocaleString() : current;
+      
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      } else {
+        element.textContent = isLarge ? target.toLocaleString() : target;
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+
 });
