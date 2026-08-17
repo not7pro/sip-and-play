@@ -1,9 +1,9 @@
 /* ============================================================
-   SIP & PLAY — LUXURY EDITORIAL & CINEMATIC DESIGN SYSTEM
-   Monochromatic Architectural Magazine Aesthetic
+   SIP & PLAY — ULTRA-MODERN LUXURY ARCHITECTURAL DESIGN SYSTEM
+   Contemporary Commercial Kitchen Architecture & Engineering
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
 
 :root {
   /* Tonal Palette: Ink & Fine Paper */
@@ -31,11 +31,12 @@
   --border-dark: rgba(255, 255, 255, 0.1);
   --border-dark-soft: rgba(255, 255, 255, 0.05);
 
-  /* Typography */
-  --font-editorial: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
-  --font-serif: 'Playfair Display', Georgia, serif;
+  /* Modern Luxury Typography */
+  --font-display: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-editorial: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'Space Mono', monospace;
+  --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
 
   /* Type Scale */
   --t-mega: clamp(3.2rem, 8vw, 7.5rem);
@@ -136,6 +137,24 @@ button {
   border: none;
   background: none;
   font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  text-wrap: balance;
+}
+
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
+.editorial-intro__headline em,
+.hero-cinematic__title em,
+.footer-editorial__statement em,
+.hambach-editorial__title em {
+  font-style: normal;
+  font-weight: 300;
+  opacity: 0.8;
+  letter-spacing: -0.02em;
 }
 
 .container {
@@ -354,16 +373,17 @@ button {
 }
 
 .nav__logo {
-  font-family: var(--font-editorial);
-  font-size: 1.55rem;
-  font-weight: 400;
-  letter-spacing: 0.12em;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   color: var(--paper-ivory);
 }
 
 .nav__logo em {
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
+  color: var(--stone-light);
 }
 
 .nav__links {
@@ -375,9 +395,9 @@ button {
 .nav__link {
   font-family: var(--font-sans);
   font-size: 0.85rem;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--stone-light);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   position: relative;
   padding-block: var(--sp-2);
 }
@@ -448,9 +468,10 @@ button {
 }
 
 .mob-nav__link {
-  font-family: var(--font-editorial);
-  font-size: clamp(2rem, 7vw, 3.2rem);
-  font-weight: 400;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 6vw, 2.8rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
   color: var(--paper-ivory);
   display: flex;
   justify-content: space-between;
