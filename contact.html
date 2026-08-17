@@ -8,14 +8,17 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-<body class="theme-light">
+<body class="theme-paper">
+
+  <!-- Scroll Progress Indicator Line -->
+  <div id="scrollProgress"></div>
 
   <!-- NAVIGATION -->
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner container">
-      <a class="nav__logo" href="index.html">SIP <em>&amp;</em> PLAY</a>
+      <a class="nav__logo" href="index.html">Sip <em>&amp;</em> Play</a>
       <div class="nav__links">
         <a class="nav__link" href="about.html">About</a>
         <a class="nav__link" href="services.html">Services</a>
@@ -24,14 +27,14 @@
         <a class="nav__link" href="equipment.html">Equipment</a>
         <a class="nav__link" href="contact.html" aria-current="page">Contact</a>
       </div>
-      <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a Quote <span class="arrow">→</span></a>
+      <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a quote <span class="arrow">→</span></a>
       <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- MOBILE MENU -->
+  <!-- FULLSCREEN LUXURY MOBILE NAV -->
   <div class="mob-nav" id="mobNav">
     <nav class="mob-nav__links">
       <a class="mob-nav__link" href="about.html">About <span>→</span></a>
@@ -41,8 +44,8 @@
       <a class="mob-nav__link" href="equipment.html">Equipment <span>→</span></a>
       <a class="mob-nav__link" href="contact.html">Contact <span>→</span></a>
     </nav>
-    <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a Quote →</a>
-    <div class="mob-nav__bottom">
+    <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a quote →</a>
+    <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:0.7rem; color:var(--stone-light); border-top:1px solid var(--border-dark); padding-top:1.5rem;">
       <span>© 2026 Sip &amp; Play</span>
       <span>11A/1 Rathnawali Rd, Dehiwela</span>
     </div>
@@ -51,56 +54,56 @@
   <main>
 
     <!-- PAGE HERO -->
-    <section class="section-pad theme-dark" style="padding-top:140px;">
+    <section class="section-pad theme-dark" style="padding-top:160px;">
       <div class="container">
         <span class="eyebrow">Direct Engagement</span>
-        <h1 style="font-family:var(--font-display); font-size:var(--t-hero); font-weight:500; line-height:0.95; text-transform:uppercase; color:var(--white-pure); margin-bottom:var(--sp-6);">
-          DISCUSS YOUR<br>PROJECT.
+        <h1 style="font-family:var(--font-editorial); font-size:var(--t-mega); font-weight:300; line-height:0.95; color:var(--paper-ivory); margin-bottom:var(--sp-6);">
+          Discuss your <em>culinary project</em>.
         </h1>
-        <p style="font-size:var(--t-xl); color:var(--text-dark-secondary); max-width:680px; line-height:1.7;">
+        <p style="font-size:var(--t-xl); color:var(--stone-light); max-width:720px; line-height:1.7;">
           Connect with our commercial kitchen design and equipment specialists to discuss your upcoming project or request an equipment quotation.
         </p>
       </div>
     </section>
 
     <!-- CONTACT DETAILS & FORM -->
-    <section class="section-pad theme-light" id="quote">
+    <section class="editorial-intro section-pad" id="quote">
       <div class="container">
-        <div style="display:grid; grid-template-columns:1fr 1.2fr; gap:clamp(3rem, 6vw, 6rem);">
+        <div style="display:grid; grid-template-columns:1fr 1.15fr; gap:clamp(3rem, 6vw, 6rem);">
           
           <!-- Official Company Details -->
           <div>
-            <span class="section-label">01 — Official Office</span>
-            <h2 style="font-family:var(--font-display); font-size:var(--t-3xl); font-weight:500; text-transform:uppercase; color:var(--black-pure); margin-bottom:var(--sp-6);">
-              SIP &amp; PLAY HEADQUARTERS
+            <span class="section-tag">Headquarters</span>
+            <h2 style="font-family:var(--font-editorial); font-size:var(--t-4xl); font-weight:400; line-height:1; color:var(--ink-pure); margin-bottom:var(--sp-6);">
+              Sip &amp; Play Office
             </h2>
 
             <div style="display:flex; flex-direction:column; gap:var(--sp-6); margin-bottom:var(--sp-8);">
               <div>
                 <span style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--stone-mid); display:block; margin-bottom:4px;">Physical Address</span>
-                <p style="font-size:1.05rem; font-weight:500; color:var(--black-pure); line-height:1.5;">
+                <p style="font-size:1.15rem; font-family:var(--font-editorial); font-weight:400; color:var(--ink-pure); line-height:1.5;">
                   11A/1 Rathnawali Road,<br>Dehiwela, Sri Lanka
                 </p>
               </div>
 
               <div>
                 <span style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--stone-mid); display:block; margin-bottom:4px;">Direct Phone Lines</span>
-                <p style="font-size:1.15rem; font-family:var(--font-mono); font-weight:600; color:var(--black-pure);">
-                  <a href="tel:+94702700500" style="display:block; margin-bottom:4px;">+94 702 700 500</a>
+                <p style="font-size:1.1rem; font-family:var(--font-mono); font-weight:600; color:var(--ink-pure);">
+                  <a href="tel:+94702700500" style="display:block; margin-bottom:6px;">+94 702 700 500</a>
                   <a href="tel:+94717700100" style="display:block;">+94 717 700 100</a>
                 </p>
               </div>
 
               <div>
                 <span style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--stone-mid); display:block; margin-bottom:4px;">Official Domain</span>
-                <p style="font-size:1rem; font-family:var(--font-mono); color:var(--black-pure);">
+                <p style="font-size:1rem; font-family:var(--font-mono); color:var(--ink-pure);">
                   <a href="https://www.sipandplay.co" target="_blank">www.sipandplay.co</a>
                 </p>
               </div>
 
               <div>
                 <span style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--stone-mid); display:block; margin-bottom:4px;">Authorized Hambach Territory</span>
-                <p style="font-size:0.85rem; color:var(--text-light-secondary);">
+                <p style="font-size:0.9rem; color:var(--stone-dark);">
                   Sri Lanka • Maldives • Thailand
                 </p>
               </div>
@@ -108,32 +111,32 @@
           </div>
 
           <!-- RFQ Form -->
-          <div style="background:var(--white-pure); border:1px solid var(--border-light); padding:clamp(2rem, 4vw, 3.5rem);">
-            <span class="section-label">02 — Request a Quote</span>
-            <h3 style="font-family:var(--font-display); font-size:var(--t-2xl); font-weight:500; text-transform:uppercase; color:var(--black-pure); margin-bottom:var(--sp-6);">
-              PROJECT SPECIFICATION INQUIRY
+          <div style="background:var(--paper-warm); border:1px solid var(--border-light); padding:clamp(2rem, 4vw, 3.5rem);">
+            <span class="section-tag">Direct Inquiry</span>
+            <h3 style="font-family:var(--font-editorial); font-size:var(--t-3xl); font-weight:400; color:var(--ink-pure); margin-bottom:var(--sp-6);">
+              Project specification inquiry
             </h3>
 
             <form id="contactForm" onsubmit="event.preventDefault(); alert('Thank you. Your project inquiry has been received by Sip & Play.'); this.reset();" style="display:flex; flex-direction:column; gap:var(--sp-4);">
               <div>
                 <label style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--stone-mid); display:block; margin-bottom:6px;">Your Name / Company *</label>
-                <input type="text" required placeholder="e.g. John Perera / Ceylon Hospitality Group" style="width:100%; padding:0.9rem 1rem; border:1px solid var(--border-light); background:var(--off-white); font-family:var(--font-sans); font-size:0.9rem;" />
+                <input type="text" required placeholder="e.g. John Perera / Ceylon Hospitality Group" style="width:100%; padding:0.95rem 1rem; border:1px solid var(--border-light); background:var(--paper-ivory); font-family:var(--font-sans); font-size:0.92rem;" />
               </div>
 
               <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-4);">
                 <div>
                   <label style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--stone-mid); display:block; margin-bottom:6px;">Contact Phone *</label>
-                  <input type="tel" required placeholder="+94 7X XXX XXXX" style="width:100%; padding:0.9rem 1rem; border:1px solid var(--border-light); background:var(--off-white); font-family:var(--font-sans); font-size:0.9rem;" />
+                  <input type="tel" required placeholder="+94 7X XXX XXXX" style="width:100%; padding:0.95rem 1rem; border:1px solid var(--border-light); background:var(--paper-ivory); font-family:var(--font-sans); font-size:0.92rem;" />
                 </div>
                 <div>
                   <label style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--stone-mid); display:block; margin-bottom:6px;">Email Address *</label>
-                  <input type="email" required placeholder="client@domain.com" style="width:100%; padding:0.9rem 1rem; border:1px solid var(--border-light); background:var(--off-white); font-family:var(--font-sans); font-size:0.9rem;" />
+                  <input type="email" required placeholder="client@domain.com" style="width:100%; padding:0.95rem 1rem; border:1px solid var(--border-light); background:var(--paper-ivory); font-family:var(--font-sans); font-size:0.92rem;" />
                 </div>
               </div>
 
               <div>
                 <label style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--stone-mid); display:block; margin-bottom:6px;">Project Scope</label>
-                <select style="width:100%; padding:0.9rem 1rem; border:1px solid var(--border-light); background:var(--off-white); font-family:var(--font-sans); font-size:0.9rem;">
+                <select style="width:100%; padding:0.95rem 1rem; border:1px solid var(--border-light); background:var(--paper-ivory); font-family:var(--font-sans); font-size:0.92rem;">
                   <option>Full Commercial Kitchen Turnkey Design &amp; Build</option>
                   <option>Commercial Kitchen Layout Planning (2D/3D)</option>
                   <option>Commercial Equipment Sourcing</option>
@@ -145,11 +148,11 @@
 
               <div>
                 <label style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--stone-mid); display:block; margin-bottom:6px;">Project Details / Space Dimensions</label>
-                <textarea rows="4" placeholder="Describe your kitchen concept, square footage, expected meal capacity, or equipment requirements..." style="width:100%; padding:0.9rem 1rem; border:1px solid var(--border-light); background:var(--off-white); font-family:var(--font-sans); font-size:0.9rem; resize:vertical;"></textarea>
+                <textarea rows="4" placeholder="Describe your kitchen concept, square footage, expected meal capacity, or equipment requirements..." style="width:100%; padding:0.95rem 1rem; border:1px solid var(--border-light); background:var(--paper-ivory); font-family:var(--font-sans); font-size:0.92rem; resize:vertical;"></textarea>
               </div>
 
               <button type="submit" class="btn btn--primary" style="margin-top:var(--sp-2); width:100%; justify-content:center;">
-                Submit Project Inquiry <span class="arrow">→</span>
+                Submit project inquiry <span class="arrow">→</span>
               </button>
             </form>
           </div>
@@ -160,48 +163,58 @@
 
   </main>
 
-  <!-- OFFICIAL FOOTER -->
-  <footer class="footer">
+  <!-- MASSIVE EDITORIAL FOOTER -->
+  <footer class="footer-editorial">
     <div class="container">
-      <div class="footer__top">
+      <div class="footer-editorial__statement">
+        Precision. Performance. <em>Partnership.</em>
+      </div>
+
+      <div class="footer-editorial__grid">
         <div>
-          <div class="footer__logo">SIP <em>&amp;</em> PLAY</div>
-          <p class="footer__tagline">A DECADE OF KITCHEN EXCELLENCE</p>
-          <p class="footer__desc">
+          <div class="footer-editorial__brand-name">Sip &amp; Play</div>
+          <p class="footer-editorial__brand-tag">A Decade of Kitchen Excellence</p>
+          <p style="font-size:0.9rem; color:var(--stone-light); line-height:1.75; max-width:380px;">
             Designing, supplying, and supporting high-performance commercial kitchens across Sri Lanka, Maldives, and Thailand. Authorized Agent for Hambach.
           </p>
         </div>
 
-        <nav class="footer__nav" aria-label="Footer navigation">
-          <div class="footer__col">
-            <span class="footer__col-title">Official Office</span>
-            <span>11A/1 Rathnawali Road,</span>
-            <span>Dehiwela, Sri Lanka</span>
-            <a href="tel:+94702700500">+94 702 700 500</a>
-            <a href="tel:+94717700100">+94 717 700 100</a>
-            <a href="https://www.sipandplay.co" target="_blank">www.sipandplay.co</a>
+        <div class="footer-editorial__cols">
+          <div>
+            <span class="footer-editorial__col-title">Official Office</span>
+            <div class="footer-editorial__col-links">
+              <span>11A/1 Rathnawali Road,</span>
+              <span>Dehiwela, Sri Lanka</span>
+              <a href="tel:+94702700500">+94 702 700 500</a>
+              <a href="tel:+94717700100">+94 717 700 100</a>
+              <a href="https://www.sipandplay.co" target="_blank">www.sipandplay.co</a>
+            </div>
           </div>
 
-          <div class="footer__col">
-            <span class="footer__col-title">Navigation</span>
-            <a href="about.html">About Sip &amp; Play</a>
-            <a href="services.html">Services &amp; Process</a>
-            <a href="brands.html">Hambach Agency</a>
-            <a href="solutions.html">Current Projects</a>
-            <a href="equipment.html">Equipment Sourcing</a>
-            <a href="contact.html">Contact Us</a>
+          <div>
+            <span class="footer-editorial__col-title">Navigation</span>
+            <div class="footer-editorial__col-links">
+              <a href="about.html">About Sip &amp; Play</a>
+              <a href="services.html">Services &amp; Process</a>
+              <a href="brands.html">Hambach Agency</a>
+              <a href="solutions.html">Current Projects</a>
+              <a href="equipment.html">Equipment Sourcing</a>
+              <a href="contact.html">Contact Us</a>
+            </div>
           </div>
 
-          <div class="footer__col">
-            <span class="footer__col-title">Client Engagements</span>
-            <a href="contact.html#quote">Request a Project Quote →</a>
-            <a href="contact.html">Arrange Site Visit</a>
-            <span style="font-size:0.75rem; color:var(--stone-light); margin-top:0.5rem;">Territories: Sri Lanka • Maldives • Thailand</span>
+          <div>
+            <span class="footer-editorial__col-title">Direct Inquiries</span>
+            <div class="footer-editorial__col-links">
+              <a href="contact.html#quote" style="text-decoration:underline;">Request a project quote →</a>
+              <a href="contact.html">Arrange site visit</a>
+              <span style="font-size:0.75rem; color:var(--stone-light); margin-top:0.5rem;">Territories: Sri Lanka • Maldives • Thailand</span>
+            </div>
           </div>
-        </nav>
+        </div>
       </div>
 
-      <div class="footer__bottom">
+      <div class="footer-editorial__bottom">
         <p>© 2026 Sip &amp; Play. All rights reserved.</p>
         <div>
           <a href="https://www.sipandplay.co">www.sipandplay.co</a>

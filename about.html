@@ -8,14 +8,17 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-<body class="theme-light">
+<body class="theme-paper">
+
+  <!-- Scroll Progress Indicator Line -->
+  <div id="scrollProgress"></div>
 
   <!-- NAVIGATION -->
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner container">
-      <a class="nav__logo" href="index.html">SIP <em>&amp;</em> PLAY</a>
+      <a class="nav__logo" href="index.html">Sip <em>&amp;</em> Play</a>
       <div class="nav__links">
         <a class="nav__link" href="about.html" aria-current="page">About</a>
         <a class="nav__link" href="services.html">Services</a>
@@ -24,14 +27,14 @@
         <a class="nav__link" href="equipment.html">Equipment</a>
         <a class="nav__link" href="contact.html">Contact</a>
       </div>
-      <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a Quote <span class="arrow">→</span></a>
+      <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a quote <span class="arrow">→</span></a>
       <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- MOBILE MENU -->
+  <!-- FULLSCREEN LUXURY MOBILE NAV -->
   <div class="mob-nav" id="mobNav">
     <nav class="mob-nav__links">
       <a class="mob-nav__link" href="about.html">About <span>→</span></a>
@@ -41,147 +44,142 @@
       <a class="mob-nav__link" href="equipment.html">Equipment <span>→</span></a>
       <a class="mob-nav__link" href="contact.html">Contact <span>→</span></a>
     </nav>
-    <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a Quote →</a>
-    <div class="mob-nav__bottom">
+    <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a quote →</a>
+    <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:0.7rem; color:var(--stone-light); border-top:1px solid var(--border-dark); padding-top:1.5rem;">
       <span>© 2026 Sip &amp; Play</span>
       <span>11A/1 Rathnawali Rd, Dehiwela</span>
     </div>
   </div>
 
+  <!-- FLOATING QUOTE BUTTON -->
+  <a href="contact.html#quote" class="floating-quote-btn" aria-label="Request a quote">
+    <span>Request a quote</span>
+    <span class="arrow">→</span>
+  </a>
+
   <main>
 
     <!-- PAGE HERO -->
-    <section class="section-pad theme-dark" style="padding-top:140px;">
+    <section class="section-pad theme-dark" style="padding-top:160px;">
       <div class="container">
         <span class="eyebrow">Company Profile</span>
-        <h1 style="font-family:var(--font-display); font-size:var(--t-hero); font-weight:500; line-height:0.95; text-transform:uppercase; color:var(--white-pure); margin-bottom:var(--sp-6);">
-          A DECADE OF<br>KITCHEN<br>EXCELLENCE.
+        <h1 style="font-family:var(--font-editorial); font-size:var(--t-mega); font-weight:300; line-height:0.95; color:var(--paper-ivory); margin-bottom:var(--sp-6);">
+          A decade of <em>kitchen excellence</em>.
         </h1>
-        <p style="font-size:var(--t-xl); color:var(--text-dark-secondary); max-width:680px; line-height:1.7;">
+        <p style="font-size:var(--t-xl); color:var(--stone-light); max-width:720px; line-height:1.7;">
           With over a decade of kitchen excellence, Sip &amp; Play brings trusted expertise in designing, supplying, and supporting high-performance commercial kitchens across the region.
         </p>
       </div>
     </section>
 
-    <!-- CORE COMPANY STORY -->
-    <section class="section-pad theme-light">
-      <div class="container">
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:clamp(3rem, 6vw, 6rem); align-items:center;">
-          <div>
-            <span class="section-label">01 — Our Foundation</span>
-            <h2 style="font-family:var(--font-display); font-size:var(--t-3xl); font-weight:500; line-height:1; text-transform:uppercase; color:var(--black-pure); margin-bottom:var(--sp-6);">
-              FUNCTIONAL.<br>DURABLE.<br>REFINED.
-            </h2>
-            <p style="font-size:var(--t-base); color:var(--text-light-secondary); line-height:1.8; margin-bottom:var(--sp-6);">
-              Sip &amp; Play is a dedicated team specializing in designing and building commercial kitchens. We work closely with clients to create culinary spaces tailored to their specific business needs.
-            </p>
-            <p style="font-size:var(--t-base); color:var(--text-light-secondary); line-height:1.8; margin-bottom:var(--sp-6);">
-              Our mission is to create functional, durable, and aesthetically refined culinary spaces that empower businesses to succeed. We deliver Chinese-engineered professional kitchen solutions backed by reliable service, tailored planning, industry expertise, and a steadfast commitment to improving culinary operations.
-            </p>
-
-            <div style="border-left:2px solid var(--black-pure); padding-left:1.25rem; margin-top:var(--sp-6);">
-              <span style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--stone-mid); display:block; margin-bottom:4px;">Sectors Served</span>
-              <p style="font-size:0.9rem; font-weight:500; color:var(--black-pure);">Hotels • Restaurants • Cafés • Industrial Kitchens</p>
-            </div>
+    <!-- FOUNDATION & ETHOS -->
+    <section class="editorial-intro section-pad">
+      <div class="container editorial-intro__grid">
+        <div>
+          <span class="section-tag">Our Foundation</span>
+          <h2 class="editorial-intro__headline">
+            Functional. Durable. <em>Aesthetically refined culinary spaces</em>.
+          </h2>
+          <p class="editorial-intro__text">
+            Sip &amp; Play is a dedicated team specializing in designing and building commercial kitchens. We work closely with clients to create culinary spaces tailored to their specific business needs.
+          </p>
+          <p class="editorial-intro__text">
+            Our mission is to empower businesses with culinary architecture that performs day in and day out. We deliver Chinese-engineered professional solutions backed by reliable service, tailored planning, and deep industry expertise.
+          </p>
+          <div class="editorial-intro__pullquote">
+            “Real kitchen experience. Strategic vision. Practical design.”
           </div>
+        </div>
 
-          <div>
-            <div style="aspect-ratio:4/5; overflow:hidden; border:1px solid var(--border-light); position:relative;">
-              <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1000&q=80" alt="Professional kitchen design by Sip & Play" style="width:100%; height:100%; object-fit:cover; filter:grayscale(100%) contrast(110%);" />
-            </div>
+        <div>
+          <div class="editorial-intro__img-frame">
+            <img class="editorial-intro__img" src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=85" alt="Commercial culinary workspace" />
           </div>
         </div>
       </div>
     </section>
 
     <!-- LEADERSHIP PROFILE — ISHAM NAYEEM -->
-    <section class="section-pad theme-white">
+    <section class="section-pad theme-warm">
       <div class="container">
-        <div style="display:grid; grid-template-columns:1.15fr 1fr; gap:clamp(3rem, 6vw, 6rem); align-items:center;">
+        <div style="display:grid; grid-template-columns:1.15fr 0.85fr; gap:clamp(3rem, 6vw, 6rem); align-items:center;">
           <div>
-            <span class="section-label">02 — CEO &amp; Co-Founder</span>
-            <h2 style="font-family:var(--font-display); font-size:var(--t-4xl); font-weight:500; line-height:0.95; text-transform:uppercase; color:var(--black-pure); margin-bottom:var(--sp-4);">
-              ISHAM NAYEEM
+            <span class="section-tag">CEO &amp; Co-Founder</span>
+            <h2 style="font-family:var(--font-editorial); font-size:var(--t-4xl); font-weight:400; line-height:1; color:var(--ink-pure); margin-bottom:var(--sp-2);">
+              Isham Nayeem
             </h2>
             <p style="font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--stone-mid); margin-bottom:var(--sp-6);">
-              CEO &amp; CO-FOUNDER • 20+ YEARS GLOBAL CULINARY EXPERIENCE
+              20+ Years Global Culinary Experience
             </p>
-            <p style="font-size:var(--t-base); color:var(--text-light-secondary); line-height:1.8; margin-bottom:var(--sp-6);">
-              Isham Nayeem brings over 20 years of global culinary experience to every project. His professional background includes working as a chef across the <strong>Middle East, Maldives, and Sri Lanka</strong>.
+            <p style="font-size:var(--t-base); color:var(--stone-dark); line-height:1.8; margin-bottom:var(--sp-6);">
+              Isham Nayeem brings over 20 years of global culinary experience as a chef across the <strong>Middle East, Maldives, and Sri Lanka</strong>.
             </p>
-            <p style="font-size:var(--t-base); color:var(--text-light-secondary); line-height:1.8; margin-bottom:var(--sp-6);">
-              His background gives him real-world kitchen knowledge combined with strategic vision. This expertise directly contributes to high-performance commercial kitchen design, functional planning, efficient workflow, durability, and practical kitchen solutions.
+            <p style="font-size:var(--t-base); color:var(--stone-dark); line-height:1.8; margin-bottom:var(--sp-6);">
+              His background provides real-world kitchen knowledge combined with strategic vision — contributing to high-performance kitchen layout planning, workflow efficiency, durability, and practical design solutions.
             </p>
-
-            <div style="background:var(--off-white); border:1px solid var(--border-light); padding:1.25rem 1.5rem; margin-top:var(--sp-6);">
-              <span style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--stone-mid); display:block; margin-bottom:4px;">Core Leadership Philosophy</span>
-              <p style="font-family:var(--font-display); font-size:1.05rem; font-weight:600; color:var(--black-pure); text-transform:uppercase;">
-                Real kitchen experience. Strategic vision. Practical design.
-              </p>
-            </div>
           </div>
 
           <div>
-            <div style="aspect-ratio:4/5; overflow:hidden; border:1px solid var(--border-light); position:relative;">
-              <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=80" alt="Isham Nayeem - Culinary Experience" style="width:100%; height:100%; object-fit:cover; filter:grayscale(100%) contrast(110%);" />
+            <div style="aspect-ratio:4/5; overflow:hidden; border:1px solid var(--border-light);">
+              <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1200&q=85" alt="Isham Nayeem - Culinary Direction" style="width:100%; height:100%; object-fit:cover;" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- KEY PERSONNEL & TEAM -->
-    <section class="section-pad theme-light">
+    <!-- OUR TEAM -->
+    <section class="editorial-team section-pad">
       <div class="container">
         <div style="margin-bottom:clamp(3rem, 5vw, 5rem);">
-          <span class="section-label">03 — Our Team</span>
-          <h2 style="font-family:var(--font-display); font-size:var(--t-4xl); font-weight:500; line-height:0.95; text-transform:uppercase; color:var(--black-pure);">
-            KEY PERSONNEL.
+          <span class="section-tag">Key Personnel</span>
+          <h2 style="font-family:var(--font-editorial); font-size:var(--t-4xl); font-weight:400; line-height:1; color:var(--ink-pure);">
+            Leadership &amp; key personnel.
           </h2>
         </div>
 
         <div class="team-grid">
           <!-- Isham Nayeem -->
-          <div class="team-card">
-            <span class="team-card__role">CEO &amp; CO-FOUNDER</span>
-            <h3 class="team-card__name">Isham Nayeem</h3>
-            <p class="team-card__bio">
+          <div class="team-portrait-card">
+            <span class="team-portrait-card__role">CEO &amp; Co-Founder</span>
+            <h3 class="team-portrait-card__name">Isham Nayeem</h3>
+            <p class="team-portrait-card__bio">
               Over 20 years of global culinary experience as a chef across the Middle East, Maldives, and Sri Lanka. Integrates deep kitchen knowledge with strategic commercial planning.
             </p>
           </div>
 
           <!-- Vivian Hu -->
-          <div class="team-card">
-            <span class="team-card__role">SUPPLY CHAIN SPECIALIST</span>
-            <h3 class="team-card__name">Vivian Hu</h3>
-            <p class="team-card__bio">
+          <div class="team-portrait-card">
+            <span class="team-portrait-card__role">Supply Chain Specialist</span>
+            <h3 class="team-portrait-card__name">Vivian Hu</h3>
+            <p class="team-portrait-card__bio">
               Originally from China, Vivian is a sourcing specialist with deep industry connections and equipment expertise. Oversees procurement and logistics from China to Sri Lanka with a focus on reliability, quality, efficiency, and timely delivery.
             </p>
           </div>
 
           <!-- Ifraz Mohamed -->
-          <div class="team-card">
-            <span class="team-card__role">HEAD OF SALES</span>
-            <h3 class="team-card__name">Ifraz Mohamed</h3>
-            <p class="team-card__bio">
+          <div class="team-portrait-card">
+            <span class="team-portrait-card__role">Head of Sales</span>
+            <h3 class="team-portrait-card__name">Ifraz Mohamed</h3>
+            <p class="team-portrait-card__bio">
               Brings a strong background in enterprise software sales from major corporations. Focuses on commercial consultation, translating culinary vision into tailored high-performance kitchen outcomes.
             </p>
           </div>
 
           <!-- Ilham Nayeem -->
-          <div class="team-card">
-            <span class="team-card__role">ENGINEER-IN-CHIEF</span>
-            <h3 class="team-card__name">Ilham Nayeem</h3>
-            <p class="team-card__bio">
+          <div class="team-portrait-card">
+            <span class="team-portrait-card__role">Engineer-in-Chief</span>
+            <h3 class="team-portrait-card__name">Ilham Nayeem</h3>
+            <p class="team-portrait-card__bio">
               Brings over 10 years of technical expertise from the automobile industry, emphasizing engineering precision, equipment reliability, technical problem-solving, and operational efficiency.
             </p>
           </div>
 
-          <!-- Mohammed Mufthy (Factual Placeholder) -->
-          <div class="team-card">
-            <span class="team-card__role">[ROLE / TITLE TO BE PROVIDED]</span>
-            <h3 class="team-card__name">Mohammed Mufthy</h3>
-            <p class="team-card__bio" style="color:var(--stone-mid); font-style:italic;">
+          <!-- Mohammed Mufthy -->
+          <div class="team-portrait-card">
+            <span class="team-portrait-card__role">[ROLE / TITLE TO BE PROVIDED]</span>
+            <h3 class="team-portrait-card__name">Mohammed Mufthy</h3>
+            <p class="team-portrait-card__bio" style="color:var(--stone-mid); font-style:italic;">
               Key team member at Sip &amp; Play. Detailed responsibility overview to be provided from official company profile records.
             </p>
           </div>
@@ -189,69 +187,60 @@
       </div>
     </section>
 
-    <!-- STATEMENT CTA -->
-    <section class="cta-statement section-pad theme-black">
-      <div class="container">
-        <div class="cta-statement__inner">
-          <div>
-            <span class="section-label">Collaboration</span>
-            <h2 class="cta-statement__title">WORK WITH<br>SIP &amp; PLAY.</h2>
-            <p class="cta-statement__sub">
-              Partner with an experienced commercial kitchen design and equipment team that understands real culinary operations.
-            </p>
-          </div>
-          <div class="cta-statement__actions">
-            <a class="btn btn--primary" href="contact.html#quote">Request a Quote <span class="arrow">→</span></a>
-            <a class="btn btn--outline-light" href="contact.html">Discuss Your Project <span class="arrow">→</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- OFFICIAL FOOTER -->
-  <footer class="footer">
+  <!-- MASSIVE EDITORIAL FOOTER -->
+  <footer class="footer-editorial">
     <div class="container">
-      <div class="footer__top">
+      <div class="footer-editorial__statement">
+        Precision. Performance. <em>Partnership.</em>
+      </div>
+
+      <div class="footer-editorial__grid">
         <div>
-          <div class="footer__logo">SIP <em>&amp;</em> PLAY</div>
-          <p class="footer__tagline">A DECADE OF KITCHEN EXCELLENCE</p>
-          <p class="footer__desc">
+          <div class="footer-editorial__brand-name">Sip &amp; Play</div>
+          <p class="footer-editorial__brand-tag">A Decade of Kitchen Excellence</p>
+          <p style="font-size:0.9rem; color:var(--stone-light); line-height:1.75; max-width:380px;">
             Designing, supplying, and supporting high-performance commercial kitchens across Sri Lanka, Maldives, and Thailand. Authorized Agent for Hambach.
           </p>
         </div>
 
-        <nav class="footer__nav" aria-label="Footer navigation">
-          <div class="footer__col">
-            <span class="footer__col-title">Official Office</span>
-            <span>11A/1 Rathnawali Road,</span>
-            <span>Dehiwela, Sri Lanka</span>
-            <a href="tel:+94702700500">+94 702 700 500</a>
-            <a href="tel:+94717700100">+94 717 700 100</a>
-            <a href="https://www.sipandplay.co" target="_blank">www.sipandplay.co</a>
+        <div class="footer-editorial__cols">
+          <div>
+            <span class="footer-editorial__col-title">Official Office</span>
+            <div class="footer-editorial__col-links">
+              <span>11A/1 Rathnawali Road,</span>
+              <span>Dehiwela, Sri Lanka</span>
+              <a href="tel:+94702700500">+94 702 700 500</a>
+              <a href="tel:+94717700100">+94 717 700 100</a>
+              <a href="https://www.sipandplay.co" target="_blank">www.sipandplay.co</a>
+            </div>
           </div>
 
-          <div class="footer__col">
-            <span class="footer__col-title">Navigation</span>
-            <a href="about.html">About Sip &amp; Play</a>
-            <a href="services.html">Services &amp; Process</a>
-            <a href="brands.html">Hambach Agency</a>
-            <a href="solutions.html">Current Projects</a>
-            <a href="equipment.html">Equipment Sourcing</a>
-            <a href="contact.html">Contact Us</a>
+          <div>
+            <span class="footer-editorial__col-title">Navigation</span>
+            <div class="footer-editorial__col-links">
+              <a href="about.html">About Sip &amp; Play</a>
+              <a href="services.html">Services &amp; Process</a>
+              <a href="brands.html">Hambach Agency</a>
+              <a href="solutions.html">Current Projects</a>
+              <a href="equipment.html">Equipment Sourcing</a>
+              <a href="contact.html">Contact Us</a>
+            </div>
           </div>
 
-          <div class="footer__col">
-            <span class="footer__col-title">Client Engagements</span>
-            <a href="contact.html#quote">Request a Project Quote →</a>
-            <a href="contact.html">Arrange Site Visit</a>
-            <span style="font-size:0.75rem; color:var(--stone-light); margin-top:0.5rem;">Territories: Sri Lanka • Maldives • Thailand</span>
+          <div>
+            <span class="footer-editorial__col-title">Direct Inquiries</span>
+            <div class="footer-editorial__col-links">
+              <a href="contact.html#quote" style="text-decoration:underline;">Request a project quote →</a>
+              <a href="contact.html">Arrange site visit</a>
+              <span style="font-size:0.75rem; color:var(--stone-light); margin-top:0.5rem;">Territories: Sri Lanka • Maldives • Thailand</span>
+            </div>
           </div>
-        </nav>
+        </div>
       </div>
 
-      <div class="footer__bottom">
+      <div class="footer-editorial__bottom">
         <p>© 2026 Sip &amp; Play. All rights reserved.</p>
         <div>
           <a href="https://www.sipandplay.co">www.sipandplay.co</a>

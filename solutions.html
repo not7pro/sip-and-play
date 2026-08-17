@@ -4,18 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Sip & Play Projects & Case Studies — Chinese Mega Kitchen (33,000 sq ft, 6,000 meals/day), The Mustard Gourmet (2,500 sq ft), and Oh Donuts cloud kitchen (10,000 donuts/day)." />
-  <title>Projects &amp; Case Studies — Sip &amp; Play</title>
+  <title>Current Projects — Sip &amp; Play</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-<body class="theme-light">
+<body class="theme-paper">
+
+  <!-- Scroll Progress Indicator Line -->
+  <div id="scrollProgress"></div>
 
   <!-- NAVIGATION -->
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner container">
-      <a class="nav__logo" href="index.html">SIP <em>&amp;</em> PLAY</a>
+      <a class="nav__logo" href="index.html">Sip <em>&amp;</em> Play</a>
       <div class="nav__links">
         <a class="nav__link" href="about.html">About</a>
         <a class="nav__link" href="services.html">Services</a>
@@ -24,14 +27,14 @@
         <a class="nav__link" href="equipment.html">Equipment</a>
         <a class="nav__link" href="contact.html">Contact</a>
       </div>
-      <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a Quote <span class="arrow">→</span></a>
+      <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a quote <span class="arrow">→</span></a>
       <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- MOBILE MENU -->
+  <!-- FULLSCREEN LUXURY MOBILE NAV -->
   <div class="mob-nav" id="mobNav">
     <nav class="mob-nav__links">
       <a class="mob-nav__link" href="about.html">About <span>→</span></a>
@@ -41,222 +44,185 @@
       <a class="mob-nav__link" href="equipment.html">Equipment <span>→</span></a>
       <a class="mob-nav__link" href="contact.html">Contact <span>→</span></a>
     </nav>
-    <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a Quote →</a>
-    <div class="mob-nav__bottom">
+    <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a quote →</a>
+    <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:0.7rem; color:var(--stone-light); border-top:1px solid var(--border-dark); padding-top:1.5rem;">
       <span>© 2026 Sip &amp; Play</span>
       <span>11A/1 Rathnawali Rd, Dehiwela</span>
     </div>
   </div>
 
+  <!-- FLOATING QUOTE BUTTON -->
+  <a href="contact.html#quote" class="floating-quote-btn" aria-label="Request a quote">
+    <span>Request a quote</span>
+    <span class="arrow">→</span>
+  </a>
+
   <main>
 
     <!-- PAGE HERO -->
-    <section class="section-pad theme-dark" style="padding-top:140px;">
+    <section class="section-pad theme-dark" style="padding-top:160px;">
       <div class="container">
-        <span class="eyebrow">Project Portfolio</span>
-        <h1 style="font-family:var(--font-display); font-size:var(--t-hero); font-weight:500; line-height:0.95; text-transform:uppercase; color:var(--white-pure); margin-bottom:var(--sp-6);">
-          CURRENT<br>PROJECTS.
+        <span class="eyebrow">Project Evidence</span>
+        <h1 style="font-family:var(--font-editorial); font-size:var(--t-mega); font-weight:300; line-height:0.95; color:var(--paper-ivory); margin-bottom:var(--sp-6);">
+          Current <em>developments</em>.
         </h1>
-        <p style="font-size:var(--t-xl); color:var(--text-dark-secondary); max-width:680px; line-height:1.7;">
+        <p style="font-size:var(--t-xl); color:var(--stone-light); max-width:720px; line-height:1.7;">
           Explore our real-world commercial kitchen developments — from mega industrial kitchens to high-capacity cloud production facilities.
         </p>
       </div>
     </section>
 
-    <!-- EDITORIAL CASE STUDIES (100% VERIFIED) -->
-    <section class="section-pad theme-light">
+    <!-- EDITORIAL CASE STUDIES (3 VERIFIED) -->
+    <section class="editorial-projects section-pad">
       <div class="container">
 
         <!-- Project 01: The Chinese Mega Kitchen -->
-        <article class="project-case">
-          <div class="project-case__content">
-            <span class="project-case__num">PROJECT 01 / INDUSTRIAL SCALE</span>
-            <h2 class="project-case__title">THE CHINESE<br>MEGA KITCHEN</h2>
-            <span class="project-case__sub">COLOMBO'S LARGEST COMMERCIAL KITCHEN</span>
+        <article class="project-feature">
+          <div class="project-feature__content">
+            <span class="project-feature__num">01 / COMMERCIAL MEGA KITCHEN</span>
+            <h2 class="project-feature__title">The Chinese Mega Kitchen</h2>
+            <span class="project-feature__sub">Colombo's Largest Commercial Kitchen</span>
 
-            <div class="project-case__metrics">
+            <div class="project-feature__metrics">
               <div>
-                <span class="project-metric__val">33,000</span>
-                <span class="project-metric__lbl">SQ FT PROJECT SIZE</span>
+                <span class="project-feature__metric-val">33,000</span>
+                <span class="project-feature__metric-lbl">SQ FT PROJECT SIZE</span>
               </div>
               <div>
-                <span class="project-metric__val">6,000</span>
-                <span class="project-metric__lbl">MEALS / DAY CAPACITY</span>
+                <span class="project-feature__metric-val">6,000</span>
+                <span class="project-feature__metric-lbl">MEALS / DAY CAPACITY</span>
               </div>
             </div>
 
-            <p class="project-case__desc">
+            <p class="project-feature__desc">
               Sip &amp; Play is currently building one of Sri Lanka's largest commercial mega kitchens in Colombo. A major operational milestone demonstrating our high-performance technical engineering capacity. We invite prospective hospitality partners to arrange a site visit.
             </p>
 
-            <span class="project-case__status">● CURRENT PROJECT / IN DEVELOPMENT</span>
+            <span class="project-feature__status">● Current Project / In Development</span>
           </div>
 
-          <div class="project-case__media">
-            <img class="project-case__img" src="https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=1000&q=80" alt="The Chinese Mega Kitchen Colombo" loading="lazy" />
+          <div class="project-feature__media">
+            <img class="project-feature__img" src="https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=1200&q=85" alt="The Chinese Mega Kitchen Colombo" loading="lazy" />
           </div>
         </article>
 
         <!-- Project 02: The Mustard Gourmet -->
-        <article class="project-case">
-          <div class="project-case__content">
-            <span class="project-case__num">PROJECT 02 / CENTRAL COLOMBO</span>
-            <h2 class="project-case__title">THE MUSTARD<br>GOURMET</h2>
-            <span class="project-case__sub">A GOURMET KITCHEN IN THE HEART OF COLOMBO</span>
+        <article class="project-feature">
+          <div class="project-feature__content">
+            <span class="project-feature__num">02 / CENTRAL COLOMBO</span>
+            <h2 class="project-feature__title">The Mustard Gourmet</h2>
+            <span class="project-feature__sub">A Gourmet Kitchen in the Heart of Colombo</span>
 
-            <div class="project-case__metrics">
+            <div class="project-feature__metrics">
               <div>
-                <span class="project-metric__val">2,500</span>
-                <span class="project-metric__lbl">SQ FT PROJECT SIZE</span>
+                <span class="project-feature__metric-val">2,500</span>
+                <span class="project-feature__metric-lbl">SQ FT PROJECT SIZE</span>
               </div>
               <div>
-                <span class="project-metric__val">2,000</span>
-                <span class="project-metric__lbl">PAX CAPACITY</span>
+                <span class="project-feature__metric-val">2,000</span>
+                <span class="project-feature__metric-lbl">PAX CAPACITY</span>
               </div>
             </div>
 
-            <p class="project-case__desc">
+            <p class="project-feature__desc">
               An exciting multi-concept gourmet destination bringing diverse culinary offerings under one roof. Sip &amp; Play's scope encompasses end-to-end kitchen layout planning and commercial equipment sourcing.
             </p>
 
-            <span class="project-case__status">● PREPARING FOR LAUNCH</span>
+            <span class="project-feature__status">● Preparing for Launch</span>
           </div>
 
-          <div class="project-case__media">
-            <img class="project-case__img" src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1000&q=80" alt="The Mustard Gourmet Colombo" loading="lazy" />
+          <div class="project-feature__media">
+            <img class="project-feature__img" src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=85" alt="The Mustard Gourmet Colombo" loading="lazy" />
           </div>
         </article>
 
         <!-- Project 03: Oh Donuts -->
-        <article class="project-case">
-          <div class="project-case__content">
-            <span class="project-case__num">PROJECT 03 / CLOUD PRODUCTION</span>
-            <h2 class="project-case__title">OH DONUTS</h2>
-            <span class="project-case__sub">A CLOUD KITCHEN IN DEHIWELA FOR DOUGHNUTS</span>
+        <article class="project-feature">
+          <div class="project-feature__content">
+            <span class="project-feature__num">03 / CLOUD PRODUCTION</span>
+            <h2 class="project-feature__title">Oh Donuts</h2>
+            <span class="project-feature__sub">A Cloud Kitchen in Dehiwela for Doughnuts</span>
 
-            <div class="project-case__metrics">
+            <div class="project-feature__metrics">
               <div>
-                <span class="project-metric__val">2,000</span>
-                <span class="project-metric__lbl">SQ FT PROJECT SIZE</span>
+                <span class="project-feature__metric-val">2,000</span>
+                <span class="project-feature__metric-lbl">SQ FT PROJECT SIZE</span>
               </div>
               <div>
-                <span class="project-metric__val">10,000</span>
-                <span class="project-metric__lbl">DONUTS / DAY CAPACITY</span>
+                <span class="project-feature__metric-val">10,000</span>
+                <span class="project-feature__metric-lbl">DONUTS / DAY CAPACITY</span>
               </div>
             </div>
 
-            <p class="project-case__desc">
+            <p class="project-feature__desc">
               Expanding a specialized commercial cloud kitchen facility in Dehiwela to handle output of up to 10,000 donuts per day. Designed for high volume, rigorous consistency, and future business scalability.
             </p>
 
-            <span class="project-case__status">● CURRENT EXPANSION PROJECT</span>
+            <span class="project-feature__status">● Current Expansion Project</span>
           </div>
 
-          <div class="project-case__media">
-            <img class="project-case__img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=80" alt="Oh Donuts Cloud Kitchen Dehiwela" loading="lazy" />
+          <div class="project-feature__media">
+            <img class="project-feature__img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=85" alt="Oh Donuts Cloud Kitchen Dehiwela" loading="lazy" />
           </div>
         </article>
 
-      </div>
-    </section>
-
-    <!-- SECTOR CAPABILITIES -->
-    <section class="section-pad theme-white">
-      <div class="container">
-        <div style="margin-bottom:clamp(3rem, 5vw, 5rem);">
-          <span class="section-label">Target Sectors</span>
-          <h2 style="font-family:var(--font-display); font-size:var(--t-4xl); font-weight:500; line-height:0.95; text-transform:uppercase; color:var(--black-pure);">
-            KITCHEN SOLUTIONS<br>ACROSS SECTORS.
-          </h2>
-        </div>
-
-        <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:1px; background:var(--border-light); border:1px solid var(--border-light);">
-          <div style="background:var(--white-pure); padding:2rem; display:flex; flex-direction:column; gap:1rem;">
-            <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--stone-mid);">01 / SECTOR</span>
-            <h3 style="font-family:var(--font-display); font-size:1.25rem; font-weight:600; text-transform:uppercase; color:var(--black-pure);">Hotels &amp; Resorts</h3>
-            <p style="font-size:0.85rem; color:var(--text-light-secondary); line-height:1.7;">High-capacity banqueting, all-day dining kitchens, and room service line architecture.</p>
-          </div>
-          <div style="background:var(--white-pure); padding:2rem; display:flex; flex-direction:column; gap:1rem;">
-            <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--stone-mid);">02 / SECTOR</span>
-            <h3 style="font-family:var(--font-display); font-size:1.25rem; font-weight:600; text-transform:uppercase; color:var(--black-pure);">Restaurants</h3>
-            <p style="font-size:0.85rem; color:var(--text-light-secondary); line-height:1.7;">Ergonomic cooking suites, fast-turnaround prep passes, and specialized culinary lines.</p>
-          </div>
-          <div style="background:var(--white-pure); padding:2rem; display:flex; flex-direction:column; gap:1rem;">
-            <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--stone-mid);">03 / SECTOR</span>
-            <h3 style="font-family:var(--font-display); font-size:1.25rem; font-weight:600; text-transform:uppercase; color:var(--black-pure);">Cafés &amp; Coffee</h3>
-            <p style="font-size:0.85rem; color:var(--text-light-secondary); line-height:1.7;">Authorized Hambach espresso machinery, modular back bars, and compact kitchen equipment.</p>
-          </div>
-          <div style="background:var(--white-pure); padding:2rem; display:flex; flex-direction:column; gap:1rem;">
-            <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--stone-mid);">04 / SECTOR</span>
-            <h3 style="font-family:var(--font-display); font-size:1.25rem; font-weight:600; text-transform:uppercase; color:var(--black-pure);">Industrial Kitchens</h3>
-            <p style="font-size:0.85rem; color:var(--text-light-secondary); line-height:1.7;">Mass production cloud kitchens, central commissaries, and high-throughput baking facilities.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- STATEMENT CTA -->
-    <section class="cta-statement section-pad theme-black">
-      <div class="container">
-        <div class="cta-statement__inner">
-          <div>
-            <span class="section-label">Site Consultations</span>
-            <h2 class="cta-statement__title">ARRANGE A<br>SITE VISIT.</h2>
-            <p class="cta-statement__sub">
-              Interested in seeing our commercial kitchen developments or discussing your upcoming build? Connect with our project directors.
-            </p>
-          </div>
-          <div class="cta-statement__actions">
-            <a class="btn btn--primary" href="contact.html#quote">Request a Quote <span class="arrow">→</span></a>
-          </div>
-        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- OFFICIAL FOOTER -->
-  <footer class="footer">
+  <!-- MASSIVE EDITORIAL FOOTER -->
+  <footer class="footer-editorial">
     <div class="container">
-      <div class="footer__top">
+      <div class="footer-editorial__statement">
+        Precision. Performance. <em>Partnership.</em>
+      </div>
+
+      <div class="footer-editorial__grid">
         <div>
-          <div class="footer__logo">SIP <em>&amp;</em> PLAY</div>
-          <p class="footer__tagline">A DECADE OF KITCHEN EXCELLENCE</p>
-          <p class="footer__desc">
+          <div class="footer-editorial__brand-name">Sip &amp; Play</div>
+          <p class="footer-editorial__brand-tag">A Decade of Kitchen Excellence</p>
+          <p style="font-size:0.9rem; color:var(--stone-light); line-height:1.75; max-width:380px;">
             Designing, supplying, and supporting high-performance commercial kitchens across Sri Lanka, Maldives, and Thailand. Authorized Agent for Hambach.
           </p>
         </div>
 
-        <nav class="footer__nav" aria-label="Footer navigation">
-          <div class="footer__col">
-            <span class="footer__col-title">Official Office</span>
-            <span>11A/1 Rathnawali Road,</span>
-            <span>Dehiwela, Sri Lanka</span>
-            <a href="tel:+94702700500">+94 702 700 500</a>
-            <a href="tel:+94717700100">+94 717 700 100</a>
-            <a href="https://www.sipandplay.co" target="_blank">www.sipandplay.co</a>
+        <div class="footer-editorial__cols">
+          <div>
+            <span class="footer-editorial__col-title">Official Office</span>
+            <div class="footer-editorial__col-links">
+              <span>11A/1 Rathnawali Road,</span>
+              <span>Dehiwela, Sri Lanka</span>
+              <a href="tel:+94702700500">+94 702 700 500</a>
+              <a href="tel:+94717700100">+94 717 700 100</a>
+              <a href="https://www.sipandplay.co" target="_blank">www.sipandplay.co</a>
+            </div>
           </div>
 
-          <div class="footer__col">
-            <span class="footer__col-title">Navigation</span>
-            <a href="about.html">About Sip &amp; Play</a>
-            <a href="services.html">Services &amp; Process</a>
-            <a href="brands.html">Hambach Agency</a>
-            <a href="solutions.html">Current Projects</a>
-            <a href="equipment.html">Equipment Sourcing</a>
-            <a href="contact.html">Contact Us</a>
+          <div>
+            <span class="footer-editorial__col-title">Navigation</span>
+            <div class="footer-editorial__col-links">
+              <a href="about.html">About Sip &amp; Play</a>
+              <a href="services.html">Services &amp; Process</a>
+              <a href="brands.html">Hambach Agency</a>
+              <a href="solutions.html">Current Projects</a>
+              <a href="equipment.html">Equipment Sourcing</a>
+              <a href="contact.html">Contact Us</a>
+            </div>
           </div>
 
-          <div class="footer__col">
-            <span class="footer__col-title">Client Engagements</span>
-            <a href="contact.html#quote">Request a Project Quote →</a>
-            <a href="contact.html">Arrange Site Visit</a>
-            <span style="font-size:0.75rem; color:var(--stone-light); margin-top:0.5rem;">Territories: Sri Lanka • Maldives • Thailand</span>
+          <div>
+            <span class="footer-editorial__col-title">Direct Inquiries</span>
+            <div class="footer-editorial__col-links">
+              <a href="contact.html#quote" style="text-decoration:underline;">Request a project quote →</a>
+              <a href="contact.html">Arrange site visit</a>
+              <span style="font-size:0.75rem; color:var(--stone-light); margin-top:0.5rem;">Territories: Sri Lanka • Maldives • Thailand</span>
+            </div>
           </div>
-        </nav>
+        </div>
       </div>
 
-      <div class="footer__bottom">
+      <div class="footer-editorial__bottom">
         <p>© 2026 Sip &amp; Play. All rights reserved.</p>
         <div>
           <a href="https://www.sipandplay.co">www.sipandplay.co</a>

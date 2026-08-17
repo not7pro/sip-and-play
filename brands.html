@@ -8,14 +8,17 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-<body class="theme-dark">
+<body class="theme-paper">
+
+  <!-- Scroll Progress Indicator Line -->
+  <div id="scrollProgress"></div>
 
   <!-- NAVIGATION -->
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner container">
-      <a class="nav__logo" href="index.html">SIP <em>&amp;</em> PLAY</a>
+      <a class="nav__logo" href="index.html">Sip <em>&amp;</em> Play</a>
       <div class="nav__links">
         <a class="nav__link" href="about.html">About</a>
         <a class="nav__link" href="services.html">Services</a>
@@ -24,14 +27,14 @@
         <a class="nav__link" href="equipment.html">Equipment</a>
         <a class="nav__link" href="contact.html">Contact</a>
       </div>
-      <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a Quote <span class="arrow">→</span></a>
+      <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a quote <span class="arrow">→</span></a>
       <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- MOBILE MENU -->
+  <!-- FULLSCREEN LUXURY MOBILE NAV -->
   <div class="mob-nav" id="mobNav">
     <nav class="mob-nav__links">
       <a class="mob-nav__link" href="about.html">About <span>→</span></a>
@@ -41,125 +44,111 @@
       <a class="mob-nav__link" href="equipment.html">Equipment <span>→</span></a>
       <a class="mob-nav__link" href="contact.html">Contact <span>→</span></a>
     </nav>
-    <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a Quote →</a>
-    <div class="mob-nav__bottom">
+    <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a quote →</a>
+    <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:0.7rem; color:var(--stone-light); border-top:1px solid var(--border-dark); padding-top:1.5rem;">
       <span>© 2026 Sip &amp; Play</span>
       <span>11A/1 Rathnawali Rd, Dehiwela</span>
     </div>
   </div>
 
+  <!-- FLOATING QUOTE BUTTON -->
+  <a href="contact.html#quote" class="floating-quote-btn" aria-label="Request a quote">
+    <span>Request a quote</span>
+    <span class="arrow">→</span>
+  </a>
+
   <main>
 
-    <!-- HERO SECTION -->
-    <section class="section-pad theme-dark" style="padding-top:140px;">
+    <!-- PAGE HERO -->
+    <section class="section-pad theme-dark" style="padding-top:160px;">
       <div class="container">
         <span class="eyebrow">Brand Partnership</span>
-        <h1 style="font-family:var(--font-display); font-size:var(--t-hero); font-weight:500; line-height:0.95; text-transform:uppercase; color:var(--white-pure); margin-bottom:var(--sp-6);">
-          AUTHORIZED AGENT<br>FOR HAMBACH.
+        <h1 style="font-family:var(--font-editorial); font-size:var(--t-mega); font-weight:300; line-height:0.95; color:var(--paper-ivory); margin-bottom:var(--sp-6);">
+          Authorized agent for <em>Hambach</em>.
         </h1>
-        <p style="font-size:var(--t-xl); color:var(--text-dark-secondary); max-width:680px; line-height:1.7;">
+        <p style="font-size:var(--t-xl); color:var(--stone-light); max-width:720px; line-height:1.7;">
           Sip &amp; Play is the authorized dealer and agent for Hambach espresso machines, representing one of China's fastest-growing coffee machinery brands.
         </p>
       </div>
     </section>
 
     <!-- EXCLUSIVE AGENCY TERRITORIES -->
-    <section class="section-pad theme-light">
-      <div class="container">
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:clamp(3rem, 6vw, 6rem); align-items:center;">
-          <div>
-            <span class="section-label">01 — Official Representation</span>
-            <h2 style="font-family:var(--font-display); font-size:var(--t-3xl); font-weight:500; line-height:1; text-transform:uppercase; color:var(--black-pure); margin-bottom:var(--sp-6);">
-              EXCLUSIVE AGENT RIGHTS ACROSS 3 TERRITORIES.
-            </h2>
-            <p style="font-size:var(--t-base); color:var(--text-light-secondary); line-height:1.8; margin-bottom:var(--sp-6);">
-              Sip &amp; Play holds authorized agency rights to supply, calibrate, and support Hambach commercial espresso machines across:
-            </p>
+    <section class="editorial-intro section-pad">
+      <div class="container editorial-intro__grid">
+        <div>
+          <span class="section-tag">Official Representation</span>
+          <h2 class="editorial-intro__headline">
+            Exclusive agent rights across <em>three territories</em>.
+          </h2>
+          <p class="editorial-intro__text">
+            Sip &amp; Play holds authorized agency rights to supply, calibrate, and support Hambach commercial espresso machines across:
+          </p>
 
-            <div style="display:flex; flex-direction:column; gap:var(--sp-3); margin-bottom:var(--sp-6);">
-              <div style="background:var(--white-pure); border:1px solid var(--border-light); padding:1rem 1.25rem; font-family:var(--font-mono); font-size:0.85rem; font-weight:600; color:var(--black-pure);">
-                🇱🇰 SRI LANKA — AUTHORIZED AGENT &amp; TECHNICAL SERVICE
-              </div>
-              <div style="background:var(--white-pure); border:1px solid var(--border-light); padding:1rem 1.25rem; font-family:var(--font-mono); font-size:0.85rem; font-weight:600; color:var(--black-pure);">
-                🇲🇻 MALDIVES — RESORT &amp; HOSPITALITY SUPPLY
-              </div>
-              <div style="background:var(--white-pure); border:1px solid var(--border-light); padding:1rem 1.25rem; font-family:var(--font-mono); font-size:0.85rem; font-weight:600; color:var(--black-pure);">
-                🇹🇭 THAILAND — REGIONAL AGENT RIGHTS
-              </div>
+          <div style="display:flex; flex-direction:column; gap:var(--sp-3); margin-bottom:var(--sp-6);">
+            <div style="background:var(--paper-warm); border:1px solid var(--border-light); padding:1rem 1.25rem; font-family:var(--font-mono); font-size:0.85rem; font-weight:600; color:var(--ink-pure);">
+              🇱🇰 SRI LANKA — AUTHORIZED AGENT &amp; TECHNICAL SERVICE
             </div>
-
-            <p style="font-size:0.85rem; color:var(--stone-mid); line-height:1.7;">
-              Every machine is backed by verified warranty terms, genuine spare parts availability, and factory-trained technical support.
-            </p>
+            <div style="background:var(--paper-warm); border:1px solid var(--border-light); padding:1rem 1.25rem; font-family:var(--font-mono); font-size:0.85rem; font-weight:600; color:var(--ink-pure);">
+              🇲🇻 MALDIVES — RESORT &amp; HOSPITALITY SUPPLY
+            </div>
+            <div style="background:var(--paper-warm); border:1px solid var(--border-light); padding:1rem 1.25rem; font-family:var(--font-mono); font-size:0.85rem; font-weight:600; color:var(--ink-pure);">
+              🇹🇭 THAILAND — REGIONAL AGENT RIGHTS
+            </div>
           </div>
 
-          <div>
-            <div style="aspect-ratio:4/5; overflow:hidden; border:1px solid var(--border-light); position:relative;">
-              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=80" alt="Hambach Espresso Systems" style="width:100%; height:100%; object-fit:cover; filter:grayscale(100%) contrast(110%);" />
-            </div>
+          <p style="font-size:0.88rem; color:var(--stone-dark); line-height:1.75;">
+            Every machine is backed by verified warranty terms, genuine spare parts availability, and factory-trained technical support.
+          </p>
+        </div>
+
+        <div>
+          <div class="editorial-intro__img-frame">
+            <img class="editorial-intro__img" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=85" alt="Hambach Espresso Systems" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CHINA SOURCING SPECIALIZATION (VIVIAN HU) -->
-    <section class="section-pad theme-white">
+    <!-- CHINA SOURCING SPECIALIZATION -->
+    <section class="section-pad theme-warm">
       <div class="container">
         <div style="display:grid; grid-template-columns:1fr 1.15fr; gap:clamp(3rem, 6vw, 6rem); align-items:start;">
           <div>
-            <span class="section-label">02 — Supply Chain Network</span>
-            <h2 style="font-family:var(--font-display); font-size:var(--t-3xl); font-weight:500; line-height:1; text-transform:uppercase; color:var(--black-pure); margin-bottom:var(--sp-6);">
-              CHINESE-ENGINEERED<br>EQUIPMENT SOURCING.
+            <span class="section-tag">Supply Chain Network</span>
+            <h2 style="font-family:var(--font-editorial); font-size:var(--t-4xl); font-weight:400; line-height:1; color:var(--ink-pure); margin-bottom:var(--sp-6);">
+              Chinese-engineered equipment sourcing.
             </h2>
-            <p style="font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--stone-mid); border-left:2px solid var(--black-pure); padding-left:1rem;">
+            <p style="font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--stone-mid); border-left:2px solid var(--ink-pure); padding-left:1rem;">
               Led by Vivian Hu • Direct Factory Procurement
             </p>
           </div>
 
           <div>
-            <p style="font-size:var(--t-base); color:var(--text-light-secondary); line-height:1.8; margin-bottom:var(--sp-6);">
+            <p style="font-size:var(--t-base); color:var(--stone-dark); line-height:1.8; margin-bottom:var(--sp-6);">
               Our supply chain specialist Vivian Hu, based with direct ties to leading manufacturing hubs in China, brings deep industry connections and equipment expertise.
             </p>
-            <p style="font-size:var(--t-base); color:var(--text-light-secondary); line-height:1.8; margin-bottom:var(--sp-6);">
+            <p style="font-size:var(--t-base); color:var(--stone-dark); line-height:1.8; margin-bottom:var(--sp-6);">
               We oversee the entire procurement pipeline — identifying the right commercial kitchen equipment, verifying technical specifications, negotiating fair pricing, and managing logistics directly to Sri Lanka.
             </p>
 
             <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:var(--sp-4); border-top:1px solid var(--border-light); padding-top:var(--sp-6);">
               <div>
                 <span style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--stone-mid); display:block;">Pillar 01</span>
-                <p style="font-size:0.85rem; font-weight:600; color:var(--black-pure);">Reliability &amp; Build Quality</p>
+                <p style="font-size:0.9rem; font-weight:600; color:var(--ink-pure);">Reliability &amp; Build Quality</p>
               </div>
               <div>
                 <span style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--stone-mid); display:block;">Pillar 02</span>
-                <p style="font-size:0.85rem; font-weight:600; color:var(--black-pure);">Fair &amp; Transparent Pricing</p>
+                <p style="font-size:0.9rem; font-weight:600; color:var(--ink-pure);">Fair &amp; Transparent Pricing</p>
               </div>
               <div>
                 <span style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--stone-mid); display:block;">Pillar 03</span>
-                <p style="font-size:0.85rem; font-weight:600; color:var(--black-pure);">Logistical Efficiency</p>
+                <p style="font-size:0.9rem; font-weight:600; color:var(--ink-pure);">Logistical Efficiency</p>
               </div>
               <div>
                 <span style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--stone-mid); display:block;">Pillar 04</span>
-                <p style="font-size:0.85rem; font-weight:600; color:var(--black-pure);">Timely Project Delivery</p>
+                <p style="font-size:0.9rem; font-weight:600; color:var(--ink-pure);">Timely Project Delivery</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- STATEMENT CTA -->
-    <section class="cta-statement section-pad theme-black">
-      <div class="container">
-        <div class="cta-statement__inner">
-          <div>
-            <span class="section-label">Brand Inquiries</span>
-            <h2 class="cta-statement__title">HAMBACH COFFEE<br>EQUIPMENT QUOTE.</h2>
-            <p class="cta-statement__sub">
-              Contact our sales engineering team for Hambach espresso machine specifications, pricing, and installation services.
-            </p>
-          </div>
-          <div class="cta-statement__actions">
-            <a class="btn btn--primary" href="contact.html#quote">Request a Quote <span class="arrow">→</span></a>
           </div>
         </div>
       </div>
@@ -167,48 +156,58 @@
 
   </main>
 
-  <!-- OFFICIAL FOOTER -->
-  <footer class="footer">
+  <!-- MASSIVE EDITORIAL FOOTER -->
+  <footer class="footer-editorial">
     <div class="container">
-      <div class="footer__top">
+      <div class="footer-editorial__statement">
+        Precision. Performance. <em>Partnership.</em>
+      </div>
+
+      <div class="footer-editorial__grid">
         <div>
-          <div class="footer__logo">SIP <em>&amp;</em> PLAY</div>
-          <p class="footer__tagline">A DECADE OF KITCHEN EXCELLENCE</p>
-          <p class="footer__desc">
+          <div class="footer-editorial__brand-name">Sip &amp; Play</div>
+          <p class="footer-editorial__brand-tag">A Decade of Kitchen Excellence</p>
+          <p style="font-size:0.9rem; color:var(--stone-light); line-height:1.75; max-width:380px;">
             Designing, supplying, and supporting high-performance commercial kitchens across Sri Lanka, Maldives, and Thailand. Authorized Agent for Hambach.
           </p>
         </div>
 
-        <nav class="footer__nav" aria-label="Footer navigation">
-          <div class="footer__col">
-            <span class="footer__col-title">Official Office</span>
-            <span>11A/1 Rathnawali Road,</span>
-            <span>Dehiwela, Sri Lanka</span>
-            <a href="tel:+94702700500">+94 702 700 500</a>
-            <a href="tel:+94717700100">+94 717 700 100</a>
-            <a href="https://www.sipandplay.co" target="_blank">www.sipandplay.co</a>
+        <div class="footer-editorial__cols">
+          <div>
+            <span class="footer-editorial__col-title">Official Office</span>
+            <div class="footer-editorial__col-links">
+              <span>11A/1 Rathnawali Road,</span>
+              <span>Dehiwela, Sri Lanka</span>
+              <a href="tel:+94702700500">+94 702 700 500</a>
+              <a href="tel:+94717700100">+94 717 700 100</a>
+              <a href="https://www.sipandplay.co" target="_blank">www.sipandplay.co</a>
+            </div>
           </div>
 
-          <div class="footer__col">
-            <span class="footer__col-title">Navigation</span>
-            <a href="about.html">About Sip &amp; Play</a>
-            <a href="services.html">Services &amp; Process</a>
-            <a href="brands.html">Hambach Agency</a>
-            <a href="solutions.html">Current Projects</a>
-            <a href="equipment.html">Equipment Sourcing</a>
-            <a href="contact.html">Contact Us</a>
+          <div>
+            <span class="footer-editorial__col-title">Navigation</span>
+            <div class="footer-editorial__col-links">
+              <a href="about.html">About Sip &amp; Play</a>
+              <a href="services.html">Services &amp; Process</a>
+              <a href="brands.html">Hambach Agency</a>
+              <a href="solutions.html">Current Projects</a>
+              <a href="equipment.html">Equipment Sourcing</a>
+              <a href="contact.html">Contact Us</a>
+            </div>
           </div>
 
-          <div class="footer__col">
-            <span class="footer__col-title">Client Engagements</span>
-            <a href="contact.html#quote">Request a Project Quote →</a>
-            <a href="contact.html">Arrange Site Visit</a>
-            <span style="font-size:0.75rem; color:var(--stone-light); margin-top:0.5rem;">Territories: Sri Lanka • Maldives • Thailand</span>
+          <div>
+            <span class="footer-editorial__col-title">Direct Inquiries</span>
+            <div class="footer-editorial__col-links">
+              <a href="contact.html#quote" style="text-decoration:underline;">Request a project quote →</a>
+              <a href="contact.html">Arrange site visit</a>
+              <span style="font-size:0.75rem; color:var(--stone-light); margin-top:0.5rem;">Territories: Sri Lanka • Maldives • Thailand</span>
+            </div>
           </div>
-        </nav>
+        </div>
       </div>
 
-      <div class="footer__bottom">
+      <div class="footer-editorial__bottom">
         <p>© 2026 Sip &amp; Play. All rights reserved.</p>
         <div>
           <a href="https://www.sipandplay.co">www.sipandplay.co</a>
