@@ -3,23 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sip & Play Sri Lanka Services — Technical consultation, spatial load design, tier-1 equipment supply, certified installation in Colombo/Galle/Kandy, and lifecycle maintenance contracts." />
-  <title>Engineering Services — Sip & Play Sri Lanka | Colombo • Galle • Kandy</title>
+  <meta name="description" content="Sip & Play Services — Kitchen Design, Workflow Optimization, Restaurant Interiors, and Hambach Espresso Machines. From vision to kitchen across Sri Lanka, Maldives, and Thailand." />
+  <title>Our Services &amp; Execution Process — Sip &amp; Play</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <style>
-    .svc-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:1px; background:var(--border-light); border:1px solid var(--border-light); margin-bottom:clamp(4rem,8vw,8rem); }
-    .svc-card { background:var(--white-pure); padding:var(--sp-10) var(--sp-8); transition:background var(--med) var(--ease-cinematic), transform var(--med) var(--ease-cinematic); }
-    .svc-card:hover { background:var(--off-white-warm); transform:translateY(-3px); }
-    .svc-card__num { font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.2em; color:var(--stone-mid); display:block; margin-bottom:var(--sp-4); }
-    .svc-card__title { font-family:var(--font-display); font-size:var(--t-2xl); font-weight:500; letter-spacing:0.02em; text-transform:uppercase; color:var(--black-pure); margin-bottom:var(--sp-4); }
-    .svc-card__desc { font-size:var(--t-base); color:var(--text-light-secondary); line-height:1.85; margin-bottom:var(--sp-6); }
-    .svc-card__points { display:flex; flex-direction:column; gap:var(--sp-2); border-top:1px solid var(--border-light); padding-top:var(--sp-5); }
-    .svc-card__point { font-family:var(--font-mono); font-size:0.65rem; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-light-muted); display:flex; align-items:center; gap:var(--sp-3); }
-    .svc-card__point::before { content:'—'; color:var(--black-pure); }
-    @media(max-width:768px){ .svc-grid{ grid-template-columns:1fr; } }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body class="theme-light">
 
@@ -28,11 +17,11 @@
     <div class="nav__inner container">
       <a class="nav__logo" href="index.html">SIP <em>&amp;</em> PLAY</a>
       <div class="nav__links">
-        <a class="nav__link" href="solutions.html">Solutions</a>
-        <a class="nav__link" href="equipment.html">Equipment (500+)</a>
-        <a class="nav__link" href="brands.html">Brands</a>
-        <a class="nav__link" href="services.html" aria-current="page">Services</a>
         <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="services.html" aria-current="page">Services</a>
+        <a class="nav__link" href="brands.html">Hambach Agency</a>
+        <a class="nav__link" href="solutions.html">Projects</a>
+        <a class="nav__link" href="equipment.html">Equipment</a>
         <a class="nav__link" href="contact.html">Contact</a>
       </div>
       <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a Quote <span class="arrow">→</span></a>
@@ -45,106 +34,173 @@
   <!-- MOBILE MENU -->
   <div class="mob-nav" id="mobNav">
     <nav class="mob-nav__links">
-      <a class="mob-nav__link" href="solutions.html">Solutions <span>→</span></a>
-      <a class="mob-nav__link" href="equipment.html">Equipment (500+) <span>→</span></a>
-      <a class="mob-nav__link" href="brands.html">Brands <span>→</span></a>
-      <a class="mob-nav__link" href="services.html">Services <span>→</span></a>
       <a class="mob-nav__link" href="about.html">About <span>→</span></a>
+      <a class="mob-nav__link" href="services.html">Services <span>→</span></a>
+      <a class="mob-nav__link" href="brands.html">Hambach Agency <span>→</span></a>
+      <a class="mob-nav__link" href="solutions.html">Projects <span>→</span></a>
+      <a class="mob-nav__link" href="equipment.html">Equipment <span>→</span></a>
       <a class="mob-nav__link" href="contact.html">Contact <span>→</span></a>
     </nav>
     <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a Quote →</a>
     <div class="mob-nav__bottom">
-      <span class="mob-nav__bottom-label">© 2026 Sip &amp; Play Sri Lanka</span>
-      <span class="mob-nav__bottom-label">Colombo • Galle • Kandy</span>
+      <span>© 2026 Sip &amp; Play</span>
+      <span>11A/1 Rathnawali Rd, Dehiwela</span>
     </div>
   </div>
 
   <main>
 
     <!-- PAGE HERO -->
-    <section class="page-hero theme-dark">
-      <div class="container page-hero__inner">
-        <div>
-          <span class="section-label">01 — Full Lifecycle Services • Sri Lanka</span>
-          <h1 class="page-hero__title">ENGINEERING<br>&amp; CONSULTATION.</h1>
-        </div>
-        <p class="page-hero__desc">From spatial equipment modeling and Sri Lanka 230V/400V 50Hz load schedules to certified installation in Colombo, Galle, Kandy, and lifecycle SLAs.</p>
+    <section class="section-pad theme-dark" style="padding-top:140px;">
+      <div class="container">
+        <span class="eyebrow">Official Capabilities</span>
+        <h1 style="font-family:var(--font-display); font-size:var(--t-hero); font-weight:500; line-height:0.95; text-transform:uppercase; color:var(--white-pure); margin-bottom:var(--sp-6);">
+          DESIGN. SUPPLY.<br>BUILD. SUPPORT.
+        </h1>
+        <p style="font-size:var(--t-xl); color:var(--text-dark-secondary); max-width:680px; line-height:1.7;">
+          Sip &amp; Play provides complete commercial kitchen services tailored to your operational needs — from initial layout planning to after-sales technical maintenance.
+        </p>
       </div>
-      <span class="page-hero__num" aria-hidden="true">04</span>
     </section>
 
-    <!-- 4 PILLARS -->
+    <!-- 4 PRIMARY SERVICES -->
     <section class="section-pad theme-light">
       <div class="container">
-        <div class="reveal" style="margin-bottom:clamp(3.5rem,6vw,6rem);">
-          <span class="section-label">02 — Service Pillars</span>
-          <h2 style="font-family:var(--font-display);font-size:var(--t-4xl);font-weight:500;line-height:.95;letter-spacing:0.01em;color:var(--black-pure);text-transform:uppercase;">FULL LIFECYCLE<br>SRI LANKA CAPABILITY.</h2>
+        <div style="margin-bottom:clamp(3.5rem, 6vw, 6rem);">
+          <span class="section-label">01 — Core Services</span>
+          <h2 style="font-family:var(--font-display); font-size:var(--t-4xl); font-weight:500; line-height:0.95; text-transform:uppercase; color:var(--black-pure);">
+            FOUR PILLARS OF<br>CULINARY ARCHITECTURE.
+          </h2>
         </div>
 
-        <div class="svc-grid">
-          <!-- 1 -->
-          <div class="svc-card reveal d1">
-            <span class="svc-card__num">PILLAR 01</span>
-            <h2 class="svc-card__title">MEP &amp; Architectural Consultation</h2>
-            <p class="svc-card__desc">Detailed operational analysis correlating menu engineering with Sri Lankan electrical loads, local water hardness filtration, gas manifold design, and tropical ventilation.</p>
-            <div class="svc-card__points">
-              <span class="svc-card__point">230V / 400V 50Hz Load &amp; Connection Schedules</span>
-              <span class="svc-card__point">Reverse-Osmosis Water Balancing for Sri Lanka</span>
-              <span class="svc-card__point">Architectural CAD Equipment Placement</span>
-            </div>
+        <div class="services-grid">
+          <!-- 01 Kitchen Design -->
+          <div class="service-card">
+            <span class="service-card__num">01 / SERVICE</span>
+            <h2 class="service-card__title">Kitchen Design</h2>
+            <p class="service-card__desc">
+              Transforming client culinary visions into practical, high-performance commercial kitchens. We handle the entire spatial and technical specification cycle.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__item">Kitchen Layout Planning</li>
+              <li class="service-card__item">2D Technical Drawings</li>
+              <li class="service-card__item">3D Spatial Visualizations</li>
+              <li class="service-card__item">Commercial Kitchen Sourcing</li>
+              <li class="service-card__item">Building Kitchens From Scratch</li>
+            </ul>
           </div>
 
-          <!-- 2 -->
-          <div class="svc-card reveal d2">
-            <span class="svc-card__num">PILLAR 02</span>
-            <h2 class="svc-card__title">Colombo Port Procurement &amp; Logistics</h2>
-            <p class="svc-card__desc">Consolidated shipping, customs clearance, and bonded warehouse delivery directly to hotel and resort job sites across Sri Lanka without middleman markups.</p>
-            <div class="svc-card__points">
-              <span class="svc-card__point">Direct Tier-1 Factory Supply Lines</span>
-              <span class="svc-card__point">Sri Lanka Customs &amp; SLS Compliance Clearance</span>
-              <span class="svc-card__point">Secure Site Delivery to Any District</span>
-            </div>
+          <!-- 02 Workflow Optimization -->
+          <div class="service-card">
+            <span class="service-card__num">02 / SERVICE</span>
+            <h2 class="service-card__title">Workflow Optimization</h2>
+            <p class="service-card__desc">
+              Designed around how your kitchen actually works. We structure systems and operational strategies to make food-service operations leaner and enhance daily output.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__item">Lean Operational Systems</li>
+              <li class="service-card__item">Station Ergonomics &amp; Safety</li>
+              <li class="service-card__item">Bottleneck Elimination</li>
+              <li class="service-card__item">High-Capacity Throughput Management</li>
+            </ul>
           </div>
 
-          <!-- 3 -->
-          <div class="svc-card reveal d3">
-            <span class="svc-card__num">PILLAR 03</span>
-            <h2 class="svc-card__title">Certified Island-Wide Installation</h2>
-            <p class="svc-card__desc">Certified technical engineers manage mechanical positioning, water balancing, gas safety testing, electrical isolation, and digital controller calibration.</p>
-            <div class="svc-card__points">
-              <span class="svc-card__point">Manufacturer-Certified Colombo Engineering Crew</span>
-              <span class="svc-card__point">Thermal Probe &amp; PID Calibration</span>
-              <span class="svc-card__point">Culinary Handover &amp; Local Staff Briefing</span>
-            </div>
+          <!-- 03 Restaurant Interiors -->
+          <div class="service-card">
+            <span class="service-card__num">03 / SERVICE</span>
+            <h2 class="service-card__title">Restaurant Interiors</h2>
+            <p class="service-card__desc">
+              Shaping both the physical and operational environments of hospitality spaces for seamless integration between kitchen passes and front-of-house guest areas.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__item">Restaurant Layout Planning</li>
+              <li class="service-card__item">Commercial Furniture Sourcing</li>
+              <li class="service-card__item">Front-of-House Spatial Flow</li>
+              <li class="service-card__item">Hospitality Environment Cohesion</li>
+            </ul>
           </div>
 
-          <!-- 4 -->
-          <div class="svc-card reveal d4">
-            <span class="svc-card__num">PILLAR 04</span>
-            <h2 class="svc-card__title">Preventative Maintenance &amp; SLAs</h2>
-            <p class="svc-card__desc">Protect your commercial investment with proactive descaling schedules, gasket renewal, compressor performance checks, and rapid OEM replacement parts deployment from Colombo.</p>
-            <div class="svc-card__points">
-              <span class="svc-card__point">Island-Wide Emergency Response SLAs</span>
-              <span class="svc-card__point">Colombo Bonded OEM Spare Parts Warehouse</span>
-              <span class="svc-card__point">Annual Safety &amp; Gas Compliance Audits</span>
-            </div>
+          <!-- 04 Espresso Machines -->
+          <div class="service-card">
+            <span class="service-card__num">04 / SERVICE</span>
+            <h2 class="service-card__title">Espresso Machines</h2>
+            <p class="service-card__desc">
+              Authorized agent for Hambach — a fast-growing espresso machine brand in China — supplying precision coffee machinery across Sri Lanka, Maldives, and Thailand.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__item">Hambach Commercial Espresso Systems</li>
+              <li class="service-card__item">Regional Distribution &amp; Supply</li>
+              <li class="service-card__item">Professional Installation &amp; Calibration</li>
+              <li class="service-card__item">Dedicated After-Sales Technical Support</li>
+            </ul>
           </div>
         </div>
+      </div>
+    </section>
 
+    <!-- FROM VISION TO KITCHEN (6-STEP JOURNEY) -->
+    <section class="section-pad theme-black">
+      <div class="container">
+        <div>
+          <span class="section-label">02 — Our Proven Process</span>
+          <h2 style="font-family:var(--font-display); font-size:var(--t-4xl); font-weight:500; line-height:0.95; text-transform:uppercase; color:var(--white-pure);">
+            FROM VISION<br>TO KITCHEN.
+          </h2>
+        </div>
+
+        <div class="journey-grid">
+          <div class="journey-step">
+            <span class="journey-step__num">01 / UNDERSTAND</span>
+            <h3 class="journey-step__title">Understand</h3>
+            <p class="journey-step__desc">Understand the client's business, menu requirements, and operational capacity goals.</p>
+          </div>
+
+          <div class="journey-step">
+            <span class="journey-step__num">02 / PLAN</span>
+            <h3 class="journey-step__title">Plan</h3>
+            <p class="journey-step__desc">Kitchen layout planning and workflow considerations tailored to spatial limitations.</p>
+          </div>
+
+          <div class="journey-step">
+            <span class="journey-step__num">03 / VISUALIZE</span>
+            <h3 class="journey-step__title">Visualize</h3>
+            <p class="journey-step__desc">Accurate 2D architectural drawings and 3D visualizations for spatial validation.</p>
+          </div>
+
+          <div class="journey-step">
+            <span class="journey-step__num">04 / SOURCE</span>
+            <h3 class="journey-step__title">Source</h3>
+            <p class="journey-step__desc">Direct commercial equipment procurement with stringent quality and pricing control.</p>
+          </div>
+
+          <div class="journey-step">
+            <span class="journey-step__num">05 / BUILD</span>
+            <h3 class="journey-step__title">Build</h3>
+            <p class="journey-step__desc">Build and execute the commercial kitchen according to agreed project specifications.</p>
+          </div>
+
+          <div class="journey-step">
+            <span class="journey-step__num">06 / SUPPORT</span>
+            <h3 class="journey-step__title">Support</h3>
+            <p class="journey-step__desc">Continuous equipment warranty maintenance and dedicated after-sales support.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- STATEMENT CTA -->
-    <section class="cta-statement section-pad theme-black">
+    <section class="cta-statement section-pad theme-dark">
       <div class="container">
         <div class="cta-statement__inner">
-          <div class="reveal-left">
-            <span class="section-label">Engage Colombo Engineers</span>
-            <h2 class="cta-statement__title">HAVE A SRI LANKA<br>PROJECT REQUIREMENT?</h2>
-            <p class="cta-statement__sub">Discuss your hotel, resort, or restaurant fit-out with our Colombo engineering consultants to ensure the right capacity, footprint, and utility planning from day one.</p>
+          <div>
+            <span class="section-label">Consultation</span>
+            <h2 class="cta-statement__title">PLAN YOUR<br>KITCHEN TODAY.</h2>
+            <p class="cta-statement__sub">
+              Reach out to our team to structure an efficient commercial kitchen layout and equipment schedule for your business.
+            </p>
           </div>
-          <div class="reveal-right cta-statement__actions">
-            <a class="btn btn--primary btn--lg" href="contact.html#quote">Book Engineering Consultation <span class="arrow">→</span></a>
+          <div class="cta-statement__actions">
+            <a class="btn btn--primary" href="contact.html#quote">Request a Quote <span class="arrow">→</span></a>
           </div>
         </div>
       </div>
@@ -152,47 +208,53 @@
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer theme-black">
+  <!-- OFFICIAL FOOTER -->
+  <footer class="footer">
     <div class="container">
       <div class="footer__top">
         <div>
           <div class="footer__logo">SIP <em>&amp;</em> PLAY</div>
-          <p class="footer__tagline">ENGINEERED FOR<br>PERFORMANCE.</p>
-          <p class="footer__desc">Commercial kitchen equipment and engineering solutions based in Colombo, Sri Lanka. Serving premier hotels, resorts, and food-service operations nationwide.</p>
+          <p class="footer__tagline">A DECADE OF KITCHEN EXCELLENCE</p>
+          <p class="footer__desc">
+            Designing, supplying, and supporting high-performance commercial kitchens across Sri Lanka, Maldives, and Thailand. Authorized Agent for Hambach.
+          </p>
         </div>
+
         <nav class="footer__nav" aria-label="Footer navigation">
           <div class="footer__col">
-            <span class="footer__col-title">Headquarters</span>
-            <span>Colombo 07, Sri Lanka</span>
-            <span>Coverage: Colombo • Galle • Kandy</span>
-            <a href="mailto:specifications@sipandplay.lk">specifications@sipandplay.lk</a>
-            <a href="tel:+94112345678">+94 (0) 11 234 5678</a>
+            <span class="footer__col-title">Official Office</span>
+            <span>11A/1 Rathnawali Road,</span>
+            <span>Dehiwela, Sri Lanka</span>
+            <a href="tel:+94702700500">+94 702 700 500</a>
+            <a href="tel:+94717700100">+94 717 700 100</a>
+            <a href="https://www.sipandplay.co" target="_blank">www.sipandplay.co</a>
           </div>
+
           <div class="footer__col">
             <span class="footer__col-title">Navigation</span>
-            <a href="equipment.html">500+ Equipment Catalogue</a>
-            <a href="solutions.html">Solutions</a>
-            <a href="brands.html">Brands</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact &amp; Hubs</a>
+            <a href="about.html">About Sip &amp; Play</a>
+            <a href="services.html">Services &amp; Process</a>
+            <a href="brands.html">Hambach Agency</a>
+            <a href="solutions.html">Current Projects</a>
+            <a href="equipment.html">Equipment Sourcing</a>
+            <a href="contact.html">Contact Us</a>
           </div>
+
           <div class="footer__col">
-            <span class="footer__col-title">Direct Engagement</span>
-            <a href="contact.html">Colombo • Galle • Kandy</a>
-            <a href="mailto:specifications@sipandplay.lk">specifications@sipandplay.lk</a>
-            <a href="contact.html#quote" style="margin-top:0.5rem; text-decoration:underline;">Request a Project Quote →</a>
+            <span class="footer__col-title">Client Engagements</span>
+            <a href="contact.html#quote">Request a Project Quote →</a>
+            <a href="contact.html">Arrange Site Visit</a>
+            <span style="font-size:0.75rem; color:var(--stone-light); margin-top:0.5rem;">Territories: Sri Lanka • Maldives • Thailand</span>
           </div>
         </nav>
       </div>
+
       <div class="footer__bottom">
-        <p class="footer__copy">© 2026 Sip &amp; Play Sri Lanka (Pvt) Ltd. All rights reserved.</p>
-        <div class="footer__legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms &amp; Conditions</a>
+        <p>© 2026 Sip &amp; Play. All rights reserved.</p>
+        <div>
+          <a href="https://www.sipandplay.co">www.sipandplay.co</a>
         </div>
-        <span class="footer__statement">COLOMBO • GALLE • KANDY</span>
+        <span>11A/1 RATHNAWALI ROAD, DEHIWELA</span>
       </div>
     </div>
   </footer>
