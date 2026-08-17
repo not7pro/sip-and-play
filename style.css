@@ -1273,6 +1273,94 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
 }
 
 /* ============================================================
+   ABOUT PAGE LUXURY SPATIAL REFINEMENTS
+   ============================================================ */
+.spacious-panel {
+  background: var(--card-bg-light);
+  border: 1px solid var(--border-light);
+  padding: clamp(2.5rem, 5vw, 4.5rem);
+  position: relative;
+  transition: border-color var(--fast) var(--ease-editorial);
+}
+
+.theme-dark .spacious-panel,
+.theme-charcoal .spacious-panel {
+  background: var(--ink-deep);
+  border-color: var(--border-dark);
+}
+
+.giant-stat-callout {
+  font-family: var(--font-editorial);
+  font-size: clamp(4rem, 9vw, 9rem);
+  line-height: 0.85;
+  font-weight: 300;
+  color: inherit;
+  letter-spacing: -0.03em;
+}
+
+.reach-panel {
+  background: var(--card-bg-light);
+  border: 1px solid var(--border-light);
+  padding: clamp(2rem, 3.5vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+  position: relative;
+  transition: all var(--med) var(--ease-editorial);
+}
+
+.reach-panel:hover {
+  background: var(--ink-pure);
+  color: var(--paper-ivory);
+  border-color: var(--ink-pure);
+  transform: translateY(-3px);
+}
+
+.reach-panel__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--sp-4);
+}
+
+.reach-panel__flag {
+  font-size: 1.5rem;
+}
+
+.reach-panel__title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--sp-2);
+}
+
+.reach-panel__label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--stone-mid);
+  transition: color var(--fast);
+}
+
+.reach-panel:hover .reach-panel__label {
+  color: var(--stone-light);
+}
+
+.reach-panel__desc {
+  font-size: 0.88rem;
+  color: var(--stone-dark);
+  line-height: 1.7;
+  transition: color var(--fast);
+}
+
+.reach-panel:hover .reach-panel__desc {
+  color: var(--stone-light);
+}
+
+/* ============================================================
    SCROLL REVEAL UTILITIES
    ============================================================ */
 .reveal-on-scroll {
