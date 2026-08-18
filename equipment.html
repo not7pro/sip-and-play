@@ -20,11 +20,13 @@
     <div class="nav__inner container">
       <a class="nav__logo" href="index.html">SIP <em>&amp;</em> PLAY</a>
       <div class="nav__links">
+        <a class="nav__link" href="index.html">Home</a>
         <a class="nav__link" href="about.html">About</a>
         <a class="nav__link" href="services.html">Services</a>
-        <a class="nav__link" href="brands.html">Hambach Agency</a>
         <a class="nav__link" href="solutions.html">Projects</a>
-        <a class="nav__link" href="equipment.html" aria-current="page">Equipment</a>
+        <a class="nav__link" href="equipment.html">Equipment</a>
+        <a class="nav__link" href="brands.html">Hambach</a>
+        <a class="nav__link" href="about.html#team">Our Team</a>
         <a class="nav__link" href="contact.html">Contact</a>
       </div>
       <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a Quote <span class="arrow">→</span></a>
@@ -37,11 +39,13 @@
   <!-- MOBILE MENU -->
   <div class="mob-nav" id="mobNav">
     <nav class="mob-nav__links">
+      <a class="mob-nav__link" href="index.html">Home <span>→</span></a>
       <a class="mob-nav__link" href="about.html">About <span>→</span></a>
       <a class="mob-nav__link" href="services.html">Services <span>→</span></a>
-      <a class="mob-nav__link" href="brands.html">Hambach Agency <span>→</span></a>
       <a class="mob-nav__link" href="solutions.html">Projects <span>→</span></a>
       <a class="mob-nav__link" href="equipment.html">Equipment <span>→</span></a>
+      <a class="mob-nav__link" href="brands.html">Hambach <span>→</span></a>
+      <a class="mob-nav__link" href="about.html#team">Our Team <span>→</span></a>
       <a class="mob-nav__link" href="contact.html">Contact <span>→</span></a>
     </nav>
     <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a Quote →</a>
@@ -63,6 +67,45 @@
         <p style="font-size:var(--t-xl); color:var(--stone-light); max-width:760px; line-height:1.7;">
           Explore 500+ industrial-grade commercial units supplied and supported across Sri Lanka, Maldives, and Thailand. Filter live by discipline, utility requirements (400V 3-Phase / 230V / Gas), and global manufacturers.
         </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         QUICK CATEGORIES
+         ============================================================ -->
+    <section class="section-pad theme-paper" style="padding-bottom:0;">
+      <div class="container">
+        <div class="grid-12" style="gap:2rem;">
+          
+          <div class="col-3 reveal-on-scroll arch-panel" style="padding:1rem; cursor:pointer;" onclick="document.getElementById('catSearch').value='Coffee'; document.getElementById('catSearch').dispatchEvent(new Event('input')); window.location.hash='catalogueView';">
+            <div class="img-frame img-frame--1-1" style="margin-bottom:1rem;">
+              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=85" alt="Coffee & Beverage Equipment" />
+            </div>
+            <h3 class="arch-card__title" style="font-size:1.2rem; text-align:center;">Coffee &amp; Beverage</h3>
+          </div>
+
+          <div class="col-3 reveal-on-scroll arch-panel" style="padding:1rem; cursor:pointer;" onclick="document.getElementById('catSearch').value='Thermal'; document.getElementById('catSearch').dispatchEvent(new Event('input')); window.location.hash='catalogueView';">
+            <div class="img-frame img-frame--1-1" style="margin-bottom:1rem;">
+              <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=600&q=85" alt="Thermal Processing" />
+            </div>
+            <h3 class="arch-card__title" style="font-size:1.2rem; text-align:center;">Thermal Processing</h3>
+          </div>
+
+          <div class="col-3 reveal-on-scroll arch-panel" style="padding:1rem; cursor:pointer;" onclick="document.getElementById('catSearch').value='Cold'; document.getElementById('catSearch').dispatchEvent(new Event('input')); window.location.hash='catalogueView';">
+            <div class="img-frame img-frame--1-1" style="margin-bottom:1rem;">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=85" alt="Cold Storage" />
+            </div>
+            <h3 class="arch-card__title" style="font-size:1.2rem; text-align:center;">Cold Storage</h3>
+          </div>
+
+          <div class="col-3 reveal-on-scroll arch-panel" style="padding:1rem; cursor:pointer;" onclick="document.getElementById('catSearch').value='Bakery'; document.getElementById('catSearch').dispatchEvent(new Event('input')); window.location.hash='catalogueView';">
+            <div class="img-frame img-frame--1-1" style="margin-bottom:1rem;">
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=85" alt="Bakery Equipment" />
+            </div>
+            <h3 class="arch-card__title" style="font-size:1.2rem; text-align:center;">Bakery Systems</h3>
+          </div>
+
+        </div>
       </div>
     </section>
 
