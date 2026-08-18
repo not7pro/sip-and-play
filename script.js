@@ -79,13 +79,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 5. Animated Number Counter for Verified Statistics
-  const countElements = document.querySelectorAll('.count-up');
+  const countElements = document.querySelectorAll('.count-up, .stat-card__num, .stat-matrix__num span');
   if ('IntersectionObserver' in window && countElements.length > 0) {
     const countObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const el = entry.target;
-          const target = parseInt(el.getAttribute('data-target'), 10);
+          let targetAttr = el.getAttribute('data-target');
+          let target = 0;
+          
+          if (targetAttr) {
+            target = parseInt(targetAttr, 10);
+          } else {
+            // Extract from text content (e.g. "33,000" or "10+")
+            let text = el.textContent.replace(/,/g, '').replace(/\+/g, '').trim();
+            target = parseInt(text, 10);
+            
+            // Store original format if it has a plus sign
+            if (el.textContent.includes('+')) {
+              el.setAttribute('data-suffix', '+');
+            }
+          }
+          
           if (!isNaN(target)) {
             animateNumber(el, target, 1600);
           }
@@ -100,6 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function animateNumber(element, target, duration) {
     let startTimestamp = null;
     const isLarge = target >= 1000;
+    const suffix = element.getAttribute('data-suffix') || '';
     
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
@@ -108,12 +124,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const easeProgress = 1 - Math.pow(1 - progress, 3);
       const current = Math.floor(easeProgress * target);
       
-      element.textContent = isLarge ? current.toLocaleString() : current;
+      element.textContent = (isLarge ? current.toLocaleString() : current) + suffix;
       
       if (progress < 1) {
         window.requestAnimationFrame(step);
       } else {
-        element.textContent = isLarge ? target.toLocaleString() : target;
+        element.textContent = (isLarge ? target.toLocaleString() : target) + suffix;
       }
     };
     window.requestAnimationFrame(step);
