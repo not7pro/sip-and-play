@@ -1641,6 +1641,30 @@ p em, .accent-italic {
   width: 100%;
 }
 
+.footer-editorial__label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-brand);
+  margin-bottom: var(--sp-4);
+  font-weight: 600;
+  display: block;
+}
+
+.footer-editorial__link {
+  font-family: var(--font-display);
+  font-weight: 300;
+  color: var(--stone-light);
+  display: block;
+  margin-bottom: 0.3rem;
+  transition: color var(--fast) var(--ease-editorial);
+}
+
+.footer-editorial__link:hover {
+  color: var(--paper-ivory);
+}
+
 .footer-editorial__bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: var(--sp-8);
