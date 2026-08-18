@@ -114,13 +114,13 @@
         <!-- Top Search & Filter Bar -->
         <div class="cat-header-bar" style="display:flex; flex-direction:column; gap:2rem; margin-bottom:3rem;">
           
-          <div style="display:grid; grid-template-columns:1fr 2fr; gap:2rem; align-items:center;">
-            <div class="cat-search-box" style="position:relative; width:100%;">
+          <div class="grid-12" style="align-items:center;">
+            <div class="col-4 cat-search-box" style="position:relative; width:100%;">
               <span class="cat-search-icon" style="position:absolute; left:1rem; top:50%; transform:translateY(-50%); font-size:1.2rem; color:var(--stone-mid);">🔍</span>
               <input type="search" class="cat-search-input" id="catSearch" placeholder="Search 500+ products..." aria-label="Search commercial equipment" style="width:100%; padding:1.2rem 1rem 1.2rem 3.5rem; background:var(--card-bg-light); border:1px solid var(--border-light); font-family:var(--font-sans); font-size:1rem; outline:none; transition:border var(--fast);" />
             </div>
 
-            <div class="cat-selects" style="display:flex; gap:1rem; width:100%;">
+            <div class="col-8 cat-selects" style="display:flex; flex-wrap:wrap; gap:1rem; width:100%;">
               <select class="cat-select" id="brandSelect" aria-label="Filter by Manufacturer" style="flex:1; padding:1.2rem 1rem; background:var(--card-bg-light); border:1px solid var(--border-light); font-family:var(--font-sans); font-size:0.9rem; outline:none;">
                 <option value="all">All Manufacturers</option>
               </select>
@@ -169,13 +169,13 @@
     <!-- STATEMENT CTA -->
     <section class="cta-statement section-pad theme-charcoal">
       <div class="container">
-        <div class="cta-statement__inner" style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
-          <div class="reveal-on-scroll">
+        <div class="cta-statement__inner grid-12" style="align-items:center;">
+          <div class="col-6 reveal-on-scroll">
             <span class="eyebrow" style="color:var(--stone-light);">Sri Lanka Procurement</span>
             <h2 class="editorial" style="font-size:clamp(2.5rem, 4vw, 4rem); color:var(--paper-ivory); line-height:1.1; margin-bottom:1.5rem;">NEED A CUSTOM<br><em>EQUIPMENT SPEC?</em></h2>
             <p style="font-size:1.1rem; color:var(--stone-mid); line-height:1.7;">If you have specific equipment schedules on architectural drawings for your hotel or restaurant, our Colombo procurement team handles direct factory supply, bypassing standard markups.</p>
           </div>
-          <div class="reveal-on-scroll" style="display:flex; justify-content:flex-end;">
+          <div class="col-6 reveal-on-scroll" style="text-align:right;">
             <a class="btn btn--primary btn--lg" style="padding:1.5rem 3rem; font-size:1.1rem;" href="contact.html#quote">Submit Equipment Schedule <span class="arrow">→</span></a>
           </div>
         </div>
