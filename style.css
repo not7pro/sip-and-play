@@ -258,9 +258,9 @@ p em, .accent-italic {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
+  font-family: var(--font-editorial);
+  font-size: 1rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   font-variant: small-caps;
   color: var(--accent-brand);
@@ -383,9 +383,9 @@ p em, .accent-italic {
 }
 
 .arch-card__num {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
+  font-family: var(--font-editorial);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
   color: var(--stone-mid);
   font-weight: 600;
 }
@@ -1481,8 +1481,8 @@ p em, .accent-italic {
 
 .luxe-list li .bullet {
   color: var(--accent-brand);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-family: var(--font-editorial);
+  font-size: 1.1rem;
   margin-top: 0.2rem;
 }
 
