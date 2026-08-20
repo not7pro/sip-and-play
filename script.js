@@ -4,7 +4,7 @@
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
-  
+
   // 1. Hero Entrance Animation Sequence
   const heroSection = document.getElementById('heroSection');
   if (heroSection) {
@@ -16,13 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 2. Scroll Progress Bar & Sticky Header
   const progressBar = document.getElementById('scrollProgress');
-  const nav = document.getElementById('siteHeader');
+  const nav = document.getElementById('nav');
 
   window.addEventListener('scroll', () => {
     const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrolled = (winScroll / height) * 100;
-    
+
     if (progressBar) {
       progressBar.style.width = scrolled + '%';
     }
@@ -37,22 +37,20 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { passive: true });
 
   // 3. Fullscreen Luxury Mobile Navigation
-  const burger = document.getElementById('menuToggle');
-  const mobNav = document.getElementById('mobMenu');
+  const burger = document.getElementById('burger');
+  const mobNav = document.getElementById('mobNav');
 
   if (burger && mobNav) {
     burger.addEventListener('click', () => {
-      const isOpen = burger.classList.toggle('is-active');
-      mobNav.classList.toggle('is-active');
+      const isOpen = mobNav.classList.toggle('open');
       burger.setAttribute('aria-expanded', isOpen);
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
-    const mobLinks = mobNav.querySelectorAll('a');
+    const mobLinks = mobNav.querySelectorAll('.mob-nav__link');
     mobLinks.forEach(link => {
       link.addEventListener('click', () => {
-        mobNav.classList.remove('is-active');
-        burger.classList.remove('is-active');
+        mobNav.classList.remove('open');
         burger.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = '';
       });
@@ -60,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 4. IntersectionObserver for Scroll Reveals
-  const revealElements = document.querySelectorAll('.reveal-on-scroll, .reveal-fade-up');
+  const revealElements = document.querySelectorAll('.reveal-on-scroll');
   if ('IntersectionObserver' in window && revealElements.length > 0) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
@@ -89,20 +87,20 @@ document.addEventListener('DOMContentLoaded', () => {
           const el = entry.target;
           let targetAttr = el.getAttribute('data-target');
           let target = 0;
-          
+
           if (targetAttr) {
             target = parseInt(targetAttr, 10);
           } else {
             // Extract from text content (e.g. "33,000" or "10+")
             let text = el.textContent.replace(/,/g, '').replace(/\+/g, '').trim();
             target = parseInt(text, 10);
-            
+
             // Store original format if it has a plus sign
             if (el.textContent.includes('+')) {
               el.setAttribute('data-suffix', '+');
             }
           }
-          
+
           if (!isNaN(target)) {
             animateNumber(el, target, 1600);
           }
@@ -118,16 +116,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let startTimestamp = null;
     const isLarge = target >= 1000;
     const suffix = element.getAttribute('data-suffix') || '';
-    
+
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
       // Ease out cubic
       const easeProgress = 1 - Math.pow(1 - progress, 3);
       const current = Math.floor(easeProgress * target);
-      
+
       element.textContent = (isLarge ? current.toLocaleString() : current) + suffix;
-      
+
       if (progress < 1) {
         window.requestAnimationFrame(step);
       } else {
@@ -137,56 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.requestAnimationFrame(step);
   }
 
-});
-
-
-// Page Transitions
-window.addEventListener('pageshow', (e) => {
-  document.body.classList.remove('page-transitioning');
-});
-
-document.addEventListener('click', (e) => {
-  const link = e.target.closest('a');
-  if (!link) return;
-  
-  const href = link.getAttribute('href');
-  if (
-    href && 
-    !href.startsWith('http') && 
-    !href.startsWith('mailto:') && 
-    !href.startsWith('tel:') && 
-    !href.startsWith('#') &&
-    link.target !== '_blank'
-  ) {
-    e.preventDefault();
-    document.body.classList.add('page-transitioning');
-    setTimeout(() => {
-      window.location.href = link.href;
-    }, 400);
-  }
-});
-
-// Global Enquiry Drawer Hook
-document.addEventListener('DOMContentLoaded', () => {
-  const openEnquiryBtn = document.getElementById('openEnquiryBtn');
-  const enquiryDrawer = document.getElementById('enquiryDrawer');
-  
-  if (openEnquiryBtn && enquiryDrawer) {
-    openEnquiryBtn.addEventListener('click', () => {
-      enquiryDrawer.classList.add('open');
-      if (window.renderEnquiryDrawer) window.renderEnquiryDrawer();
-    });
-  }
-  
-  // Sync count on load
-  const syncCount = () => {
-    const list = JSON.parse(localStorage.getItem('sip_project_schedule') || '[]');
-    const countTop = document.getElementById('enquiryCountTop');
-    if (countTop) countTop.textContent = list.length;
-  };
-  
-  syncCount();
-  window.addEventListener('enquiryUpdated', syncCount);
 });
 
 // 6. Advanced Hero Word Reveal
@@ -211,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       heroTitle.innerHTML = newHtml;
       heroTitle.classList.add('word-reveal');
-      
+
       // Trigger reveal after a short delay
       setTimeout(() => {
         heroTitle.classList.add('is-visible');
@@ -225,32 +173,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const roadmapGrid = document.getElementById('roadmapGrid');
   const roadmapProgress = document.getElementById('roadmapProgress');
   const steps = document.querySelectorAll('.roadmap-step');
-  
+
   if (roadmapGrid && roadmapProgress && steps.length > 0) {
-    
+
     // Set up observer for each step
     const stepObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active-step');
-          
+
           // Calculate progress height based on the lowest active step
           let activeIndex = -1;
           steps.forEach((step, idx) => {
             if (step.classList.contains('active-step')) activeIndex = idx;
           });
-          
+
           if (activeIndex >= 0) {
             // Calculate percentage or absolute height
             const stepElement = steps[activeIndex];
             // offsetTop of the step + some padding to reach the circle
-            const progressHeight = stepElement.offsetTop + 20; 
+            const progressHeight = stepElement.offsetTop + 20;
             roadmapProgress.style.height = progressHeight + 'px';
           }
         }
       });
     }, { rootMargin: '0px 0px -25% 0px', threshold: 0 });
-    
+
     steps.forEach(step => stepObserver.observe(step));
   }
 });
