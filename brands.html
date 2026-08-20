@@ -15,51 +15,51 @@
   <!-- Scroll Progress Indicator Line -->
   <div id="scrollProgress"></div>
 
-  <!-- STICKY NAVIGATION -->
-  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__inner container">
-      <a class="nav__logo" href="index.html">Sip <em>&amp;</em> Play</a>
-      <div class="nav__links">
-        <a class="nav__link" href="index.html">Home</a>
-        <a class="nav__link" href="about.html">About</a>
-        <a class="nav__link" href="services.html">Services</a>
-        <a class="nav__link" href="solutions.html">Projects</a>
-        <a class="nav__link" href="equipment.html">Equipment</a>
-        <a class="nav__link" href="brands.html">Hambach</a>
-        <a class="nav__link" href="contact.html">Contact</a>
+    <!-- STICKY NAVIGATION -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Sip <em>&amp;</em> Play</a>
+      
+      <nav class="nav-desktop">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="solutions.html">Projects</a>
+        <a class="nav-link" href="equipment.html">Equipment</a>
+        <a class="nav-link" href="brands.html">Hambach</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      
+      <div class="header-actions">
+        <a class="btn-premium btn-premium--primary" href="contact.html#quote">Request a Quote <span class="arrow-icon">→</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
       </div>
-      <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a quote <span class="arrow">→</span></a>
-      <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
-  </nav>
+  </header>
 
-  <!-- FULLSCREEN LUXURY MOBILE NAV -->
-  <div class="mob-nav" id="mobNav">
-    <nav class="mob-nav__links">
-      <a class="mob-nav__link" href="index.html">Home <span>→</span></a>
-      <a class="mob-nav__link" href="about.html">About <span>→</span></a>
-      <a class="mob-nav__link" href="services.html">Services <span>→</span></a>
-      <a class="mob-nav__link" href="solutions.html">Projects <span>→</span></a>
-      <a class="mob-nav__link" href="equipment.html">Equipment <span>→</span></a>
-      <a class="mob-nav__link" href="brands.html">Hambach <span>→</span></a>
-      <a class="mob-nav__link" href="contact.html">Contact <span>→</span></a>
-    </nav>
-    <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a quote →</a>
-    <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:0.7rem;  border-top:1px solid var(--border-dark); padding-top:1.5rem;">
-      <span>© 2026 Sip &amp; Play</span>
-      <span>11A/1 Rathnawali Rd, Dehiwela</span>
+  <!-- MOBILE NAVIGATION OVERLAY -->
+  <div class="mob-menu" id="mobMenu">
+    <div class="mob-menu-inner container">
+      <nav class="mob-nav-links">
+        <a class="reveal-fade-up stagger-1" href="index.html">Home</a>
+        <a class="reveal-fade-up stagger-2" href="about.html">About</a>
+        <a class="reveal-fade-up stagger-3" href="services.html">Services</a>
+        <a class="reveal-fade-up stagger-4" href="solutions.html">Projects</a>
+        <a class="reveal-fade-up stagger-5" href="equipment.html">Equipment</a>
+        <a class="reveal-fade-up stagger-6" href="brands.html">Hambach</a>
+        <a class="reveal-fade-up stagger-6" href="contact.html">Contact</a>
+      </nav>
+      <div class="mob-menu-footer reveal-fade-up stagger-6">
+        <a class="btn-premium btn-premium--primary" style="width: 100%; margin-bottom: 1rem;" href="contact.html#quote">Request a Quote <span class="arrow-icon">→</span></a>
+        <a class="btn-premium btn-premium--secondary" style="width: 100%; border-color: #25D366; color: #25D366;" href="https://wa.me/94770000000" target="_blank">Chat on WhatsApp</a>
+      </div>
     </div>
   </div>
-
-  <!-- FLOATING QUOTE BUTTON -->
-  <a href="contact.html#quote" class="floating-quote-btn" aria-label="Request a quote">
-    <span>Request a quote</span>
-    <span class="arrow">→</span>
-  </a>
-
-  <main>
+<main>
 
     <!-- ============================================================
          01 — REGIONAL DISTRIBUTION
@@ -346,67 +346,60 @@
   <!-- ============================================================
        FOOTER
        ============================================================ -->
-  <footer class="footer-editorial">
+    <!-- FOOTER -->
+  <footer class="site-footer theme-charcoal">
     <div class="container">
-      <div class="footer-editorial__statement">
-        Precision. Performance. <em>Partnership.</em>
-      </div>
-
-      <div class="footer-editorial__grid">
-        <div>
-          <div class="footer-editorial__brand-name">Sip &amp; Play</div>
-          <p class="footer-editorial__brand-tag">A Decade of Kitchen Excellence</p>
-          <p style="font-size:0.9rem;  line-height:1.75; max-width:380px;">
-            Designing, supplying, and supporting high-performance commercial kitchens across Sri Lanka, Maldives, and Thailand. Authorized Agent for Hambach.
-          </p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 class="footer-brand">Sip <em>&amp;</em> Play</h4>
+          <p class="footer-desc">Designing, supplying, and building high-performance commercial kitchens for hotels, resorts, and industrial operations across Sri Lanka, Maldives, and Thailand.</p>
         </div>
-
-        <div class="footer-editorial__cols">
-          <div>
-            <span class="footer-editorial__col-title">Official Office</span>
-            <div class="footer-editorial__col-links">
-              <span>11A/1 Rathnawali Road,</span>
-              <span>Dehiwela, Sri Lanka</span>
-              <a href="tel:+94702700500">+94 702 700 500</a>
-              <a href="tel:+94717700100">+94 717 700 100</a>
-              <a href="https://wa.me/94760595115" target="_blank">WhatsApp: +94 76 059 5115</a>
-              <a href="https://www.sipandplay.co" target="_blank">www.sipandplay.co</a>
-            </div>
-          </div>
-
-          <div>
-            <span class="footer-editorial__col-title">Navigation</span>
-            <div class="footer-editorial__col-links">
-              <a href="about.html">About Sip &amp; Play</a>
-              <a href="services.html">Services &amp; Process</a>
-              <a href="brands.html">Hambach Agency</a>
-              <a href="solutions.html">Current Projects</a>
-              <a href="equipment.html">Equipment Sourcing</a>
-              <a href="contact.html">Contact Us</a>
-            </div>
-          </div>
-
-          <div>
-            <span class="footer-editorial__col-title">Direct Inquiries</span>
-            <div class="footer-editorial__col-links">
-              <a href="contact.html#quote" style="text-decoration:underline;">Request a project quote &rarr;</a>
-              <a href="contact.html">Arrange site visit</a>
-              <span style="font-size:0.75rem;  margin-top:0.5rem;">Territories: Sri Lanka &bull; Maldives &bull; Thailand</span>
-            </div>
+        <div class="footer-col">
+          <h5 class="footer-title">Company</h5>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="solutions.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5 class="footer-title">Equipment</h5>
+          <a href="equipment.html?category=coffee">Coffee &amp; Espresso</a>
+          <a href="equipment.html?category=cooking">Cooking</a>
+          <a href="equipment.html?category=refrigeration">Refrigeration</a>
+          <a href="equipment.html?category=bakery">Bakery</a>
+          <a href="equipment.html?category=preparation">Preparation</a>
+          <a href="equipment.html">Catalogue</a>
+        </div>
+        <div class="footer-col">
+          <h5 class="footer-title">Services</h5>
+          <a href="services.html#design">Kitchen Design</a>
+          <a href="services.html#workflow">Workflow Optimization</a>
+          <a href="services.html#interiors">Restaurant Interiors</a>
+          <a href="services.html#espresso">Espresso Machines</a>
+        </div>
+        <div class="footer-col">
+          <h5 class="footer-title">Contact</h5>
+          <a href="tel:+94112000000">Phone: +94 11 200 0000</a>
+          <a href="https://wa.me/94770000000">WhatsApp: +94 77 000 0000</a>
+          <a href="mailto:info@sipandplay.lk">Email: info@sipandplay.lk</a>
+          <p>11A/1 Rathnawali Rd, Dehiwela</p>
+          <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
           </div>
         </div>
       </div>
-
-      <div class="footer-editorial__bottom">
+      <div class="footer-bottom">
         <p>&copy; 2026 Sip &amp; Play. All rights reserved.</p>
-        <div>
-          <a href="https://www.sipandplay.co">www.sipandplay.co</a>
-        </div>
-        <span>11A/1 RATHNAWALI ROAD, DEHIWELA</span>
       </div>
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/94770000000" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
 </body>
 </html>

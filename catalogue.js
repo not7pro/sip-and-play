@@ -84,12 +84,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Project Schedule (Quote Basket)
   let projectSchedule = JSON.parse(localStorage.getItem('sip_project_schedule') || '[]');
-  const scheduleBar = document.getElementById('scheduleBar');
-  const scheduleCount = document.getElementById('scheduleCount');
-  const scheduleDrawer = document.getElementById('scheduleDrawer');
-  const scheduleItemsList = document.getElementById('scheduleItemsList');
-  const scheduleDrawerClose = document.getElementById('scheduleDrawerClose');
-  const scheduleForm = document.getElementById('scheduleForm');
+  const enquiryBar = document.getElementById('enquiryBar');
+  const enquiryCountTop = document.getElementById('enquiryCountTop');
+  const enquiryDrawer = document.getElementById('enquiryDrawer');
+  const enquiryItemsList = document.getElementById('enquiryItemsList');
+  const enquiryDrawerClose = document.getElementById('enquiryDrawerClose');
+  const enquiryForm = document.getElementById('enquiryForm');
 
   // Populate Brand Select options
   if (brandSelect) {
@@ -470,26 +470,26 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function updateScheduleUI() {
-    if (!scheduleBar || !scheduleCount) return;
+    if (!enquiryBar || !enquiryCountTop) return;
     const count = projectSchedule.length;
-    scheduleCount.textContent = count;
+    enquiryCountTop.textContent = count;
 
     if (count > 0) {
-      scheduleBar.classList.add('visible');
+      enquiryBar.classList.add('visible');
     } else {
-      scheduleBar.classList.remove('visible');
-      if (scheduleDrawer) scheduleDrawer.classList.remove('open');
+      enquiryBar.classList.remove('visible');
+      if (enquiryDrawer) enquiryDrawer.classList.remove('open');
     }
 
     renderScheduleDrawerItems();
   }
 
   function renderScheduleDrawerItems() {
-    if (!scheduleItemsList) return;
-    scheduleItemsList.innerHTML = '';
+    if (!enquiryItemsList) return;
+    enquiryItemsList.innerHTML = '';
 
     if (projectSchedule.length === 0) {
-      scheduleItemsList.innerHTML = '<p class="schedule-empty">No equipment items in project schedule.</p>';
+      enquiryItemsList.innerHTML = '<p class="schedule-empty">No equipment items in project schedule.</p>';
       return;
     }
 
@@ -510,26 +510,26 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderGrid();
       });
 
-      scheduleItemsList.appendChild(li);
+      enquiryItemsList.appendChild(li);
     });
   }
 
-  if (scheduleBar) {
-    scheduleBar.addEventListener('click', () => {
-      if (scheduleDrawer) scheduleDrawer.classList.toggle('open');
+  if (enquiryBar) {
+    enquiryBar.addEventListener('click', () => {
+      if (enquiryDrawer) enquiryDrawer.classList.toggle('open');
     });
   }
 
-  if (scheduleDrawerClose) {
-    scheduleDrawerClose.addEventListener('click', () => {
-      if (scheduleDrawer) scheduleDrawer.classList.remove('open');
+  if (enquiryDrawerClose) {
+    enquiryDrawerClose.addEventListener('click', () => {
+      if (enquiryDrawer) enquiryDrawer.classList.remove('open');
     });
   }
 
-  if (scheduleForm) {
-    scheduleForm.addEventListener('submit', (e) => {
+  if (enquiryForm) {
+    enquiryForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const submitBtn = scheduleForm.querySelector('[type="submit"]');
+      const submitBtn = enquiryForm.querySelector('[type="submit"]');
       if (!submitBtn) return;
 
       submitBtn.innerHTML = 'PROCESSING RFQ <span class="arrow">→</span>';
@@ -546,7 +546,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderGrid();
 
         setTimeout(() => {
-          if (scheduleDrawer) scheduleDrawer.classList.remove('open');
+          if (enquiryDrawer) enquiryDrawer.classList.remove('open');
           submitBtn.innerHTML = 'Submit Multi-Item RFQ <span class="arrow">→</span>';
           submitBtn.style.background = '';
           submitBtn.style.color = '';

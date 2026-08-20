@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 2. Scroll Progress Bar & Sticky Header
   const progressBar = document.getElementById('scrollProgress');
-  const nav = document.getElementById('nav');
+  const nav = document.getElementById('siteHeader');
 
   window.addEventListener('scroll', () => {
     const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -37,20 +37,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { passive: true });
 
   // 3. Fullscreen Luxury Mobile Navigation
-  const burger = document.getElementById('burger');
-  const mobNav = document.getElementById('mobNav');
+  const burger = document.getElementById('menuToggle');
+  const mobNav = document.getElementById('mobMenu');
 
   if (burger && mobNav) {
     burger.addEventListener('click', () => {
-      const isOpen = mobNav.classList.toggle('open');
+      const isOpen = burger.classList.toggle('is-active');
+      mobNav.classList.toggle('is-active');
       burger.setAttribute('aria-expanded', isOpen);
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
-    const mobLinks = mobNav.querySelectorAll('.mob-nav__link');
+    const mobLinks = mobNav.querySelectorAll('a');
     mobLinks.forEach(link => {
       link.addEventListener('click', () => {
-        mobNav.classList.remove('open');
+        mobNav.classList.remove('is-active');
+        burger.classList.remove('is-active');
         burger.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = '';
       });
@@ -58,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 4. IntersectionObserver for Scroll Reveals
-  const revealElements = document.querySelectorAll('.reveal-on-scroll');
+  const revealElements = document.querySelectorAll('.reveal-on-scroll, .reveal-fade-up');
   if ('IntersectionObserver' in window && revealElements.length > 0) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
@@ -135,4 +137,54 @@ document.addEventListener('DOMContentLoaded', () => {
     window.requestAnimationFrame(step);
   }
 
+});
+
+
+// Page Transitions
+window.addEventListener('pageshow', (e) => {
+  document.body.classList.remove('page-transitioning');
+});
+
+document.addEventListener('click', (e) => {
+  const link = e.target.closest('a');
+  if (!link) return;
+  
+  const href = link.getAttribute('href');
+  if (
+    href && 
+    !href.startsWith('http') && 
+    !href.startsWith('mailto:') && 
+    !href.startsWith('tel:') && 
+    !href.startsWith('#') &&
+    link.target !== '_blank'
+  ) {
+    e.preventDefault();
+    document.body.classList.add('page-transitioning');
+    setTimeout(() => {
+      window.location.href = link.href;
+    }, 400);
+  }
+});
+
+// Global Enquiry Drawer Hook
+document.addEventListener('DOMContentLoaded', () => {
+  const openEnquiryBtn = document.getElementById('openEnquiryBtn');
+  const enquiryDrawer = document.getElementById('enquiryDrawer');
+  
+  if (openEnquiryBtn && enquiryDrawer) {
+    openEnquiryBtn.addEventListener('click', () => {
+      enquiryDrawer.classList.add('open');
+      if (window.renderEnquiryDrawer) window.renderEnquiryDrawer();
+    });
+  }
+  
+  // Sync count on load
+  const syncCount = () => {
+    const list = JSON.parse(localStorage.getItem('sip_project_schedule') || '[]');
+    const countTop = document.getElementById('enquiryCountTop');
+    if (countTop) countTop.textContent = list.length;
+  };
+  
+  syncCount();
+  window.addEventListener('enquiryUpdated', syncCount);
 });

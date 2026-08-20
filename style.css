@@ -3,7 +3,7 @@
    Contemporary Commercial Kitchen Architecture & Engineering
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap');
 
 :root {
   /* Tonal Palette: Ink, Fine Paper & Charcoal */
@@ -40,21 +40,24 @@
   --border-dark-hover: rgba(255, 255, 255, 0.25);
 
   /* Typography Pairing */
-  --font-editorial: 'Playfair Display', Georgia, serif;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-editorial: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'SF Mono', ui-monospace, monospace;
 
   /* Type Scale */
-  --t-mega: clamp(3.5rem, 8vw, 7.5rem);
-  --t-hero: clamp(3rem, 6.5vw, 6rem);
-  --t-4xl: clamp(2.4rem, 4.5vw, 4.2rem);
+  --t-mega: clamp(3.5rem, 6vw, 6.5rem);
+  --t-hero: clamp(2.5rem, 4vw, 4.5rem);
+  --t-4xl: clamp(1.4rem, 2vw, 2rem);
   --t-3xl: clamp(1.8rem, 3vw, 2.8rem);
   --t-2xl: clamp(1.4rem, 2.2vw, 2rem);
   --t-xl: clamp(1.15rem, 1.6vw, 1.45rem);
-  --t-base: clamp(1rem, 1.1vw, 1.1rem);
-  --t-sm: 0.9rem;
+  --t-base: clamp(1rem, 1.1vw, 1.125rem);
+  --t-sm: clamp(0.8125rem, 1vw, 0.875rem);
+  --t-nav: clamp(0.875rem, 1vw, 0.9375rem);
+  --t-button: clamp(0.875rem, 1.1vw, 1rem);
+  --t-hero-support: clamp(1rem, 1.3vw, 1.25rem);
   --t-label: 0.75rem;
 
   /* Layout Spacing */
@@ -2261,4 +2264,388 @@ p em, .accent-italic {
 }
 .schedule-item__remove:hover {
   color: var(--ink-pure);
+}
+
+
+/* ============================================================
+   PREMIUM ANIMATIONS & MICRO-INTERACTIONS
+   ============================================================ */
+
+/* Base Fade Up */
+.reveal-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 800ms cubic-bezier(0.16, 1, 0.3, 1), transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered Delay Utilities */
+.stagger-1 { transition-delay: 100ms; }
+.stagger-2 { transition-delay: 200ms; }
+.stagger-3 { transition-delay: 300ms; }
+.stagger-4 { transition-delay: 400ms; }
+.stagger-5 { transition-delay: 500ms; }
+.stagger-6 { transition-delay: 600ms; }
+
+/* Subtle Hover Lift for Cards */
+.hover-lift {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+}
+
+/* Image Scale Hover */
+.img-scale-wrapper {
+  overflow: hidden;
+}
+
+.img-scale-wrapper img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-lift:hover .img-scale-wrapper img,
+.card:hover .img-scale-wrapper img,
+.cat-card:hover .img-frame img {
+  transform: scale(1.03);
+}
+
+/* Button Arrow Hover */
+.btn-premium {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 52px;
+  padding: 0 2rem;
+  border-radius: 8px; /* 8px-12px as requested */
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--t-button);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-premium:hover {
+  transform: translateY(-2px);
+}
+
+.btn-premium .arrow-icon {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-premium:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+.btn-premium--primary {
+  background: var(--ink-pure);
+  color: var(--white-pure);
+}
+.btn-premium--primary:hover {
+  background: var(--ink-surface);
+}
+
+.btn-premium--secondary {
+  background: transparent;
+  border: 1px solid var(--ink-pure);
+  color: var(--ink-pure);
+}
+.btn-premium--secondary:hover {
+  background: var(--ink-pure);
+  color: var(--white-pure);
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  z-index: 9999;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-float svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 50px;
+    height: 50px;
+  }
+  .whatsapp-float svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* Page Transitions */
+body {
+  opacity: 1;
+  transition: opacity 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+body.page-transitioning {
+  opacity: 0;
+}
+
+
+/* ============================================================
+   NEW HEADER & NAVIGATION
+   ============================================================ */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; width: 100%;
+  z-index: 1000;
+  transition: background-color 0.4s ease, border-bottom 0.4s ease, backdrop-filter 0.4s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.site-header.scrolled {
+  background-color: rgba(253, 251, 247, 0.85); /* paper-ivory with opacity */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.theme-charcoal .site-header.scrolled {
+  background-color: rgba(10, 10, 12, 0.85);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  transition: height 0.4s ease;
+}
+
+.site-header.scrolled .header-inner {
+  height: 64px;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+.logo em {
+  font-family: var(--font-editorial);
+  color: var(--accent-brand);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.nav-desktop {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .nav-desktop { display: flex; }
+  .menu-toggle { display: none !important; }
+}
+
+.nav-link {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--t-nav);
+  color: inherit;
+  opacity: 0.8;
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  opacity: 1;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent-brand);
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+  width: 100%;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 1023px) {
+  .header-actions .btn-premium { display: none; }
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-toggle .bar {
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: left center;
+}
+
+.menu-toggle.is-active .bar:nth-child(1) { transform: rotate(45deg); width: 24px; }
+.menu-toggle.is-active .bar:nth-child(2) { opacity: 0; }
+.menu-toggle.is-active .bar:nth-child(3) { transform: rotate(-45deg); width: 24px; }
+
+/* MOBILE MENU */
+.mob-menu {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100vh;
+  background-color: var(--ink-pure);
+  color: var(--white-pure);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mob-menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mob-menu-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 4rem;
+}
+
+.mob-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mob-nav-links a {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+
+/* ============================================================
+   NEW FOOTER
+   ============================================================ */
+.site-footer {
+  padding: 6rem 0 3rem;
+  color: var(--stone-light);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr; gap: 2rem; }
+}
+
+.footer-brand {
+  font-size: 1.5rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--white-pure);
+  margin-bottom: 1.5rem;
+}
+
+.footer-brand em {
+  font-family: var(--font-editorial);
+  color: var(--accent-brand);
+  font-style: italic;
+}
+
+.footer-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-title {
+  font-size: 1.1rem;
+  color: var(--white-pure);
+  margin-bottom: 1.5rem;
+  font-family: var(--font-display);
+}
+
+.footer-col a {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: var(--accent-brand);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
 }
