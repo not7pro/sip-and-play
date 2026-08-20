@@ -170,7 +170,7 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em,
 .footer-editorial__statement em,
 .hambach-editorial__title em {
   font-family: var(--font-editorial);
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   opacity: 0.9;
   color: var(--accent-brand);
@@ -696,13 +696,119 @@ p em, .accent-italic {
   line-height: 1.5;
 }
 
+/* ============================================================
+   SYMMETRICAL BRAND MATRIX (Authorized Partners) - ULTRA PREMIUM
+   ============================================================ */
+.brand-matrix {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: linear-gradient(135deg, rgba(197, 160, 89, 0.2), rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(197, 160, 89, 0.25);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-matrix::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--accent-brand), transparent);
+  opacity: 0.5;
+}
+
+.brand-matrix__item {
+  position: relative;
+  background: linear-gradient(to bottom, #111114, #0a0a0c);
+  padding: clamp(4rem, 5vw, 5.5rem) clamp(1.5rem, 3vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--sp-4);
+  transition: transform var(--slow) var(--ease-editorial), box-shadow var(--slow) var(--ease-editorial);
+  z-index: 1;
+}
+
+.brand-matrix__item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(197, 160, 89, 0.12) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity var(--slow) var(--ease-editorial);
+  z-index: -1;
+}
+
+.brand-matrix__item:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(197, 160, 89, 0.08);
+  z-index: 2;
+  border-radius: 2px;
+}
+
+.brand-matrix__item:hover::after {
+  opacity: 1;
+}
+
+.brand-matrix__name {
+  font-family: var(--font-sans);
+  font-size: clamp(1.6rem, 2.2vw, 2.2rem);
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #c5a059, #fdfbf7, #c5a059);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: goldShine 6s linear infinite;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+
+@keyframes goldShine {
+  to { background-position: 200% center; }
+}
+
+.brand-matrix__label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--stone-light);
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.brand-matrix__label::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 1px;
+  background: var(--accent-brand);
+  transition: width var(--med) var(--ease-editorial), background var(--med);
+}
+
+.brand-matrix__item:hover .brand-matrix__label::after {
+  width: 100%;
+  background: var(--paper-ivory);
+}
+
 @media (max-width: 1024px) {
   .stat-matrix { grid-template-columns: repeat(2, 1fr); }
   .stat-matrix__item--primary { border-right: none; }
+  .brand-matrix { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
   .stat-matrix { grid-template-columns: 1fr; }
+  .brand-matrix { grid-template-columns: 1fr; }
 }
 
 /* ============================================================

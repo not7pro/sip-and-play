@@ -93,42 +93,70 @@
     </section>
 
     <!-- ============================================================
-         02 — PROOF
+         02 — PROOF (PREMIUM PARTNERS)
          ============================================================ -->
-    <section class="theme-paper" style="border-top:1px solid var(--border-dark); border-bottom:1px solid var(--border-dark);">
-      <div class="container" style="padding-block:var(--sp-6);">
-        <div class="stat-matrix reveal-on-scroll">
+    <section class="theme-paper" style="border-top:1px solid var(--border-dark); border-bottom:1px solid var(--border-dark); position: relative;">
+      
+      <!-- Hidden SVG Defs for Gold Gradient -->
+      <svg width="0" height="0" style="position:absolute; display:none;">
+        <defs>
+          <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#c5a059" />
+            <stop offset="50%" stop-color="#fdfbf7" />
+            <stop offset="100%" stop-color="#c5a059" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div class="container" style="padding-block:var(--sp-12);">
+        <div class="brand-matrix reveal-on-scroll">
           
-          <div class="stat-matrix__item stat-matrix__item--primary">
+          <div class="brand-matrix__item">
+            <span class="badge" style="margin-bottom:0; border-color:rgba(197, 160, 89, 0.3); color:var(--accent-brand); background:transparent;">AUTHORIZED PARTNER</span>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" style="margin-top:var(--sp-2);">
+              <path d="M4 4h16v16H4z"/>
+              <path d="M4 12h16"/>
+              <path d="M12 4v16"/>
+            </svg>
             <div>
-              <span class="badge" style="margin-bottom:var(--sp-2);">02 — TRACK RECORD</span>
-              <div class="stat-matrix__num"><span class="count-up" data-target="10">10</span>+</div>
+              <div class="brand-matrix__name">Hambach</div>
+              <div class="brand-matrix__label">Engineering</div>
             </div>
-            <div class="stat-matrix__label">Years of Commercial Kitchen Excellence</div>
           </div>
 
-          <div class="stat-matrix__item">
+          <div class="brand-matrix__item">
+            <span class="badge" style="margin-bottom:0; border-color:rgba(197, 160, 89, 0.3); color:var(--accent-brand); background:transparent;">AUTHORIZED PARTNER</span>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" style="margin-top:var(--sp-2);">
+              <path d="M12 2l3 6 6 3-6 3-3 6-3-6-6-3 6-3z"/>
+            </svg>
             <div>
-              <span class="badge" style="margin-bottom:var(--sp-2);">LEADERSHIP</span>
-              <div class="stat-matrix__num"><span class="count-up" data-target="20">20</span>+</div>
+              <div class="brand-matrix__name">Steel &amp; Fire<br>Co.</div>
+              <div class="brand-matrix__label">Commercial Fabrication</div>
             </div>
-            <div class="stat-matrix__label">Years Global Culinary Pedigree (Isham Nayeem)</div>
           </div>
 
-          <div class="stat-matrix__item">
+          <div class="brand-matrix__item">
+            <span class="badge" style="margin-bottom:0; border-color:rgba(197, 160, 89, 0.3); color:var(--accent-brand); background:transparent;">AUTHORIZED PARTNER</span>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" style="margin-top:var(--sp-2);">
+              <circle cx="12" cy="12" r="8"/>
+              <path d="M12 2v20M2 12h20"/>
+            </svg>
             <div>
-              <span class="badge" style="margin-bottom:var(--sp-2);">COLOMBO BUILD</span>
-              <div class="stat-matrix__num"><span class="count-up" data-target="33000">33,000</span></div>
+              <div class="brand-matrix__name">Zhongshan</div>
+              <div class="brand-matrix__label">Culinary Equipment</div>
             </div>
-            <div class="stat-matrix__label">SQ FT Mega Kitchen In Active Development</div>
           </div>
 
-          <div class="stat-matrix__item">
+          <div class="brand-matrix__item">
+            <span class="badge" style="margin-bottom:0; border-color:rgba(197, 160, 89, 0.3); color:var(--accent-brand); background:transparent;">AUTHORIZED PARTNER</span>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#goldGradient)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" style="margin-top:var(--sp-2);">
+              <path d="M12 2L2 22h20L12 2z"/>
+              <path d="M12 22V10"/>
+            </svg>
             <div>
-              <span class="badge" style="margin-bottom:var(--sp-2);">THROUGHPUT</span>
-              <div class="stat-matrix__num"><span class="count-up" data-target="6000">6,000</span></div>
+              <div class="brand-matrix__name">Alpha</div>
+              <div class="brand-matrix__label">Refrigeration Systems</div>
             </div>
-            <div class="stat-matrix__label">Meals / Day Project Capacity</div>
           </div>
 
         </div>
@@ -294,7 +322,7 @@
     <!-- ============================================================
          05 — PROJECTS (UCODE CASE STUDY STYLE)
          ============================================================ -->
-    <section class="section-pad theme-paper">
+    <section class="section-pad theme-charcoal">
       <div class="container">
         
         <div style="text-align:left; margin-bottom:var(--sp-8);" class="reveal-on-scroll">
@@ -313,11 +341,11 @@
             <h3 class="arch-card__title" style="font-size:2rem; margin-bottom:1rem;">The Chinese Mega Kitchen</h3>
             
             <div class="stats-grid" style="margin-bottom:var(--sp-4);">
-              <div class="stat-card" style="padding:1rem; border:1px solid var(--border-light); background:transparent;">
+              <div class="stat-card" style="padding:1rem; border:1px solid var(--border-dark); background:transparent;">
                 <span class="stat-card__num" style="font-size:1.5rem; ">33,000</span>
                 <span class="stat-card__label">SQ FT</span>
               </div>
-              <div class="stat-card" style="padding:1rem; border:1px solid var(--border-light); background:transparent;">
+              <div class="stat-card" style="padding:1rem; border:1px solid var(--border-dark); background:transparent;">
                 <span class="stat-card__num" style="font-size:1.5rem; ">6,000</span>
                 <span class="stat-card__label">MEALS / DAY</span>
               </div>
@@ -327,7 +355,7 @@
               Sip &amp; Play is currently building one of Sri Lanka's largest commercial mega kitchens. A landmark engineering project featuring multi-station cooking suites and automated walk-in refrigeration lines.
             </p>
 
-            <a href="solutions.html" class="btn btn--outline">View project details <span class="arrow">→</span></a>
+            <a href="solutions.html" class="btn btn--outline-light">View project details <span class="arrow">→</span></a>
           </div>
 
           <!-- Image Split -->
@@ -344,7 +372,7 @@
     <!-- ============================================================
          06 — EQUIPMENT
          ============================================================ -->
-    <section class="section-pad theme-charcoal" style="border-top:1px solid var(--border-dark);">
+    <section class="section-pad theme-paper" style="border-top:1px solid var(--border-light);">
       <div class="container">
         
         <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:var(--sp-8); flex-wrap:wrap; gap:1.5rem;">
@@ -360,67 +388,67 @@
         <div class="cat-grid reveal-on-scroll">
           
           <!-- Card 1: Coffee -->
-          <a href="equipment.html" class="cat-card arch-panel" style="padding:1rem; border- background:transparent;">
+          <a href="equipment.html" class="cat-card arch-panel arch-card--dark" style="padding:1rem;">
             <div class="img-frame img-frame--4-3">
               <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=85" alt="Coffee & Beverage Systems" />
             </div>
             <div class="cat-card__body" style="padding:1rem 0 0 0;">
-              <span class="cat-card__title" style="">Coffee &amp; Espresso</span>
+              <span class="cat-card__title">Coffee &amp; Espresso</span>
               <span class="cat-card__arrow">EXPLORE →</span>
             </div>
           </a>
 
           <!-- Card 2: Thermal Processing -->
-          <a href="equipment.html" class="cat-card arch-panel" style="padding:1rem; border- background:transparent;">
+          <a href="equipment.html" class="cat-card arch-panel arch-card--dark" style="padding:1rem;">
             <div class="img-frame img-frame--4-3">
               <img src="images/thermal_processing.jpg" alt="Thermal Cooking Ranges" />
             </div>
             <div class="cat-card__body" style="padding:1rem 0 0 0;">
-              <span class="cat-card__title" style="">Thermal Processing</span>
+              <span class="cat-card__title">Thermal Processing</span>
               <span class="cat-card__arrow">EXPLORE →</span>
             </div>
           </a>
 
           <!-- Card 3: Cold Storage -->
-          <a href="equipment.html" class="cat-card arch-panel" style="padding:1rem; border- background:transparent;">
+          <a href="equipment.html" class="cat-card arch-panel arch-card--dark" style="padding:1rem;">
             <div class="img-frame img-frame--4-3">
               <img src="images/cold_storage.jpg" alt="Cold Storage & Freezers" />
             </div>
             <div class="cat-card__body" style="padding:1rem 0 0 0;">
-              <span class="cat-card__title" style="">Cold Storage</span>
+              <span class="cat-card__title">Cold Storage</span>
               <span class="cat-card__arrow">EXPLORE →</span>
             </div>
           </a>
 
           <!-- Card 4: Bakery & Prep -->
-          <a href="equipment.html" class="cat-card arch-panel" style="padding:1rem; border- background:transparent;">
+          <a href="equipment.html" class="cat-card arch-panel arch-card--dark" style="padding:1rem;">
             <div class="img-frame img-frame--4-3">
               <img src="images/bakery_prep.jpg" alt="Bakery & Prep Equipment" />
             </div>
             <div class="cat-card__body" style="padding:1rem 0 0 0;">
-              <span class="cat-card__title" style="">Bakery &amp; Prep</span>
+              <span class="cat-card__title">Bakery &amp; Prep</span>
               <span class="cat-card__arrow">EXPLORE →</span>
             </div>
           </a>
 
           <!-- Card 5: Warewashing Systems -->
-          <a href="equipment.html" class="cat-card arch-panel" style="padding:1rem; border- background:transparent;">
+          <a href="equipment.html" class="cat-card arch-panel arch-card--dark" style="padding:1rem;">
             <div class="img-frame img-frame--4-3">
               <img src="images/warewashing.jpg" alt="Warewashing Systems" />
             </div>
             <div class="cat-card__body" style="padding:1rem 0 0 0;">
-              <span class="cat-card__title" style="">Warewashing</span>
+              <span class="cat-card__title">Warewashing</span>
               <span class="cat-card__arrow">EXPLORE →</span>
             </div>
           </a>
 
           <!-- Card 6: Stainless Fabrication -->
-          <a href="equipment.html" class="cat-card arch-panel" style="padding:1rem; border- background:transparent;">
+          <a href="equipment.html" class="cat-card arch-panel arch-card--dark" style="padding:1rem;">
             <div class="img-frame img-frame--4-3">
               <img src="images/stainless_fabrication.jpg" alt="Stainless Modular Fabrication" />
             </div>
             <div class="cat-card__body" style="padding:1rem 0 0 0;">
-              <span class="cat-card__title" style="">Stainless Fabrication</span>
+              <span class="cat-card__title">Stainless Fabrication</span>
               <span class="cat-card__arrow">EXPLORE →</span>
             </div>
           </a>

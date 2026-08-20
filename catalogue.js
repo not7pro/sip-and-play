@@ -222,33 +222,33 @@ document.addEventListener('DOMContentLoaded', async () => {
           <span class="cat-card__sku" style="position:absolute; top:1rem; left:1rem; background:var(--ink-pure); color:var(--paper-ivory); font-family:var(--font-mono); font-size:0.7rem; padding:0.2rem 0.5rem; letter-spacing:0.1em;">${p.sku}</span>
           ${p.featured ? '<span class="cat-card__featured" style="position:absolute; top:1rem; right:1rem; background:var(--stone-light); color:var(--ink-pure); font-family:var(--font-mono); font-size:0.7rem; padding:0.2rem 0.5rem; letter-spacing:0.1em; font-weight:700;">FEATURED</span>' : ''}
         </div>
-        <div class="cat-card__body" style="padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between; flex-grow:1;">
+        <div class="cat-card__body" style="padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between; flex-grow:1; background:var(--ink-deep); color:var(--paper-ivory);">
           <div>
-            <div class="cat-card__meta" style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.1em; color:var(--stone-mid); text-transform:uppercase; margin-bottom:1rem; border-bottom:1px solid var(--border-light); padding-bottom:0.5rem;">
-              <span class="cat-card__brand" style="color:var(--ink-pure); font-weight:600;">${p.brand}</span>
+            <div class="cat-card__meta" style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.1em; color:var(--stone-light); text-transform:uppercase; margin-bottom:1rem; border-bottom:1px solid var(--border-dark); padding-bottom:0.5rem;">
+              <span class="cat-card__brand" style="color:var(--paper-ivory); font-weight:600;">${p.brand}</span>
               <span class="cat-card__cat">${p.subCategory}</span>
             </div>
-            <h3 class="cat-card__title" style="font-family:var(--font-display); font-size:1.1rem; font-weight:600; letter-spacing:-0.02em; color:var(--ink-pure); margin-bottom:1.5rem; line-height:1.3;">${p.name}</h3>
+            <h3 class="cat-card__title" style="font-family:var(--font-display); font-size:1.1rem; font-weight:600; letter-spacing:-0.02em; color:var(--paper-ivory); margin-bottom:1.5rem; line-height:1.3;">${p.name}</h3>
             
             <div class="cat-card__specs" style="display:flex; flex-direction:column; gap:0.5rem; margin-bottom:1.5rem;">
-              <div class="cat-card__spec-item" style="display:flex; justify-content:space-between; font-size:0.85rem; font-family:var(--font-sans); border-bottom:1px dashed var(--border-light); padding-bottom:0.2rem;">
-                <span class="cat-card__spec-label" style="color:var(--stone-mid); font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.1em;">POWER</span>
+              <div class="cat-card__spec-item" style="display:flex; justify-content:space-between; font-size:0.85rem; font-family:var(--font-sans); border-bottom:1px dashed var(--border-dark); padding-bottom:0.2rem;">
+                <span class="cat-card__spec-label" style="color:var(--stone-light); font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.1em;">POWER</span>
                 <span class="cat-card__spec-val" style="font-weight:500;">${p.power}</span>
               </div>
-              <div class="cat-card__spec-item" style="display:flex; justify-content:space-between; font-size:0.85rem; font-family:var(--font-sans); border-bottom:1px dashed var(--border-light); padding-bottom:0.2rem;">
-                <span class="cat-card__spec-label" style="color:var(--stone-mid); font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.1em;">DIMENSIONS</span>
+              <div class="cat-card__spec-item" style="display:flex; justify-content:space-between; font-size:0.85rem; font-family:var(--font-sans); border-bottom:1px dashed var(--border-dark); padding-bottom:0.2rem;">
+                <span class="cat-card__spec-label" style="color:var(--stone-light); font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.1em;">DIMENSIONS</span>
                 <span class="cat-card__spec-val" style="font-weight:500;">${p.dimensions}</span>
               </div>
-              <div class="cat-card__spec-item" style="display:flex; justify-content:space-between; font-size:0.85rem; font-family:var(--font-sans); border-bottom:1px dashed var(--border-light); padding-bottom:0.2rem;">
-                <span class="cat-card__spec-label" style="color:var(--stone-mid); font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.1em;">ORIGIN</span>
+              <div class="cat-card__spec-item" style="display:flex; justify-content:space-between; font-size:0.85rem; font-family:var(--font-sans); border-bottom:1px dashed var(--border-dark); padding-bottom:0.2rem;">
+                <span class="cat-card__spec-label" style="color:var(--stone-light); font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.1em;">ORIGIN</span>
                 <span class="cat-card__spec-val" style="font-weight:500;">${p.origin}</span>
               </div>
             </div>
           </div>
 
           <div class="cat-card__actions" style="display:grid; grid-template-columns:1fr; gap:0.5rem; margin-top:auto;">
-            <button class="cat-card__btn-spec" data-id="${p.id}" style="width:100%; background:transparent; border:1px solid var(--ink-pure); color:var(--ink-pure); padding:0.75rem; font-family:var(--font-sans); font-size:0.8rem; font-weight:600; cursor:pointer; transition:all var(--fast);">View Specifications ↗</button>
-            <button class="cat-card__btn-add ${isScheduled ? 'added' : ''}" data-id="${p.id}" style="width:100%; background:${isScheduled ? 'var(--ink-pure)' : 'transparent'}; border:1px solid var(--ink-pure); color:${isScheduled ? 'var(--paper-ivory)' : 'var(--ink-pure)'}; padding:0.75rem; font-family:var(--font-sans); font-size:0.8rem; font-weight:600; cursor:pointer; transition:all var(--fast);">
+            <button class="cat-card__btn-spec" data-id="${p.id}" style="width:100%; background:transparent; border:1px solid var(--border-dark); color:var(--paper-ivory); padding:0.75rem; font-family:var(--font-sans); font-size:0.8rem; font-weight:600; cursor:pointer; transition:all var(--fast);">View Specifications ↗</button>
+            <button class="cat-card__btn-add ${isScheduled ? 'added' : ''}" data-id="${p.id}" style="width:100%; background:${isScheduled ? 'var(--paper-ivory)' : 'transparent'}; border:1px solid var(--paper-ivory); color:${isScheduled ? 'var(--ink-pure)' : 'var(--paper-ivory)'}; padding:0.75rem; font-family:var(--font-sans); font-size:0.8rem; font-weight:600; cursor:pointer; transition:all var(--fast);">
               ${isScheduled ? '✓ Scheduled' : '+ Add to Schedule'}
             </button>
           </div>
