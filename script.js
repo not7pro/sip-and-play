@@ -188,3 +188,81 @@ document.addEventListener('DOMContentLoaded', () => {
   syncCount();
   window.addEventListener('enquiryUpdated', syncCount);
 });
+
+// 6. Advanced Hero Word Reveal
+document.addEventListener('DOMContentLoaded', () => {
+  const heroTitle = document.querySelector('.hero-cinematic__title');
+  if (heroTitle) {
+    // Check if it hasn't been processed yet
+    if (!heroTitle.classList.contains('word-reveal')) {
+      const text = heroTitle.innerHTML;
+      // Simple split by space, keeping HTML tags intact as much as possible 
+      // (For robust HTML preservation, we'd use a textNode walker, but regex works for this specific case with one <em>)
+      const words = text.split(/(<[^>]*>|\s+)/).filter(Boolean);
+      let newHtml = '';
+      let delay = 0.2;
+      words.forEach(word => {
+        if (word.startsWith('<') || word.trim() === '') {
+          newHtml += word;
+        } else {
+          newHtml += `<span style="transition-delay: ${delay}s">${word}</span>`;
+          delay += 0.08;
+        }
+      });
+      heroTitle.innerHTML = newHtml;
+      heroTitle.classList.add('word-reveal');
+      
+      // Trigger reveal after a short delay
+      setTimeout(() => {
+        heroTitle.classList.add('is-visible');
+      }, 300);
+    }
+  }
+});
+
+// 7. Methodology Timeline Progress
+document.addEventListener('DOMContentLoaded', () => {
+  const roadmapGrid = document.getElementById('roadmapGrid');
+  const roadmapProgress = document.getElementById('roadmapProgress');
+  const steps = document.querySelectorAll('.roadmap-step');
+  
+  if (roadmapGrid && roadmapProgress && steps.length > 0) {
+    
+    // Set up observer for each step
+    const stepObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active-step');
+          
+          // Calculate progress height based on the lowest active step
+          let activeIndex = -1;
+          steps.forEach((step, idx) => {
+            if (step.classList.contains('active-step')) activeIndex = idx;
+          });
+          
+          if (activeIndex >= 0) {
+            // Calculate percentage or absolute height
+            const stepElement = steps[activeIndex];
+            // offsetTop of the step + some padding to reach the circle
+            const progressHeight = stepElement.offsetTop + 20; 
+            roadmapProgress.style.height = progressHeight + 'px';
+          }
+        }
+      });
+    }, { rootMargin: '0px 0px -25% 0px', threshold: 0 });
+    
+    steps.forEach(step => stepObserver.observe(step));
+  }
+});
+
+// 8. Scroll Indicator Fade Out
+window.addEventListener('scroll', () => {
+  const indicator = document.getElementById('scrollIndicator');
+  if (indicator) {
+    if (window.scrollY > 50) {
+      indicator.classList.add('hidden');
+    } else {
+      indicator.classList.remove('hidden');
+    }
+  }
+}, { passive: true });
