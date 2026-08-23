@@ -2065,85 +2065,263 @@ p em, .accent-italic {
   margin-bottom: 0.5rem;
 }
 
-/* Specification Modal */
+/* Specification Modal & Template Sheet */
 .spec-modal {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(252, 251, 247, 0.95);
-  backdrop-filter: blur(8px);
-  z-index: 1000;
+  background: rgba(10, 10, 10, 0.88);
+  backdrop-filter: blur(12px);
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 1.5rem;
   opacity: 0;
   pointer-events: none;
-  transition: opacity var(--med) var(--ease-editorial);
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.spec-modal.active {
+.spec-modal.active,
+.spec-modal.open {
   opacity: 1;
   pointer-events: auto;
 }
 .spec-modal-container {
-  background: var(--card-bg-light);
+  background: var(--ink-charcoal, #121212);
+  color: var(--paper-ivory, #fdfbf7);
   width: 100%;
-  max-width: 1000px;
+  max-width: 920px;
   max-height: 90vh;
   overflow-y: auto;
-  border: 1px solid var(--ink-pure);
+  border: 1px solid var(--border-dark, #333);
   position: relative;
-  transform: translateY(20px);
-  transition: transform var(--med) var(--ease-editorial);
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.1);
+  transform: translateY(24px) scale(0.98);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6);
+  padding: 2.5rem;
+  border-radius: 4px;
 }
-.spec-modal.active .spec-modal-container {
-  transform: translateY(0);
+.spec-modal.active .spec-modal-container,
+.spec-modal.open .spec-modal-container {
+  transform: translateY(0) scale(1);
 }
 .spec-modal-close {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  background: transparent;
-  border: none;
-  font-size: 1.5rem;
-  color: var(--stone-mid);
+  top: 1.25rem;
+  right: 1.25rem;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid var(--border-dark, rgba(255,255,255,0.15));
+  font-size: 1.25rem;
+  color: var(--paper-ivory, #fff);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   z-index: 10;
-  transition: color var(--fast);
+  transition: all 0.2s ease;
 }
 .spec-modal-close:hover {
-  color: var(--ink-pure);
+  background: var(--accent-brand, #c5a059);
+  color: #000;
+  transform: rotate(90deg);
+}
+
+/* Template Specification Sheet Layout */
+.modal-spec-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.modal-spec-header {
+  border-bottom: 1px solid var(--border-dark, #333);
+  padding-bottom: 1.25rem;
+}
+.modal-spec-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+.modal-spec-tag {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.08);
+  padding: 0.25rem 0.65rem;
+  border-radius: 2px;
+  color: var(--stone-light, #ccc);
+}
+.modal-spec-tag.accent {
+  background: rgba(197, 160, 89, 0.18);
+  color: var(--accent-brand, #c5a059);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+}
+.modal-spec-title {
+  font-family: var(--font-display, serif);
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 600;
+  color: var(--paper-ivory, #fff);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.modal-spec-desc {
+  font-size: 0.95rem;
+  color: var(--stone-light, #bbb);
+  line-height: 1.6;
+}
+.modal-spec-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .modal-spec-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.modal-spec-media {
+  position: relative;
+  background: #000;
+  border: 1px solid var(--border-dark, #333);
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.modal-spec-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal-spec-badge {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  background: rgba(0,0,0,0.85);
+  color: var(--accent-brand, #c5a059);
+  font-family: var(--font-mono, monospace);
+  font-size: 0.7rem;
+  padding: 0.3rem 0.6rem;
+  letter-spacing: 0.1em;
+  border: 1px solid rgba(197, 160, 89, 0.3);
+}
+.modal-spec-subtitle {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  color: var(--accent-brand, #c5a059);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.modal-spec-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--border-dark, #333);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.modal-spec-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--border-dark, #262626);
+  font-size: 0.88rem;
+  align-items: center;
+}
+.modal-spec-row:nth-child(even) {
+  background: rgba(255,255,255,0.02);
+}
+.modal-spec-row:last-child {
+  border-bottom: none;
+}
+.modal-spec-th {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--stone-light, #888);
+  text-transform: uppercase;
+}
+.modal-spec-td {
+  color: var(--paper-ivory, #eee);
+  font-weight: 500;
+}
+.modal-spec-td.font-mono {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.82rem;
+}
+.modal-spec-ctas {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border-dark, #333);
+  padding-top: 1.25rem;
+}
+.modal-spec-ctas .btn,
+.modal-spec-ctas a,
+.modal-spec-ctas button {
+  flex: 1;
+  min-width: 200px;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  font-family: var(--font-sans, sans-serif);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.modal-spec-ctas .btn--primary,
+.modal-spec-ctas a.btn--primary,
+body .modal-spec-ctas a.btn--primary {
+  background: var(--accent-brand, #c5a059) !important;
+  color: #000000 !important;
+  border: 1px solid var(--accent-brand, #c5a059) !important;
+  box-shadow: none !important;
+}
+
+.modal-spec-ctas .btn--primary:hover,
+.modal-spec-ctas a.btn--primary:hover,
+body .modal-spec-ctas a.btn--primary:hover {
+  background: transparent !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: none !important;
+  transform: translateY(-2px);
+}
+
+.modal-spec-ctas .btn--outline,
+.modal-spec-ctas button.btn--outline,
+body .modal-spec-ctas button.btn--outline {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: none !important;
+}
+
+.modal-spec-ctas .btn--outline:hover,
+.modal-spec-ctas button.btn--outline:hover,
+body .modal-spec-ctas button.btn--outline:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: none !important;
+  transform: translateY(-2px);
 }
 
 /* ============================================================
    PROJECT SCHEDULE DRAWER (UCODE STYLING)
    ============================================================ */
 .schedule-bar {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background: var(--ink-pure);
-  color: var(--paper-ivory);
-  padding: 1rem 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  cursor: pointer;
-  z-index: 900;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  transition: transform var(--fast) var(--ease-editorial), opacity var(--fast) var(--ease-editorial);
-  border: 1px solid var(--ink-pure);
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(20px);
-}
-.schedule-bar.visible {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-.schedule-bar:hover {
-  transform: translateY(-4px);
+  display: none !important;
 }
 .schedule-bar__title {
   font-family: var(--font-mono);

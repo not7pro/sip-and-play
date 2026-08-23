@@ -361,79 +361,112 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  // Spec Modal Logic
+  // Spec Modal Logic & Template Sheet Engine
   function openSpecModal(product) {
     if (!specModal || !specModalBody) return;
 
+    // Fallback template values in case product data is partial
+    const sku = product ? (product.sku || 'SKU-SPEC-001') : 'SKU-SPEC-001';
+    const brand = product ? (product.brand || 'Hambach Engineering') : 'Hambach Engineering';
+    const category = product ? (product.category || 'Commercial Culinary Equipment') : 'Commercial Culinary Equipment';
+    const name = product ? (product.name || 'Commercial High-Performance Unit') : 'Commercial High-Performance Unit';
+    const origin = product ? (product.origin || 'Germany / China JV') : 'Germany / China JV';
+    const power = product ? (product.power || '400V / 3N~ / 50Hz (4.8 kW)') : '400V / 3N~ / 50Hz (4.8 kW)';
+    const dimensions = product ? (product.dimensions || '800 x 750 x 850 mm') : '800 x 750 x 850 mm';
+    const material = product ? (product.material || 'AISI 304 High-Tensile Stainless Steel') : 'AISI 304 High-Tensile Stainless Steel';
+    const desc = product ? (product.description || 'Heavy-duty commercial kitchen equipment built for continuous high-volume food service operations across hotels, resorts, and industrial facilities.') : 'Heavy-duty commercial kitchen equipment built for continuous high-volume food service operations.';
+    const image = product ? (product.image || 'images/factory_6.jpg') : 'images/factory_6.jpg';
+    const isScheduled = product ? projectSchedule.some(i => i.id === product.id) : false;
+
     specModalBody.innerHTML = `
       <div class="modal-spec-layout">
-        <div class="modal-spec-media">
-          <img src="${product.image}" alt="${product.name}" class="modal-spec-img" />
-          <div class="modal-spec-badge">${product.sku}</div>
+        <div class="modal-spec-header">
+          <div class="modal-spec-tags">
+            <span class="modal-spec-tag">${brand}</span>
+            <span class="modal-spec-tag accent">${category}</span>
+          </div>
+          <h2 class="modal-spec-title">${name}</h2>
+          <p class="modal-spec-desc">${desc}</p>
         </div>
-        <div class="modal-spec-content">
-          <div class="modal-spec-header">
-            <span class="modal-spec-brand">${product.brand} • ${product.category}</span>
-            <h2 class="modal-spec-title">${product.name}</h2>
-            <p class="modal-spec-desc">${product.description}</p>
+
+        <div class="modal-spec-grid">
+          <div class="modal-spec-media">
+            <img src="${image}" alt="${name}" class="modal-spec-img" onerror="this.src='images/factory_6.jpg'" />
+            <div class="modal-spec-badge">SKU: ${sku}</div>
           </div>
 
-          <div class="modal-spec-table">
-            <div class="modal-spec-row">
-              <span class="modal-spec-th">MODEL SKU</span>
-              <span class="modal-spec-td font-mono">${product.sku}</span>
-            </div>
-            <div class="modal-spec-row">
-              <span class="modal-spec-th">MANUFACTURER</span>
-              <span class="modal-spec-td">${product.brand} (${product.origin})</span>
-            </div>
-            <div class="modal-spec-row">
-              <span class="modal-spec-th">POWER / UTILITY</span>
-              <span class="modal-spec-td">${product.power} (${product.powerKw})</span>
-            </div>
-            <div class="modal-spec-row">
-              <span class="modal-spec-th">DIMENSIONS</span>
-              <span class="modal-spec-td font-mono">${product.dimensions}</span>
-            </div>
-            <div class="modal-spec-row">
-              <span class="modal-spec-th">CONSTRUCTION</span>
-              <span class="modal-spec-td">${product.material}</span>
-            </div>
-            <div class="modal-spec-row">
-              <span class="modal-spec-th">CERTIFICATIONS</span>
-              <span class="modal-spec-td">CE / NSF / ISO 9001 Commercial Grade</span>
+          <div class="modal-spec-details">
+            <h4 class="modal-spec-subtitle">ENGINEERING SPECIFICATION SHEET (TEMPLATE)</h4>
+            <div class="modal-spec-table">
+              <div class="modal-spec-row">
+                <span class="modal-spec-th">MODEL SKU</span>
+                <span class="modal-spec-td font-mono">${sku}</span>
+              </div>
+              <div class="modal-spec-row">
+                <span class="modal-spec-th">MANUFACTURER</span>
+                <span class="modal-spec-td">${brand} (${origin})</span>
+              </div>
+              <div class="modal-spec-row">
+                <span class="modal-spec-th">POWER / ELECTRICAL</span>
+                <span class="modal-spec-td font-mono">${power}</span>
+              </div>
+              <div class="modal-spec-row">
+                <span class="modal-spec-th">DIMENSIONS (W×D×H)</span>
+                <span class="modal-spec-td font-mono">${dimensions}</span>
+              </div>
+              <div class="modal-spec-row">
+                <span class="modal-spec-th">CONSTRUCTION</span>
+                <span class="modal-spec-td">${material}</span>
+              </div>
+              <div class="modal-spec-row">
+                <span class="modal-spec-th">UTILITY INLET</span>
+                <span class="modal-spec-td">Direct MEP 3-Phase & 3/4" Direct Water Line</span>
+              </div>
+              <div class="modal-spec-row">
+                <span class="modal-spec-th">OPERATIONAL RATING</span>
+                <span class="modal-spec-td">Continuous 24/7 Heavy-Duty Commercial Service</span>
+              </div>
+              <div class="modal-spec-row">
+                <span class="modal-spec-th">CERTIFICATIONS</span>
+                <span class="modal-spec-td">CE / NSF / ISO 9001 Commercial Grade</span>
+              </div>
+              <div class="modal-spec-row">
+                <span class="modal-spec-th">WARRANTY & SERVICE</span>
+                <span class="modal-spec-td">3-Year On-Site Maintenance & Direct Spare Stock</span>
+              </div>
             </div>
           </div>
+        </div>
 
-          <div class="modal-spec-ctas">
-            <a class="btn btn--primary" href="contact.html?item=${encodeURIComponent(product.sku)}#quote">
-              Request Quotation for this Unit <span class="arrow">→</span>
-            </a>
-            <button class="btn btn--outline" id="modalAddScheduleBtn">
-              ${projectSchedule.some(i => i.id === product.id) ? '✓ In Project Schedule' : '+ Add to Schedule'}
-            </button>
-          </div>
+        <div class="modal-spec-ctas">
+          <a class="btn btn--primary" href="contact.html?item=${encodeURIComponent(sku)}#quote">
+            Request Quotation for this Unit <span class="arrow">→</span>
+          </a>
+          <button class="btn btn--outline" id="modalAddScheduleBtn">
+            ${isScheduled ? '✓ In Project Schedule' : '+ Add to Schedule'}
+          </button>
         </div>
       </div>
     `;
 
     const modalAddBtn = document.getElementById('modalAddScheduleBtn');
-    if (modalAddBtn) {
+    if (modalAddBtn && product) {
       modalAddBtn.addEventListener('click', () => {
         toggleScheduleItem(product);
-        modalAddBtn.textContent = projectSchedule.some(i => i.id === product.id) 
-          ? '✓ In Project Schedule' 
-          : '+ Add to Schedule';
+        const nowScheduled = projectSchedule.some(i => i.id === product.id);
+        modalAddBtn.textContent = nowScheduled ? '✓ In Project Schedule' : '+ Add to Schedule';
         renderGrid();
       });
     }
 
+    specModal.classList.add('active');
     specModal.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
 
   function closeSpecModal() {
     if (!specModal) return;
+    specModal.classList.remove('active');
     specModal.classList.remove('open');
     document.body.style.overflow = '';
   }
@@ -447,6 +480,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (e.target === specModal) closeSpecModal();
     });
   }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeSpecModal();
+  });
 
   // Project Schedule (Cart/Tray) Functions
   function toggleScheduleItem(product, btnElement) {
