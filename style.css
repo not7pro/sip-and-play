@@ -637,7 +637,7 @@ p em, .accent-italic {
   z-index: 3;
   font-family: var(--font-mono);
   font-size: 0.65rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
   display: flex;
@@ -694,7 +694,7 @@ p em, .accent-italic {
 .stat-matrix__label {
   font-family: var(--font-mono);
   font-size: 0.7rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--stone-light);
   line-height: 1.5;
@@ -1689,7 +1689,7 @@ p em, .accent-italic {
 .footer-editorial__brand-tag {
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--stone-light);
   margin-bottom: var(--sp-4);
@@ -2418,19 +2418,22 @@ body.page-transitioning {
   position: fixed;
   top: 0; left: 0; width: 100%;
   z-index: 1000;
-  transition: background-color 0.4s ease, border-bottom 0.4s ease, backdrop-filter 0.4s ease;
+  transition: background 0.4s ease, border-bottom 0.4s ease, backdrop-filter 0.4s ease, color 0.4s ease;
   border-bottom: 1px solid transparent;
+  color: var(--paper-ivory); /* Light text on transparent background */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, transparent 100%);
 }
 
 .site-header.scrolled {
-  background-color: rgba(253, 251, 247, 0.85); /* paper-ivory with opacity */
+  background: rgba(253, 251, 247, 0.90); /* paper-ivory with opacity */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-light);
+  color: var(--ink-pure); /* Dark text on light background */
 }
 
 .theme-charcoal .site-header.scrolled {
-  background-color: rgba(10, 10, 12, 0.85);
+  background: rgba(10, 10, 12, 0.90);
   border-bottom: 1px solid var(--border-dark);
 }
 
@@ -2647,3 +2650,187 @@ body.page-transitioning {
   font-size: 0.85rem;
   font-family: var(--font-mono);
 }
+
+/* ============================================================
+   LUXURY UPGRADES (PARALLAX, HOVER, SCROLLBAR, TRANSITIONS)
+   ============================================================ */
+
+/* 1. Custom Bespoke Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  background: var(--ink-pure);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--stone-mid);
+  border-radius: 10px;
+}
+.theme-paper::-webkit-scrollbar {
+  background: var(--paper-ivory);
+}
+.theme-paper::-webkit-scrollbar-thumb {
+  background: var(--stone-dark);
+}
+
+/* 2. Editorial Typography (Drop Cap & Spacing) */
+
+
+.section-tag, .section-label {
+  letter-spacing: 0.12em; /* Increased for architectural feel */
+}
+
+/* 3. Premium Hover States (Buttons) */
+/* Button Arrow Glides */
+.btn .arrow, .btn-premium .arrow-icon, .arch-card__arrow {
+  display: inline-block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn:hover .arrow, .btn-premium:hover .arrow-icon, .arch-card:hover .arch-card__arrow {
+  transform: translateX(6px);
+}
+
+/* 4. Page Transition Enhancement */
+body.fade-out {
+  opacity: 0 !important;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+
+
+
+
+/* ============================================================
+   7. LINE-BY-LINE TEXT REVEAL
+   ============================================================ */
+.split-line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
+}
+.split-word {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+.reveal-on-scroll.is-visible .split-word,
+.hero-cinematic.loaded .split-word,
+.editorial.is-visible .split-word {
+  transform: translateY(0);
+}
+
+/* ============================================================
+   8. DARK/LIGHT MODE TOGGLE (INVERT RHYTHM)
+   ============================================================ */
+body[data-theme="invert"] .theme-paper {
+  background-color: var(--ink-deep) !important;
+  color: var(--paper-ivory) !important;
+}
+body[data-theme="invert"] .theme-charcoal {
+  background-color: var(--paper-ivory) !important;
+  color: var(--ink-pure) !important;
+}
+body[data-theme="invert"] .theme-paper .arch-panel {
+  background-color: transparent !important;
+  border-color: var(--border-dark) !important;
+}
+body[data-theme="invert"] .theme-charcoal .arch-panel {
+  background-color: var(--card-bg-light) !important;
+  border-color: var(--border-light) !important;
+}
+body[data-theme="invert"] .theme-paper .section-pad {
+  border-bottom-color: var(--border-dark) !important;
+}
+body[data-theme="invert"] .theme-charcoal .section-pad {
+  border-bottom-color: var(--border-light) !important;
+}
+/* Header inversion logic */
+body[data-theme="invert"] .site-header.scrolled {
+  background: rgba(10, 10, 12, 0.90) !important;
+  color: var(--paper-ivory) !important;
+  border-bottom-color: var(--border-dark) !important;
+}
+body[data-theme="invert"].theme-charcoal .site-header.scrolled {
+  background: rgba(253, 251, 247, 0.90) !important;
+  color: var(--ink-pure) !important;
+  border-bottom-color: var(--border-light) !important;
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle-btn {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: inherit;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  margin-right: 16px;
+}
+.site-header.scrolled .theme-toggle-btn {
+  border-color: rgba(0,0,0,0.1);
+}
+.theme-toggle-btn:hover {
+  background: rgba(128,128,128,0.1);
+  transform: rotate(15deg);
+}
+.theme-toggle-btn svg {
+  width: 18px; height: 18px;
+  fill: currentColor;
+}
+
+
+
+
+/* ============================================================
+   TEAM GRID COMPONENT (Reverted)
+   ============================================================ */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 3rem 2rem;
+  margin-top: 2rem;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: var(--paper-warm);
+  border: 1px solid var(--border-light);
+  border-top: 3px solid var(--stone-mid);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  border-top-color: var(--accent-brand);
+}
+
+.team-card__role {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--stone-mid);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.team-card__name {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--ink-pure);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.team-card__bio {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink-charcoal);
+  margin-top: auto;
+}
+

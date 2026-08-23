@@ -13,14 +13,14 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=1",
     "featured": true
   },
   {
     "id": 2,
     "sku": "SP-HOS-1002",
     "name": "Hoshizaki Upright Storage Cabinet Pro-10",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "230V / Single-Phase",
@@ -29,14 +29,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=2",
     "featured": false
   },
   {
     "id": 3,
     "sku": "SP-MEN-1003",
     "name": "Menu System Induction Suite Pro-10",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Natural Gas (20mbar)",
@@ -45,14 +45,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=3",
     "featured": false
   },
   {
     "id": 4,
     "sku": "SP-WIN-1004",
     "name": "Winterhalter Utensil & Pot Washer Pro-10",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -61,14 +61,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=4",
     "featured": false
   },
   {
     "id": 5,
     "sku": "SP-HOB-1005",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "LPG Gas",
@@ -77,7 +77,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=5",
     "featured": false
   },
   {
@@ -93,7 +93,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=6",
     "featured": false
   },
   {
@@ -109,7 +109,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=7",
     "featured": false
   },
   {
@@ -125,7 +125,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=8",
     "featured": false
   },
   {
@@ -141,14 +141,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=9",
     "featured": false
   },
   {
     "id": 10,
     "sku": "SP-HOS-1010",
     "name": "Hoshizaki Upright Storage Cabinet Pro-20",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "LPG Gas",
@@ -157,14 +157,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=10",
     "featured": false
   },
   {
     "id": 11,
     "sku": "SP-MEN-1011",
     "name": "Menu System Induction Suite Pro-20",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "400V / 3-Phase",
@@ -173,7 +173,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=11",
     "featured": false
   },
   {
@@ -189,14 +189,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=12",
     "featured": false
   },
   {
     "id": 13,
     "sku": "SP-HOB-1013",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Natural Gas (20mbar)",
@@ -205,7 +205,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=13",
     "featured": false
   },
   {
@@ -221,7 +221,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=14",
     "featured": false
   },
   {
@@ -237,7 +237,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=15",
     "featured": false
   },
   {
@@ -253,7 +253,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=16",
     "featured": false
   },
   {
@@ -269,14 +269,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=17",
     "featured": false
   },
   {
     "id": 18,
     "sku": "SP-HOS-1018",
     "name": "Hoshizaki Upright Storage Cabinet Pro-30",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Natural Gas (20mbar)",
@@ -285,14 +285,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=18",
     "featured": true
   },
   {
     "id": 19,
     "sku": "SP-MEN-1019",
     "name": "Menu System Induction Suite Pro-30",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Dual Fuel (Gas + 230V)",
@@ -301,14 +301,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=19",
     "featured": false
   },
   {
     "id": 20,
     "sku": "SP-HOB-1020",
     "name": "Hobart Utensil & Pot Washer Pro-30",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "LPG Gas",
@@ -317,14 +317,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=20",
     "featured": false
   },
   {
     "id": 21,
     "sku": "SP-HOB-1021",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "400V / 3-Phase",
@@ -333,7 +333,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=21",
     "featured": false
   },
   {
@@ -349,7 +349,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=22",
     "featured": false
   },
   {
@@ -365,7 +365,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=23",
     "featured": false
   },
   {
@@ -381,7 +381,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=24",
     "featured": false
   },
   {
@@ -397,14 +397,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=25",
     "featured": false
   },
   {
     "id": 26,
     "sku": "SP-HOS-1026",
     "name": "Hoshizaki Upright Storage Cabinet Pro-40",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "400V / 3-Phase",
@@ -413,14 +413,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=26",
     "featured": false
   },
   {
     "id": 27,
     "sku": "SP-MEN-1027",
     "name": "Menu System Induction Suite Pro-40",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "230V / Single-Phase",
@@ -429,14 +429,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=27",
     "featured": false
   },
   {
     "id": 28,
     "sku": "SP-WIN-1028",
     "name": "Winterhalter Utensil & Pot Washer Pro-40",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Natural Gas (20mbar)",
@@ -445,14 +445,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=28",
     "featured": false
   },
   {
     "id": 29,
     "sku": "SP-HOB-1029",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -461,7 +461,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=29",
     "featured": false
   },
   {
@@ -477,7 +477,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=30",
     "featured": false
   },
   {
@@ -493,7 +493,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=31",
     "featured": false
   },
   {
@@ -509,7 +509,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=32",
     "featured": false
   },
   {
@@ -525,14 +525,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=33",
     "featured": false
   },
   {
     "id": 34,
     "sku": "SP-HOS-1034",
     "name": "Hoshizaki Upright Storage Cabinet Pro-50",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Dual Fuel (Gas + 230V)",
@@ -541,14 +541,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=34",
     "featured": false
   },
   {
     "id": 35,
     "sku": "SP-MEN-1035",
     "name": "Menu System Induction Suite Pro-50",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "LPG Gas",
@@ -557,7 +557,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=35",
     "featured": true
   },
   {
@@ -573,14 +573,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=36",
     "featured": false
   },
   {
     "id": 37,
     "sku": "SP-HOB-1037",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "230V / Single-Phase",
@@ -589,7 +589,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=37",
     "featured": false
   },
   {
@@ -605,7 +605,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=38",
     "featured": false
   },
   {
@@ -621,7 +621,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=39",
     "featured": false
   },
   {
@@ -637,7 +637,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=40",
     "featured": false
   },
   {
@@ -653,14 +653,14 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=41",
     "featured": false
   },
   {
     "id": 42,
     "sku": "SP-HOS-1042",
     "name": "Hoshizaki Upright Storage Cabinet Pro-60",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "230V / Single-Phase",
@@ -669,14 +669,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=42",
     "featured": false
   },
   {
     "id": 43,
     "sku": "SP-MEN-1043",
     "name": "Menu System Induction Suite Pro-60",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Natural Gas (20mbar)",
@@ -685,14 +685,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=43",
     "featured": false
   },
   {
     "id": 44,
     "sku": "SP-HOB-1044",
     "name": "Hobart Utensil & Pot Washer Pro-60",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -701,14 +701,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=44",
     "featured": false
   },
   {
     "id": 45,
     "sku": "SP-HOB-1045",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "LPG Gas",
@@ -717,7 +717,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=45",
     "featured": false
   },
   {
@@ -733,7 +733,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=46",
     "featured": false
   },
   {
@@ -749,7 +749,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=47",
     "featured": false
   },
   {
@@ -765,7 +765,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=48",
     "featured": false
   },
   {
@@ -781,14 +781,14 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=49",
     "featured": false
   },
   {
     "id": 50,
     "sku": "SP-HOS-1050",
     "name": "Hoshizaki Upright Storage Cabinet Pro-70",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "LPG Gas",
@@ -797,14 +797,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=50",
     "featured": false
   },
   {
     "id": 51,
     "sku": "SP-MEN-1051",
     "name": "Menu System Induction Suite Pro-70",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "400V / 3-Phase",
@@ -813,14 +813,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=51",
     "featured": false
   },
   {
     "id": 52,
     "sku": "SP-WIN-1052",
     "name": "Winterhalter Utensil & Pot Washer Pro-70",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "230V / Single-Phase",
@@ -829,14 +829,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=52",
     "featured": true
   },
   {
     "id": 53,
     "sku": "SP-HOB-1053",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Natural Gas (20mbar)",
@@ -845,7 +845,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=53",
     "featured": false
   },
   {
@@ -861,7 +861,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=54",
     "featured": false
   },
   {
@@ -877,7 +877,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=55",
     "featured": false
   },
   {
@@ -893,7 +893,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=56",
     "featured": false
   },
   {
@@ -909,14 +909,14 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=57",
     "featured": false
   },
   {
     "id": 58,
     "sku": "SP-HOS-1058",
     "name": "Hoshizaki Upright Storage Cabinet Pro-80",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Natural Gas (20mbar)",
@@ -925,14 +925,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=58",
     "featured": false
   },
   {
     "id": 59,
     "sku": "SP-MEN-1059",
     "name": "Menu System Induction Suite Pro-80",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Dual Fuel (Gas + 230V)",
@@ -941,7 +941,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=59",
     "featured": false
   },
   {
@@ -957,14 +957,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=60",
     "featured": false
   },
   {
     "id": 61,
     "sku": "SP-HOB-1061",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "400V / 3-Phase",
@@ -973,7 +973,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=61",
     "featured": false
   },
   {
@@ -989,7 +989,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=62",
     "featured": false
   },
   {
@@ -1005,7 +1005,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=63",
     "featured": false
   },
   {
@@ -1021,7 +1021,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=64",
     "featured": false
   },
   {
@@ -1037,14 +1037,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=65",
     "featured": false
   },
   {
     "id": 66,
     "sku": "SP-HOS-1066",
     "name": "Hoshizaki Upright Storage Cabinet Pro-90",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "400V / 3-Phase",
@@ -1053,14 +1053,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=66",
     "featured": false
   },
   {
     "id": 67,
     "sku": "SP-MEN-1067",
     "name": "Menu System Induction Suite Pro-90",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "230V / Single-Phase",
@@ -1069,14 +1069,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=67",
     "featured": false
   },
   {
     "id": 68,
     "sku": "SP-HOB-1068",
     "name": "Hobart Utensil & Pot Washer Pro-90",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Natural Gas (20mbar)",
@@ -1085,14 +1085,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=68",
     "featured": false
   },
   {
     "id": 69,
     "sku": "SP-HOB-1069",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -1101,7 +1101,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=69",
     "featured": true
   },
   {
@@ -1117,7 +1117,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=70",
     "featured": false
   },
   {
@@ -1133,7 +1133,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=71",
     "featured": false
   },
   {
@@ -1149,7 +1149,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=72",
     "featured": false
   },
   {
@@ -1165,14 +1165,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=73",
     "featured": false
   },
   {
     "id": 74,
     "sku": "SP-HOS-1074",
     "name": "Hoshizaki Upright Storage Cabinet Pro-100",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Dual Fuel (Gas + 230V)",
@@ -1181,14 +1181,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=74",
     "featured": false
   },
   {
     "id": 75,
     "sku": "SP-MEN-1075",
     "name": "Menu System Induction Suite Pro-100",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "LPG Gas",
@@ -1197,14 +1197,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=75",
     "featured": false
   },
   {
     "id": 76,
     "sku": "SP-WIN-1076",
     "name": "Winterhalter Utensil & Pot Washer Pro-100",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "400V / 3-Phase",
@@ -1213,14 +1213,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=76",
     "featured": false
   },
   {
     "id": 77,
     "sku": "SP-HOB-1077",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "230V / Single-Phase",
@@ -1229,7 +1229,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=77",
     "featured": false
   },
   {
@@ -1245,7 +1245,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=78",
     "featured": false
   },
   {
@@ -1261,7 +1261,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=79",
     "featured": false
   },
   {
@@ -1277,7 +1277,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=80",
     "featured": false
   },
   {
@@ -1293,14 +1293,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=81",
     "featured": false
   },
   {
     "id": 82,
     "sku": "SP-HOS-1082",
     "name": "Hoshizaki Upright Storage Cabinet Pro-110",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "230V / Single-Phase",
@@ -1309,14 +1309,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=82",
     "featured": false
   },
   {
     "id": 83,
     "sku": "SP-MEN-1083",
     "name": "Menu System Induction Suite Pro-110",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Natural Gas (20mbar)",
@@ -1325,7 +1325,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=83",
     "featured": false
   },
   {
@@ -1341,14 +1341,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=84",
     "featured": false
   },
   {
     "id": 85,
     "sku": "SP-HOB-1085",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "LPG Gas",
@@ -1357,7 +1357,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=85",
     "featured": false
   },
   {
@@ -1373,7 +1373,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=86",
     "featured": true
   },
   {
@@ -1389,7 +1389,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=87",
     "featured": false
   },
   {
@@ -1405,7 +1405,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=88",
     "featured": false
   },
   {
@@ -1421,14 +1421,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=89",
     "featured": false
   },
   {
     "id": 90,
     "sku": "SP-HOS-1090",
     "name": "Hoshizaki Upright Storage Cabinet Pro-120",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "LPG Gas",
@@ -1437,14 +1437,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=90",
     "featured": false
   },
   {
     "id": 91,
     "sku": "SP-MEN-1091",
     "name": "Menu System Induction Suite Pro-120",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "400V / 3-Phase",
@@ -1453,14 +1453,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=91",
     "featured": false
   },
   {
     "id": 92,
     "sku": "SP-HOB-1092",
     "name": "Hobart Utensil & Pot Washer Pro-120",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "230V / Single-Phase",
@@ -1469,14 +1469,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=92",
     "featured": false
   },
   {
     "id": 93,
     "sku": "SP-HOB-1093",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Natural Gas (20mbar)",
@@ -1485,7 +1485,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=93",
     "featured": false
   },
   {
@@ -1501,7 +1501,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=94",
     "featured": false
   },
   {
@@ -1517,7 +1517,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=95",
     "featured": false
   },
   {
@@ -1533,7 +1533,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=96",
     "featured": false
   },
   {
@@ -1549,14 +1549,14 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=97",
     "featured": false
   },
   {
     "id": 98,
     "sku": "SP-HOS-1098",
     "name": "Hoshizaki Upright Storage Cabinet Pro-130",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Natural Gas (20mbar)",
@@ -1565,14 +1565,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=98",
     "featured": false
   },
   {
     "id": 99,
     "sku": "SP-MEN-1099",
     "name": "Menu System Induction Suite Pro-130",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Dual Fuel (Gas + 230V)",
@@ -1581,14 +1581,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=99",
     "featured": false
   },
   {
     "id": 100,
     "sku": "SP-WIN-1100",
     "name": "Winterhalter Utensil & Pot Washer Pro-130",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "LPG Gas",
@@ -1597,14 +1597,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=100",
     "featured": false
   },
   {
     "id": 101,
     "sku": "SP-HOB-1101",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "400V / 3-Phase",
@@ -1613,7 +1613,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=101",
     "featured": false
   },
   {
@@ -1629,7 +1629,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=102",
     "featured": false
   },
   {
@@ -1645,7 +1645,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=103",
     "featured": true
   },
   {
@@ -1661,7 +1661,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=104",
     "featured": false
   },
   {
@@ -1677,14 +1677,14 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=105",
     "featured": false
   },
   {
     "id": 106,
     "sku": "SP-HOS-1106",
     "name": "Hoshizaki Upright Storage Cabinet Pro-140",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "400V / 3-Phase",
@@ -1693,14 +1693,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=106",
     "featured": false
   },
   {
     "id": 107,
     "sku": "SP-MEN-1107",
     "name": "Menu System Induction Suite Pro-140",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "230V / Single-Phase",
@@ -1709,7 +1709,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=107",
     "featured": false
   },
   {
@@ -1725,14 +1725,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=108",
     "featured": false
   },
   {
     "id": 109,
     "sku": "SP-HOB-1109",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -1741,7 +1741,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=109",
     "featured": false
   },
   {
@@ -1757,7 +1757,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=110",
     "featured": false
   },
   {
@@ -1773,7 +1773,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=111",
     "featured": false
   },
   {
@@ -1789,7 +1789,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=112",
     "featured": false
   },
   {
@@ -1805,14 +1805,14 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=113",
     "featured": false
   },
   {
     "id": 114,
     "sku": "SP-HOS-1114",
     "name": "Hoshizaki Upright Storage Cabinet Pro-150",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Dual Fuel (Gas + 230V)",
@@ -1821,14 +1821,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=114",
     "featured": false
   },
   {
     "id": 115,
     "sku": "SP-MEN-1115",
     "name": "Menu System Induction Suite Pro-150",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "LPG Gas",
@@ -1837,14 +1837,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=115",
     "featured": false
   },
   {
     "id": 116,
     "sku": "SP-HOB-1116",
     "name": "Hobart Utensil & Pot Washer Pro-150",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "400V / 3-Phase",
@@ -1853,14 +1853,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=116",
     "featured": false
   },
   {
     "id": 117,
     "sku": "SP-HOB-1117",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "230V / Single-Phase",
@@ -1869,7 +1869,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=117",
     "featured": false
   },
   {
@@ -1885,7 +1885,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=118",
     "featured": false
   },
   {
@@ -1901,7 +1901,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=119",
     "featured": false
   },
   {
@@ -1917,7 +1917,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=120",
     "featured": true
   },
   {
@@ -1933,14 +1933,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=121",
     "featured": false
   },
   {
     "id": 122,
     "sku": "SP-HOS-1122",
     "name": "Hoshizaki Upright Storage Cabinet Pro-160",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "230V / Single-Phase",
@@ -1949,14 +1949,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=122",
     "featured": false
   },
   {
     "id": 123,
     "sku": "SP-MEN-1123",
     "name": "Menu System Induction Suite Pro-160",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Natural Gas (20mbar)",
@@ -1965,14 +1965,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=123",
     "featured": false
   },
   {
     "id": 124,
     "sku": "SP-WIN-1124",
     "name": "Winterhalter Utensil & Pot Washer Pro-160",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -1981,14 +1981,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=124",
     "featured": false
   },
   {
     "id": 125,
     "sku": "SP-HOB-1125",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "LPG Gas",
@@ -1997,7 +1997,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=125",
     "featured": false
   },
   {
@@ -2013,7 +2013,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=126",
     "featured": false
   },
   {
@@ -2029,7 +2029,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=127",
     "featured": false
   },
   {
@@ -2045,7 +2045,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=128",
     "featured": false
   },
   {
@@ -2061,14 +2061,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=129",
     "featured": false
   },
   {
     "id": 130,
     "sku": "SP-HOS-1130",
     "name": "Hoshizaki Upright Storage Cabinet Pro-170",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "LPG Gas",
@@ -2077,14 +2077,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=130",
     "featured": false
   },
   {
     "id": 131,
     "sku": "SP-MEN-1131",
     "name": "Menu System Induction Suite Pro-170",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "400V / 3-Phase",
@@ -2093,7 +2093,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=131",
     "featured": false
   },
   {
@@ -2109,14 +2109,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=132",
     "featured": false
   },
   {
     "id": 133,
     "sku": "SP-HOB-1133",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Natural Gas (20mbar)",
@@ -2125,7 +2125,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=133",
     "featured": false
   },
   {
@@ -2141,7 +2141,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=134",
     "featured": false
   },
   {
@@ -2157,7 +2157,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=135",
     "featured": false
   },
   {
@@ -2173,7 +2173,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=136",
     "featured": false
   },
   {
@@ -2189,14 +2189,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=137",
     "featured": true
   },
   {
     "id": 138,
     "sku": "SP-HOS-1138",
     "name": "Hoshizaki Upright Storage Cabinet Pro-180",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Natural Gas (20mbar)",
@@ -2205,14 +2205,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=138",
     "featured": false
   },
   {
     "id": 139,
     "sku": "SP-MEN-1139",
     "name": "Menu System Induction Suite Pro-180",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Dual Fuel (Gas + 230V)",
@@ -2221,14 +2221,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=139",
     "featured": false
   },
   {
     "id": 140,
     "sku": "SP-HOB-1140",
     "name": "Hobart Utensil & Pot Washer Pro-180",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "LPG Gas",
@@ -2237,14 +2237,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=140",
     "featured": false
   },
   {
     "id": 141,
     "sku": "SP-HOB-1141",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "400V / 3-Phase",
@@ -2253,7 +2253,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=141",
     "featured": false
   },
   {
@@ -2269,7 +2269,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=142",
     "featured": false
   },
   {
@@ -2285,7 +2285,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=143",
     "featured": false
   },
   {
@@ -2301,7 +2301,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=144",
     "featured": false
   },
   {
@@ -2317,14 +2317,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=145",
     "featured": false
   },
   {
     "id": 146,
     "sku": "SP-HOS-1146",
     "name": "Hoshizaki Upright Storage Cabinet Pro-190",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "400V / 3-Phase",
@@ -2333,14 +2333,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=146",
     "featured": false
   },
   {
     "id": 147,
     "sku": "SP-MEN-1147",
     "name": "Menu System Induction Suite Pro-190",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "230V / Single-Phase",
@@ -2349,14 +2349,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=147",
     "featured": false
   },
   {
     "id": 148,
     "sku": "SP-WIN-1148",
     "name": "Winterhalter Utensil & Pot Washer Pro-190",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Natural Gas (20mbar)",
@@ -2365,14 +2365,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=148",
     "featured": false
   },
   {
     "id": 149,
     "sku": "SP-HOB-1149",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -2381,7 +2381,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=149",
     "featured": false
   },
   {
@@ -2397,7 +2397,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=150",
     "featured": false
   },
   {
@@ -2413,7 +2413,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=151",
     "featured": false
   },
   {
@@ -2429,7 +2429,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=152",
     "featured": false
   },
   {
@@ -2445,14 +2445,14 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=153",
     "featured": false
   },
   {
     "id": 154,
     "sku": "SP-HOS-1154",
     "name": "Hoshizaki Upright Storage Cabinet Pro-200",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Dual Fuel (Gas + 230V)",
@@ -2461,14 +2461,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=154",
     "featured": true
   },
   {
     "id": 155,
     "sku": "SP-MEN-1155",
     "name": "Menu System Induction Suite Pro-200",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "LPG Gas",
@@ -2477,7 +2477,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=155",
     "featured": false
   },
   {
@@ -2493,14 +2493,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=156",
     "featured": false
   },
   {
     "id": 157,
     "sku": "SP-HOB-1157",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "230V / Single-Phase",
@@ -2509,7 +2509,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=157",
     "featured": false
   },
   {
@@ -2525,7 +2525,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=158",
     "featured": false
   },
   {
@@ -2541,7 +2541,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=159",
     "featured": false
   },
   {
@@ -2557,7 +2557,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=160",
     "featured": false
   },
   {
@@ -2573,14 +2573,14 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=161",
     "featured": false
   },
   {
     "id": 162,
     "sku": "SP-HOS-1162",
     "name": "Hoshizaki Upright Storage Cabinet Pro-210",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "230V / Single-Phase",
@@ -2589,14 +2589,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=162",
     "featured": false
   },
   {
     "id": 163,
     "sku": "SP-MEN-1163",
     "name": "Menu System Induction Suite Pro-210",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Natural Gas (20mbar)",
@@ -2605,14 +2605,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=163",
     "featured": false
   },
   {
     "id": 164,
     "sku": "SP-HOB-1164",
     "name": "Hobart Utensil & Pot Washer Pro-210",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -2621,14 +2621,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=164",
     "featured": false
   },
   {
     "id": 165,
     "sku": "SP-HOB-1165",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "LPG Gas",
@@ -2637,7 +2637,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=165",
     "featured": false
   },
   {
@@ -2653,7 +2653,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=166",
     "featured": false
   },
   {
@@ -2669,7 +2669,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=167",
     "featured": false
   },
   {
@@ -2685,7 +2685,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=168",
     "featured": false
   },
   {
@@ -2701,14 +2701,14 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=169",
     "featured": false
   },
   {
     "id": 170,
     "sku": "SP-HOS-1170",
     "name": "Hoshizaki Upright Storage Cabinet Pro-220",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "LPG Gas",
@@ -2717,14 +2717,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=170",
     "featured": false
   },
   {
     "id": 171,
     "sku": "SP-MEN-1171",
     "name": "Menu System Induction Suite Pro-220",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "400V / 3-Phase",
@@ -2733,14 +2733,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=171",
     "featured": true
   },
   {
     "id": 172,
     "sku": "SP-WIN-1172",
     "name": "Winterhalter Utensil & Pot Washer Pro-220",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "230V / Single-Phase",
@@ -2749,14 +2749,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=172",
     "featured": false
   },
   {
     "id": 173,
     "sku": "SP-HOB-1173",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Natural Gas (20mbar)",
@@ -2765,7 +2765,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=173",
     "featured": false
   },
   {
@@ -2781,7 +2781,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=174",
     "featured": false
   },
   {
@@ -2797,7 +2797,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=175",
     "featured": false
   },
   {
@@ -2813,7 +2813,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=176",
     "featured": false
   },
   {
@@ -2829,14 +2829,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=177",
     "featured": false
   },
   {
     "id": 178,
     "sku": "SP-HOS-1178",
     "name": "Hoshizaki Upright Storage Cabinet Pro-230",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Natural Gas (20mbar)",
@@ -2845,14 +2845,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=178",
     "featured": false
   },
   {
     "id": 179,
     "sku": "SP-MEN-1179",
     "name": "Menu System Induction Suite Pro-230",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Dual Fuel (Gas + 230V)",
@@ -2861,7 +2861,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=179",
     "featured": false
   },
   {
@@ -2877,14 +2877,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=180",
     "featured": false
   },
   {
     "id": 181,
     "sku": "SP-HOB-1181",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "400V / 3-Phase",
@@ -2893,7 +2893,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=181",
     "featured": false
   },
   {
@@ -2909,7 +2909,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=182",
     "featured": false
   },
   {
@@ -2925,7 +2925,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=183",
     "featured": false
   },
   {
@@ -2941,7 +2941,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=184",
     "featured": false
   },
   {
@@ -2957,14 +2957,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=185",
     "featured": false
   },
   {
     "id": 186,
     "sku": "SP-HOS-1186",
     "name": "Hoshizaki Upright Storage Cabinet Pro-240",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "400V / 3-Phase",
@@ -2973,14 +2973,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=186",
     "featured": false
   },
   {
     "id": 187,
     "sku": "SP-MEN-1187",
     "name": "Menu System Induction Suite Pro-240",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "230V / Single-Phase",
@@ -2989,14 +2989,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=187",
     "featured": false
   },
   {
     "id": 188,
     "sku": "SP-HOB-1188",
     "name": "Hobart Utensil & Pot Washer Pro-240",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Natural Gas (20mbar)",
@@ -3005,14 +3005,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=188",
     "featured": true
   },
   {
     "id": 189,
     "sku": "SP-HOB-1189",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -3021,7 +3021,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=189",
     "featured": false
   },
   {
@@ -3037,7 +3037,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=190",
     "featured": false
   },
   {
@@ -3053,7 +3053,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=191",
     "featured": false
   },
   {
@@ -3069,7 +3069,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=192",
     "featured": false
   },
   {
@@ -3085,14 +3085,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=193",
     "featured": false
   },
   {
     "id": 194,
     "sku": "SP-HOS-1194",
     "name": "Hoshizaki Upright Storage Cabinet Pro-250",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Dual Fuel (Gas + 230V)",
@@ -3101,14 +3101,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=194",
     "featured": false
   },
   {
     "id": 195,
     "sku": "SP-MEN-1195",
     "name": "Menu System Induction Suite Pro-250",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "LPG Gas",
@@ -3117,14 +3117,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=195",
     "featured": false
   },
   {
     "id": 196,
     "sku": "SP-WIN-1196",
     "name": "Winterhalter Utensil & Pot Washer Pro-250",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "400V / 3-Phase",
@@ -3133,14 +3133,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=196",
     "featured": false
   },
   {
     "id": 197,
     "sku": "SP-HOB-1197",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "230V / Single-Phase",
@@ -3149,7 +3149,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=197",
     "featured": false
   },
   {
@@ -3165,7 +3165,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=198",
     "featured": false
   },
   {
@@ -3181,7 +3181,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=199",
     "featured": false
   },
   {
@@ -3197,7 +3197,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=200",
     "featured": false
   },
   {
@@ -3213,14 +3213,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=201",
     "featured": false
   },
   {
     "id": 202,
     "sku": "SP-HOS-1202",
     "name": "Hoshizaki Upright Storage Cabinet Pro-260",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "230V / Single-Phase",
@@ -3229,14 +3229,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=202",
     "featured": false
   },
   {
     "id": 203,
     "sku": "SP-MEN-1203",
     "name": "Menu System Induction Suite Pro-260",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Natural Gas (20mbar)",
@@ -3245,7 +3245,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=203",
     "featured": false
   },
   {
@@ -3261,14 +3261,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=204",
     "featured": false
   },
   {
     "id": 205,
     "sku": "SP-HOB-1205",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "LPG Gas",
@@ -3277,7 +3277,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=205",
     "featured": true
   },
   {
@@ -3293,7 +3293,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=206",
     "featured": false
   },
   {
@@ -3309,7 +3309,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=207",
     "featured": false
   },
   {
@@ -3325,7 +3325,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=208",
     "featured": false
   },
   {
@@ -3341,14 +3341,14 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=209",
     "featured": false
   },
   {
     "id": 210,
     "sku": "SP-HOS-1210",
     "name": "Hoshizaki Upright Storage Cabinet Pro-270",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "LPG Gas",
@@ -3357,14 +3357,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=210",
     "featured": false
   },
   {
     "id": 211,
     "sku": "SP-MEN-1211",
     "name": "Menu System Induction Suite Pro-270",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "400V / 3-Phase",
@@ -3373,14 +3373,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=211",
     "featured": false
   },
   {
     "id": 212,
     "sku": "SP-HOB-1212",
     "name": "Hobart Utensil & Pot Washer Pro-270",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "230V / Single-Phase",
@@ -3389,14 +3389,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=212",
     "featured": false
   },
   {
     "id": 213,
     "sku": "SP-HOB-1213",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Natural Gas (20mbar)",
@@ -3405,7 +3405,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=213",
     "featured": false
   },
   {
@@ -3421,7 +3421,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=214",
     "featured": false
   },
   {
@@ -3437,7 +3437,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=215",
     "featured": false
   },
   {
@@ -3453,7 +3453,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=216",
     "featured": false
   },
   {
@@ -3469,14 +3469,14 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=217",
     "featured": false
   },
   {
     "id": 218,
     "sku": "SP-HOS-1218",
     "name": "Hoshizaki Upright Storage Cabinet Pro-280",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Natural Gas (20mbar)",
@@ -3485,14 +3485,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=218",
     "featured": false
   },
   {
     "id": 219,
     "sku": "SP-MEN-1219",
     "name": "Menu System Induction Suite Pro-280",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Dual Fuel (Gas + 230V)",
@@ -3501,14 +3501,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=219",
     "featured": false
   },
   {
     "id": 220,
     "sku": "SP-WIN-1220",
     "name": "Winterhalter Utensil & Pot Washer Pro-280",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "LPG Gas",
@@ -3517,14 +3517,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=220",
     "featured": false
   },
   {
     "id": 221,
     "sku": "SP-HOB-1221",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "400V / 3-Phase",
@@ -3533,7 +3533,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=221",
     "featured": false
   },
   {
@@ -3549,7 +3549,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=222",
     "featured": true
   },
   {
@@ -3565,7 +3565,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=223",
     "featured": false
   },
   {
@@ -3581,7 +3581,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=224",
     "featured": false
   },
   {
@@ -3597,14 +3597,14 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=225",
     "featured": false
   },
   {
     "id": 226,
     "sku": "SP-HOS-1226",
     "name": "Hoshizaki Upright Storage Cabinet Pro-290",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "400V / 3-Phase",
@@ -3613,14 +3613,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=226",
     "featured": false
   },
   {
     "id": 227,
     "sku": "SP-MEN-1227",
     "name": "Menu System Induction Suite Pro-290",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "230V / Single-Phase",
@@ -3629,7 +3629,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=227",
     "featured": false
   },
   {
@@ -3645,14 +3645,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=228",
     "featured": false
   },
   {
     "id": 229,
     "sku": "SP-HOB-1229",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -3661,7 +3661,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=229",
     "featured": false
   },
   {
@@ -3677,7 +3677,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=230",
     "featured": false
   },
   {
@@ -3693,7 +3693,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=231",
     "featured": false
   },
   {
@@ -3709,7 +3709,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=232",
     "featured": false
   },
   {
@@ -3725,14 +3725,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=233",
     "featured": false
   },
   {
     "id": 234,
     "sku": "SP-HOS-1234",
     "name": "Hoshizaki Upright Storage Cabinet Pro-300",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Dual Fuel (Gas + 230V)",
@@ -3741,14 +3741,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=234",
     "featured": false
   },
   {
     "id": 235,
     "sku": "SP-MEN-1235",
     "name": "Menu System Induction Suite Pro-300",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "LPG Gas",
@@ -3757,14 +3757,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=235",
     "featured": false
   },
   {
     "id": 236,
     "sku": "SP-HOB-1236",
     "name": "Hobart Utensil & Pot Washer Pro-300",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "400V / 3-Phase",
@@ -3773,14 +3773,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=236",
     "featured": false
   },
   {
     "id": 237,
     "sku": "SP-HOB-1237",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "230V / Single-Phase",
@@ -3789,7 +3789,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=237",
     "featured": false
   },
   {
@@ -3805,7 +3805,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=238",
     "featured": false
   },
   {
@@ -3821,7 +3821,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=239",
     "featured": true
   },
   {
@@ -3837,7 +3837,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=240",
     "featured": false
   },
   {
@@ -3853,14 +3853,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=241",
     "featured": false
   },
   {
     "id": 242,
     "sku": "SP-HOS-1242",
     "name": "Hoshizaki Upright Storage Cabinet Pro-310",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "230V / Single-Phase",
@@ -3869,14 +3869,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=242",
     "featured": false
   },
   {
     "id": 243,
     "sku": "SP-MEN-1243",
     "name": "Menu System Induction Suite Pro-310",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Natural Gas (20mbar)",
@@ -3885,14 +3885,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=243",
     "featured": false
   },
   {
     "id": 244,
     "sku": "SP-WIN-1244",
     "name": "Winterhalter Utensil & Pot Washer Pro-310",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -3901,14 +3901,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=244",
     "featured": false
   },
   {
     "id": 245,
     "sku": "SP-HOB-1245",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "LPG Gas",
@@ -3917,7 +3917,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=245",
     "featured": false
   },
   {
@@ -3933,7 +3933,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=246",
     "featured": false
   },
   {
@@ -3949,7 +3949,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=247",
     "featured": false
   },
   {
@@ -3965,7 +3965,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=248",
     "featured": false
   },
   {
@@ -3981,14 +3981,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=249",
     "featured": false
   },
   {
     "id": 250,
     "sku": "SP-HOS-1250",
     "name": "Hoshizaki Upright Storage Cabinet Pro-320",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "LPG Gas",
@@ -3997,14 +3997,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=250",
     "featured": false
   },
   {
     "id": 251,
     "sku": "SP-MEN-1251",
     "name": "Menu System Induction Suite Pro-320",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "400V / 3-Phase",
@@ -4013,7 +4013,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=251",
     "featured": false
   },
   {
@@ -4029,14 +4029,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=252",
     "featured": false
   },
   {
     "id": 253,
     "sku": "SP-HOB-1253",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Natural Gas (20mbar)",
@@ -4045,7 +4045,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=253",
     "featured": false
   },
   {
@@ -4061,7 +4061,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=254",
     "featured": false
   },
   {
@@ -4077,7 +4077,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=255",
     "featured": false
   },
   {
@@ -4093,7 +4093,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=256",
     "featured": true
   },
   {
@@ -4109,14 +4109,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=257",
     "featured": false
   },
   {
     "id": 258,
     "sku": "SP-HOS-1258",
     "name": "Hoshizaki Upright Storage Cabinet Pro-330",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Natural Gas (20mbar)",
@@ -4125,14 +4125,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=258",
     "featured": false
   },
   {
     "id": 259,
     "sku": "SP-MEN-1259",
     "name": "Menu System Induction Suite Pro-330",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Dual Fuel (Gas + 230V)",
@@ -4141,14 +4141,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=259",
     "featured": false
   },
   {
     "id": 260,
     "sku": "SP-HOB-1260",
     "name": "Hobart Utensil & Pot Washer Pro-330",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "LPG Gas",
@@ -4157,14 +4157,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=260",
     "featured": false
   },
   {
     "id": 261,
     "sku": "SP-HOB-1261",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "400V / 3-Phase",
@@ -4173,7 +4173,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=261",
     "featured": false
   },
   {
@@ -4189,7 +4189,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=262",
     "featured": false
   },
   {
@@ -4205,7 +4205,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=263",
     "featured": false
   },
   {
@@ -4221,7 +4221,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=264",
     "featured": false
   },
   {
@@ -4237,14 +4237,14 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=265",
     "featured": false
   },
   {
     "id": 266,
     "sku": "SP-HOS-1266",
     "name": "Hoshizaki Upright Storage Cabinet Pro-340",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "400V / 3-Phase",
@@ -4253,14 +4253,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=266",
     "featured": false
   },
   {
     "id": 267,
     "sku": "SP-MEN-1267",
     "name": "Menu System Induction Suite Pro-340",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "230V / Single-Phase",
@@ -4269,14 +4269,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=267",
     "featured": false
   },
   {
     "id": 268,
     "sku": "SP-WIN-1268",
     "name": "Winterhalter Utensil & Pot Washer Pro-340",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Natural Gas (20mbar)",
@@ -4285,14 +4285,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=268",
     "featured": false
   },
   {
     "id": 269,
     "sku": "SP-HOB-1269",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -4301,7 +4301,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=269",
     "featured": false
   },
   {
@@ -4317,7 +4317,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=270",
     "featured": false
   },
   {
@@ -4333,7 +4333,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=271",
     "featured": false
   },
   {
@@ -4349,7 +4349,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=272",
     "featured": false
   },
   {
@@ -4365,14 +4365,14 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=273",
     "featured": true
   },
   {
     "id": 274,
     "sku": "SP-HOS-1274",
     "name": "Hoshizaki Upright Storage Cabinet Pro-350",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Dual Fuel (Gas + 230V)",
@@ -4381,14 +4381,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=274",
     "featured": false
   },
   {
     "id": 275,
     "sku": "SP-MEN-1275",
     "name": "Menu System Induction Suite Pro-350",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "LPG Gas",
@@ -4397,7 +4397,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=275",
     "featured": false
   },
   {
@@ -4413,14 +4413,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=276",
     "featured": false
   },
   {
     "id": 277,
     "sku": "SP-HOB-1277",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "230V / Single-Phase",
@@ -4429,7 +4429,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=277",
     "featured": false
   },
   {
@@ -4445,7 +4445,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=278",
     "featured": false
   },
   {
@@ -4461,7 +4461,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=279",
     "featured": false
   },
   {
@@ -4477,7 +4477,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=280",
     "featured": false
   },
   {
@@ -4493,14 +4493,14 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=281",
     "featured": false
   },
   {
     "id": 282,
     "sku": "SP-HOS-1282",
     "name": "Hoshizaki Upright Storage Cabinet Pro-360",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "230V / Single-Phase",
@@ -4509,14 +4509,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=282",
     "featured": false
   },
   {
     "id": 283,
     "sku": "SP-MEN-1283",
     "name": "Menu System Induction Suite Pro-360",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Natural Gas (20mbar)",
@@ -4525,14 +4525,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=283",
     "featured": false
   },
   {
     "id": 284,
     "sku": "SP-HOB-1284",
     "name": "Hobart Utensil & Pot Washer Pro-360",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -4541,14 +4541,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=284",
     "featured": false
   },
   {
     "id": 285,
     "sku": "SP-HOB-1285",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "LPG Gas",
@@ -4557,7 +4557,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=285",
     "featured": false
   },
   {
@@ -4573,7 +4573,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=286",
     "featured": false
   },
   {
@@ -4589,7 +4589,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=287",
     "featured": false
   },
   {
@@ -4605,7 +4605,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=288",
     "featured": false
   },
   {
@@ -4621,14 +4621,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=289",
     "featured": false
   },
   {
     "id": 290,
     "sku": "SP-HOS-1290",
     "name": "Hoshizaki Upright Storage Cabinet Pro-370",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "LPG Gas",
@@ -4637,14 +4637,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=290",
     "featured": true
   },
   {
     "id": 291,
     "sku": "SP-MEN-1291",
     "name": "Menu System Induction Suite Pro-370",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "400V / 3-Phase",
@@ -4653,14 +4653,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=291",
     "featured": false
   },
   {
     "id": 292,
     "sku": "SP-WIN-1292",
     "name": "Winterhalter Utensil & Pot Washer Pro-370",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "230V / Single-Phase",
@@ -4669,14 +4669,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=292",
     "featured": false
   },
   {
     "id": 293,
     "sku": "SP-HOB-1293",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Natural Gas (20mbar)",
@@ -4685,7 +4685,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=293",
     "featured": false
   },
   {
@@ -4701,7 +4701,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=294",
     "featured": false
   },
   {
@@ -4717,7 +4717,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=295",
     "featured": false
   },
   {
@@ -4733,7 +4733,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=296",
     "featured": false
   },
   {
@@ -4749,14 +4749,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=297",
     "featured": false
   },
   {
     "id": 298,
     "sku": "SP-HOS-1298",
     "name": "Hoshizaki Upright Storage Cabinet Pro-380",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Natural Gas (20mbar)",
@@ -4765,14 +4765,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=298",
     "featured": false
   },
   {
     "id": 299,
     "sku": "SP-MEN-1299",
     "name": "Menu System Induction Suite Pro-380",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Dual Fuel (Gas + 230V)",
@@ -4781,7 +4781,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=299",
     "featured": false
   },
   {
@@ -4797,14 +4797,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=300",
     "featured": false
   },
   {
     "id": 301,
     "sku": "SP-HOB-1301",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "400V / 3-Phase",
@@ -4813,7 +4813,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=301",
     "featured": false
   },
   {
@@ -4829,7 +4829,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=302",
     "featured": false
   },
   {
@@ -4845,7 +4845,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=303",
     "featured": false
   },
   {
@@ -4861,7 +4861,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=304",
     "featured": false
   },
   {
@@ -4877,14 +4877,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=305",
     "featured": false
   },
   {
     "id": 306,
     "sku": "SP-HOS-1306",
     "name": "Hoshizaki Upright Storage Cabinet Pro-390",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "400V / 3-Phase",
@@ -4893,14 +4893,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=306",
     "featured": false
   },
   {
     "id": 307,
     "sku": "SP-MEN-1307",
     "name": "Menu System Induction Suite Pro-390",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "230V / Single-Phase",
@@ -4909,14 +4909,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=307",
     "featured": true
   },
   {
     "id": 308,
     "sku": "SP-HOB-1308",
     "name": "Hobart Utensil & Pot Washer Pro-390",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Natural Gas (20mbar)",
@@ -4925,14 +4925,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=308",
     "featured": false
   },
   {
     "id": 309,
     "sku": "SP-HOB-1309",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -4941,7 +4941,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=309",
     "featured": false
   },
   {
@@ -4957,7 +4957,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=310",
     "featured": false
   },
   {
@@ -4973,7 +4973,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=311",
     "featured": false
   },
   {
@@ -4989,7 +4989,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=312",
     "featured": false
   },
   {
@@ -5005,14 +5005,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=313",
     "featured": false
   },
   {
     "id": 314,
     "sku": "SP-HOS-1314",
     "name": "Hoshizaki Upright Storage Cabinet Pro-400",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Dual Fuel (Gas + 230V)",
@@ -5021,14 +5021,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=314",
     "featured": false
   },
   {
     "id": 315,
     "sku": "SP-MEN-1315",
     "name": "Menu System Induction Suite Pro-400",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "LPG Gas",
@@ -5037,14 +5037,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=315",
     "featured": false
   },
   {
     "id": 316,
     "sku": "SP-WIN-1316",
     "name": "Winterhalter Utensil & Pot Washer Pro-400",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "400V / 3-Phase",
@@ -5053,14 +5053,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=316",
     "featured": false
   },
   {
     "id": 317,
     "sku": "SP-HOB-1317",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "230V / Single-Phase",
@@ -5069,7 +5069,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=317",
     "featured": false
   },
   {
@@ -5085,7 +5085,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=318",
     "featured": false
   },
   {
@@ -5101,7 +5101,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=319",
     "featured": false
   },
   {
@@ -5117,7 +5117,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=320",
     "featured": false
   },
   {
@@ -5133,14 +5133,14 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=321",
     "featured": false
   },
   {
     "id": 322,
     "sku": "SP-HOS-1322",
     "name": "Hoshizaki Upright Storage Cabinet Pro-410",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "230V / Single-Phase",
@@ -5149,14 +5149,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=322",
     "featured": false
   },
   {
     "id": 323,
     "sku": "SP-MEN-1323",
     "name": "Menu System Induction Suite Pro-410",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Natural Gas (20mbar)",
@@ -5165,7 +5165,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=323",
     "featured": false
   },
   {
@@ -5181,14 +5181,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=324",
     "featured": true
   },
   {
     "id": 325,
     "sku": "SP-HOB-1325",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "LPG Gas",
@@ -5197,7 +5197,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=325",
     "featured": false
   },
   {
@@ -5213,7 +5213,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=326",
     "featured": false
   },
   {
@@ -5229,7 +5229,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=327",
     "featured": false
   },
   {
@@ -5245,7 +5245,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=328",
     "featured": false
   },
   {
@@ -5261,14 +5261,14 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=329",
     "featured": false
   },
   {
     "id": 330,
     "sku": "SP-HOS-1330",
     "name": "Hoshizaki Upright Storage Cabinet Pro-420",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "LPG Gas",
@@ -5277,14 +5277,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=330",
     "featured": false
   },
   {
     "id": 331,
     "sku": "SP-MEN-1331",
     "name": "Menu System Induction Suite Pro-420",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "400V / 3-Phase",
@@ -5293,14 +5293,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=331",
     "featured": false
   },
   {
     "id": 332,
     "sku": "SP-HOB-1332",
     "name": "Hobart Utensil & Pot Washer Pro-420",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "230V / Single-Phase",
@@ -5309,14 +5309,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=332",
     "featured": false
   },
   {
     "id": 333,
     "sku": "SP-HOB-1333",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Natural Gas (20mbar)",
@@ -5325,7 +5325,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=333",
     "featured": false
   },
   {
@@ -5341,7 +5341,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=334",
     "featured": false
   },
   {
@@ -5357,7 +5357,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=335",
     "featured": false
   },
   {
@@ -5373,7 +5373,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=336",
     "featured": false
   },
   {
@@ -5389,14 +5389,14 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=337",
     "featured": false
   },
   {
     "id": 338,
     "sku": "SP-HOS-1338",
     "name": "Hoshizaki Upright Storage Cabinet Pro-430",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Natural Gas (20mbar)",
@@ -5405,14 +5405,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=338",
     "featured": false
   },
   {
     "id": 339,
     "sku": "SP-MEN-1339",
     "name": "Menu System Induction Suite Pro-430",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Dual Fuel (Gas + 230V)",
@@ -5421,14 +5421,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=339",
     "featured": false
   },
   {
     "id": 340,
     "sku": "SP-WIN-1340",
     "name": "Winterhalter Utensil & Pot Washer Pro-430",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "LPG Gas",
@@ -5437,14 +5437,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=340",
     "featured": false
   },
   {
     "id": 341,
     "sku": "SP-HOB-1341",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "400V / 3-Phase",
@@ -5453,7 +5453,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=341",
     "featured": true
   },
   {
@@ -5469,7 +5469,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=342",
     "featured": false
   },
   {
@@ -5485,7 +5485,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=343",
     "featured": false
   },
   {
@@ -5501,7 +5501,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=344",
     "featured": false
   },
   {
@@ -5517,14 +5517,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=345",
     "featured": false
   },
   {
     "id": 346,
     "sku": "SP-HOS-1346",
     "name": "Hoshizaki Upright Storage Cabinet Pro-440",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "400V / 3-Phase",
@@ -5533,14 +5533,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=346",
     "featured": false
   },
   {
     "id": 347,
     "sku": "SP-MEN-1347",
     "name": "Menu System Induction Suite Pro-440",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "230V / Single-Phase",
@@ -5549,7 +5549,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=347",
     "featured": false
   },
   {
@@ -5565,14 +5565,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=348",
     "featured": false
   },
   {
     "id": 349,
     "sku": "SP-HOB-1349",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -5581,7 +5581,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=349",
     "featured": false
   },
   {
@@ -5597,7 +5597,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=350",
     "featured": false
   },
   {
@@ -5613,7 +5613,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=351",
     "featured": false
   },
   {
@@ -5629,7 +5629,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=352",
     "featured": false
   },
   {
@@ -5645,14 +5645,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=353",
     "featured": false
   },
   {
     "id": 354,
     "sku": "SP-HOS-1354",
     "name": "Hoshizaki Upright Storage Cabinet Pro-450",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Dual Fuel (Gas + 230V)",
@@ -5661,14 +5661,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=354",
     "featured": false
   },
   {
     "id": 355,
     "sku": "SP-MEN-1355",
     "name": "Menu System Induction Suite Pro-450",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "LPG Gas",
@@ -5677,14 +5677,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=355",
     "featured": false
   },
   {
     "id": 356,
     "sku": "SP-HOB-1356",
     "name": "Hobart Utensil & Pot Washer Pro-450",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "400V / 3-Phase",
@@ -5693,14 +5693,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=356",
     "featured": false
   },
   {
     "id": 357,
     "sku": "SP-HOB-1357",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "230V / Single-Phase",
@@ -5709,7 +5709,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=357",
     "featured": false
   },
   {
@@ -5725,7 +5725,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=358",
     "featured": true
   },
   {
@@ -5741,7 +5741,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=359",
     "featured": false
   },
   {
@@ -5757,7 +5757,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=360",
     "featured": false
   },
   {
@@ -5773,14 +5773,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=361",
     "featured": false
   },
   {
     "id": 362,
     "sku": "SP-HOS-1362",
     "name": "Hoshizaki Upright Storage Cabinet Pro-460",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "230V / Single-Phase",
@@ -5789,14 +5789,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=362",
     "featured": false
   },
   {
     "id": 363,
     "sku": "SP-MEN-1363",
     "name": "Menu System Induction Suite Pro-460",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Natural Gas (20mbar)",
@@ -5805,14 +5805,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=363",
     "featured": false
   },
   {
     "id": 364,
     "sku": "SP-WIN-1364",
     "name": "Winterhalter Utensil & Pot Washer Pro-460",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -5821,14 +5821,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=364",
     "featured": false
   },
   {
     "id": 365,
     "sku": "SP-HOB-1365",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "LPG Gas",
@@ -5837,7 +5837,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=365",
     "featured": false
   },
   {
@@ -5853,7 +5853,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=366",
     "featured": false
   },
   {
@@ -5869,7 +5869,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=367",
     "featured": false
   },
   {
@@ -5885,7 +5885,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=368",
     "featured": false
   },
   {
@@ -5901,14 +5901,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=369",
     "featured": false
   },
   {
     "id": 370,
     "sku": "SP-HOS-1370",
     "name": "Hoshizaki Upright Storage Cabinet Pro-470",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "LPG Gas",
@@ -5917,14 +5917,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=370",
     "featured": false
   },
   {
     "id": 371,
     "sku": "SP-MEN-1371",
     "name": "Menu System Induction Suite Pro-470",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "400V / 3-Phase",
@@ -5933,7 +5933,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=371",
     "featured": false
   },
   {
@@ -5949,14 +5949,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=372",
     "featured": false
   },
   {
     "id": 373,
     "sku": "SP-HOB-1373",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Natural Gas (20mbar)",
@@ -5965,7 +5965,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=373",
     "featured": false
   },
   {
@@ -5981,7 +5981,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=374",
     "featured": false
   },
   {
@@ -5997,7 +5997,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=375",
     "featured": true
   },
   {
@@ -6013,7 +6013,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=376",
     "featured": false
   },
   {
@@ -6029,14 +6029,14 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=377",
     "featured": false
   },
   {
     "id": 378,
     "sku": "SP-HOS-1378",
     "name": "Hoshizaki Upright Storage Cabinet Pro-480",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Natural Gas (20mbar)",
@@ -6045,14 +6045,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=378",
     "featured": false
   },
   {
     "id": 379,
     "sku": "SP-MEN-1379",
     "name": "Menu System Induction Suite Pro-480",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Dual Fuel (Gas + 230V)",
@@ -6061,14 +6061,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=379",
     "featured": false
   },
   {
     "id": 380,
     "sku": "SP-HOB-1380",
     "name": "Hobart Utensil & Pot Washer Pro-480",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "LPG Gas",
@@ -6077,14 +6077,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=380",
     "featured": false
   },
   {
     "id": 381,
     "sku": "SP-HOB-1381",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "400V / 3-Phase",
@@ -6093,7 +6093,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=381",
     "featured": false
   },
   {
@@ -6109,7 +6109,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=382",
     "featured": false
   },
   {
@@ -6125,7 +6125,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=383",
     "featured": false
   },
   {
@@ -6141,7 +6141,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=384",
     "featured": false
   },
   {
@@ -6157,14 +6157,14 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=385",
     "featured": false
   },
   {
     "id": 386,
     "sku": "SP-HOS-1386",
     "name": "Hoshizaki Upright Storage Cabinet Pro-490",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "400V / 3-Phase",
@@ -6173,14 +6173,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=386",
     "featured": false
   },
   {
     "id": 387,
     "sku": "SP-MEN-1387",
     "name": "Menu System Induction Suite Pro-490",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "230V / Single-Phase",
@@ -6189,14 +6189,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=387",
     "featured": false
   },
   {
     "id": 388,
     "sku": "SP-WIN-1388",
     "name": "Winterhalter Utensil & Pot Washer Pro-490",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Natural Gas (20mbar)",
@@ -6205,14 +6205,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=388",
     "featured": false
   },
   {
     "id": 389,
     "sku": "SP-HOB-1389",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -6221,7 +6221,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=389",
     "featured": false
   },
   {
@@ -6237,7 +6237,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=390",
     "featured": false
   },
   {
@@ -6253,7 +6253,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=391",
     "featured": false
   },
   {
@@ -6269,7 +6269,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=392",
     "featured": true
   },
   {
@@ -6285,14 +6285,14 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=393",
     "featured": false
   },
   {
     "id": 394,
     "sku": "SP-HOS-1394",
     "name": "Hoshizaki Upright Storage Cabinet Pro-500",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Dual Fuel (Gas + 230V)",
@@ -6301,14 +6301,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=394",
     "featured": false
   },
   {
     "id": 395,
     "sku": "SP-MEN-1395",
     "name": "Menu System Induction Suite Pro-500",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "LPG Gas",
@@ -6317,7 +6317,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=395",
     "featured": false
   },
   {
@@ -6333,14 +6333,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=396",
     "featured": false
   },
   {
     "id": 397,
     "sku": "SP-HOB-1397",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "230V / Single-Phase",
@@ -6349,7 +6349,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=397",
     "featured": false
   },
   {
@@ -6365,7 +6365,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=398",
     "featured": false
   },
   {
@@ -6381,7 +6381,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=399",
     "featured": false
   },
   {
@@ -6397,7 +6397,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=400",
     "featured": false
   },
   {
@@ -6413,14 +6413,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=401",
     "featured": false
   },
   {
     "id": 402,
     "sku": "SP-HOS-1402",
     "name": "Hoshizaki Upright Storage Cabinet Pro-510",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "230V / Single-Phase",
@@ -6429,14 +6429,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=402",
     "featured": false
   },
   {
     "id": 403,
     "sku": "SP-MEN-1403",
     "name": "Menu System Induction Suite Pro-510",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Natural Gas (20mbar)",
@@ -6445,14 +6445,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=403",
     "featured": false
   },
   {
     "id": 404,
     "sku": "SP-HOB-1404",
     "name": "Hobart Utensil & Pot Washer Pro-510",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -6461,14 +6461,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=404",
     "featured": false
   },
   {
     "id": 405,
     "sku": "SP-HOB-1405",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "LPG Gas",
@@ -6477,7 +6477,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=405",
     "featured": false
   },
   {
@@ -6493,7 +6493,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=406",
     "featured": false
   },
   {
@@ -6509,7 +6509,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=407",
     "featured": false
   },
   {
@@ -6525,7 +6525,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=408",
     "featured": false
   },
   {
@@ -6541,14 +6541,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=409",
     "featured": true
   },
   {
     "id": 410,
     "sku": "SP-HOS-1410",
     "name": "Hoshizaki Upright Storage Cabinet Pro-520",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "LPG Gas",
@@ -6557,14 +6557,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=410",
     "featured": false
   },
   {
     "id": 411,
     "sku": "SP-MEN-1411",
     "name": "Menu System Induction Suite Pro-520",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "400V / 3-Phase",
@@ -6573,14 +6573,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=411",
     "featured": false
   },
   {
     "id": 412,
     "sku": "SP-WIN-1412",
     "name": "Winterhalter Utensil & Pot Washer Pro-520",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "230V / Single-Phase",
@@ -6589,14 +6589,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=412",
     "featured": false
   },
   {
     "id": 413,
     "sku": "SP-HOB-1413",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Natural Gas (20mbar)",
@@ -6605,7 +6605,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=413",
     "featured": false
   },
   {
@@ -6621,7 +6621,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=414",
     "featured": false
   },
   {
@@ -6637,7 +6637,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=415",
     "featured": false
   },
   {
@@ -6653,7 +6653,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=416",
     "featured": false
   },
   {
@@ -6669,14 +6669,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=417",
     "featured": false
   },
   {
     "id": 418,
     "sku": "SP-HOS-1418",
     "name": "Hoshizaki Upright Storage Cabinet Pro-530",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Natural Gas (20mbar)",
@@ -6685,14 +6685,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=418",
     "featured": false
   },
   {
     "id": 419,
     "sku": "SP-MEN-1419",
     "name": "Menu System Induction Suite Pro-530",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Dual Fuel (Gas + 230V)",
@@ -6701,7 +6701,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=419",
     "featured": false
   },
   {
@@ -6717,14 +6717,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=420",
     "featured": false
   },
   {
     "id": 421,
     "sku": "SP-HOB-1421",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "400V / 3-Phase",
@@ -6733,7 +6733,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=421",
     "featured": false
   },
   {
@@ -6749,7 +6749,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=422",
     "featured": false
   },
   {
@@ -6765,7 +6765,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=423",
     "featured": false
   },
   {
@@ -6781,7 +6781,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=424",
     "featured": false
   },
   {
@@ -6797,14 +6797,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=425",
     "featured": false
   },
   {
     "id": 426,
     "sku": "SP-HOS-1426",
     "name": "Hoshizaki Upright Storage Cabinet Pro-540",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "400V / 3-Phase",
@@ -6813,14 +6813,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=426",
     "featured": true
   },
   {
     "id": 427,
     "sku": "SP-MEN-1427",
     "name": "Menu System Induction Suite Pro-540",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "230V / Single-Phase",
@@ -6829,14 +6829,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=427",
     "featured": false
   },
   {
     "id": 428,
     "sku": "SP-HOB-1428",
     "name": "Hobart Utensil & Pot Washer Pro-540",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Natural Gas (20mbar)",
@@ -6845,14 +6845,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=428",
     "featured": false
   },
   {
     "id": 429,
     "sku": "SP-HOB-1429",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -6861,7 +6861,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=429",
     "featured": false
   },
   {
@@ -6877,7 +6877,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=430",
     "featured": false
   },
   {
@@ -6893,7 +6893,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=431",
     "featured": false
   },
   {
@@ -6909,7 +6909,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=432",
     "featured": false
   },
   {
@@ -6925,14 +6925,14 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=433",
     "featured": false
   },
   {
     "id": 434,
     "sku": "SP-HOS-1434",
     "name": "Hoshizaki Upright Storage Cabinet Pro-550",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Dual Fuel (Gas + 230V)",
@@ -6941,14 +6941,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=434",
     "featured": false
   },
   {
     "id": 435,
     "sku": "SP-MEN-1435",
     "name": "Menu System Induction Suite Pro-550",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "LPG Gas",
@@ -6957,14 +6957,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=435",
     "featured": false
   },
   {
     "id": 436,
     "sku": "SP-WIN-1436",
     "name": "Winterhalter Utensil & Pot Washer Pro-550",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "400V / 3-Phase",
@@ -6973,14 +6973,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=436",
     "featured": false
   },
   {
     "id": 437,
     "sku": "SP-HOB-1437",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "230V / Single-Phase",
@@ -6989,7 +6989,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=437",
     "featured": false
   },
   {
@@ -7005,7 +7005,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=438",
     "featured": false
   },
   {
@@ -7021,7 +7021,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=439",
     "featured": false
   },
   {
@@ -7037,7 +7037,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=440",
     "featured": false
   },
   {
@@ -7053,14 +7053,14 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=441",
     "featured": false
   },
   {
     "id": 442,
     "sku": "SP-HOS-1442",
     "name": "Hoshizaki Upright Storage Cabinet Pro-560",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "230V / Single-Phase",
@@ -7069,14 +7069,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=442",
     "featured": false
   },
   {
     "id": 443,
     "sku": "SP-MEN-1443",
     "name": "Menu System Induction Suite Pro-560",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Natural Gas (20mbar)",
@@ -7085,7 +7085,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=443",
     "featured": true
   },
   {
@@ -7101,14 +7101,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=444",
     "featured": false
   },
   {
     "id": 445,
     "sku": "SP-HOB-1445",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "LPG Gas",
@@ -7117,7 +7117,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=445",
     "featured": false
   },
   {
@@ -7133,7 +7133,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=446",
     "featured": false
   },
   {
@@ -7149,7 +7149,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=447",
     "featured": false
   },
   {
@@ -7165,7 +7165,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=448",
     "featured": false
   },
   {
@@ -7181,14 +7181,14 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=449",
     "featured": false
   },
   {
     "id": 450,
     "sku": "SP-HOS-1450",
     "name": "Hoshizaki Upright Storage Cabinet Pro-570",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "LPG Gas",
@@ -7197,14 +7197,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=450",
     "featured": false
   },
   {
     "id": 451,
     "sku": "SP-MEN-1451",
     "name": "Menu System Induction Suite Pro-570",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "400V / 3-Phase",
@@ -7213,14 +7213,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=451",
     "featured": false
   },
   {
     "id": 452,
     "sku": "SP-HOB-1452",
     "name": "Hobart Utensil & Pot Washer Pro-570",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "230V / Single-Phase",
@@ -7229,14 +7229,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=452",
     "featured": false
   },
   {
     "id": 453,
     "sku": "SP-HOB-1453",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Natural Gas (20mbar)",
@@ -7245,7 +7245,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=453",
     "featured": false
   },
   {
@@ -7261,7 +7261,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=454",
     "featured": false
   },
   {
@@ -7277,7 +7277,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=455",
     "featured": false
   },
   {
@@ -7293,7 +7293,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=456",
     "featured": false
   },
   {
@@ -7309,14 +7309,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=457",
     "featured": false
   },
   {
     "id": 458,
     "sku": "SP-HOS-1458",
     "name": "Hoshizaki Upright Storage Cabinet Pro-580",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Natural Gas (20mbar)",
@@ -7325,14 +7325,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=458",
     "featured": false
   },
   {
     "id": 459,
     "sku": "SP-MEN-1459",
     "name": "Menu System Induction Suite Pro-580",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Dual Fuel (Gas + 230V)",
@@ -7341,14 +7341,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=459",
     "featured": false
   },
   {
     "id": 460,
     "sku": "SP-WIN-1460",
     "name": "Winterhalter Utensil & Pot Washer Pro-580",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "LPG Gas",
@@ -7357,14 +7357,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=460",
     "featured": true
   },
   {
     "id": 461,
     "sku": "SP-HOB-1461",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "400V / 3-Phase",
@@ -7373,7 +7373,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=461",
     "featured": false
   },
   {
@@ -7389,7 +7389,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=462",
     "featured": false
   },
   {
@@ -7405,7 +7405,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=463",
     "featured": false
   },
   {
@@ -7421,7 +7421,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=464",
     "featured": false
   },
   {
@@ -7437,14 +7437,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=465",
     "featured": false
   },
   {
     "id": 466,
     "sku": "SP-HOS-1466",
     "name": "Hoshizaki Upright Storage Cabinet Pro-590",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "400V / 3-Phase",
@@ -7453,14 +7453,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=466",
     "featured": false
   },
   {
     "id": 467,
     "sku": "SP-MEN-1467",
     "name": "Menu System Induction Suite Pro-590",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "230V / Single-Phase",
@@ -7469,7 +7469,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=467",
     "featured": false
   },
   {
@@ -7485,14 +7485,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=468",
     "featured": false
   },
   {
     "id": 469,
     "sku": "SP-HOB-1469",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -7501,7 +7501,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=469",
     "featured": false
   },
   {
@@ -7517,7 +7517,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=470",
     "featured": false
   },
   {
@@ -7533,7 +7533,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=471",
     "featured": false
   },
   {
@@ -7549,7 +7549,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=472",
     "featured": false
   },
   {
@@ -7565,14 +7565,14 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=473",
     "featured": false
   },
   {
     "id": 474,
     "sku": "SP-HOS-1474",
     "name": "Hoshizaki Upright Storage Cabinet Pro-600",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Dual Fuel (Gas + 230V)",
@@ -7581,14 +7581,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=474",
     "featured": false
   },
   {
     "id": 475,
     "sku": "SP-MEN-1475",
     "name": "Menu System Induction Suite Pro-600",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "LPG Gas",
@@ -7597,14 +7597,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=475",
     "featured": false
   },
   {
     "id": 476,
     "sku": "SP-HOB-1476",
     "name": "Hobart Utensil & Pot Washer Pro-600",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "400V / 3-Phase",
@@ -7613,14 +7613,14 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=476",
     "featured": false
   },
   {
     "id": 477,
     "sku": "SP-HOB-1477",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "230V / Single-Phase",
@@ -7629,7 +7629,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=477",
     "featured": true
   },
   {
@@ -7645,7 +7645,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=478",
     "featured": false
   },
   {
@@ -7661,7 +7661,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=479",
     "featured": false
   },
   {
@@ -7677,7 +7677,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=480",
     "featured": false
   },
   {
@@ -7693,14 +7693,14 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=481",
     "featured": false
   },
   {
     "id": 482,
     "sku": "SP-HOS-1482",
     "name": "Hoshizaki Upright Storage Cabinet Pro-610",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "230V / Single-Phase",
@@ -7709,14 +7709,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=482",
     "featured": false
   },
   {
     "id": 483,
     "sku": "SP-MEN-1483",
     "name": "Menu System Induction Suite Pro-610",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Natural Gas (20mbar)",
@@ -7725,14 +7725,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=483",
     "featured": false
   },
   {
     "id": 484,
     "sku": "SP-WIN-1484",
     "name": "Winterhalter Utensil & Pot Washer Pro-610",
-    "brand": "Winterhalter",
+    "brand": "Steel & Fire Co.",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "Dual Fuel (Gas + 230V)",
@@ -7741,14 +7741,14 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=484",
     "featured": false
   },
   {
     "id": 485,
     "sku": "SP-HOB-1485",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "LPG Gas",
@@ -7757,7 +7757,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=485",
     "featured": false
   },
   {
@@ -7773,7 +7773,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=486",
     "featured": false
   },
   {
@@ -7789,7 +7789,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=487",
     "featured": false
   },
   {
@@ -7805,7 +7805,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=488",
     "featured": false
   },
   {
@@ -7821,14 +7821,14 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=489",
     "featured": false
   },
   {
     "id": 490,
     "sku": "SP-HOS-1490",
     "name": "Hoshizaki Upright Storage Cabinet Pro-620",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "LPG Gas",
@@ -7837,14 +7837,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=490",
     "featured": false
   },
   {
     "id": 491,
     "sku": "SP-MEN-1491",
     "name": "Menu System Induction Suite Pro-620",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "400V / 3-Phase",
@@ -7853,7 +7853,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=491",
     "featured": false
   },
   {
@@ -7869,14 +7869,14 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=492",
     "featured": false
   },
   {
     "id": 493,
     "sku": "SP-HOB-1493",
     "name": "Hobart 20L Heavy Planetary Planetary Mixer",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Food Preparation & Bakery",
     "subCategory": "Planetary Mixer",
     "power": "Natural Gas (20mbar)",
@@ -7885,7 +7885,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=493",
     "featured": false
   },
   {
@@ -7901,7 +7901,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=494",
     "featured": true
   },
   {
@@ -7917,7 +7917,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=495",
     "featured": false
   },
   {
@@ -7933,7 +7933,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=496",
     "featured": false
   },
   {
@@ -7949,14 +7949,14 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=497",
     "featured": false
   },
   {
     "id": 498,
     "sku": "SP-HOS-1498",
     "name": "Hoshizaki Upright Storage Cabinet Pro-630",
-    "brand": "Hoshizaki",
+    "brand": "Alpha",
     "category": "Cold Storage & Refrigeration",
     "subCategory": "Upright Storage Cabinet",
     "power": "Natural Gas (20mbar)",
@@ -7965,14 +7965,14 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=498",
     "featured": false
   },
   {
     "id": 499,
     "sku": "SP-MEN-1499",
     "name": "Menu System Induction Suite Pro-630",
-    "brand": "Menu System",
+    "brand": "Hambach",
     "category": "Thermal Processing & Cooking",
     "subCategory": "Induction Suite",
     "power": "Dual Fuel (Gas + 230V)",
@@ -7981,14 +7981,14 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=499",
     "featured": false
   },
   {
     "id": 500,
     "sku": "SP-HOB-1500",
     "name": "Hobart Utensil & Pot Washer Pro-630",
-    "brand": "Hobart",
+    "brand": "Hambach",
     "category": "Warewashing Systems",
     "subCategory": "Utensil & Pot Washer",
     "power": "LPG Gas",
@@ -7997,7 +7997,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
+    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=500",
     "featured": false
   }
 ];

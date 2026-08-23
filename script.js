@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 2. Scroll Progress Bar & Sticky Header
   const progressBar = document.getElementById('scrollProgress');
-  const nav = document.getElementById('nav');
+  const nav = document.getElementById('siteHeader'); // FIXED: was 'nav'
 
   window.addEventListener('scroll', () => {
     const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { passive: true });
 
   // 3. Fullscreen Luxury Mobile Navigation
-  const burger = document.getElementById('burger');
-  const mobNav = document.getElementById('mobNav');
+  const burger = document.getElementById('menuToggle');
+  const mobNav = document.getElementById('mobMenu');
 
   if (burger && mobNav) {
     burger.addEventListener('click', () => {
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 4. IntersectionObserver for Scroll Reveals
-  const revealElements = document.querySelectorAll('.reveal-on-scroll');
+  const revealElements = document.querySelectorAll('.reveal-on-scroll, .reveal-fade-up, .editorial');
   if ('IntersectionObserver' in window && revealElements.length > 0) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
@@ -151,4 +151,80 @@ document.addEventListener('DOMContentLoaded', () => {
       link.classList.remove('active');
     }
   });
+
+  // LUXURY UPGRADES
+  
+  // 1. Smooth Page Transitions
+  const links = document.querySelectorAll('a[href]');
+  links.forEach(link => {
+    link.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      // Only transition on internal HTML links, not anchors or absolute external urls
+      if (href && href.endsWith('.html') && !href.startsWith('http') && !href.startsWith('#')) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => {
+          window.location.href = href;
+        }, 500); // Wait for fade out
+      }
+    });
+  });
+
+
+
+  // 3. Magnetic Navigation Links
+  const magneticLinks = document.querySelectorAll('.nav-link');
+  magneticLinks.forEach(link => {
+    link.addEventListener('mousemove', function(e) {
+      const position = link.getBoundingClientRect();
+      const x = e.clientX - position.left - position.width / 2;
+      const y = e.clientY - position.top - position.height / 2;
+      link.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+    });
+    link.addEventListener('mouseout', function(e) {
+      link.style.transform = 'translate(0px, 0px)';
+    });
+  });
+
+  // 4. Line-by-Line Text Reveals (SplitText alternative)
+  const editorialHeadings = document.querySelectorAll('.editorial');
+  editorialHeadings.forEach(heading => {
+    // Basic word split for demo purposes. In production, a proper line-splitter like GSAP SplitText is preferred.
+    const text = heading.innerHTML;
+    if(!text.includes('<span class="split-word">')) {
+       // We only split if not already split
+       const words = text.split(/(<[^>]+>|\s+)/).filter(Boolean);
+       let newHTML = '';
+       let delay = 0;
+       words.forEach(word => {
+         if(word.startsWith('<') || word.trim() === '') {
+           newHTML += word;
+         } else {
+           newHTML += `<span class="split-line" style="display:inline-block;"><span class="split-word" style="transition-delay:${delay}s">${word}</span></span>`;
+           delay += 0.04; // stagger delay
+         }
+       });
+       heading.innerHTML = newHTML;
+    }
+  });
+
+  // 5. Dark/Light Mode Toggle
+  const themeToggle = document.getElementById('themeToggle');
+  if (themeToggle) {
+    // Check local storage
+    if (localStorage.getItem('theme-invert') === 'true') {
+      document.body.setAttribute('data-theme', 'invert');
+    }
+    
+    themeToggle.addEventListener('click', () => {
+      const isInderted = document.body.getAttribute('data-theme') === 'invert';
+      if (isInderted) {
+        document.body.removeAttribute('data-theme');
+        localStorage.setItem('theme-invert', 'false');
+      } else {
+        document.body.setAttribute('data-theme', 'invert');
+        localStorage.setItem('theme-invert', 'true');
+      }
+    });
+  }
 });
