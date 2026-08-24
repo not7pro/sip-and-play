@@ -239,26 +239,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 5. Dark/Light Mode Toggle
-  const themeToggle = document.getElementById('themeToggle');
-  if (themeToggle) {
-    // Check local storage
-    if (localStorage.getItem('theme-invert') === 'true') {
-      document.body.setAttribute('data-theme', 'invert');
-    }
-    
-    themeToggle.addEventListener('click', () => {
-      const isInderted = document.body.getAttribute('data-theme') === 'invert';
-      if (isInderted) {
-        document.body.removeAttribute('data-theme');
-        localStorage.setItem('theme-invert', 'false');
-      } else {
-        document.body.setAttribute('data-theme', 'invert');
-        localStorage.setItem('theme-invert', 'true');
-      }
-    });
-  }
-
   // 6. Table of Contents Scrollspy for Legal & Documentation Pages
   const tocLinks = document.querySelectorAll('.legal-toc-link');
   const legalSections = document.querySelectorAll('.legal-section');
