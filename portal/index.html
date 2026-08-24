@@ -46,11 +46,16 @@
         </a>
       </nav>
 
-      <div class="sidebar__footer">
-        <span id="portalUserDisplay">USER: ADMIN</span>
-        <button id="btnPortalLogout" style="background:none; border:none; color:var(--text-dim); cursor:pointer; font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.1em; transition:color 0.2s;">
-          LOGOUT ⎋
-        </button>
+      <div class="sidebar__footer" style="flex-direction:column; gap:0.5rem; align-items:flex-start;">
+        <div style="display:flex; justify-content:space-between; width:100%; align-items:center;">
+          <span id="portalUserDisplay">USER: ADMIN</span>
+          <button id="btnPortalLogout" style="background:none; border:none; color:var(--text-dim); cursor:pointer; font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.1em; transition:color 0.2s;">
+            LOGOUT ⎋
+          </button>
+        </div>
+        <div style="font-family:var(--font-mono); font-size:0.6rem; color:var(--text-dim); border-top:1px solid var(--border-light); width:100%; padding-top:0.4rem;">
+          <a href="../terms.html" style="color:inherit; text-decoration:underline;">Terms</a> &bull; <a href="../privacy.html" style="color:inherit; text-decoration:underline;">Privacy</a>
+        </div>
       </div>
     </aside>
 

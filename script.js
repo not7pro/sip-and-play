@@ -227,4 +227,33 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // 6. Table of Contents Scrollspy for Legal & Documentation Pages
+  const tocLinks = document.querySelectorAll('.legal-toc-link');
+  const legalSections = document.querySelectorAll('.legal-section');
+
+  if (tocLinks.length > 0 && legalSections.length > 0) {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-100px 0px -60% 0px',
+      threshold: 0
+    };
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const activeId = entry.target.getAttribute('id');
+          tocLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${activeId}`) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    legalSections.forEach(sec => sectionObserver.observe(sec));
+  }
 });
