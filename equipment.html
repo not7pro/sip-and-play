@@ -45,41 +45,52 @@
   <!-- Scroll Progress Indicator Line -->
   <div id="scrollProgress"></div>
 
-  <!-- NAVIGATION -->
-  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__inner container">
-      <a class="nav__logo" href="index.html">SIP <em>&amp;</em> PLAY</a>
-      <div class="nav__links">
-        <a class="nav__link" href="index.html">Home</a>
-        <a class="nav__link" href="about.html">About</a>
-        <a class="nav__link" href="services.html">Services</a>
-        <a class="nav__link" href="solutions.html">Projects</a>
-        <a class="nav__link" href="equipment.html">Equipment</a>
-        <a class="nav__link" href="brands.html">Hambach</a>
-        <a class="nav__link" href="contact.html">Contact</a>
-      </div>
-      <a class="btn btn--primary nav__cta" href="contact.html#quote">Request a Quote <span class="arrow">→</span></a>
-      <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  <!-- STICKY NAVIGATION -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Sip &amp; Play</a>
+      
+      <nav class="nav-desktop">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="solutions.html">Projects</a>
+        <a class="nav-link active" href="equipment.html">Equipment</a>
+        <a class="nav-link" href="brands.html">Hambach</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme" title="Toggle Theme">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6V6z"/></svg>
+        </button>
 
-  <!-- MOBILE MENU -->
-  <div class="mob-nav" id="mobNav">
-    <nav class="mob-nav__links">
-      <a class="mob-nav__link" href="index.html">Home <span>→</span></a>
-      <a class="mob-nav__link" href="about.html">About <span>→</span></a>
-      <a class="mob-nav__link" href="services.html">Services <span>→</span></a>
-      <a class="mob-nav__link" href="solutions.html">Projects <span>→</span></a>
-      <a class="mob-nav__link" href="equipment.html">Equipment <span>→</span></a>
-      <a class="mob-nav__link" href="brands.html">Hambach <span>→</span></a>
-      <a class="mob-nav__link" href="contact.html">Contact <span>→</span></a>
-    </nav>
-    <a class="btn btn--primary" href="contact.html#quote" style="width:100%; justify-content:center;">Request a Quote →</a>
-    <div class="mob-nav__bottom">
-      <span class="mob-nav__bottom-label">© 2026 Sip &amp; Play</span>
-      <span class="mob-nav__bottom-label">11A/1 Rathnawali Rd, Dehiwela</span>
+        <a class="btn-premium btn-premium--primary" href="contact.html#quote">Request a Quote <span class="arrow-icon">→</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION OVERLAY -->
+  <div class="mob-menu" id="mobMenu">
+    <div class="mob-menu-inner container">
+      <nav class="mob-nav-links">
+        <a class="mob-nav__link" href="index.html">Home</a>
+        <a class="mob-nav__link" href="about.html">About</a>
+        <a class="mob-nav__link" href="services.html">Services</a>
+        <a class="mob-nav__link" href="solutions.html">Projects</a>
+        <a class="mob-nav__link active" href="equipment.html">Equipment</a>
+        <a class="mob-nav__link" href="brands.html">Hambach</a>
+        <a class="mob-nav__link" href="contact.html">Contact</a>
+      </nav>
+      <div class="mob-menu-footer">
+        <a class="btn-premium btn-premium--primary" style="width: 100%; margin-bottom: 1rem;" href="contact.html#quote">Request a Quote <span class="arrow-icon">→</span></a>
+        <a class="btn-premium btn-premium--secondary" style="width: 100%; border-color: #25D366; color: #25D366;" href="https://wa.me/94770000000?text=Hi%20Sip%20%26%20Play,%20I'd%20like%20to%20request%20a%20commercial%20kitchen%20consultation." target="_blank">Chat on WhatsApp</a>
+      </div>
     </div>
   </div>
 
@@ -146,7 +157,7 @@
           <!-- Zhongshan -->
           <div class="col-6 reveal-on-scroll arch-panel arch-card--dark" style="padding:0; overflow:hidden; display:flex; flex-direction:column;">
             <div class="img-frame img-frame--16-9" style="border-radius:0; border-bottom:1px solid var(--border-dark);">
-              <img src="https://loremflickr.com/800/600/commercial,kitchen,appliances?lock=111" alt="Zhongshan Culinary Equipment" />
+              <img src="images/bakery_prep.jpg" alt="Zhongshan Culinary Equipment" />
             </div>
             <div style="padding:2.5rem; flex-grow:1; display:flex; flex-direction:column; background:var(--ink-deep);">
               <span class="badge" style="margin-bottom:1rem; align-self:flex-start; border-color:rgba(197, 160, 89, 0.3); color:var(--accent-brand);">CULINARY EQUIPMENT</span>

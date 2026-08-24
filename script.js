@@ -37,23 +37,50 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { passive: true });
 
   // 3. Fullscreen Luxury Mobile Navigation
-  const burger = document.getElementById('menuToggle');
-  const mobNav = document.getElementById('mobMenu');
+  const burger = document.getElementById('menuToggle') || document.getElementById('burger');
+  const mobNav = document.getElementById('mobMenu') || document.getElementById('mobNav');
+  const siteHeader = document.getElementById('siteHeader') || document.getElementById('nav');
 
   if (burger && mobNav) {
-    burger.addEventListener('click', () => {
-      const isOpen = mobNav.classList.toggle('open');
-      burger.setAttribute('aria-expanded', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+    const closeMenu = () => {
+      mobNav.classList.remove('is-active', 'open');
+      burger.classList.remove('is-active', 'open');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('menu-open');
+      document.body.style.overflow = '';
+      if (siteHeader) siteHeader.classList.remove('menu-active');
+    };
+
+    const openMenu = () => {
+      mobNav.classList.add('is-active', 'open');
+      burger.classList.add('is-active', 'open');
+      burger.setAttribute('aria-expanded', 'true');
+      document.body.classList.add('menu-open');
+      document.body.style.overflow = 'hidden';
+      if (siteHeader) siteHeader.classList.add('menu-active');
+    };
+
+    burger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isActive = mobNav.classList.contains('is-active') || mobNav.classList.contains('open');
+      if (isActive) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
 
-    const mobLinks = mobNav.querySelectorAll('.mob-nav__link');
+    const mobLinks = mobNav.querySelectorAll('.mob-nav__link, .mob-nav-links a');
     mobLinks.forEach(link => {
       link.addEventListener('click', () => {
-        mobNav.classList.remove('open');
-        burger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
+        closeMenu();
       });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && (mobNav.classList.contains('is-active') || mobNav.classList.contains('open'))) {
+        closeMenu();
+      }
     });
   }
 
@@ -155,6 +182,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // LUXURY UPGRADES
   
   // 1. Smooth Page Transitions
+  window.addEventListener('pageshow', () => {
+    document.body.classList.remove('fade-out');
+  });
+
   const links = document.querySelectorAll('a[href]');
   links.forEach(link => {
     link.addEventListener('click', function(e) {
@@ -165,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('fade-out');
         setTimeout(() => {
           window.location.href = href;
-        }, 500); // Wait for fade out
+        }, 350); // Wait for fade out
       }
     });
   });

@@ -11,6 +11,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     return;
   }
 
+  // Category Fallback Image Map for High Reliability
+  const categoryFallbackImages = {
+    'Coffee & Beverage': 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80',
+    'Cold Storage & Refrigeration': 'images/cold_storage.jpg',
+    'Thermal Processing & Cooking': 'images/thermal_processing.jpg',
+    'Warewashing Systems': 'images/warewashing.jpg',
+    'Food Preparation & Bakery': 'images/bakery_prep.jpg',
+    'Commercial Ice Systems': 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80',
+    'Heated Holding & Servery': 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+    'Stainless Modular Fabrication': 'images/stainless_fabrication.jpg'
+  };
+
+  function getProductImage(product) {
+    if (product && product.image && !product.image.includes('loremflickr.com') && product.image.trim() !== '') {
+      return product.image;
+    }
+    const cat = product ? (product.category || '') : '';
+    return categoryFallbackImages[cat] || 'images/factory_1.jpg';
+  }
+
   // Load base products
   const baseProducts = window.SIP_PRODUCTS;
   const customProducts = JSON.parse(localStorage.getItem('sip_custom_products') || '[]');
@@ -24,6 +44,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else {
       allProducts.unshift(c);
     }
+  });
+
+  // Ensure all products have verified working images
+  allProducts.forEach(p => {
+    p.image = getProductImage(p);
   });
 
   // Check if Supabase Cloud is configured
@@ -46,7 +71,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             origin: d.origin,
             material: d.material || 'AISI 304 High-Tensile Stainless Steel',
             description: d.description,
-            image: d.image,
+            image: d.image || getProductImage(d),
             featured: Boolean(d.featured)
           }));
         }
@@ -216,9 +241,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       const isScheduled = projectSchedule.some(item => item.id === p.id);
       const card = document.createElement('article');
       card.className = 'cat-card';
+      const imgSrc = getProductImage(p);
       card.innerHTML = `
         <div class="cat-card__img-wrap" style="position:relative; width:100%; aspect-ratio:4/3; overflow:hidden; background:var(--ink-charcoal);">
-          <img class="cat-card__img" src="${p.image}" alt="${p.name}" loading="lazy" style="width:100%; height:100%; object-fit:cover; transition:transform var(--slow) var(--ease-editorial);" />
+          <img class="cat-card__img" src="${imgSrc}" alt="${p.name}" loading="lazy" onerror="this.onerror=null; this.src='images/factory_1.jpg';" style="width:100%; height:100%; object-fit:cover; transition:transform var(--slow) var(--ease-editorial);" />
           <span class="cat-card__sku" style="position:absolute; top:1rem; left:1rem; background:var(--ink-pure); color:var(--paper-ivory); font-family:var(--font-mono); font-size:0.7rem; padding:0.2rem 0.5rem; letter-spacing:0.1em;">${p.sku}</span>
           ${p.featured ? '<span class="cat-card__featured" style="position:absolute; top:1rem; right:1rem; background:var(--stone-light); color:var(--ink-pure); font-family:var(--font-mono); font-size:0.7rem; padding:0.2rem 0.5rem; letter-spacing:0.1em; font-weight:700;">FEATURED</span>' : ''}
         </div>
@@ -375,7 +401,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const dimensions = product ? (product.dimensions || '800 x 750 x 850 mm') : '800 x 750 x 850 mm';
     const material = product ? (product.material || 'AISI 304 High-Tensile Stainless Steel') : 'AISI 304 High-Tensile Stainless Steel';
     const desc = product ? (product.description || 'Heavy-duty commercial kitchen equipment built for continuous high-volume food service operations across hotels, resorts, and industrial facilities.') : 'Heavy-duty commercial kitchen equipment built for continuous high-volume food service operations.';
-    const image = product ? (product.image || 'images/factory_6.jpg') : 'images/factory_6.jpg';
+    const image = getProductImage(product);
     const isScheduled = product ? projectSchedule.some(i => i.id === product.id) : false;
 
     specModalBody.innerHTML = `
@@ -391,7 +417,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         <div class="modal-spec-grid">
           <div class="modal-spec-media">
-            <img src="${image}" alt="${name}" class="modal-spec-img" onerror="this.src='images/factory_6.jpg'" />
+            <img src="${image}" alt="${name}" class="modal-spec-img" onerror="this.onerror=null; this.src='images/factory_6.jpg';" />
             <div class="modal-spec-badge">SKU: ${sku}</div>
           </div>
 

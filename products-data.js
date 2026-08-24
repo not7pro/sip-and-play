@@ -13,7 +13,7 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=1",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -29,7 +29,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=2",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -45,7 +45,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=3",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -61,7 +61,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=4",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -77,7 +77,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=5",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -93,7 +93,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=6",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -109,7 +109,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=7",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -125,7 +125,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=8",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -141,7 +141,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=9",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -157,7 +157,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=10",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -173,7 +173,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=11",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -189,7 +189,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=12",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -205,7 +205,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=13",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -221,7 +221,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=14",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -237,7 +237,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=15",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -253,7 +253,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=16",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -269,7 +269,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=17",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -285,7 +285,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=18",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -301,7 +301,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=19",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -317,7 +317,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=20",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -333,7 +333,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=21",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -349,7 +349,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=22",
+    "image": "images/factory_2.jpg",
     "featured": false
   },
   {
@@ -365,7 +365,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=23",
+    "image": "images/factory_5.jpg",
     "featured": false
   },
   {
@@ -381,7 +381,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=24",
+    "image": "images/factory_6.jpg",
     "featured": false
   },
   {
@@ -397,7 +397,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=25",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -413,7 +413,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=26",
+    "image": "images/factory_4.jpg",
     "featured": false
   },
   {
@@ -429,7 +429,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=27",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -445,7 +445,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=28",
+    "image": "images/factory_3.jpg",
     "featured": false
   },
   {
@@ -461,7 +461,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=29",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -477,7 +477,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=30",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -493,7 +493,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=31",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -509,7 +509,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=32",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -525,7 +525,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=33",
+    "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -541,7 +541,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=34",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -557,7 +557,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=35",
+    "image": "images/thermal_processing.jpg",
     "featured": true
   },
   {
@@ -573,7 +573,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=36",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -589,7 +589,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=37",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -605,7 +605,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=38",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -621,7 +621,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=39",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -637,7 +637,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=40",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -653,7 +653,7 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=41",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -669,7 +669,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=42",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -685,7 +685,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=43",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -701,7 +701,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=44",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -717,7 +717,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=45",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -733,7 +733,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=46",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -749,7 +749,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=47",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -765,7 +765,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=48",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -781,7 +781,7 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=49",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -797,7 +797,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=50",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -813,7 +813,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=51",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -829,7 +829,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=52",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -845,7 +845,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=53",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -861,7 +861,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=54",
+    "image": "images/factory_2.jpg",
     "featured": false
   },
   {
@@ -877,7 +877,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=55",
+    "image": "images/factory_5.jpg",
     "featured": false
   },
   {
@@ -893,7 +893,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=56",
+    "image": "images/factory_6.jpg",
     "featured": false
   },
   {
@@ -909,7 +909,7 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=57",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -925,7 +925,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=58",
+    "image": "images/factory_4.jpg",
     "featured": false
   },
   {
@@ -941,7 +941,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=59",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -957,7 +957,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=60",
+    "image": "images/factory_3.jpg",
     "featured": false
   },
   {
@@ -973,7 +973,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=61",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -989,7 +989,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=62",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -1005,7 +1005,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=63",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -1021,7 +1021,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=64",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -1037,7 +1037,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=65",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1053,7 +1053,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=66",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1069,7 +1069,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=67",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -1085,7 +1085,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=68",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -1101,7 +1101,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=69",
+    "image": "images/bakery_prep.jpg",
     "featured": true
   },
   {
@@ -1117,7 +1117,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=70",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1133,7 +1133,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=71",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1149,7 +1149,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=72",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -1165,7 +1165,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=73",
+    "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1181,7 +1181,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=74",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -1197,7 +1197,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=75",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1213,7 +1213,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=76",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1229,7 +1229,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=77",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1245,7 +1245,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=78",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1261,7 +1261,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=79",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1277,7 +1277,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=80",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1293,7 +1293,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=81",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1309,7 +1309,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=82",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1325,7 +1325,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=83",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1341,7 +1341,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=84",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1357,7 +1357,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=85",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1373,7 +1373,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=86",
+    "image": "images/factory_2.jpg",
     "featured": true
   },
   {
@@ -1389,7 +1389,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=87",
+    "image": "images/factory_5.jpg",
     "featured": false
   },
   {
@@ -1405,7 +1405,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=88",
+    "image": "images/factory_6.jpg",
     "featured": false
   },
   {
@@ -1421,7 +1421,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=89",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1437,7 +1437,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=90",
+    "image": "images/factory_4.jpg",
     "featured": false
   },
   {
@@ -1453,7 +1453,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=91",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -1469,7 +1469,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=92",
+    "image": "images/factory_3.jpg",
     "featured": false
   },
   {
@@ -1485,7 +1485,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=93",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1501,7 +1501,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=94",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -1517,7 +1517,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=95",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -1533,7 +1533,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=96",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -1549,7 +1549,7 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=97",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1565,7 +1565,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=98",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1581,7 +1581,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=99",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -1597,7 +1597,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=100",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -1613,7 +1613,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=101",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -1629,7 +1629,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=102",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1645,7 +1645,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=103",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -1661,7 +1661,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=104",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -1677,7 +1677,7 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=105",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1693,7 +1693,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=106",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -1709,7 +1709,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=107",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1725,7 +1725,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=108",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1741,7 +1741,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=109",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1757,7 +1757,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=110",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1773,7 +1773,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=111",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1789,7 +1789,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=112",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1805,7 +1805,7 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=113",
+    "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1821,7 +1821,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=114",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1837,7 +1837,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=115",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1853,7 +1853,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=116",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1869,7 +1869,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=117",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1885,7 +1885,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=118",
+    "image": "images/factory_2.jpg",
     "featured": false
   },
   {
@@ -1901,7 +1901,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=119",
+    "image": "images/factory_5.jpg",
     "featured": false
   },
   {
@@ -1917,7 +1917,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=120",
+    "image": "images/factory_6.jpg",
     "featured": true
   },
   {
@@ -1933,7 +1933,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=121",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -1949,7 +1949,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=122",
+    "image": "images/factory_4.jpg",
     "featured": false
   },
   {
@@ -1965,7 +1965,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=123",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -1981,7 +1981,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=124",
+    "image": "images/factory_3.jpg",
     "featured": false
   },
   {
@@ -1997,7 +1997,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=125",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2013,7 +2013,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=126",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -2029,7 +2029,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=127",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -2045,7 +2045,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=128",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -2061,7 +2061,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=129",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2077,7 +2077,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=130",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2093,7 +2093,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=131",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -2109,7 +2109,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=132",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -2125,7 +2125,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=133",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -2141,7 +2141,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=134",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2157,7 +2157,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=135",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2173,7 +2173,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=136",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -2189,7 +2189,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=137",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -2205,7 +2205,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=138",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -2221,7 +2221,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=139",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2237,7 +2237,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=140",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2253,7 +2253,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=141",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2269,7 +2269,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=142",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2285,7 +2285,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=143",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2301,7 +2301,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=144",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2317,7 +2317,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=145",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2333,7 +2333,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=146",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2349,7 +2349,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=147",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2365,7 +2365,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=148",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2381,7 +2381,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=149",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2397,7 +2397,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=150",
+    "image": "images/factory_2.jpg",
     "featured": false
   },
   {
@@ -2413,7 +2413,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=151",
+    "image": "images/factory_5.jpg",
     "featured": false
   },
   {
@@ -2429,7 +2429,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=152",
+    "image": "images/factory_6.jpg",
     "featured": false
   },
   {
@@ -2445,7 +2445,7 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=153",
+    "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2461,7 +2461,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=154",
+    "image": "images/factory_4.jpg",
     "featured": true
   },
   {
@@ -2477,7 +2477,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=155",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -2493,7 +2493,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=156",
+    "image": "images/factory_3.jpg",
     "featured": false
   },
   {
@@ -2509,7 +2509,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=157",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2525,7 +2525,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=158",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -2541,7 +2541,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=159",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -2557,7 +2557,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=160",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -2573,7 +2573,7 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=161",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2589,7 +2589,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=162",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2605,7 +2605,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=163",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -2621,7 +2621,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=164",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -2637,7 +2637,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=165",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -2653,7 +2653,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=166",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2669,7 +2669,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=167",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2685,7 +2685,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=168",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -2701,7 +2701,7 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=169",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2717,7 +2717,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=170",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -2733,7 +2733,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=171",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -2749,7 +2749,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=172",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2765,7 +2765,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=173",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2781,7 +2781,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=174",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2797,7 +2797,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=175",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2813,7 +2813,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=176",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2829,7 +2829,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=177",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2845,7 +2845,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=178",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2861,7 +2861,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=179",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2877,7 +2877,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=180",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2893,7 +2893,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=181",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2909,7 +2909,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=182",
+    "image": "images/factory_2.jpg",
     "featured": false
   },
   {
@@ -2925,7 +2925,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=183",
+    "image": "images/factory_5.jpg",
     "featured": false
   },
   {
@@ -2941,7 +2941,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=184",
+    "image": "images/factory_6.jpg",
     "featured": false
   },
   {
@@ -2957,7 +2957,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=185",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -2973,7 +2973,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=186",
+    "image": "images/factory_4.jpg",
     "featured": false
   },
   {
@@ -2989,7 +2989,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=187",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -3005,7 +3005,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=188",
+    "image": "images/factory_3.jpg",
     "featured": true
   },
   {
@@ -3021,7 +3021,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=189",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3037,7 +3037,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=190",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -3053,7 +3053,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=191",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -3069,7 +3069,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=192",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -3085,7 +3085,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=193",
+    "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3101,7 +3101,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=194",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3117,7 +3117,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=195",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -3133,7 +3133,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=196",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -3149,7 +3149,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=197",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -3165,7 +3165,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=198",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3181,7 +3181,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=199",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3197,7 +3197,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=200",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -3213,7 +3213,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=201",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3229,7 +3229,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=202",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -3245,7 +3245,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=203",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3261,7 +3261,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=204",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3277,7 +3277,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=205",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -3293,7 +3293,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=206",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3309,7 +3309,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=207",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3325,7 +3325,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=208",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3341,7 +3341,7 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=209",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3357,7 +3357,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=210",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3373,7 +3373,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=211",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3389,7 +3389,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=212",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3405,7 +3405,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=213",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3421,7 +3421,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=214",
+    "image": "images/factory_2.jpg",
     "featured": false
   },
   {
@@ -3437,7 +3437,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=215",
+    "image": "images/factory_5.jpg",
     "featured": false
   },
   {
@@ -3453,7 +3453,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=216",
+    "image": "images/factory_6.jpg",
     "featured": false
   },
   {
@@ -3469,7 +3469,7 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=217",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3485,7 +3485,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=218",
+    "image": "images/factory_4.jpg",
     "featured": false
   },
   {
@@ -3501,7 +3501,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=219",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -3517,7 +3517,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=220",
+    "image": "images/factory_3.jpg",
     "featured": false
   },
   {
@@ -3533,7 +3533,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=221",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3549,7 +3549,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=222",
+    "image": "images/cold_storage.jpg",
     "featured": true
   },
   {
@@ -3565,7 +3565,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=223",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -3581,7 +3581,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=224",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -3597,7 +3597,7 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=225",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3613,7 +3613,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=226",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3629,7 +3629,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=227",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -3645,7 +3645,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=228",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -3661,7 +3661,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=229",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -3677,7 +3677,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=230",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3693,7 +3693,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=231",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3709,7 +3709,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=232",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -3725,7 +3725,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=233",
+    "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3741,7 +3741,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=234",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -3757,7 +3757,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=235",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3773,7 +3773,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=236",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3789,7 +3789,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=237",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3805,7 +3805,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=238",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3821,7 +3821,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=239",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -3837,7 +3837,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=240",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3853,7 +3853,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=241",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3869,7 +3869,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=242",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3885,7 +3885,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=243",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3901,7 +3901,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=244",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3917,7 +3917,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=245",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3933,7 +3933,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=246",
+    "image": "images/factory_2.jpg",
     "featured": false
   },
   {
@@ -3949,7 +3949,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=247",
+    "image": "images/factory_5.jpg",
     "featured": false
   },
   {
@@ -3965,7 +3965,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=248",
+    "image": "images/factory_6.jpg",
     "featured": false
   },
   {
@@ -3981,7 +3981,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=249",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -3997,7 +3997,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=250",
+    "image": "images/factory_4.jpg",
     "featured": false
   },
   {
@@ -4013,7 +4013,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=251",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -4029,7 +4029,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=252",
+    "image": "images/factory_3.jpg",
     "featured": false
   },
   {
@@ -4045,7 +4045,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=253",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4061,7 +4061,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=254",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -4077,7 +4077,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=255",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -4093,7 +4093,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=256",
+    "image": "images/factory_1.jpg",
     "featured": true
   },
   {
@@ -4109,7 +4109,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=257",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4125,7 +4125,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=258",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4141,7 +4141,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=259",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -4157,7 +4157,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=260",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -4173,7 +4173,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=261",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -4189,7 +4189,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=262",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4205,7 +4205,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=263",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4221,7 +4221,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=264",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -4237,7 +4237,7 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=265",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4253,7 +4253,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=266",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -4269,7 +4269,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=267",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4285,7 +4285,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=268",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4301,7 +4301,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=269",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4317,7 +4317,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=270",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4333,7 +4333,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=271",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4349,7 +4349,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=272",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4365,7 +4365,7 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=273",
+    "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -4381,7 +4381,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=274",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4397,7 +4397,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=275",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4413,7 +4413,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=276",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4429,7 +4429,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=277",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4445,7 +4445,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=278",
+    "image": "images/factory_2.jpg",
     "featured": false
   },
   {
@@ -4461,7 +4461,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=279",
+    "image": "images/factory_5.jpg",
     "featured": false
   },
   {
@@ -4477,7 +4477,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=280",
+    "image": "images/factory_6.jpg",
     "featured": false
   },
   {
@@ -4493,7 +4493,7 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=281",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4509,7 +4509,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=282",
+    "image": "images/factory_4.jpg",
     "featured": false
   },
   {
@@ -4525,7 +4525,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=283",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -4541,7 +4541,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=284",
+    "image": "images/factory_3.jpg",
     "featured": false
   },
   {
@@ -4557,7 +4557,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=285",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4573,7 +4573,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=286",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -4589,7 +4589,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=287",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -4605,7 +4605,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=288",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -4621,7 +4621,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=289",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4637,7 +4637,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=290",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -4653,7 +4653,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=291",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -4669,7 +4669,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=292",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -4685,7 +4685,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=293",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -4701,7 +4701,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=294",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4717,7 +4717,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=295",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4733,7 +4733,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=296",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -4749,7 +4749,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=297",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4765,7 +4765,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=298",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -4781,7 +4781,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=299",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4797,7 +4797,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=300",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4813,7 +4813,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=301",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4829,7 +4829,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=302",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4845,7 +4845,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=303",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4861,7 +4861,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=304",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4877,7 +4877,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=305",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4893,7 +4893,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=306",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4909,7 +4909,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=307",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -4925,7 +4925,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=308",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4941,7 +4941,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=309",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -4957,7 +4957,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=310",
+    "image": "images/factory_2.jpg",
     "featured": false
   },
   {
@@ -4973,7 +4973,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=311",
+    "image": "images/factory_5.jpg",
     "featured": false
   },
   {
@@ -4989,7 +4989,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=312",
+    "image": "images/factory_6.jpg",
     "featured": false
   },
   {
@@ -5005,7 +5005,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=313",
+    "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5021,7 +5021,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=314",
+    "image": "images/factory_4.jpg",
     "featured": false
   },
   {
@@ -5037,7 +5037,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=315",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -5053,7 +5053,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=316",
+    "image": "images/factory_3.jpg",
     "featured": false
   },
   {
@@ -5069,7 +5069,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=317",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5085,7 +5085,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=318",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -5101,7 +5101,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=319",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -5117,7 +5117,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=320",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -5133,7 +5133,7 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=321",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5149,7 +5149,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=322",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5165,7 +5165,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=323",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -5181,7 +5181,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=324",
+    "image": "images/warewashing.jpg",
     "featured": true
   },
   {
@@ -5197,7 +5197,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=325",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -5213,7 +5213,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=326",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5229,7 +5229,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=327",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5245,7 +5245,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=328",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -5261,7 +5261,7 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=329",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5277,7 +5277,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=330",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -5293,7 +5293,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=331",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5309,7 +5309,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=332",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5325,7 +5325,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=333",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5341,7 +5341,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=334",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5357,7 +5357,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=335",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5373,7 +5373,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=336",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5389,7 +5389,7 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=337",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5405,7 +5405,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=338",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5421,7 +5421,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=339",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5437,7 +5437,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=340",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5453,7 +5453,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=341",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -5469,7 +5469,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=342",
+    "image": "images/factory_2.jpg",
     "featured": false
   },
   {
@@ -5485,7 +5485,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=343",
+    "image": "images/factory_5.jpg",
     "featured": false
   },
   {
@@ -5501,7 +5501,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=344",
+    "image": "images/factory_6.jpg",
     "featured": false
   },
   {
@@ -5517,7 +5517,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=345",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5533,7 +5533,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=346",
+    "image": "images/factory_4.jpg",
     "featured": false
   },
   {
@@ -5549,7 +5549,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=347",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -5565,7 +5565,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=348",
+    "image": "images/factory_3.jpg",
     "featured": false
   },
   {
@@ -5581,7 +5581,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=349",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5597,7 +5597,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=350",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -5613,7 +5613,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=351",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -5629,7 +5629,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=352",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -5645,7 +5645,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=353",
+    "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5661,7 +5661,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=354",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5677,7 +5677,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=355",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -5693,7 +5693,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=356",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -5709,7 +5709,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=357",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -5725,7 +5725,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=358",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -5741,7 +5741,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=359",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5757,7 +5757,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=360",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -5773,7 +5773,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=361",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5789,7 +5789,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=362",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -5805,7 +5805,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=363",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5821,7 +5821,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=364",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5837,7 +5837,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=365",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5853,7 +5853,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=366",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5869,7 +5869,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=367",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5885,7 +5885,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=368",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5901,7 +5901,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=369",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5917,7 +5917,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=370",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5933,7 +5933,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=371",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5949,7 +5949,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=372",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5965,7 +5965,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=373",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -5981,7 +5981,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=374",
+    "image": "images/factory_2.jpg",
     "featured": false
   },
   {
@@ -5997,7 +5997,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=375",
+    "image": "images/factory_5.jpg",
     "featured": true
   },
   {
@@ -6013,7 +6013,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=376",
+    "image": "images/factory_6.jpg",
     "featured": false
   },
   {
@@ -6029,7 +6029,7 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=377",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6045,7 +6045,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=378",
+    "image": "images/factory_4.jpg",
     "featured": false
   },
   {
@@ -6061,7 +6061,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=379",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -6077,7 +6077,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=380",
+    "image": "images/factory_3.jpg",
     "featured": false
   },
   {
@@ -6093,7 +6093,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=381",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6109,7 +6109,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=382",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -6125,7 +6125,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=383",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -6141,7 +6141,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=384",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -6157,7 +6157,7 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=385",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6173,7 +6173,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=386",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6189,7 +6189,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=387",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -6205,7 +6205,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=388",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -6221,7 +6221,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=389",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -6237,7 +6237,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=390",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6253,7 +6253,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=391",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6269,7 +6269,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=392",
+    "image": "images/stainless_fabrication.jpg",
     "featured": true
   },
   {
@@ -6285,7 +6285,7 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=393",
+    "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6301,7 +6301,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=394",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -6317,7 +6317,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=395",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6333,7 +6333,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=396",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6349,7 +6349,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=397",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6365,7 +6365,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=398",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6381,7 +6381,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=399",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6397,7 +6397,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=400",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6413,7 +6413,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=401",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6429,7 +6429,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=402",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6445,7 +6445,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=403",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6461,7 +6461,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=404",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6477,7 +6477,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=405",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6493,7 +6493,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=406",
+    "image": "images/factory_2.jpg",
     "featured": false
   },
   {
@@ -6509,7 +6509,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=407",
+    "image": "images/factory_5.jpg",
     "featured": false
   },
   {
@@ -6525,7 +6525,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=408",
+    "image": "images/factory_6.jpg",
     "featured": false
   },
   {
@@ -6541,7 +6541,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=409",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -6557,7 +6557,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=410",
+    "image": "images/factory_4.jpg",
     "featured": false
   },
   {
@@ -6573,7 +6573,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=411",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -6589,7 +6589,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=412",
+    "image": "images/factory_3.jpg",
     "featured": false
   },
   {
@@ -6605,7 +6605,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=413",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6621,7 +6621,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=414",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -6637,7 +6637,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=415",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -6653,7 +6653,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=416",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -6669,7 +6669,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=417",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6685,7 +6685,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=418",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6701,7 +6701,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=419",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -6717,7 +6717,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=420",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -6733,7 +6733,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=421",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -6749,7 +6749,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=422",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6765,7 +6765,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=423",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6781,7 +6781,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=424",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -6797,7 +6797,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=425",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6813,7 +6813,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=426",
+    "image": "images/cold_storage.jpg",
     "featured": true
   },
   {
@@ -6829,7 +6829,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=427",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6845,7 +6845,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=428",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6861,7 +6861,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=429",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6877,7 +6877,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=430",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6893,7 +6893,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=431",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6909,7 +6909,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=432",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6925,7 +6925,7 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=433",
+    "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6941,7 +6941,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=434",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6957,7 +6957,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=435",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6973,7 +6973,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=436",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -6989,7 +6989,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=437",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7005,7 +7005,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=438",
+    "image": "images/factory_2.jpg",
     "featured": false
   },
   {
@@ -7021,7 +7021,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=439",
+    "image": "images/factory_5.jpg",
     "featured": false
   },
   {
@@ -7037,7 +7037,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=440",
+    "image": "images/factory_6.jpg",
     "featured": false
   },
   {
@@ -7053,7 +7053,7 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=441",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7069,7 +7069,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=442",
+    "image": "images/factory_4.jpg",
     "featured": false
   },
   {
@@ -7085,7 +7085,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=443",
+    "image": "images/factory_1.jpg",
     "featured": true
   },
   {
@@ -7101,7 +7101,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=444",
+    "image": "images/factory_3.jpg",
     "featured": false
   },
   {
@@ -7117,7 +7117,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=445",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7133,7 +7133,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=446",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -7149,7 +7149,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=447",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -7165,7 +7165,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=448",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -7181,7 +7181,7 @@ window.SIP_PRODUCTS = [
     "origin": "Florence, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by La Marzocco for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=449",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7197,7 +7197,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=450",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7213,7 +7213,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=451",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -7229,7 +7229,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=452",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -7245,7 +7245,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=453",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -7261,7 +7261,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=454",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7277,7 +7277,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=455",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7293,7 +7293,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=456",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -7309,7 +7309,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Nuova Simonelli for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=457",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7325,7 +7325,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=458",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -7341,7 +7341,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=459",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7357,7 +7357,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=460",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -7373,7 +7373,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=461",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7389,7 +7389,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=462",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7405,7 +7405,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=463",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7421,7 +7421,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=464",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7437,7 +7437,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Slayer for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=465",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7453,7 +7453,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=466",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7469,7 +7469,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=467",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7485,7 +7485,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=468",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7501,7 +7501,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=469",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7517,7 +7517,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=470",
+    "image": "images/factory_2.jpg",
     "featured": false
   },
   {
@@ -7533,7 +7533,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=471",
+    "image": "images/factory_5.jpg",
     "featured": false
   },
   {
@@ -7549,7 +7549,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=472",
+    "image": "images/factory_6.jpg",
     "featured": false
   },
   {
@@ -7565,7 +7565,7 @@ window.SIP_PRODUCTS = [
     "origin": "Seattle, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Synesso for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=473",
+    "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7581,7 +7581,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=474",
+    "image": "images/factory_4.jpg",
     "featured": false
   },
   {
@@ -7597,7 +7597,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=475",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -7613,7 +7613,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=476",
+    "image": "images/factory_3.jpg",
     "featured": false
   },
   {
@@ -7629,7 +7629,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=477",
+    "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -7645,7 +7645,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial crescent & gourmet cube maker engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=478",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -7661,7 +7661,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial multi-deck heated display engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=479",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -7677,7 +7677,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial extraction & air handling unit engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=480",
+    "image": "images/factory_1.jpg",
     "featured": false
   },
   {
@@ -7693,7 +7693,7 @@ window.SIP_PRODUCTS = [
     "origin": "Belforte, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Victoria Arduino for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=481",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7709,7 +7709,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=482",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7725,7 +7725,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=483",
+    "image": "images/thermal_processing.jpg",
     "featured": false
   },
   {
@@ -7741,7 +7741,7 @@ window.SIP_PRODUCTS = [
     "origin": "Meckenbeuren, Germany",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Winterhalter for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=484",
+    "image": "images/warewashing.jpg",
     "featured": false
   },
   {
@@ -7757,7 +7757,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=485",
+    "image": "images/bakery_prep.jpg",
     "featured": false
   },
   {
@@ -7773,7 +7773,7 @@ window.SIP_PRODUCTS = [
     "origin": "Easton, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial high-capacity storage bin engineered by Follett for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=486",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7789,7 +7789,7 @@ window.SIP_PRODUCTS = [
     "origin": "Menomonee Falls, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial halo heat cook & hold oven engineered by Alto-Shaam for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=487",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7805,7 +7805,7 @@ window.SIP_PRODUCTS = [
     "origin": "Tournus, France",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial mobile gastronorm rack trolley engineered by Tournus for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=488",
+    "image": "images/stainless_fabrication.jpg",
     "featured": false
   },
   {
@@ -7821,7 +7821,7 @@ window.SIP_PRODUCTS = [
     "origin": "Treviso, Italy",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Sanremo for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=489",
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7837,7 +7837,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=490",
+    "image": "images/cold_storage.jpg",
     "featured": false
   },
   {
@@ -7853,7 +7853,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=491",
+    "image": "https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7869,7 +7869,7 @@ window.SIP_PRODUCTS = [
     "origin": "Malm\u00f6, Sweden",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Granuldisk for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=492",
+    "image": "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7885,7 +7885,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial planetary mixer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/bakery,mixer?lock=493",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7901,7 +7901,7 @@ window.SIP_PRODUCTS = [
     "origin": "Vernon Hills, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial flake & nugget ice machine engineered by Scotsman for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/ice,machine,commercial?lock=494",
+    "image": "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=800&q=80",
     "featured": true
   },
   {
@@ -7917,7 +7917,7 @@ window.SIP_PRODUCTS = [
     "origin": "King's Lynn, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial banquet holding cabinet engineered by Foster for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/buffet,warmer,food?lock=495",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7933,7 +7933,7 @@ window.SIP_PRODUCTS = [
     "origin": "London Fabrication Facility, UK",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial heavy gauge prep worktable engineered by Sip & Play Custom for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/stainless,kitchen,sink?lock=496",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7949,7 +7949,7 @@ window.SIP_PRODUCTS = [
     "origin": "Waalre, Netherlands",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial espresso machine engineered by Kees van der Westen for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/espresso,machine,commercial?lock=497",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7965,7 +7965,7 @@ window.SIP_PRODUCTS = [
     "origin": "Toyoake, Japan",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial upright storage cabinet engineered by Hoshizaki for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,refrigerator?lock=498",
+    "image": "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7981,7 +7981,7 @@ window.SIP_PRODUCTS = [
     "origin": "St. Gallen, Switzerland",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial induction suite engineered by Menu System for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,oven,kitchen?lock=499",
+    "image": "https://images.unsplash.com/photo-1574966739985-612604e3ca8f?auto=format&fit=crop&w=800&q=80",
     "featured": false
   },
   {
@@ -7997,7 +7997,7 @@ window.SIP_PRODUCTS = [
     "origin": "Troy, USA",
     "material": "AISI 304 High-Tensile Stainless Steel",
     "description": "Industrial-grade commercial utensil & pot washer engineered by Hobart for high-volume hospitality and heavy continuous operation.",
-    "image": "https://loremflickr.com/800/600/commercial,dishwasher?lock=500",
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80",
     "featured": false
   }
 ];
