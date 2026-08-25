@@ -491,7 +491,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       modalRow('CONSTRUCTION',      p.material,  false),
       modalRow('ORIGIN',            p.origin,    false),
       modalRow('SOURCE PAGE',       p.sourcePage != null ? `Page ${p.sourcePage}` : '', true),
-      modalRow('CONFIDENCE',        p.confidence, false)
+      modalRow('CONFIDENCE',        p.confidence, false),
+      modalRow('IMAGE STATUS',      p.imageStatus || '', false),
+      modalRow('IMAGE SOURCE',      p.imageSource || '', false),
+      modalRow('IMAGE VERIFIED',    p.imageVerified !== undefined ? (p.imageVerified ? 'Yes (Verified PDF Crop)' : 'No (Category Placeholder)') : '', false)
     ].join('');
 
     // otherSpecifications is shown separately if non-empty
