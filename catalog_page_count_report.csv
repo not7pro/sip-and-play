@@ -1,0 +1,125 @@
+page,extracted_records,status,candidate_model_tokens,error
+1,0,no_product_record,Zhongqun; zhang; zhongqunchuju; zone,
+2,0,no_product_record,zhongqun,
+3,1,extracted,ZHONG,
+4,0,no_product_record,Zhongqun; zhongqun,
+5,5,extracted,ZQ002-01; ZaQoo101; za00106; zao0102; zao02,
+6,19,extracted,Z20VIGAS; ZQ-6R; Za004-07; Za00401; Za00404; Za00408; ZaAR; za00; za4A; zan0a-15,
+7,18,extracted,ZO43; ZOAVK; ZOAVK-0; ZOAVK-D; ZOAVK0200; ZONGSN; ZORKAZ; ZQ-DMG-8M; ZQ-RX-20; ZQA2MJMZG; ZQAVK-D; ZQAVK-O; ZQAVKO-160; ZaRxcaomk; zacroR25; zaovaay; zapanze; zaswkzct,
+8,4,extracted,zanaame; zeansias; zowie,
+9,15,extracted,,
+10,15,extracted,2Q380-20PC; ZOKW; za380-12QA; za3804000D; za98026PC; zaae920PC; zaaeozoace; zt020QA,
+11,7,extracted,2Q-BS-216; ZQ-10; ZQ-W65-D01; ZQ013-01; Za-12; za-12; zasrrannas; zooteat,
+12,13,extracted,ZHIGHTC280; ZOHIGHT-CHB; ZaHGHT-c200; ZoonT-c4s0; za4HIOHT-450; zaHhGHraaojzatahramon,
+13,7,extracted,ZOKFATDSOA; ZQKT-RTD; ZawrzogreAi; ZoKrATOEan; ZontPsore; zaenzaeazaes; zara; zo2ov; zoKreTossn; zocs; zoxrerosen; zoxs,
+14,2,extracted,ZOLGL2A; ZOYOCKSANH; ZYOCKATH; zasLtA,
+15,11,extracted,ZOZHRC2E; ZOZHRCAE; ZOZHRU4; ZQZH-TCAE; ZQZH-TT; ZQZH-TT4; ZQZH-TU; ZQZHTC-2E; ZQZHTOMH; ZREUACR; ZRRURGSAN; Zoztin; zaaeTe2; zazOm; zoinetsomooasost; zoztued,
+16,4,extracted,ZOZH-RN; ZQZH-RZ,
+17,10,extracted,2Q-2H-820; 2Q-2H-861; ZQ-2H-818; ZQ-ZH-830; ZaQ-zH; Zara; zazhizg; zbaniea; zhH400,
+18,9,extracted,ZO2H718; ZQ-BDH-12L; ZQ-ZH-81; ZQ-ZH-82; ZQ-ZH-901; ZQ-ZH-902; zazhal; zazhaov; zazhratv; zazntazv; zoznaL2,
+19,6,extracted,ZQ-PT-06A; ZQPT06; Za16L-88; ZaicLs; zaeohor; zaore-sze; zauoxz24; zaversus; zomowai,
+20,4,extracted,ZQ-ZH-4041; ZQ-ZH-4042; ZQ-ZH-801A; ZQFY213; zarerisa; zarrzn; zazie; zeae,
+21,4,extracted,ZOFY228; Za-zh-128; zante; zarme; zarvaate; zaziae; zeae; zorvari; zorvave; zozi,
+22,6,extracted,2QZMBIEA; ZQ-FY-45; ZQ-ZH-410; ZQZH-410R; ZQZH2R; Zazhent; zazhantE; zazhats; zaznataA; zaznettea; zozisis,
+23,3,extracted,zaloae2; zeeraroses,
+24,1,extracted,zamv; zawsol; zazhal,
+25,4,extracted,ZOYA-900; ZQZHA2; Zaesre; zone,
+26,4,extracted,2Q2H-82,
+27,4,extracted,ZaexXLDeL; Zaft; zane; zaresa; zaress; zowar,
+28,5,extracted,zaaat; zener; zest,
+29,4,extracted,ZNKS60; ZQ-60C,
+30,23,extracted,2Q-ACL-3; 2Q-JMC-312QH; ZORA; ZQ-ACL-3; ZQ-ACL24DH; ZQ-ACL41-2GH; ZQ-JMC-2120; ZQACL24Q; ZQACL24QH; ZQACLIGQH; ZQACLSSDH,
+31,14,extracted,ZQ-630; ZQ-ACL-16Y; ZQ-B20; ZQ-B40; ZQ-B60; ZQ-B60A; ZQ-B80; ZQ-B80A; ZQ-SK-XF32D; ZQB208; ZQuMF-16F; Zo20v0KKW; za0visoHe; zaB60; zae-t08; zante; zosso,
+32,4,extracted,2Q-CS200L; ZaQ-SF; zane; zavm; zens; zoms,
+33,1,extracted,ZOSOKI0S; ZaY30; Zavaog; Zaveo; za0vscn; zaoveny; zaviss; zavow; zoacso; zoos,
+34,6,extracted,ZQ-BDQ-650C; ZQ-JGB-120; ZQ-XZ-87; zaQ-BDQ,
+35,8,extracted,ZQ-SY-12; ZQ062-01; ZQ42AC; za-q3o0gh; zaecian; zoos,
+36,3,extracted,Z2O2AOVEO-ORE; ZQ-SL300C; ZaseoRl; Zavitenioon; za-sac; zaass; zante,
+37,3,extracted,ZQvce5Ms; Za-assoaA; za0xa00x460; zaanoea; zavceons,
+38,9,extracted,ZOLZ-180; ZOMFS-150; ZQ-QJR-L100A; ZQMN-150; Za-YQc1000; z30VI506oHz; zene; zzosinviotz,
+39,3,extracted,ZQ-GD-100; Zaaye7L; zashrsow; zeae; zone; zoscancre,
+40,3,extracted,,
+41,6,extracted,2Q074-03; ZQ073-01; ZQ073-02; ZQ074-02; ZQ074-04,
+42,6,extracted,2Q075-01; ZOEHRISOFLS; ZQ075-02; zao7641; zonezorl4,
+43,4,extracted,ZQ-GE20R; ZQ-XLD-CBR; zacs00r0s,
+44,24,extracted,2Q-00-150071; 2Q-0D-180071; ZQ-CSS1; ZQSOOMI; ZQz000A1; Za-ecHr40B; ZacssiaLce; Zacssisic; Zacssz01C0; Zovtreon; zacssi21ce; zaocusrixt; zaracH-36; zastroonizo0081; zoschas; zz0vio2,
+45,9,extracted,2Q-D0; ZQ-D1; ZQ-D10L4FB; ZQOLOLATEB; ZaGleLeTFB; ZocasizTFe; za-D1; za-e16LeTFB,
+46,11,extracted,Za-sD5; Za0ed-t2; ZaLDR4FB; Zeses; Zooa403; za-D03L2KB; za-sD10; za08301; zaaQtatm4e; zaatatwA; zane,
+47,25,extracted,ZAMGSOLZW; Za-T046LM2B; Zaogea; Zaver2; za0s5og; zaoasos; zaoesos; zaogeaz; zarTo46LW2A; zaroasiaze; zawetalz; zcTO26LM2A; zest; zoToasuv2e,
+48,5,extracted,ZQ-G588L2; zaazmntrz; zaccioolre; zacwenrs; zone; zoom; zostwours; zosweenes,
+49,27,extracted,ZRIXROWFA; Za-G58BLT2; ZaLe-20012F; ZaQ-az60t2; ZaZXHSLI6; ZaZe2SWFA; Zaisdie; Zam2026; ZazetsFh; Zazx20rn; Zazxsorm; Zo1sm; za1c-190; zaGaent; zaazeot2; zany; zo2m; zocten2; zoos; zuooes9011900; zzOVEOHe,
+50,4,extracted,ZronaeunKlcheoware; zansow; zoscascr,
+51,14,extracted,ZE2xt61; ZODLCO-14; ZOKKHD2; ZOS0GI2; ZQ402; ZQDLCD4O; ZaDLCD-20; Zaccoasva; Zawe2s; Zawezst; zacoz0a; zas0020; zeeiee; zospo0,
+52,11,extracted,ZE2xt61; ZODLCO-14; ZOKKHD2; ZOS0GI2; ZQ402; ZQDLCD4O; ZaDLCD-20; Zaccoasva; Zawe2s; Zawezst; zacoz0a; zas0020; zeeiee; zospo0,
+53,9,extracted,ZaKWivath; ZaQ-BG; Zasesis; ZauOWRDe; Zawo4s80; Zawoeeeo; z0780H00; zaar; zaiwoes70; zaor; zawe750; zawpa7a; zeae; zethe,
+54,19,extracted,ZK20CT; ZOMKaseTB; Za-8W-350; Za-wmstecTB; ZaamazsFTB; za-5w; za-vcrss; za-ve270; za-ver0s; za0-200v; zaew7op; zaewsop; znongcun,
+55,12,extracted,Za4ox; ZaaaL; Zaza; za0K2508; zaaox; zacos; zacwae; zaees; zamxzocaae; zanKz00; zass4; zasst; zawric,
+56,12,extracted,2Q-NB2218; ZODST-B60M; ZQ-NB221S; ZQDST-32; Za-DsT; Za-NB2223; ZaQ-DsT; Zoosrog; za0r; za0vi80; zaosrie,
+57,10,extracted,ZOSK-TO0P; ZOSKAGIP; ZQSK210P; ZaQ-SK; zane; zermowre; zorsaomrs,
+58,4,extracted,ZQ-ASLX2; ZQ-XHJ-100; ZQ-XHJ-65; Zane; zane; zasosmic,
+59,20,extracted,ZOARPsTOLXS; ZOARYISLKS; ZOLRYISOLXT; ZQ-LRYJ18LX1; ZQ-LRYJ1ODG; ZaLRV09; Zatmroaba; ZazW0e2; Zounriiwsd; Zuotaba; zauRWi0; zoiRWiex2; zourvarauxe,
+60,4,extracted,ZRHRIER; Za-sT260; Zaoz; ZasT120; ZasT120ZC-sT210; zaneeem; zasicet; zastety; zavigore,
+61,11,extracted,ZOMAZ; ZQ-200-1; ZQ-999SN-75; ZQ-9CSN; ZQ-9EN; ZQ-z00-2; ZZ0V; za-ar,
+62,0,failed_structured_extraction,ZOBLO18; ZOORSILOTA; Za-HMD; Za0visoke; ZaQ-skoaAB; Zaiiee; Zeovnaov; Zoa09; ZzQ-XRJ15LX2; za-DRS23; za0visahe; za0visihe; zaoB; zasars; zaste; ze0visoHe; zone,'NoneType' object is not subscriptable
+63,30,extracted,2Q-MD-9001; ZQ-HA-3168; ZQ116-01; ZQ116-02; ZQ116-03; Za-HP-101; zQJS-602; za-10; za109; za767; zaHBB250S; zas-e02; zasoron; zauts; zepanan,
+64,16,extracted,Z20-E98A2; ZOAPIAIZOR; ZOEHA2; ZOKT-11; ZQ-900N; ZQ-ESBAZ; ZQAPPIALZOR; za0on,
+65,11,extracted,Z070x8709; Zoesawzeos; Zona; Zz0-240VeEneare; z00305; zZQ-ECAM234608; za-sToancane,
+66,3,extracted,zoaes; zoom,
+67,0,failed_structured_extraction,ZQ124-02; ZQ124-03; ZQ124-04; Za124; za124; za124-29; za12408; za126-20; zaize21; zane; zara; zareea; zareent; zaret9; zarza9; zat24; zatats; zatz418; zatztor; zones,'NoneType' object is not subscriptable
+68,11,extracted,2Q126; ZQ-KS723,
+69,18,extracted,Zales; Zanes; Zavese,
+70,8,extracted,,
+71,13,extracted,2QII-02; Z2ax72zm; ZD132-20; Za132-16; Zone; za131; za134-09; zo132-11; zol3236,
+72,0,failed_structured_extraction,2Q199-09; za13408; za13409; zaf3406; zat3404; zat3405; zt3407,'NoneType' object is not subscriptable
+73,0,failed_structured_extraction,2Q135; 2Q136; 2Q136-05; 2Q136-16; ZaN95-41; Zor9e-17; zQt136; za135; za13504; za135121; za13562; zaQ13506,'NoneType' object is not subscriptable
+74,13,extracted,ZO137-08; ZONST-10; Za137441; Zootan; z0Q13842; zQ138; za138-14; zatsr031; zola7as; zolar44,
+75,0,failed_structured_extraction,2Q140-22; ZO14028; ZQ139; za13901; za140; za14061; za43967; zat40n0; zol4o29; zowen,'NoneType' object is not subscriptable
+76,12,extracted,ZQ141-12; ZQ141-16; Zat42191; zaH4105; zat217; zat42; zaxH7om; zol42201; zonn22,
+77,0,failed_structured_extraction,zQ14413,'NoneType' object is not subscriptable
+78,0,failed_structured_extraction,ZOHKIVTC-27O; ZONKIYTC; ZOOSBWTC-I570; ZOXKGS-109; ZOXKGS-120; ZOXKGS-150; ZOXNGS-180; ZQ-W48-A04; ZQXKGS-180; ZQXKGs-181; ZW48AO2; ZaNKuvTC-1a7O; ZarKsvTe-1870; ZaxnGs-102; Zn07xe00,'NoneType' object is not subscriptable
+79,0,failed_structured_extraction,ZOLSDXY-110; ZapTCT4; Zona; zeny,'NoneType' object is not subscriptable
+80,0,failed_structured_extraction,2Q14908; Za149-09720149; Zatiest; Zav4s-05; za149; zaies2; zan5005; zane; zawo; znongaqun; zoltso5; zozzi0,'NoneType' object is not subscriptable
+81,0,failed_structured_extraction,ZQNDT-1860; Zanst12; Zanst44; Zas2-03720182; Zatst13; z0181-03720151; zais; zaisi0e; zaisiot; zaistc2; zaree-13; zas1-01120181; zats2; zavs2-2; zol5I03; zol5l04; zol5l05,'NoneType' object is not subscriptable
+82,0,failed_structured_extraction,2QDDX-180; Z200; ZOLMDG-120; ZOSCGZTODC-1590; ZQ-BLMDG-120; ZQ-BLMDG-180; ZQ-YMDG-120; ZQ-YMDG-180; ZQ-YXSC-1201150180; ZQ4LMDG-180; ZQSCGZTODC-1850; ZaauupGao0; Zannoo-20; Zasm00-100; Zasru06-100; Zasruoo-t20; zaase-a8; zacTezr1se0; zadupG-50; zasFWDG150; zasFu00-200; zawDoe-ie; zaxwoG200; zomi06200; zwDpeao,'NoneType' object is not subscriptable
+83,0,failed_structured_extraction,2Q-GOGT-1590; Z0G0GT9030; ZDIRDH; ZQ-KTGQI; ZQ-SCSCJ-150; ZQAS-03; ZQECGQI-1435; ZaGaB030; Zacoct-iew; Zouw5to5; zacaaams; zacanen0; zaccoe-t250; zacos-t235; zaecacs-t20; zanssovza1ss02; zawaGzrrw; zocasene; zomesos; zoscecuin; zoscscu-it; zoxrcass000; zoxreas; zwetear-ie8,'NoneType' object is not subscriptable
+84,0,failed_structured_extraction,ZOVGDE; ZOVKG04; Za-wesT-180Z0; Zascsrd0; Zeaee; za-scra-12nz0; za-weok-180720; za187-01720157; za187-08; zarss-o1za1se; zascsrioonzonsoneoaon; zatsrot; zauwcpB; zol5r05; zol5r3; zol5ra2; zol5ra4; zolss5; zoss7-o77z0187; zotsroe,'NoneType' object is not subscriptable
+85,0,failed_structured_extraction,Z0159-10; Z0189-06; ZQ-QFSN1992; ZQ-WS4-A08; Za159-13; Zamoaoizawiense; zame; zans008; zans9-1112Q159; zawseate; zois0; ztmm,'NoneType' object is not subscriptable
+86,0,failed_structured_extraction,2Q-27-26; ZOZK-3K; ZQ27-28; ZaQ-zT4B; ZazkSakw; Zazksawzazks; Zazr48; zazk46; zazkaa; zazkse; zazkza; zazraE; zxSakw,'NoneType' object is not subscriptable
+87,0,failed_structured_extraction,ZQ-HC4518L; ZaQ-KSJ7019; Zavauors; zawiae; zaxctan; zone; zooreas; zoviate,'NoneType' object is not subscriptable
+88,0,failed_structured_extraction,Z0980; ZOAE-OR; Za10004; ZaK38; z0xs470; za20002; zami08,'NoneType' object is not subscriptable
+89,0,failed_structured_extraction,Z0980; ZOAE-OR; Za10004; ZaK38; z0xs470; za20002; zami08,'NoneType' object is not subscriptable
+90,0,failed_structured_extraction,2Q16E2; ZOIGEH; ZORA; zonaEaaoe,'NoneType' object is not subscriptable
+91,0,failed_structured_extraction,2Q16E2; ZOIGEH; ZORA; zonaEaaoe,'NoneType' object is not subscriptable
+92,0,failed_structured_extraction,ZAATOSS; ZOATESI; ZQ170-26; ZaQ179,'NoneType' object is not subscriptable
+93,0,failed_structured_extraction,ZAATOSS; ZOATESI; ZQ170-26; ZaQ179,'NoneType' object is not subscriptable
+94,0,failed_structured_extraction,ZASH; Zoom; za17205; za17209; zamto; zane; zara; zarr1-09; zarre8; zarres8; zarri-st; zarria2; zarriar; zarrias; zarris0; zarrsa1; zarrtt9; zasror; zat7ao; zatrlaz; zatrzoa; zawriae; zeae; zona; zones; zor19; zorri28; zorriss,'NoneType' object is not subscriptable
+95,0,failed_structured_extraction,Za174; ZaQ17416; za17415; zan7yoz; zanre18; zara; zarreae; zarrest; zat74-13; zatrt; zav7o49; zaxreso; zone; zoomz0yaoez,'NoneType' object is not subscriptable
+96,0,failed_structured_extraction,ZAISWISEE; Zairem; Zonsea; zarees,'NoneType' object is not subscriptable
+97,0,failed_structured_extraction,Z17751; ZAMIR; ZRAGIRAAIDIBAG; ZenevaRS; zairees,'NoneType' object is not subscriptable
+98,0,failed_structured_extraction,2Q178-06; Z179-12; ZD179-53; ZD180-48; ZQ180-39; Za180-115; Zai80-103; ZaiTea; Zaies; ZainoTs; Zaire; Zaireas; Zaite; Zaiw0-112; Zameen; Zan101; Zan8e43; Zane; Zanes; Zarmss; Zarrsi9; Zass; Zateens; Zateo-t08; Zauen; Zaureae; Zine; Zoltan; Zorseae; Zoucat; Zqueed; zairsas; zarrees; zarrsa9; zatmse; zatnetws; zatrer3; zoNt,'NoneType' object is not subscriptable
+99,0,failed_structured_extraction,ZQ11-16; Za18119; Za182-45; Za1az21; Zataz-8; Zauen; Zawes; Zaweue; Zicmann; Zo18113; Zowes; za18224; za18227; zaisiat; zatez; zaw2o7; zhnang; zhuang; zowes,'NoneType' object is not subscriptable
+100,0,failed_structured_extraction,ZIRk57; ZQ18434; Zaiar; Zaiatsy; Zane; Zatadz; Zatatzr7; Zatds6; Zattsl; Zoot; Zoran; Zousas; Zzoteaa; z0180-02; za1a428; zaaa; zaat; zaat38; zaieste; zaimat; zajatos; zajuda; zalatT7; zalatt6; zals449; zaman; zane; zara; zarsess; zat8ta; zatat44; zatata; zatatak; zatatos; zatmor; zatsti8; zattoy; zavatos; zoey; zoinso; zoiuso; zolah22; zone; zones; zoven-2a; zovs27,'NoneType' object is not subscriptable
+101,0,failed_structured_extraction,zaehas; zaiez2; zaimess; zainese; zamey; zane; zaneeae; zare801; zasassr; zatagse; zatscae; zauew; zaveso; zavwe2; zawoas; zawsor; zawss; zoes; zoletas; zones; zons1s; zoomkaa; zoreetn; zosesar; zowest,'NoneType' object is not subscriptable
+102,0,failed_structured_extraction,2Q187-08; Za188; z9188; zae7; zarse; zarss-t1; zas8; zase04; zate7-92; zatse; zatss; zauerar; zaw7; zemen; zest; zoner1a; zones; zousie; zoxbs,'NoneType' object is not subscriptable
+103,0,failed_structured_extraction,za100-16; za100-19; za10045; za160-05; za180-11; za18e-12; za190; zar60-04; zare0-09; zate0-02; zateot7; zoreeo,'NoneType' object is not subscriptable
+104,0,failed_structured_extraction,ZQ191-12; Za191-15; ZaQ191-14; Zane; Zass2-s6; zante; zare21s; zarot; zatgat,'NoneType' object is not subscriptable
+105,0,failed_structured_extraction,ZO194-20; ZRnERARAcpe; zae415; zais18; zane; zansan7; zaorata; zasre; zatseo6; zaveet; zones,'NoneType' object is not subscriptable
+106,0,failed_structured_extraction,ZQ195; Za1gs; Zarso1; Zat96-02; za106-6; za195; za195-06; zaive1s; zarseazstFFaarl; zatee3; zater7; zatseaafrreon; zatseattrFao; zawe-es; zawsaarreo; zo10610; zo10619; zoros,'NoneType' object is not subscriptable
+107,0,failed_structured_extraction,ZQ198; Zari; zara; zawr2e; zawraseeraio; zeit; zones; zoos; zowe; zowo; zowronersin,'NoneType' object is not subscriptable
+108,0,failed_structured_extraction,2Q19013; 2Q198-47; ZawbzT; zone,'NoneType' object is not subscriptable
+109,0,failed_structured_extraction,ZQGG1ixtntsem; Zai07-02; zasast; zast,'NoneType' object is not subscriptable
+110,0,failed_structured_extraction,zQ204; za204; zans-i6; zans-it; zaz04; zaz04-08; zones,'NoneType' object is not subscriptable
+111,0,failed_structured_extraction,za205-15; za20s; zaamsat; zames8; zamse; zan0s22; zaz0s; zazos; zazoste; zeeeR; zomg; zon0516; zona; zone; zones,'NoneType' object is not subscriptable
+112,0,failed_structured_extraction,z0208-17; zaamar; zaamrse; zamrio; zouera; zouera2; zouorsn; zoxt7,'NoneType' object is not subscriptable
+113,0,failed_structured_extraction,ZQ-BO01,'NoneType' object is not subscriptable
+114,0,failed_structured_extraction,,'NoneType' object is not subscriptable
+115,0,failed_structured_extraction,ZQ-B003; zope,'NoneType' object is not subscriptable
+116,0,failed_structured_extraction,ZEST2; ZQ-B005; ZQ-B8,'NoneType' object is not subscriptable
+117,0,failed_structured_extraction,ZQ-A010,'NoneType' object is not subscriptable
+118,0,failed_structured_extraction,Znonaaun,'NoneType' object is not subscriptable
+119,0,failed_structured_extraction,ZQ-SN1544; za-sw2042; zinsmea,'NoneType' object is not subscriptable
+120,0,failed_structured_extraction,Za-sFo4g; za-sF016; zeTmeRme; zocor; zosrozs,'NoneType' object is not subscriptable
+121,0,failed_structured_extraction,2QSNSITS; ZLSN6904; ZOSNH1; ZQSNSTER; Zasnsres; Zosne; Zosnsnts; Zosnsus; Zteasonn; zasusor; zeraem; zones,'NoneType' object is not subscriptable
+122,0,failed_structured_extraction,Zari; za220; zane; zona,'NoneType' object is not subscriptable
+123,0,failed_structured_extraction,ZaoM; zaz30,'NoneType' object is not subscriptable
+124,0,failed_structured_extraction,,'NoneType' object is not subscriptable
