@@ -140,3 +140,52 @@ The 53 failed pages are listed in full in the count report. These pages likely c
 3. **Low-confidence records (~464)**: Flag for client review — `confidence: "low"` badge appears on product cards.
 4. **Category rationalization**: "Other Commercial Equipment" covers a very large proportion. Re-categorize after page-image review.
 5. **Count statement**: Do not claim "500+" or "622 verified products" in external marketing until source-page review is complete.
+6. **Image statement**: Do not claim that all products have accurate images. All 622 images are category-level placeholders. See section 11.
+
+---
+
+## 11. Image Strategy Status (2026-08-25)
+
+Image fields added to every product record via `products-data.js` shim (2026-08-25 update).
+
+### Fields added at shim layer (all 622 products)
+
+| Field | Value |
+|---|---|
+| `image` | Category-specific placeholder path (see table below) |
+| `imageStatus` | `"placeholder-category"` |
+| `imageSource` | `"category-placeholder"` |
+| `imageVerified` | `false` |
+
+### Image counts by status
+
+| imageStatus | Count |
+|---|---:|
+| `placeholder-category` | **622** |
+| `manufacturer-verified` | 0 |
+| `pdf-crop-verified` | 0 |
+
+**Why 0 verified images:**
+- No manufacturer image URLs are available for any SKU in this project
+- OCR quality (464 low-confidence records, 53 failed pages, 42 missing SKUs) prevents any safe SKU-to-page-crop assertion
+
+### Placeholder usage by category
+
+| Category | Placeholder File | Exists? |
+|---|---|---|
+| Cooking Equipment | `images/placeholder-cooking.jpg` | ⚠️ Pending |
+| Baking and Bakery | `images/bakery_prep.jpg` | ✅ |
+| Warewashing | `images/warewashing.jpg` | ✅ |
+| Refrigeration and Cold Storage | `images/cold_storage.jpg` | ✅ |
+| Ice Machines and Ice Storage | `images/placeholder-ice.jpg` | ⚠️ Pending |
+| Stainless Fabrication | `images/stainless_fabrication.jpg` | ✅ |
+| Food Preparation | `images/placeholder-foodprep.jpg` | ⚠️ Pending |
+| Other Commercial Equipment | `images/placeholder-commercial.jpg` | ⚠️ Pending |
+| Unclassified / blank | `images/category-placeholder.jpg` | ✅ (fallback) |
+
+Pending files will fall back to `images/category-placeholder.jpg` via the `onerror` handler until created. No broken images are shown.
+
+### Spec modal
+The `IMAGE STATUS`, `IMAGE SOURCE`, and `IMAGE VERIFIED` rows now appear in every product's specification modal, making the placeholder nature of all images visible to staff.
+
+Full image audit: see `image_status_report.md` and `image_crop_audit.md` artifacts.
