@@ -494,7 +494,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       modalRow('CONFIDENCE',        p.confidence, false),
       modalRow('IMAGE STATUS',      p.imageStatus || '', false),
       modalRow('IMAGE SOURCE',      p.imageSource || '', false),
-      modalRow('IMAGE VERIFIED',    p.imageVerified !== undefined ? (p.imageVerified ? 'Yes (Verified PDF Crop)' : 'No (Category Placeholder)') : '', false)
+      modalRow('IMAGE VERIFIED',    p.imageVerified !== undefined ? (p.imageVerified ? (p.imageStatus === 'manufacturer-verified' ? 'Yes (Manufacturer Verified)' : 'Yes (Verified PDF Crop)') : 'No (Category Placeholder)') : '', false)
     ].join('');
 
     // otherSpecifications is shown separately if non-empty
@@ -524,7 +524,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
             ${otherSpecs ? `
             <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-dark);">
-              <h5 style="font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--stone-light); margin-bottom:0.75rem;">OCR CONTEXT / ADDITIONAL NOTES</h5>
+              <h5 style="font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--stone-light); margin-bottom:0.75rem;">${p.imageStatus === 'manufacturer-verified' ? 'FACTORY SPECIFICATIONS &amp; ENGINEERING HIGHLIGHTS' : 'OCR CONTEXT / ADDITIONAL NOTES'}</h5>
               <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--stone-light); line-height:1.5; word-break:break-word;">${otherSpecs}</p>
             </div>` : ''}
           </div>

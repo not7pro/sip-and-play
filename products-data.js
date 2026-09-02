@@ -84,7 +84,7 @@
     return CATEGORY_PLACEHOLDERS[cat] || FALLBACK_PLACEHOLDER;
   }
 
-  window.SIP_PRODUCTS = catalogProducts.map(function (p) {
+  var normalizedCatalog = catalogProducts.map(function (p) {
     return {
       id:                  p.id                       || '',
       sku:                 (p.sku                     || '').trim(),
@@ -113,9 +113,16 @@
     };
   });
 
+  var brands = (typeof window !== 'undefined' && Array.isArray(window.BRAND_PRODUCTS))
+    ? window.BRAND_PRODUCTS
+    : [];
+
+  window.SIP_PRODUCTS = brands.concat(normalizedCatalog);
+
   console.log(
     '[SIP] Active catalog loaded: ' + window.SIP_PRODUCTS.length +
-    ' records from catalog_products_normalized.js'
+    ' total records (' + brands.length + ' verified brand units + ' +
+    normalizedCatalog.length + ' OCR units)'
   );
 
   // Image status summary for audit / console verification

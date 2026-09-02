@@ -356,7 +356,8 @@
   </a>
 
   <!-- CATALOGUE ENGINE -->
-  <!-- catalog_products_normalized.js MUST load first so the shim in products-data.js can find catalogProducts -->
+  <!-- brands_products_data.js and catalog_products_normalized.js load before products-data.js -->
+  <script src="brands_products_data.js"></script>
   <script src="catalog_products_normalized.js"></script>
   <script src="products-data.js"></script>
   <script src="catalogue.js"></script>
