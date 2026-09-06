@@ -1393,10 +1393,14 @@ p em,
 }
 
 .theme-dark .btn--outline:hover,
-.theme-charcoal .btn--outline:hover,
+.theme-charcoal .btn--outline:hover {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
 .theme-dark .btn--primary:hover,
 .theme-charcoal .btn--primary:hover {
-  color: #ffffff !important;
+  color: #000000 !important;
   border-color: #ffffff !important;
 }
 
