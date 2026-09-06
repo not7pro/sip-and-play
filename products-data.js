@@ -67,17 +67,17 @@
    * No unrelated photographs.
    */
   var CATEGORY_PLACEHOLDERS = {
-    'Cooking Equipment':              'images/placeholder-cooking.jpg',
-    'Baking and Bakery':              'images/bakery_prep.jpg',
-    'Warewashing':                    'images/warewashing.jpg',
-    'Refrigeration and Cold Storage': 'images/cold_storage.jpg',
-    'Ice Machines and Ice Storage':   'images/placeholder-ice.jpg',
-    'Stainless Fabrication':          'images/stainless_fabrication.jpg',
-    'Food Preparation':               'images/placeholder-foodprep.jpg',
-    'Other Commercial Equipment':     'images/placeholder-commercial.jpg'
+    'Cooking Equipment':              'images/placeholder-cooking.svg',
+    'Baking and Bakery':              'images/placeholder-bakery.svg',
+    'Warewashing':                    'images/placeholder-warewashing.svg',
+    'Refrigeration and Cold Storage': 'images/placeholder-refrigeration.svg',
+    'Ice Machines and Ice Storage':   'images/placeholder-ice.svg',
+    'Stainless Fabrication':          'images/placeholder-stainless.svg',
+    'Food Preparation':               'images/placeholder-foodprep.svg',
+    'Other Commercial Equipment':     'images/placeholder-commercial.svg'
   };
 
-  var FALLBACK_PLACEHOLDER = 'images/category-placeholder.jpg';
+  var FALLBACK_PLACEHOLDER = 'images/category-placeholder.svg';
 
   function resolveImagePath(p) {
     var cat = (p.category || '').trim();
@@ -88,6 +88,7 @@
     return {
       id:                  p.id                       || '',
       sku:                 (p.sku                     || '').trim(),
+      ocrSku:              (p.ocrSku                  || '').trim(),
       name:                (p.name                    || '').trim(),
       brand:               (p.brand                   || '').trim(),
       category:            (p.category                || '').trim(),
@@ -106,10 +107,10 @@
       sourceLanguage:      (p.sourceLanguage          || '').trim(),
       featured:            Boolean(p.featured),
       // Image strategy fields
-      image:               resolveImagePath(p),
-      imageStatus:         'placeholder-category',
-      imageSource:         'category-placeholder',
-      imageVerified:       false
+      image:               (p.image && p.image !== 'images/category-placeholder.jpg') ? p.image : resolveImagePath(p),
+      imageStatus:         p.imageStatus || 'placeholder-category',
+      imageSource:         p.imageSource || 'category-placeholder',
+      imageVerified:       p.imageVerified != null ? Boolean(p.imageVerified) : false
     };
   });
 

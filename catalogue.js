@@ -28,10 +28,21 @@ document.addEventListener('DOMContentLoaded', async () => {
      placeholder.  We never assign Unsplash or stock photos.
   ---------------------------------------------------------- */
   function getProductImage(product) {
-    if (product && product.image && product.image.trim() !== '') {
+    if (product && product.image && product.image.trim() !== '' && !product.image.includes('category-placeholder.jpg')) {
       return product.image;
     }
-    return 'images/category-placeholder.jpg';
+    const cat = (product && product.category) ? product.category.trim() : '';
+    const CATEGORY_MAP = {
+      'Cooking Equipment':              'images/placeholder-cooking.svg',
+      'Baking and Bakery':              'images/placeholder-bakery.svg',
+      'Warewashing':                    'images/placeholder-warewashing.svg',
+      'Refrigeration and Cold Storage': 'images/placeholder-refrigeration.svg',
+      'Ice Machines and Ice Storage':   'images/placeholder-ice.svg',
+      'Stainless Fabrication':          'images/placeholder-stainless.svg',
+      'Food Preparation':               'images/placeholder-foodprep.svg',
+      'Other Commercial Equipment':     'images/placeholder-commercial.svg'
+    };
+    return CATEGORY_MAP[cat] || 'images/category-placeholder.svg';
   }
 
   /* ----------------------------------------------------------
@@ -338,7 +349,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       card.innerHTML = `
         <div class="cat-card__img-wrap" style="position:relative; width:100%; aspect-ratio:4/3; overflow:hidden; background:var(--ink-charcoal);">
-          <img class="cat-card__img" src="${imgSrc}" alt="${displayName}" loading="lazy" onerror="this.onerror=null; this.src='images/category-placeholder.jpg';" style="width:100%; height:100%; object-fit:cover; transition:transform var(--slow) var(--ease-editorial);" />
+          <img class="cat-card__img" src="${imgSrc}" alt="${displayName}" loading="lazy" onerror="this.onerror=null; this.src='images/category-placeholder.svg';" style="width:100%; height:100%; object-fit:cover; transition:transform var(--slow) var(--ease-editorial);" />
           <span class="cat-card__sku" style="position:absolute; top:1rem; left:1rem; background:var(--ink-pure); color:var(--paper-ivory); font-family:var(--font-mono); font-size:0.7rem; padding:0.2rem 0.5rem; letter-spacing:0.1em;">${p.sku}</span>
           ${p.confidence === 'low' ? '<span style="position:absolute; bottom:0.5rem; right:0.5rem; background:rgba(0,0,0,0.6); color:#f0a500; font-family:var(--font-mono); font-size:0.6rem; padding:0.15rem 0.4rem; letter-spacing:0.08em;">REVIEW</span>' : ''}
           ${p.featured ? '<span class="cat-card__featured" style="position:absolute; top:1rem; right:1rem; background:var(--stone-light); color:var(--ink-pure); font-family:var(--font-mono); font-size:0.7rem; padding:0.2rem 0.5rem; letter-spacing:0.1em; font-weight:700;">FEATURED</span>' : ''}
@@ -479,6 +490,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Only non-empty spec rows are included
     const specRows = [
       modalRow('MODEL / SKU',       sku,         true),
+      modalRow('ORIGINAL OCR TOKEN',(p.ocrSku && p.ocrSku !== sku) ? p.ocrSku : '', false),
       modalRow('MANUFACTURER',      brand +      (p.origin ? ` — ${p.origin}` : ''), false),
       modalRow('PRODUCT NAME',      name,        false),
       modalRow('CATEGORY',          category,    false),
@@ -513,7 +525,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         <div class="modal-spec-grid">
           <div class="modal-spec-media">
-            <img src="${image}" alt="${name}" class="modal-spec-img" onerror="this.onerror=null; this.src='images/category-placeholder.jpg';" />
+            <img src="${image}" alt="${name}" class="modal-spec-img" onerror="this.onerror=null; this.src='images/category-placeholder.svg';" />
             ${sku ? `<div class="modal-spec-badge">SKU: ${sku}</div>` : ''}
           </div>
 
