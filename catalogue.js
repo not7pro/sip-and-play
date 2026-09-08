@@ -709,7 +709,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   /* ----------------------------------------------------------
-     URL PARAM: ?category=xxx  auto-selects a tab on load
+     URL PARAM: ?category=xxx or ?brand=xxx auto-selects on load
   ---------------------------------------------------------- */
   const urlParams = new URLSearchParams(window.location.search);
   const urlCat = (urlParams.get('category') || '').trim().toLowerCase();
@@ -721,12 +721,32 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (match) { currentCategory = match; }
   }
 
+  const urlBrand = (urlParams.get('brand') || '').trim().toLowerCase();
+  if (urlBrand) {
+    const matchBrand = allProducts
+      .map(p => p.brand)
+      .find(b => b && b.toLowerCase().includes(urlBrand));
+    if (matchBrand) {
+      currentBrand = matchBrand;
+      if (brandSelect) {
+        brandSelect.value = matchBrand;
+      }
+    }
+  }
+
   /* ----------------------------------------------------------
      INITIAL BOOT
   ---------------------------------------------------------- */
   renderCategoryButtons();
   applyFilters();
   updateScheduleUI();
+
+  if (urlBrand || urlCat) {
+    setTimeout(() => {
+      const catalogueView = document.getElementById('catalogueView');
+      if (catalogueView) { catalogueView.scrollIntoView({ behavior: 'smooth' }); }
+    }, 150);
+  }
 
   // Handle "View [Brand] Inventory →" buttons from the authorized brands section
   document.querySelectorAll('[data-brand-filter]').forEach(btn => {
