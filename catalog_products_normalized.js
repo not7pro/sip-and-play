@@ -2346,7 +2346,7 @@ const catalogProducts = [
     "otherSpecifications": "Weight: 108Kg",
     "sourcePage": 15,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-RU-4  ZQ-ZH-TU-4.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -2368,7 +2368,7 @@ const catalogProducts = [
     "otherSpecifications": "Weight: 139Kg",
     "sourcePage": 15,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-TT-4  ZQ-ZH-TT-4A.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "medium"
   },
@@ -2390,7 +2390,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 15,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-RC-1E    ZQ-ZH-TC-1E.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -2412,7 +2412,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 15,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-RC-2E  ZQ-ZH-TC-2E.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -2456,7 +2456,7 @@ const catalogProducts = [
     "otherSpecifications": "Weight: 84K",
     "sourcePage": 15,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-RU-4  ZQ-ZH-TU-4.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "medium"
   },
@@ -2478,7 +2478,7 @@ const catalogProducts = [
     "otherSpecifications": "Weight: 114K",
     "sourcePage": 15,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-TT-4  ZQ-ZH-TT-4A.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "medium"
   },
@@ -2500,7 +2500,7 @@ const catalogProducts = [
     "otherSpecifications": "Weight: 151Kg",
     "sourcePage": 15,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-TT-6  ZQ-ZH-TT-6A.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "medium"
   },
@@ -2522,7 +2522,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 15,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-RC-1E    ZQ-ZH-TC-1E.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "medium"
   },
@@ -2544,7 +2544,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 15,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-RC-2E  ZQ-ZH-TC-2E.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -2566,7 +2566,7 @@ const catalogProducts = [
     "otherSpecifications": "Setr10158-958",
     "sourcePage": 15,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-TQ-4H  ZQ-ZH-RS-4H.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -2610,7 +2610,7 @@ const catalogProducts = [
     "otherSpecifications": "Raw OCR fragments near model: \"400x900x850+70 60K9\" (weight shown as \"60K9\" in OCR). Additional surrounding OCR text (possibly general notes/power options): \"ICSLPG Sixt=20KW / 天志气NG了.TSz4-31KW  “VA (Power}:OKW, tE{Voltage):220Vi50-B0H2   aR(Power):OKW, 电压(Voltageh220V'50.60Hz\"",
     "sourcePage": 16,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-XM-8   ZQ-ZH-LM-6.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -2632,7 +2632,7 @@ const catalogProducts = [
     "otherSpecifications": "Raw OCR fragments near model: \"800x900x850+70 100K9\" (weight shown as \"100K9\" in OCR). See also surrounding OCR power/voltage notes: \"ICSLPG Sixt=20KW / 天志气NG了.TSz4-31KW ... 电压(Voltageh220V'50.60Hz)\"",
     "sourcePage": 16,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-RM-16  ZQ-ZH-TM-12.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -2654,7 +2654,7 @@ const catalogProducts = [
     "otherSpecifications": "Raw OCR fragments near model: \"400x900X850*70 55Kg\" (weight shown as \"55Kg\" in OCR). Surrounding OCR includes mixed notes about LPG/NG and electrical voltage: \"ICSLPG Sixt=20KW / 天志气NG了.TSz4-31KW ... 电压(Voltageh220V'50.60Hz)\"",
     "sourcePage": 16,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-RZ-400  ZQ-ZH-RZ-360.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -2676,7 +2676,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 17,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-818.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "medium"
   },
@@ -2698,7 +2698,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 17,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-820.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "medium"
   },
@@ -2720,7 +2720,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 17,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-822.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "medium"
   },
@@ -2742,7 +2742,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR possibly garbled variant of model number",
     "sourcePage": 17,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-810.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -2764,7 +2764,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR shows '20-2H-830' (may be garbled)",
     "sourcePage": 17,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-830.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -2786,7 +2786,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 17,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-861.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "medium"
   },
@@ -2808,7 +2808,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR shows '550x530x220    KW    220-240V/50-60Hz'",
     "sourcePage": 17,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-830.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "high"
   },
@@ -2874,7 +2874,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR: '2zH793   730x590x300 17KW'",
     "sourcePage": 17,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-793.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "medium"
   },
@@ -2896,7 +2896,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 18,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-81.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -2918,7 +2918,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 18,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-82.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -2940,7 +2940,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 18,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-901.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -2962,7 +2962,7 @@ const catalogProducts = [
     "otherSpecifications": "16K9",
     "sourcePage": 18,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-902.webp",
     "sourceLanguage": "Chinese",
     "confidence": "medium"
   },
@@ -2984,7 +2984,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 18,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-BDH-12L.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -3006,7 +3006,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 18,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-72A.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -3028,7 +3028,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 18,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-718.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -3050,7 +3050,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 18,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-720.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -3072,7 +3072,7 @@ const catalogProducts = [
     "otherSpecifications": "21KG 20-2182 ‘SoOxe2 D650",
     "sourcePage": 18,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-30V.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -3094,7 +3094,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR context: appears in row with other model variants; nearby text: \"ahHaHX 20047003000\" and \"GAS LAVA ROCK GRILL\"",
     "sourcePage": 19,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-PT-06.webp",
     "sourceLanguage": "mixed (zh/en)",
     "confidence": "medium"
   },
@@ -3116,7 +3116,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR context: listed adjacent to ZQPT06 and other variants in the same table row",
     "sourcePage": 19,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-PT-06A.webp",
     "sourceLanguage": "mixed (zh/en)",
     "confidence": "medium"
   },
@@ -3138,7 +3138,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR context: listed as a variant next to ZQPT06 / ZQ-PT-06A",
     "sourcePage": 19,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-IGL-88.webp",
     "sourceLanguage": "mixed (zh/en)",
     "confidence": "medium"
   },
@@ -3226,7 +3226,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 20,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-FY-213.webp",
     "sourceLanguage": "Chinese",
     "confidence": "medium"
   },
@@ -3248,7 +3248,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 20,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-801A-B.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -3270,7 +3270,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 20,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-4041.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -3292,7 +3292,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 20,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-4042.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -3314,7 +3314,7 @@ const catalogProducts = [
     "otherSpecifications": "Raw OCR row: \"ZOFY228                 580x320X200                 155KW               220-240VI50.60Hz                 50-3000                    12K9\"",
     "sourcePage": 21,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-FY228.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -3336,7 +3336,7 @@ const catalogProducts = [
     "otherSpecifications": "Raw OCR row: \"Za-zh-128                  250x460x200                 4.2KW               220-240VI50-60H2                 50-3000                    akg\"",
     "sourcePage": 21,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-12B.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -3380,7 +3380,7 @@ const catalogProducts = [
     "otherSpecifications": "Raw OCR row: \"ZQ.FYX-12B       485x250x210        12KW       220-240VI50-60Hz       50-3000         7Kg\"",
     "sourcePage": 21,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-FYX-12B.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -3402,7 +3402,7 @@ const catalogProducts = [
     "otherSpecifications": "SHAUGAS: 2800pa; Weight 17Kg (as OCR)",
     "sourcePage": 22,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-410R.webp",
     "sourceLanguage": "mixed Chinese/English (OCR)",
     "confidence": "low"
   },
@@ -3424,7 +3424,7 @@ const catalogProducts = [
     "otherSpecifications": "SOO KG (as OCR)",
     "sourcePage": 22,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-811EA.webp",
     "sourceLanguage": "mixed Chinese/English (OCR)",
     "confidence": "low"
   },
@@ -3446,7 +3446,7 @@ const catalogProducts = [
     "otherSpecifications": "Weight shown as 17K9 (as OCR)",
     "sourcePage": 22,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-410.webp",
     "sourceLanguage": "mixed Chinese/English (OCR)",
     "confidence": "low"
   },
@@ -3468,7 +3468,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 22,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-1.R.webp",
     "sourceLanguage": "mixed Chinese/English (OCR)",
     "confidence": "low"
   },
@@ -3490,7 +3490,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 22,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-2.R.webp",
     "sourceLanguage": "mixed Chinese/English (OCR)",
     "confidence": "low"
   },
@@ -3512,7 +3512,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 22,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQFY-45.R    ZQ-FY-45.webp",
     "sourceLanguage": "mixed Chinese/English (OCR)",
     "confidence": "low"
   },
@@ -3600,7 +3600,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR context fragment: ER       \"160037601780        Ti       220-240      ekg\nLocated under heading: FOOD WARM CABINET / ELECTRIC WARMING SHOWCASE. OCR text otherwise garbled; surrounding lines include Chinese and illegible characters.",
     "sourcePage": 24,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-WS-01   ZQ-WS-01.webp",
     "sourceLanguage": "English/Chinese",
     "confidence": "low"
   },
@@ -3622,7 +3622,7 @@ const catalogProducts = [
     "otherSpecifications": "Original nearby OCR text: \"YA309 920xb90xi20 05KW 220-2407 51K9\"; manufacturer shown as \"州中群厨具有限会司\"",
     "sourcePage": 25,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-YA-909.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "low"
   },
@@ -3644,7 +3644,7 @@ const catalogProducts = [
     "otherSpecifications": "Original nearby OCR text: \"ZOYA-900 — $201600x960 038KW 220-240V_S9Kg\"; original Chinese present on page",
     "sourcePage": 25,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-YA-900.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "low"
   },
@@ -3666,7 +3666,7 @@ const catalogProducts = [
     "otherSpecifications": "Original nearby OCR text: \"CONVEYOR TOASTER ZO-TT-150 —230x420x300 1.54KW 220-240V 180-180 14K\"",
     "sourcePage": 25,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-TT-150    ZQ-TT-300    ZQ-TT-450.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "high"
   },
@@ -3732,7 +3732,7 @@ const catalogProducts = [
     "otherSpecifications": "Original OCR: \"立式旋转式电烤炉\" (vertical rotating electric oven). Other nearby OCR tokens preserved: \"'GASITEKW     'SOW     Kg\"",
     "sourcePage": 26,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-ZH-82.webp",
     "sourceLanguage": "en/zh",
     "confidence": "low"
   },
@@ -3798,7 +3798,7 @@ const catalogProducts = [
     "otherSpecifications": "Original Chinese name: 巴西拉丁烧烤炉. OCR line: ZQ.BXLD.9L “1200xe00x1750   o.7kW   220v",
     "sourcePage": 27,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-BXLD-7L  ZQ-BXLD-9L   ZQ-BXLD-13L.webp",
     "sourceLanguage": "Chinese/English OCR",
     "confidence": "medium"
   },
@@ -3820,7 +3820,7 @@ const catalogProducts = [
     "otherSpecifications": "Original Chinese name: 巴西拉丁烧烤炉. OCR line: ZaexXLDeL 1200x900xf750 037k    220V",
     "sourcePage": 27,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Western Kitchen Equipment Series/ZQ-BXLD-7L  ZQ-BXLD-9L   ZQ-BXLD-13L.webp",
     "sourceLanguage": "Chinese/English OCR",
     "confidence": "low"
   },
@@ -3842,7 +3842,7 @@ const catalogProducts = [
     "otherSpecifications": "Translated from OCR heading: 'Double Speed Six Rows Roast Chichen Fumace'. OCR fragment: 'Fhs-03 —roLooGo ... —aoue-04'",
     "sourcePage": 27,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ046-03.webp",
     "sourceLanguage": "Chinese/English OCR",
     "confidence": "low"
   },
@@ -3864,7 +3864,7 @@ const catalogProducts = [
     "otherSpecifications": "Detected in OCR near Fhs-03 as '—aoue-04'. OCR uncertain/garbled.",
     "sourcePage": 27,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ046-04.webp",
     "sourceLanguage": "Chinese/English OCR",
     "confidence": "low"
   },
@@ -3886,7 +3886,7 @@ const catalogProducts = [
     "otherSpecifications": "Original OCR line: 'ELECTRIC CONVEVOR PIZZA OVEN ... 履带式电...' (conveyor-type electric). Capacity text in OCR: '152K9'.",
     "sourcePage": 28,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-PE601BD1 ZQ-PE101BD1 STOCK AVAILABLE.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "high"
   },
@@ -4084,7 +4084,7 @@ const catalogProducts = [
     "otherSpecifications": "96型高级 (96-type advanced)",
     "sourcePage": 30,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-ACL-1-1DH   STOCK AVAILABLE.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "low"
   },
@@ -4128,7 +4128,7 @@ const catalogProducts = [
     "otherSpecifications": "Tray size 400x600mm; original OCR text: EEF —_-ARSE",
     "sourcePage": 30,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-ACL-1-2QH.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "low"
   },
@@ -4150,7 +4150,7 @@ const catalogProducts = [
     "otherSpecifications": "Tray size 400x600mm; original OCR: BPE LEAN",
     "sourcePage": 30,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-ACL-2-4QH.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "medium"
   },
@@ -4172,7 +4172,7 @@ const catalogProducts = [
     "otherSpecifications": "Original OCR tray text: 006000 HAE",
     "sourcePage": 30,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-ACL-3-6QH   ZQ-ACL-3-9QH.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "low"
   },
@@ -4194,7 +4194,7 @@ const catalogProducts = [
     "otherSpecifications": "Tray size 400x600mm; 计时器 (timer)",
     "sourcePage": 30,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-ACL-3-6QH   ZQ-ACL-3-9QH.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "medium"
   },
@@ -4216,7 +4216,7 @@ const catalogProducts = [
     "otherSpecifications": "Tray size 400x600mm; original OCR trailing text: Hema",
     "sourcePage": 30,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-12H   ZQ-ACL-3-9QH.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "low"
   },
@@ -4238,7 +4238,7 @@ const catalogProducts = [
     "otherSpecifications": "标注: 普通型 (Standard type)",
     "sourcePage": 30,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-ACL-2-4Q   STOCK AVAILABLE.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "low"
   },
@@ -4282,7 +4282,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 30,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-BDD-40DF.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "low"
   },
@@ -4326,7 +4326,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 30,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-ACL-3-6QH   ZQ-ACL-3-9QH.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "low"
   },
@@ -4348,7 +4348,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 30,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-ACL-3-6    STOCK AVAILABLE.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "low"
   },
@@ -4392,7 +4392,7 @@ const catalogProducts = [
     "otherSpecifications": "Weight 650Kg; original OCR trailing text: Eee",
     "sourcePage": 30,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-BDD-40DF.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "medium"
   },
@@ -4414,7 +4414,7 @@ const catalogProducts = [
     "otherSpecifications": "Weight 400kg; original OCR text: =RAg",
     "sourcePage": 30,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-ACL-3-6QH   ZQ-ACL-3-9QH.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "low"
   },
@@ -4480,7 +4480,7 @@ const catalogProducts = [
     "otherSpecifications": "Weight 00kg; original OCR text: SRAg",
     "sourcePage": 30,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-ACL-3-6QH   ZQ-ACL-3-9QH.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "low"
   },
@@ -4546,7 +4546,7 @@ const catalogProducts = [
     "otherSpecifications": "单门18 (Chinese: single door 18)",
     "sourcePage": 31,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-JMF-16F   STOCK AVAILABLE.webp",
     "sourceLanguage": "Chinese/English (OCR)",
     "confidence": "medium"
   },
@@ -4568,7 +4568,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 31,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-B10          ZQ-B15         ZQ-B20          ZQ-B3            STOCK AVAILABLE.webp",
     "sourceLanguage": "English (OCR)",
     "confidence": "medium"
   },
@@ -4590,7 +4590,7 @@ const catalogProducts = [
     "otherSpecifications": "capacity OCR shows '0L' (likely garbled)",
     "sourcePage": 31,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-B60A       ZQ-B80A       STOCK AVAILABLE.webp",
     "sourceLanguage": "English (OCR)",
     "confidence": "low"
   },
@@ -4634,7 +4634,7 @@ const catalogProducts = [
     "otherSpecifications": "-5C-0OC; 50-98%; S28",
     "sourcePage": 31,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-SK-XF18D    ZQ-SK-XF32D.webp",
     "sourceLanguage": "English/Chinese (OCR)",
     "confidence": "medium"
   },
@@ -4656,7 +4656,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 31,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-B10          ZQ-B15         ZQ-B20          ZQ-B3            STOCK AVAILABLE.webp",
     "sourceLanguage": "English (OCR)",
     "confidence": "medium"
   },
@@ -4678,7 +4678,7 @@ const catalogProducts = [
     "otherSpecifications": "power/voltage text '1L_SKW' is garbled in OCR",
     "sourcePage": 31,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-B10          ZQ-B15         ZQ-B20          ZQ-B3            STOCK AVAILABLE.webp",
     "sourceLanguage": "English (OCR)",
     "confidence": "low"
   },
@@ -4700,7 +4700,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 31,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-B60A       ZQ-B80A       STOCK AVAILABLE.webp",
     "sourceLanguage": "English (OCR)",
     "confidence": "medium"
   },
@@ -4744,7 +4744,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR shows '220V1TOKW' (garbled)",
     "sourcePage": 31,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/BQ-B20          BQ-B25         STOCK AVAILABLE.webp",
     "sourceLanguage": "English (OCR)",
     "confidence": "low"
   },
@@ -4788,7 +4788,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 31,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-B60A       ZQ-B80A       STOCK AVAILABLE.webp",
     "sourceLanguage": "English (OCR)",
     "confidence": "medium"
   },
@@ -4810,7 +4810,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR shows '220VSKW ZOL' (garbled)",
     "sourcePage": 31,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/BQ-B20          BQ-B25         STOCK AVAILABLE.webp",
     "sourceLanguage": "English (OCR)",
     "confidence": "low"
   },
@@ -4832,7 +4832,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR fragment '220-240V0S0KW 16' (garbled)",
     "sourcePage": 31,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-B10          ZQ-B15         ZQ-B20          ZQ-B3            STOCK AVAILABLE.webp",
     "sourceLanguage": "English (OCR)",
     "confidence": "low"
   },
@@ -4854,7 +4854,7 @@ const catalogProducts = [
     "otherSpecifications": "Appears in OCR line: 'ZQ-BMS30L_  TSKW  30L'. Original surrounding text garbled.",
     "sourcePage": 32,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-BMS20L   ZQ-BMS30L   ZQ-BMS40L   ZQ-BMS60L  STOCK AVAILABLE.webp",
     "sourceLanguage": "Chinese/English (OCR)",
     "confidence": "low"
   },
@@ -4942,7 +4942,7 @@ const catalogProducts = [
     "otherSpecifications": "Original Chinese name: 自动分割滚图机. OCR row context: \"7O-8DK.306  -640y580x1500  TS5KW  0V  400K9\" (weight shown as \"400K9\" in OCR). Full nearby OCR header: \"KNEDD PRESSURE SECTION MACHINE / AUTOMATIC DIVIDING AND    1G MACHINE\".",
     "sourcePage": 33,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-BDK-30S.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -4964,7 +4964,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 34,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-BDQ-380C   ZQ-BDQ-520C  ZQ-BDQ-650C    STOCK AVAILABLE.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -4986,7 +4986,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 34,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-BDQ-380C   ZQ-BDQ-520C  ZQ-BDQ-650C    STOCK AVAILABLE.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -5008,7 +5008,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 34,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-BDQ-380C   ZQ-BDQ-520C  ZQ-BDQ-650C    STOCK AVAILABLE.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -5030,7 +5030,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 34,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-JGB-120-5A.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -5052,7 +5052,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 34,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Oven Equipment/ZQ-XZ-87.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -5734,7 +5734,7 @@ const catalogProducts = [
     "otherSpecifications": "热台; 约825Kg; 16m",
     "sourcePage": 41,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ073-01.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "high"
   },
@@ -5756,7 +5756,7 @@ const catalogProducts = [
     "otherSpecifications": "冷台; 约475Kg; 10m?",
     "sourcePage": 41,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ073-02.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "high"
   },
@@ -5778,7 +5778,7 @@ const catalogProducts = [
     "otherSpecifications": "热台; 约825Kg; 16ms",
     "sourcePage": 41,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ074-01.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "low"
   },
@@ -5800,7 +5800,7 @@ const catalogProducts = [
     "otherSpecifications": "冷台; 的475Kg; 10m?",
     "sourcePage": 41,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ074-02.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "high"
   },
@@ -5822,7 +5822,7 @@ const catalogProducts = [
     "otherSpecifications": "热台; 约825Kg; 16m?",
     "sourcePage": 41,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ074-03.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "low"
   },
@@ -5844,7 +5844,7 @@ const catalogProducts = [
     "otherSpecifications": "冷台; 约475Kg; 10m?",
     "sourcePage": 41,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ074-04.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "high"
   },
@@ -5954,7 +5954,7 @@ const catalogProducts = [
     "otherSpecifications": "约825Kg; 16m; 此型号为热台、冷台组合 (Hot&Cold Counter Combination)",
     "sourcePage": 42,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ075-01.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -5998,7 +5998,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 43,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-XLD-CBR.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "low"
   },
@@ -6020,7 +6020,7 @@ const catalogProducts = [
     "otherSpecifications": "BLOC 12C Rise 1000x800x1350 387Kg; 可根据客户尺寸定做",
     "sourcePage": 43,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-1.2N        ZQ-1.5F          ZQ-1.8X.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "low"
   },
@@ -6042,7 +6042,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 43,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-G630R    ZQ-G820R     ZQ-G1000R.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "medium"
   },
@@ -6064,7 +6064,7 @@ const catalogProducts = [
     "otherSpecifications": "0C-10C R1343 50Kg",
     "sourcePage": 43,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-980A.webp",
     "sourceLanguage": "mixed Chinese/English",
     "confidence": "low"
   },
@@ -6086,7 +6086,7 @@ const catalogProducts = [
     "otherSpecifications": "Appears in header: Cake Cabinet Series (OCR)",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-CSS1.2LC.webp",
     "sourceLanguage": "Chinese",
     "confidence": "medium"
   },
@@ -6108,7 +6108,7 @@ const catalogProducts = [
     "otherSpecifications": "Appears in header: Cake Cabinet Series (OCR)",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-CSS1.2LCC.webp",
     "sourceLanguage": "Chinese",
     "confidence": "medium"
   },
@@ -6130,7 +6130,7 @@ const catalogProducts = [
     "otherSpecifications": "Appears in header: Cake Cabinet Series (OCR)",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-CSS1.8LC.webp",
     "sourceLanguage": "Chinese",
     "confidence": "medium"
   },
@@ -6152,7 +6152,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR line: -20-120081/1500A1 (garbled)",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-1200A     ZQ-1500A1     ZQ-1700A1   ZQ-2000A1.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -6174,7 +6174,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR: \"20-1200M1/1800M1\" (garbled)",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-1200M1  ZQ-1500M1  ZQ-1700M1  ZQ-2000M1.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -6196,7 +6196,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR: \"20-00-12002/1500A2\" (garbled)",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-OD-1200A2  ZQ-OD-1500A2 ZQ-OD-1700A2  ZQ-OD-2000A2.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -6262,7 +6262,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR: \"ZQ.OD-1500A2 1500vHY00d390\" (garbled)",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-OD-1200A2  ZQ-OD-1500A2 ZQ-OD-1700A2  ZQ-OD-2000A2.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -6306,7 +6306,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR: \"20.00-1700A2 17005116051330\" (garbled)",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-OD-1200A2  ZQ-OD-1500A2 ZQ-OD-1700A2  ZQ-OD-2000A2.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -6328,7 +6328,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR: \"ZQz000A1 23000030\" (garbled)",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-1200A     ZQ-1500A1     ZQ-1700A1   ZQ-2000A1.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -6394,7 +6394,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR: \"20-00-100071 1000%500«2200\" (kept as-is)",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-OD-1000T1 ZQ-OD-1200T1 ZQ-OD-1500T1 ZQ-OD-1800T1.webp",
     "sourceLanguage": "Chinese",
     "confidence": "medium"
   },
@@ -6416,7 +6416,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR: \"ZO.CLARBFLXA\" (garbled letter sequence)",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-CL428FLX4.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -6438,7 +6438,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR: \"20-CL848FL2x4\" (garbled)",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-CL848FL2X4.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -6460,7 +6460,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR: \"2a00-120011 1200X002200\" (kept as-is)",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-OD-1000T1 ZQ-OD-1200T1 ZQ-OD-1500T1 ZQ-OD-1800T1.webp",
     "sourceLanguage": "Chinese",
     "confidence": "medium"
   },
@@ -6482,7 +6482,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR: \"20-00-150071 1500x500x2200\"",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-OD-1000T1 ZQ-OD-1200T1 ZQ-OD-1500T1 ZQ-OD-1800T1.webp",
     "sourceLanguage": "Chinese",
     "confidence": "medium"
   },
@@ -6504,7 +6504,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR: \"2Q-0D-180071 1800x500x2200\"",
     "sourcePage": 44,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-OD-1000T1 ZQ-OD-1200T1 ZQ-OD-1500T1 ZQ-OD-1800T1.webp",
     "sourceLanguage": "Chinese",
     "confidence": "medium"
   },
@@ -6614,7 +6614,7 @@ const catalogProducts = [
     "otherSpecifications": "Appears in top header line of page. OCR around this model is garbled; no clear dimensions/power/voltage/capacity shown nearby.",
     "sourcePage": 45,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-G0.5L2TFB.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "low"
   },
@@ -6636,7 +6636,7 @@ const catalogProducts = [
     "otherSpecifications": "Appears on same top line as other models. OCR is garbled; preserved as read.",
     "sourcePage": 45,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-G1.0L4TFB.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "low"
   },
@@ -6658,7 +6658,7 @@ const catalogProducts = [
     "otherSpecifications": "Appears on same top line as other models. OCR is garbled; preserved as read.",
     "sourcePage": 45,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-G1.6L6TFB.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "low"
   },
@@ -6702,7 +6702,7 @@ const catalogProducts = [
     "otherSpecifications": "Model string appears in Copland section; OCR may have misread (could be ZQ-D1.0L4FB elsewhere). Preserved as shown.",
     "sourcePage": 45,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-D1.0L4FB.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "low"
   },
@@ -6724,7 +6724,7 @@ const catalogProducts = [
     "otherSpecifications": "Appears in same Copland area; OCR shows a variant with leading lowercase 'z' (likely garbled). No clear numeric specs on this line.",
     "sourcePage": 45,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-D1.6L6L6FB.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "low"
   },
@@ -6746,7 +6746,7 @@ const catalogProducts = [
     "otherSpecifications": "Line in table area: '2Q-0.5L2FB SESTo a 497W ... DC~18C' — OCR is garbled; preserved fragment. Exact dimensions/power/voltage not clearly associated.",
     "sourcePage": 45,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-D0.5L2FB.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "low"
   },
@@ -6768,7 +6768,7 @@ const catalogProducts = [
     "otherSpecifications": "Power consumption (garbled): '条7KkW24h'; Temperature/operating: '0C~-5C/0C—18C' (garbled); Net weight: 170Kg. Row as OCR: 'ZQ-D1.6L6FB   4820x750x1860   2000   220-240VI50-60Hz    条7KkW24h    16m 0C~-5C/OC—18C 170Kg'.",
     "sourcePage": 45,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-D1.6L6L6FB.webp",
     "sourceLanguage": "Chinese; English",
     "confidence": "medium"
   },
@@ -6812,7 +6812,7 @@ const catalogProducts = [
     "otherSpecifications": "Model listed in header area; no clear spec row in OCR.",
     "sourcePage": 46,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-D0.3L2KB.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -6834,7 +6834,7 @@ const catalogProducts = [
     "otherSpecifications": "Model listed in header area; no clear spec row in OCR.",
     "sourcePage": 46,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ083-01.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -6900,7 +6900,7 @@ const catalogProducts = [
     "otherSpecifications": "Listed together with ZO-LDREFE and ZO-LOROFE in OCR; no distinct spec row visible.",
     "sourcePage": 46,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-LDR4FB.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -6922,7 +6922,7 @@ const catalogProducts = [
     "otherSpecifications": "Listed together with ZaLDR4FB and ZO-LOROFE in OCR; no distinct spec row visible.",
     "sourcePage": 46,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-LDR6FB.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -6944,7 +6944,7 @@ const catalogProducts = [
     "otherSpecifications": "Listed together with ZaLDR4FB and ZO-LDREFE in OCR; no distinct spec row visible.",
     "sourcePage": 46,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-LDR9FB.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -6988,7 +6988,7 @@ const catalogProducts = [
     "otherSpecifications": "Temperature (OCR): '-35C-40C' ; Weight (OCR): '110Kg'.",
     "sourcePage": 46,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-SD5.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "medium"
   },
@@ -7010,7 +7010,7 @@ const catalogProducts = [
     "otherSpecifications": "Temperature (OCR): '-35C-40P' ; Weight (OCR): '150Kg'.",
     "sourcePage": 46,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-SD10.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "medium"
   },
@@ -7032,7 +7032,7 @@ const catalogProducts = [
     "otherSpecifications": "7 7028.28 有 bof’ (OCR text)",
     "sourcePage": 47,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-T0.25LM2A   ZQ-T0.46LM2A.webp",
     "sourceLanguage": "Chinese and English (OCR)",
     "confidence": "low"
   },
@@ -7076,7 +7076,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 47,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-T0.25LM2A   ZQ-T0.46LM2A.webp",
     "sourceLanguage": "Chinese and English (OCR)",
     "confidence": "low"
   },
@@ -7186,7 +7186,7 @@ const catalogProducts = [
     "otherSpecifications": "Remainder OCR: ‘220-240Vi50-60He Rita 15001. ec-20 120K9",
     "sourcePage": 47,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-MG60L3W.webp",
     "sourceLanguage": "Chinese and English (OCR)",
     "confidence": "low"
   },
@@ -7252,7 +7252,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 47,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-MG50L2W.webp",
     "sourceLanguage": "Chinese and English (OCR)",
     "confidence": "low"
   },
@@ -7318,7 +7318,7 @@ const catalogProducts = [
     "otherSpecifications": "Temperature 20-80; weight 147K (OCR)",
     "sourcePage": 47,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-G1500L2PZ  ZQ-G1800L2PZ.webp",
     "sourceLanguage": "Chinese and English (OCR)",
     "confidence": "low"
   },
@@ -7384,7 +7384,7 @@ const catalogProducts = [
     "otherSpecifications": "Temperature 0-80; weight Tag (OCR)",
     "sourcePage": 47,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ085-04   ZQ085-05.webp",
     "sourceLanguage": "Chinese and English (OCR)",
     "confidence": "low"
   },
@@ -7428,7 +7428,7 @@ const catalogProducts = [
     "otherSpecifications": "Temperature 7-80; weight 172kg (OCR)",
     "sourcePage": 47,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ085-04   ZQ085-05.webp",
     "sourceLanguage": "Chinese and English (OCR)",
     "confidence": "low"
   },
@@ -7472,7 +7472,7 @@ const catalogProducts = [
     "otherSpecifications": "Temperature 2-80; weight ik (OCR)",
     "sourcePage": 47,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ085-06  ZQ085-07.webp",
     "sourceLanguage": "Chinese and English (OCR)",
     "confidence": "low"
   },
@@ -7494,7 +7494,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR: “gow 2apzsovisonz 100 oc~1a0 me akg",
     "sourcePage": 47,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-HFS-100L.webp",
     "sourceLanguage": "Chinese and English (OCR)",
     "confidence": "low"
   },
@@ -7516,7 +7516,7 @@ const catalogProducts = [
     "otherSpecifications": "Temperature 20-8C; OCR weight ‘09",
     "sourcePage": 47,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ085-06  ZQ085-07.webp",
     "sourceLanguage": "Chinese and English (OCR)",
     "confidence": "low"
   },
@@ -7538,7 +7538,7 @@ const catalogProducts = [
     "otherSpecifications": "Temperature 20-80; weight '0K (OCR)",
     "sourcePage": 47,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ085-08.webp",
     "sourceLanguage": "Chinese and English (OCR)",
     "confidence": "low"
   },
@@ -7560,7 +7560,7 @@ const catalogProducts = [
     "otherSpecifications": "Appears on page header line with other model codes; OCR noisy; no clear specifications adjacent",
     "sourcePage": 48,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-G260L1   ZQ-G360L1.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -7582,7 +7582,7 @@ const catalogProducts = [
     "otherSpecifications": "Appears on same header line as other model codes; OCR noisy; no clear specifications adjacent",
     "sourcePage": 48,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-G588L2.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -7604,7 +7604,7 @@ const catalogProducts = [
     "otherSpecifications": "Appears on same header line as other model codes; OCR noisy; no clear specifications adjacent",
     "sourcePage": 48,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-G1380L3.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -7626,7 +7626,7 @@ const catalogProducts = [
     "otherSpecifications": "Nearby tokens in OCR: \"045901900 6W 20w60HE 0C-BC Rd NF, LL: NS LT\" — mapping uncertain due to garble; preserved raw nearby text",
     "sourcePage": 48,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-G260L1   ZQ-G360L1.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -7824,7 +7824,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 49,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-G260L2    ZQ-G360L2.webp",
     "sourceLanguage": "Chinese/English OCR",
     "confidence": "medium"
   },
@@ -7846,7 +7846,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 49,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-G260L2    ZQ-G360L2.webp",
     "sourceLanguage": "Chinese/English OCR",
     "confidence": "medium"
   },
@@ -7868,7 +7868,7 @@ const catalogProducts = [
     "otherSpecifications": "",
     "sourcePage": 49,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-G588LT2 ZQ-G868LT2.webp",
     "sourceLanguage": "Chinese/English OCR",
     "confidence": "medium"
   },
@@ -8044,7 +8044,7 @@ const catalogProducts = [
     "otherSpecifications": "Temperature: 20-80 (as shown)",
     "sourcePage": 49,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/WIND CURTAIN ARK               ZQ-ZX-1.5FM           ZQ-ZX-2.0FM        ZQ-ZX-2.5FM     ZQ-ZX-3.0FM.webp",
     "sourceLanguage": "Chinese/English OCR",
     "confidence": "medium"
   },
@@ -8176,7 +8176,7 @@ const catalogProducts = [
     "otherSpecifications": "Temperature: 20-80 (as shown)",
     "sourcePage": 49,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/WIND CURTAIN ARK               ZQ-ZX-1.5FM           ZQ-ZX-2.0FM        ZQ-ZX-2.5FM     ZQ-ZX-3.0FM.webp",
     "sourceLanguage": "Chinese/English OCR",
     "confidence": "medium"
   },
@@ -8198,7 +8198,7 @@ const catalogProducts = [
     "otherSpecifications": "Temperature: 2C-8 (as shown)",
     "sourcePage": 49,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/WIND CURTAIN ARK               ZQ-ZX-1.5FM           ZQ-ZX-2.0FM        ZQ-ZX-2.5FM     ZQ-ZX-3.0FM.webp",
     "sourceLanguage": "Chinese/English OCR",
     "confidence": "medium"
   },
@@ -8220,7 +8220,7 @@ const catalogProducts = [
     "otherSpecifications": "Temperature OCR: 20-00 (preserved)",
     "sourcePage": 49,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/WIND CURTAIN ARK               ZQ-ZX-1.5FM           ZQ-ZX-2.0FM        ZQ-ZX-2.5FM     ZQ-ZX-3.0FM.webp",
     "sourceLanguage": "Chinese/English OCR",
     "confidence": "low"
   },
@@ -8352,7 +8352,7 @@ const catalogProducts = [
     "otherSpecifications": "Packing size (OCR): 1550x770x055; Current (OCR): 235A; Weight (OCR): 79K9; Temperature (OCR): <-18",
     "sourcePage": 51,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-WG-281 ZQ-WG-321.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -8396,7 +8396,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR fragment: 'ZQ402 19RS     1038512651     90     ET     Re      ra'",
     "sourcePage": 51,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-KX-1.86PRS ZQ-KX-2.1PRS  ZQ-KX-2.5PRS.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -8418,7 +8418,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR fragment: '2042 50RS     2EOBaSTHESY     007     0-18     RU从      0'",
     "sourcePage": 51,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-KX-2.5PRS.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -8484,7 +8484,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR fragment: 'ZODLCO-14) 1400xe00x1885 320V5OHE OT <t< 10C/-6C t<BC'",
     "sourcePage": 51,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-DLCD-14J  ZQ-DLCD-16J  ZQ-DLCD-18J  ZQ-DLCD-20J.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -8506,7 +8506,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR fragment: 'ZQDLCD4O 1600x00x165 POVNET ete IOC [AC teSe'",
     "sourcePage": 51,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-DLCD-14J  ZQ-DLCD-16J  ZQ-DLCD-18J  ZQ-DLCD-20J.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -8528,7 +8528,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR fragment: 'ZaDLCD-20) 2000xa00r1865 “220V5OHz 0Cxt10C1SC tcSC'",
     "sourcePage": 51,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-DLCD-14J  ZQ-DLCD-16J  ZQ-DLCD-18J  ZQ-DLCD-20J.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -8572,7 +8572,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR fragment: 'ZOKKHD2 eszlod0x1450 150000   2'",
     "sourcePage": 51,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-KX-HD-1 ZQ-KX-HD-2.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -8726,7 +8726,7 @@ const catalogProducts = [
     "otherSpecifications": "Row OCR: 'sew Do HOVisDeDHe CE AEE 005002900 00 firs se-220 ers *05K6' (preserved as-is)",
     "sourcePage": 53,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-WD4-580  ZQ-WD4-750 ZQ-WD4-860 ZQ-WD4-970.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -8748,7 +8748,7 @@ const catalogProducts = [
     "otherSpecifications": "Row OCR: 'rog90GH sa ZauOWRDe tere ace ‘0380042800 00 aoe Bese ini) 20%' (preserved as-is)",
     "sourcePage": 53,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-WD4-580  ZQ-WD4-750 ZQ-WD4-860 ZQ-WD4-970.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -8770,7 +8770,7 @@ const catalogProducts = [
     "otherSpecifications": "Row OCR: '20910 2 tere 三 0 sot sc-220 机/风入 atk' (preserved as-is)",
     "sourcePage": 53,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-WD4-580  ZQ-WD4-750 ZQ-WD4-860 ZQ-WD4-970.webp",
     "sourceLanguage": "Chinese",
     "confidence": "medium"
   },
@@ -8792,7 +8792,7 @@ const catalogProducts = [
     "otherSpecifications": "Row OCR: 'FeO sia PROUD GDN Par ee 0087 20% WD 20%' (preserved as-is)",
     "sourcePage": 53,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-WD4-580  ZQ-WD4-750 ZQ-WD4-860 ZQ-WD4-970.webp",
     "sourceLanguage": "Chinese",
     "confidence": "low"
   },
@@ -8814,7 +8814,7 @@ const catalogProducts = [
     "otherSpecifications": "Located in header line with other model SKUs: 'za-ver0s                       za-vcrss                      za-ve270'",
     "sourcePage": 54,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-YC103.webp",
     "sourceLanguage": "Mixed (Chinese/English/OCR)",
     "confidence": "low"
   },
@@ -8836,7 +8836,7 @@ const catalogProducts = [
     "otherSpecifications": "Located in header line with other model SKUs: 'za-ver0s                       za-vcrss                      za-ve270'",
     "sourcePage": 54,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-YC188.webp",
     "sourceLanguage": "Mixed (Chinese/English/OCR)",
     "confidence": "low"
   },
@@ -8858,7 +8858,7 @@ const catalogProducts = [
     "otherSpecifications": "Located in header line with other model SKUs: 'za-ver0s                       za-vcrss                      za-ve270'",
     "sourcePage": 54,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-YC270.webp",
     "sourceLanguage": "Mixed (Chinese/English/OCR)",
     "confidence": "low"
   },
@@ -8924,7 +8924,7 @@ const catalogProducts = [
     "otherSpecifications": "Frequency: SDHzEOH; Temperature column: sea",
     "sourcePage": 54,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-YC270.webp",
     "sourceLanguage": "Mixed (Chinese/English/OCR)",
     "confidence": "low"
   },
@@ -8990,7 +8990,7 @@ const catalogProducts = [
     "otherSpecifications": "Listed in sequence with other SKUs: 'za-5w.2502            Za-8W-350               zaewsop                zaew7op'",
     "sourcePage": 54,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-BW-25D2.webp",
     "sourceLanguage": "Mixed (Chinese/English/OCR)",
     "confidence": "low"
   },
@@ -9012,7 +9012,7 @@ const catalogProducts = [
     "otherSpecifications": "Listed in sequence with other SKUs: 'za-5w.2502            Za-8W-350               zaewsop                zaew7op'",
     "sourcePage": 54,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-BW-35D.webp",
     "sourceLanguage": "Mixed (Chinese/English/OCR)",
     "confidence": "low"
   },
@@ -9034,7 +9034,7 @@ const catalogProducts = [
     "otherSpecifications": "Listed in sequence with other SKUs: 'za-5w.2502            Za-8W-350               zaewsop                zaew7op'",
     "sourcePage": 54,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-BW-50D.webp",
     "sourceLanguage": "Mixed (Chinese/English/OCR)",
     "confidence": "low"
   },
@@ -9056,7 +9056,7 @@ const catalogProducts = [
     "otherSpecifications": "Listed in sequence with other SKUs: 'za-5w.2502            Za-8W-350               zaewsop                zaew7op'",
     "sourcePage": 54,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-BW-70D.webp",
     "sourceLanguage": "Mixed (Chinese/English/OCR)",
     "confidence": "low"
   },
@@ -9078,7 +9078,7 @@ const catalogProducts = [
     "otherSpecifications": "Refrigerant: AR22R404a; Compressor: 松下/相近 (Panasonic / similar) — all text taken from OCR",
     "sourcePage": 54,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQMK20CT.webp",
     "sourceLanguage": "Mixed (Chinese/English/OCR)",
     "confidence": "medium"
   },
@@ -9122,7 +9122,7 @@ const catalogProducts = [
     "otherSpecifications": "Frequency/other column: '20w5oHz'; Refrigerant: RZ2R404a; Compressor: HRA. (all OCR text)",
     "sourcePage": 54,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-MK20CTB.webp",
     "sourceLanguage": "Mixed (Chinese/English/OCR)",
     "confidence": "low"
   },
@@ -9166,7 +9166,7 @@ const catalogProducts = [
     "otherSpecifications": "Trailing OCR text: 'Rema       Germ' (as shown)",
     "sourcePage": 54,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-MK25FTB.webp",
     "sourceLanguage": "Mixed (Chinese/English/OCR)",
     "confidence": "low"
   },
@@ -9188,7 +9188,7 @@ const catalogProducts = [
     "otherSpecifications": "Full OCR segment: '_s80x770xs90_s400w_govisteiz_28n_R@2/R4O4a/R4108_LG/GMCC/E8' (retain original garbled text)",
     "sourcePage": 54,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-MK618CTB.webp",
     "sourceLanguage": "Mixed (Chinese/English/OCR)",
     "confidence": "low"
   },
@@ -9540,7 +9540,7 @@ const catalogProducts = [
     "otherSpecifications": "Temperature -16C-20C; Refrigerant RdWR134a; note: ok (OCR text)",
     "sourcePage": 56,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-OPC-1060  ZQ-OPC-1240.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -9562,7 +9562,7 @@ const catalogProducts = [
     "otherSpecifications": "Baking cycle 260-300; -2分钟; 手动; weight 48Kg (OCR text)",
     "sourcePage": 56,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-DST-10.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -9606,7 +9606,7 @@ const catalogProducts = [
     "otherSpecifications": "R22; FS; SRT , 600/18) (OCR text)",
     "sourcePage": 56,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-NB220S  ZQ-NB221S  ZQ-NB222S.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -9628,7 +9628,7 @@ const catalogProducts = [
     "otherSpecifications": "200-1000; 41-253; 手动; weight 250KB_ (OCR text)",
     "sourcePage": 56,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-DST-32.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -9650,7 +9650,7 @@ const catalogProducts = [
     "otherSpecifications": "Raz 7G JRAATLEE , 700/08) (OCR text)",
     "sourcePage": 56,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-NB220S  ZQ-NB221S  ZQ-NB222S.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -9694,7 +9694,7 @@ const catalogProducts = [
     "otherSpecifications": "Appears in table header alongside Z0-NB2228 (OCR text)",
     "sourcePage": 56,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-NB220S  ZQ-NB221S  ZQ-NB222S.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -9716,7 +9716,7 @@ const catalogProducts = [
     "otherSpecifications": "Appears in table header alongside Z0-NB2218 (OCR text)",
     "sourcePage": 56,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-NB220S  ZQ-NB221S  ZQ-NB222S.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "low"
   },
@@ -9738,7 +9738,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR row: ZaQ-SK-80P   450xS00x820(08 BERTI + 50)   230W   220Y/50-60Hz   Ranke     40fLb)     SOILbl24h)",
     "sourcePage": 57,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-SK-80P.webp",
     "sourceLanguage": "zh",
     "confidence": "low"
   },
@@ -9782,7 +9782,7 @@ const catalogProducts = [
     "otherSpecifications": "随行文本: 风纪     sou»)     Prue)",
     "sourcePage": 57,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-SK-210P.webp",
     "sourceLanguage": "zh",
     "confidence": "low"
   },
@@ -9826,7 +9826,7 @@ const catalogProducts = [
     "otherSpecifications": "Listed under FSB-系列制冰机参数 (FSB series ice maker parameters) — OCR fragment: 20-8K-420P",
     "sourcePage": 57,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-SK-350P  ZQ-SK-420P.webp",
     "sourceLanguage": "zh",
     "confidence": "low"
   },
@@ -9870,7 +9870,7 @@ const catalogProducts = [
     "otherSpecifications": "OCR fragment around model: ZO-SKA20P ——_astaSOOxiSAO/ARAW 50) 990W 220.240V...",
     "sourcePage": 57,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-SK-350P  ZQ-SK-420P.webp",
     "sourceLanguage": "zh",
     "confidence": "low"
   },
@@ -9936,7 +9936,7 @@ const catalogProducts = [
     "otherSpecifications": "Weight: ‘900(Lb); note: 高度可调上50 (height adjustable +50) — OCR row: Z0-SK-2000P 940x1220x1950[高度可调上50) 4500W — 220-240V/S0-60Hz ORK ‘900(Lb) “2000(L/24h)",
     "sourcePage": 57,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-SK-1500P   ZQ-SK-2000P.webp",
     "sourceLanguage": "zh",
     "confidence": "medium"
   },
@@ -9958,7 +9958,7 @@ const catalogProducts = [
     "otherSpecifications": "Ice shape (冰形状): 细小顺利状; Weight: 40Kg",
     "sourcePage": 58,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-XHJ-50]65]80]100.webp",
     "sourceLanguage": "Chinese and English OCR",
     "confidence": "high"
   },
@@ -9980,7 +9980,7 @@ const catalogProducts = [
     "otherSpecifications": "Text from OCR: \"FMRI a  LINER\"; Weight: 58Kg",
     "sourcePage": 58,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-XHJ-50]65]80]100.webp",
     "sourceLanguage": "Chinese and English OCR",
     "confidence": "high"
   },
@@ -10222,7 +10222,7 @@ const catalogProducts = [
     "otherSpecifications": "Features/notes from OCR: \"RA, ES UMR\"; Chinese in proximity: \"全自动机\" (fully automatic machine) appears on page general area",
     "sourcePage": 59,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-LRYJ18LX1.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "high"
   },
@@ -10618,7 +10618,7 @@ const catalogProducts = [
     "otherSpecifications": "全自动封口机",
     "sourcePage": 61,
     "featured": false,
-    "image": "images/category-placeholder.jpg",
+    "image": "images/Refrigeration Equipment/ZQ-07.webp",
     "sourceLanguage": "Chinese/English",
     "confidence": "medium"
   },
