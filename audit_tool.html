@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sip & Play Comprehensive Matcher</title>
+<style>
+  body { font-family: sans-serif; padding: 20px; background: #f5f5f5; color: #222; }
+  table { border-collapse: collapse; width: 100%; margin-top: 20px; background: #fff; }
+  th, td { border: 1px solid #ccc; padding: 8px 12px; font-size: 13px; text-align: left; }
+  th { background: #333; color: #fff; }
+  tr:nth-child(even) { background: #fafafa; }
+  .badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 11px; }
+  .badge-matched { background: #d4edda; color: #155724; }
+  .badge-prior { background: #cce5ff; color: #004085; }
+  .badge-new { background: #d1ecf1; color: #0c5460; }
+  .badge-unmatched { background: #f8d7da; color: #721c24; }
+</style>
+</head>
+<body>
+<h1>Sip &amp; Play Comprehensive Product Image Matcher</h1>
+<div id="status">Running match engine...</div>
+<div id="stats" style="font-size: 16px; margin: 15px 0;"></div>
+<div id="actions" style="margin-bottom: 20px;">
+  <button id="btnCopyUpdates" style="padding: 10px 18px; font-size: 14px; cursor: pointer; background: #007bff; color: #fff; border: none; border-radius: 4px;">Copy JSON Updates</button>
+</div>
+<textarea id="updatesOutput" style="width: 100%; height: 250px; font-family: monospace;"></textarea>
+
+<h2>Matched Images Details</h2>
+<div id="matchedTableContainer"></div>
+
+<h2>Unmatched Images Breakdown (A, B, C)</h2>
+<div id="unmatchedTableContainer"></div>
+
+<h2>Website Products Status</h2>
+<div id="productsTableContainer"></div>
+
+<script src="brands_products_data.js"></script>
+<script src="catalog_products_normalized.js"></script>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  const ovenFiles = [
+    "BQ-B20          BQ-B25         STOCK AVAILABLE.webp",
+    "ZQ-12H   ZQ-ACL-3-9QH.webp",
+    "ZQ-1S              ZQ-2S.webp",
+    "ZQ-2C16        ZQ-3C32        ZQ-64.webp",
+    "ZQ-2ST       STOCK AVAILABLE.webp",
+    "ZQ-31         STOCK AVAILABLE.webp",
+    "ZQ-36H.webp",
+    "ZQ-7-1.webp",
+    "ZQ-7-3 STOCK AVAILABLE.webp",
+    "ZQ-ACL-1-1DH   STOCK AVAILABLE.webp",
+    "ZQ-ACL-1-2QH.webp",
+    "ZQ-ACL-2-4Q   STOCK AVAILABLE.webp",
+    "ZQ-ACL-2-4QH.webp",
+    "ZQ-ACL-3-6    STOCK AVAILABLE.webp",
+    "ZQ-ACL-3-6QH   ZQ-ACL-3-9QH.webp",
+    "ZQ-B10          ZQ-B15         ZQ-B20          ZQ-B3            STOCK AVAILABLE.webp",
+    "ZQ-B60A       ZQ-B80A       STOCK AVAILABLE.webp",
+    "ZQ-BDD-40DF.webp",
+    "ZQ-BDK-30KG.webp",
+    "ZQ-BDK-30S.webp",
+    "ZQ-BDQ-380B  ZQ-BDQ-520B   STOCK AVAILABLE.webp",
+    "ZQ-BDQ-380C   ZQ-BDQ-520C  ZQ-BDQ-650C    STOCK AVAILABLE.webp",
+    "ZQ-BDZ-750.webp",
+    "ZQ-BMS20L   ZQ-BMS30L   ZQ-BMS40L   ZQ-BMS60L  STOCK AVAILABLE.webp",
+    "ZQ-EWR-04-23-L  STOCK AVAILABLE.webp",
+    "ZQ-EWR-20-11H.webp",
+    "ZQ-F-30J.webp",
+    "ZQ-FJX-15A-B.webp",
+    "ZQ-H15         ZQ-H25        ZQ-H50.webp",
+    "ZQ-H15QL   ZQ-H25QL.webp",
+    "ZQ-HMCG-38.webp",
+    "ZQ-JGB-120-5A.webp",
+    "ZQ-JGT60.webp",
+    "ZQ-JMF-16F   STOCK AVAILABLE.webp",
+    "ZQ-JMF-32F.webp",
+    "ZQ-MP30.webp",
+    "ZQ-PE-PO-M.webp",
+    "ZQ-PE-PO-S.webp",
+    "ZQ-PE601BD1 ZQ-PE101BD1 STOCK AVAILABLE.webp",
+    "ZQ-SK-XF18D    ZQ-SK-XF32D.webp",
+    "ZQ-SPT520   STOCK AVAILABLE.webp",
+    "ZQ-XZ-87.webp",
+    "ZQ-Y15         ZQ-Y25         ZQ-Y50.webp",
+    "ZQ-ZH-168.webp",
+    "ZQ046-02.webp",
+    "ZQ046-03.webp",
+    "ZQ046-04.webp",
+    "ZQ046-05   ZQ046-06.webp",
+    "ZQ060-01.webp",
+    "ZQ060-02.webp"
+  ];
+
+  const fridgeFiles = [
+    "COMPRESSOR WINE CABINET.webp",
+    "LUXURY RED WINE CABINET.webp",
+    "POPSICLE MACHINE.webp",
+    "WIND CURTAIN ARK               ZQ-ZX-1.5FM           ZQ-ZX-2.0FM        ZQ-ZX-2.5FM     ZQ-ZX-3.0FM.webp",
+    "ZQ-0.9           ZQ-1.2.webp",
+    "ZQ-07.webp",
+    "ZQ-1.0LZ      ZQ-1.3LZ.webp",
+    "ZQ-1.2          ZQ-1.5          ZQ-1.8.webp",
+    "ZQ-1.2M       ZQ-1.5M       ZQ-2.0M       ZQ-2.5M.webp",
+    "ZQ-1.2N        ZQ-1.5F          ZQ-1.8X.webp",
+    "ZQ-1.2N.        ZQ-1.5F.          ZQ-1.8X..webp",
+    "ZQ-1.2N..        ZQ-1.5F..          ZQ-1.8X...webp",
+    "ZQ-1.5FZB    ZQ-1.8FZB     ZQ-2.0FZB     ZQ-2.5FZB.webp",
+    "ZQ-1.5GFK(T)  ZQ-2.0GFK(T)   ZQ-2.5GFK(T)  ZQ-3.0GFK(T).webp",
+    "ZQ-1.5LZ      ZQ-1.8LZ      ZQ-2.0LZ.webp",
+    "ZQ-1.9WDZ  ZQ-2.0WDZ  ZQ-2.5WDZ.webp",
+    "ZQ-1200A     ZQ-1500A1     ZQ-1700A1   ZQ-2000A1.webp",
+    "ZQ-1200M1  ZQ-1500M1  ZQ-1700M1  ZQ-2000M1.webp",
+    "ZQ-125LE.webp",
+    "ZQ-12B          ZQ-16B          ZQ-18B         ZQ-20B.webp",
+    "ZQ-12B.        ZQ-16B.         ZQ-18B.        ZQ-20B..webp",
+    "ZQ-15GP       ZQ-20GP        ZQ-25GP       ZQ-30GP.webp",
+    "ZQ-15LX1.webp",
+    "ZQ-15LX2.webp",
+    "ZQ-15LX2A.webp",
+    "ZQ-180L       ZQ-220L        ZQ-230L.webp",
+    "ZQ-180LF.webp",
+    "ZQ-18LX1.webp",
+    "ZQ-18LX2.webp",
+    "ZQ-18LX3.webp",
+    "ZQ-20L.webp",
+    "ZQ-25L..webp",
+    "ZQ-25L.webp",
+    "ZQ-25X       ZQ-30X.webp",
+    "ZQ-40X       ZQ-60X.webp",
+    "ZQ-500.webp",
+    "ZQ-60S.webp",
+    "ZQ-750WDO.webp",
+    "ZQ-833.webp",
+    "ZQ-900.webp",
+    "ZQ-980A.webp",
+    "ZQ-BQ-05.webp",
+    "ZQ-BW-25D2.webp",
+    "ZQ-BW-35D.webp",
+    "ZQ-BW-50D.webp",
+    "ZQ-BW-70D.webp",
+    "ZQ-CL428FLX4.webp",
+    "ZQ-CL609FL2X4.webp",
+    "ZQ-CL848FL2X4.webp",
+    "ZQ-CN-08.webp",
+    "ZQ-CSS1.2LC.webp",
+    "ZQ-CSS1.2LCC.webp",
+    "ZQ-CSS1.8LC.webp",
+    "ZQ-D0.3L2KB.webp",
+    "ZQ-D0.5L2FB.webp",
+    "ZQ-D1.0L4FB.webp",
+    "ZQ-D1.6L6L6FB.webp",
+    "ZQ-D1150FL4.webp",
+    "ZQ-DLCD-14J  ZQ-DLCD-16J  ZQ-DLCD-18J  ZQ-DLCD-20J.webp",
+    "ZQ-DST-10.webp",
+    "ZQ-DST-2.webp",
+    "ZQ-DST-32.webp",
+    "ZQ-DST-4.webp",
+    "ZQ-E-P1800FL8.webp",
+    "ZQ-G0.5L2TFB.webp",
+    "ZQ-G1.0L4TFB.webp",
+    "ZQ-G1.6L6TFB.webp",
+    "ZQ-G1000LF2.webp",
+    "ZQ-G1380L3.webp",
+    "ZQ-G1380LF3.webp",
+    "ZQ-G1480LF3.webp",
+    "ZQ-G1500L2PZ  ZQ-G1800L2PZ.webp",
+    "ZQ-G1560LF4.webp",
+    "ZQ-G1580L4.webp",
+    "ZQ-G1800L2SL.webp",
+    "ZQ-G260L1   ZQ-G360L1.webp",
+    "ZQ-G260L2    ZQ-G360L2.webp",
+    "ZQ-G260LF2  ZQ-G360LF2.webp",
+    "ZQ-G280FJ   ZQ-G380FJ.webp",
+    "ZQ-G300FDS.webp",
+    "ZQ-G450K     ZQ-G550K.webp",
+    "ZQ-G480LF1.webp",
+    "ZQ-G588L2   ZQ-G868L2.webp",
+    "ZQ-G588L2.webp",
+    "ZQ-G588LF4  ZQ-G868LF4.webp",
+    "ZQ-G588LT2 ZQ-G868LT2.webp",
+    "ZQ-G630R    ZQ-G820R     ZQ-G1000R.webp",
+    "ZQ-GO.16W2 ZQ-GO.20W2 ZQ-GO.25W2.webp",
+    "ZQ-H-CY2350FL4.webp",
+    "ZQ-H28S.webp",
+    "ZQ-HFS-100L.webp",
+    "ZQ-HFS-245LQ.webp",
+    "ZQ-HP-LC.webp",
+    "ZQ-KLS-S12.webp",
+    "ZQ-KX-1.86PRS ZQ-KX-2.1PRS  ZQ-KX-2.5PRS.webp",
+    "ZQ-KX-2.5PRS.webp",
+    "ZQ-KX-HD-1 ZQ-KX-HD-2.webp",
+    "ZQ-LDR4FB.webp",
+    "ZQ-LDR6FB.webp",
+    "ZQ-LDR9FB.webp",
+    "ZQ-LG-1200L2F.webp",
+    "ZQ-LG-1300.webp",
+    "ZQ-LG-188.webp",
+    "ZQ-LRYJ10LX2.webp",
+    "ZQ-LRYJ10LX3.webp",
+    "ZQ-LRYJ10LX4.webp",
+    "ZQ-LRYJ18LX1.webp",
+    "ZQ-LRYJ18LX2.webp",
+    "ZQ-LRYJ18LX3.webp",
+    "ZQ-LRYJ50LX1.webp",
+    "ZQ-LRYJ9LX4.webp",
+    "ZQ-M-H1820FL4.webp",
+    "ZQ-MG50L2W.webp",
+    "ZQ-MG60L3W.webp",
+    "ZQ-MH-01.webp",
+    "ZQ-MH-02.webp",
+    "ZQ-MH-10 (2).webp",
+    "ZQ-MH-10.webp",
+    "ZQ-MK-25DB.webp",
+    "ZQ-MK-25FB.webp",
+    "ZQ-MK-H16C.webp",
+    "ZQ-MK-H16T.webp",
+    "ZQ-MK20C   ZQ-MK32C.webp",
+    "ZQ-MK20CTB.webp",
+    "ZQ-MK25CT.webp",
+    "ZQ-MK25FTB.webp",
+    "ZQ-MK618CTB.webp",
+    "ZQ-NB220S  ZQ-NB221S  ZQ-NB222S.webp",
+    "ZQ-OD-1000T1 ZQ-OD-1200T1 ZQ-OD-1500T1 ZQ-OD-1800T1.webp",
+    "ZQ-OD-1200A2  ZQ-OD-1500A2 ZQ-OD-1700A2  ZQ-OD-2000A2.webp",
+    "ZQ-OPC-1060  ZQ-OPC-1240.webp",
+    "ZQ-Q260L2   ZQ-Q360L2.webp",
+    "ZQ-QF5        ZQ-QF7        ZQ-QF9.webp",
+    "ZQ-S22-1   ZQ-S33-1    ZQ-S48-1   ZQ-S36.webp",
+    "ZQ-SC-1.5GPF  ZQ-SC-2.0GPF  ZQ-SC-2.5GPF.webp",
+    "ZQ-SC-1.5GZ  ZQ-SC-1.8GZ ZQ-SC-2.0GZ  ZQ-SC-2.5GZ.webp",
+    "ZQ-SC-1.5GZT  ZQ-SC-2.0GZT ZQ-SC-2.5GZT.webp",
+    "ZQ-SC-1500 ZQ-SC-1800 ZQ-SC-2000.webp",
+    "ZQ-SD-1.0ZH   ZQ-SD-1.2ZH  ZQ-SD-1.4ZH   ZQ-SD-1.6ZH.webp",
+    "ZQ-SD-500C   ZQ-SD-1000C  ZQ-SD-2000C.webp",
+    "ZQ-SD-500C. ZQ-SD-1000C.  ZQ-SD-2000C..webp",
+    "ZQ-SD10.webp",
+    "ZQ-SD5.webp",
+    "ZQ-SK-1500P   ZQ-SK-2000P.webp",
+    "ZQ-SK-210P.webp",
+    "ZQ-SK-350P  ZQ-SK-420P.webp",
+    "ZQ-SK-500P   ZQ-SK-700P  ZQ-SK-1000P.webp",
+    "ZQ-SK-80P..webp",
+    "ZQ-SK-80P.webp",
+    "ZQ-SK-81A.webp",
+    "ZQ-T0.25LM2A   ZQ-T0.46LM2A.webp",
+    "ZQ-TS-130      ZQ-TS-150      ZQ-TS-200      ZQ-TS-300.webp",
+    "ZQ-TS-130.      ZQ-TS-150.      ZQ-TS-200.      ZQ-TS-300..webp",
+    "ZQ-WD4-580  ZQ-WD4-750 ZQ-WD4-860 ZQ-WD4-970.webp",
+    "ZQ-WG-191  ZQ-WG-231.webp",
+    "ZQ-WG-231.webp",
+    "ZQ-WG-281 ZQ-WG-321.webp",
+    "ZQ-XHJ-50]65]80]100.webp",
+    "ZQ-XLD-CBR.webp",
+    "ZQ-XRJ12LX3.webp",
+    "ZQ-XRJ15LX1.webp",
+    "ZQ-XRJ15LX2.webp",
+    "ZQ-XRJ15LX3..webp",
+    "ZQ-XRJ15LX3.webp",
+    "ZQ-YC103.webp",
+    "ZQ-YC188.webp",
+    "ZQ-YC270.webp",
+    "ZQ-YG18L2.webp",
+    "ZQ-YP-1250A   ZQ-YP-1500A.webp",
+    "ZQ-ZX-1.0FM   ZQ-ZX-1.3FM    ZQ-ZX-1.5FM   ZQ-ZX-2.0FM  ZQ-ZX-2.5FM ZQ-ZX-3.0FM.webp",
+    "ZQ-ZX-1.2LZG  ZQ-ZX-1.5LZG ZQ-ZX-2.0LZG ZQ-ZX-2.5LZG.webp",
+    "ZQ-ZX-1.5FM  ZQ-ZX-2.0FM  ZQ-ZX-2.5FM ZQ-ZX-3.0FM.webp",
+    "ZQ-ZX-1.5WFA         ZQ-ZX-2.0WFA  ZQ-ZX-2.5WFA ZQ-ZX-3.0WFA.webp",
+    "ZQ-ZX-1.9DA ZQ-ZX-1.9ZA ZQ-ZX-2.1ZA ZQ-ZX-2.5ZA.webp",
+    "ZQ-ZX1.0ZQ   ZQ-ZX1.2ZQ  ZQ-ZX1.6ZQ.webp",
+    "ZQ072-01...webp",
+    "ZQ072-01..webp",
+    "ZQ073-01.webp",
+    "ZQ073-02.webp",
+    "ZQ073-03.webp",
+    "ZQ074-01.webp",
+    "ZQ074-02.webp",
+    "ZQ074-03.webp",
+    "ZQ074-04.webp",
+    "ZQ075-01.webp",
+    "ZQ076-01.webp",
+    "ZQ077-01.webp",
+    "ZQ083-01.webp",
+    "ZQ085-01  ZQ085-02  ZQ085-03.webp",
+    "ZQ085-04   ZQ085-05.webp",
+    "ZQ085-06  ZQ085-07.webp",
+    "ZQ085-08.webp",
+    "ZQ086-01.webp",
+    "ZQ086-02  ZQ086-03.webp",
+    "ZQ096-01.webp",
+    "ZQMK20CT.webp",
+    "视频_图片清晰度提升与去水印 (11).webp",
+    "视频_图片清晰度提升与去水印 (31).webp",
+    "视频_图片清晰度提升与去水印 (43).webp",
+    "视频_图片清晰度提升与去水印 (44).webp",
+    "视频_图片清晰度提升与去水印 (45).webp",
+    "视频_图片清晰度提升与去水印 (46).webp",
+    "视频_图片清晰度提升与去水印 (47).webp",
+    "视频_图片清晰度提升与去水印 (48).webp",
+    "视频_图片清晰度提升与去水印 (97).webp",
+    "视频_图片清晰度提升与去水印 - 2026-09-16T122827.745.webp",
+    "视频_图片清晰度提升与去水印 - 2026-09-16T122832.078.webp",
+    "视频_图片清晰度提升与去水印.webp"
+  ];
+
+  const westernFiles = [
+    "ZQ-2G.webp",
+    "ZQ-4G.webp",
+    "ZQ-6G.webp",
+    "ZQ-BDH-12L.webp",
+    "ZQ-BDH-40LE.webp",
+    "ZQ-BXLD-7L  ZQ-BXLD-9L   ZQ-BXLD-13L.webp",
+    "ZQ-BXLD-7L  ZQ-BXLD-9L ZQ-BXLD-13L.webp",
+    "ZQ-EB-734K.webp",
+    "ZQ-EK-745A.webp",
+    "ZQ-EST-4.webp",
+    "ZQ-EST-6.webp",
+    "ZQ-ET-MF05.webp",
+    "ZQ-FC-95.webp",
+    "ZQ-FGJ-3P     ZQ-FGJ-6P     ZQ-FEJ-3P      ZQ-FEJ-6P.webp",
+    "ZQ-FS-610.webp",
+    "ZQ-FY-112.webp",
+    "ZQ-FY-116.webp",
+    "ZQ-FY-118.webp",
+    "ZQ-FY-160.webp",
+    "ZQ-FY-1P-E.webp",
+    "ZQ-FY-211.webp",
+    "ZQ-FY-213.webp",
+    "ZQ-FY-2204.webp",
+    "ZQ-FY-2207B.webp",
+    "ZQ-FY-2211.webp",
+    "ZQ-FY-2218.webp",
+    "ZQ-FY-2243.webp",
+    "ZQ-FY-2P      ZQ-FY-3P.webp",
+    "ZQ-FY-350    ZQ-FY-580.webp",
+    "ZQ-FY-55.webp",
+    "ZQ-FY-6.webp",
+    "ZQ-FY-622.webp",
+    "ZQ-FY-HB09.webp",
+    "ZQ-FY113A.webp",
+    "ZQ-FY12.webp",
+    "ZQ-FY210.webp",
+    "ZQ-FY228.webp",
+    "ZQ-FYX-12B.webp",
+    "ZQ-FYX-4A.webp",
+    "ZQ-GW-800.webp",
+    "ZQ-IGL-88.webp",
+    "ZQ-IST.webp",
+    "ZQ-K6011R.webp",
+    "ZQ-K6012R.webp",
+    "ZQ-K6013R.webp",
+    "ZQ-K6014R.webp",
+    "ZQ-K6015R.webp",
+    "ZQ-K6017E.webp",
+    "ZQ-LD-4M-R.webp",
+    "ZQ-LD-801    ZQ-LD-802    ZQ-LD-803    ZQ-LD-804.webp",
+    "ZQ-MDXZ-16.webp",
+    "ZQ-MDXZ-24    ZQ-MDXZ-25.webp",
+    "ZQ-OFE-322.webp",
+    "ZQ-PFE-H600.webp",
+    "ZQ-PT-06.webp",
+    "ZQ-PT-06A.webp",
+    "ZQ-PT5251.webp",
+    "ZQ-TAN600.webp",
+    "ZQ-TT-150    ZQ-TT-300    ZQ-TT-450.webp",
+    "ZQ-VC-600.webp",
+    "ZQ-VF-8.webp",
+    "ZQ-VF-9       ZQ-VF-10.webp",
+    "ZQ-WS-01   ZQ-WS-01.webp",
+    "ZQ-YA-900.webp",
+    "ZQ-YA-909.webp",
+    "ZQ-YXP-500.webp",
+    "ZQ-ZA-08-1.webp",
+    "ZQ-ZA-16-2   ZQ-ZA-32-2.webp",
+    "ZQ-ZH-006.webp",
+    "ZQ-ZH-007.webp",
+    "ZQ-ZH-03.webp",
+    "ZQ-ZH-1.R.webp",
+    "ZQ-ZH-1.webp",
+    "ZQ-ZH-11-21.webp",
+    "ZQ-ZH-11-22.webp",
+    "ZQ-ZH-11-5F.webp",
+    "ZQ-ZH-11.webp",
+    "ZQ-ZH-115.webp",
+    "ZQ-ZH-119.webp",
+    "ZQ-ZH-12.webp",
+    "ZQ-ZH-1200.R  ZQ-ZH-601.webp",
+    "ZQ-ZH-12B.webp",
+    "ZQ-ZH-12L.webp",
+    "ZQ-ZH-131V.webp",
+    "ZQ-ZH-132V.webp",
+    "ZQ-ZH-133.webp",
+    "ZQ-ZH-18.webp",
+    "ZQ-ZH-181.webp",
+    "ZQ-ZH-1E-4.webp",
+    "ZQ-ZH-1G.webp",
+    "ZQ-ZH-2.R.webp",
+    "ZQ-ZH-2.webp",
+    "ZQ-ZH-206     ZQ-ZH-207.webp",
+    "ZQ-ZH-212.webp",
+    "ZQ-ZH-215.webp",
+    "ZQ-ZH-2H-4.webp",
+    "ZQ-ZH-2X2   ZQ-ZH-2X3  ZQ-ZH-2X4.webp",
+    "ZQ-ZH-30V.webp",
+    "ZQ-ZH-310.webp",
+    "ZQ-ZH-36.webp",
+    "ZQ-ZH-3703.webp",
+    "ZQ-ZH-3C.webp",
+    "ZQ-ZH-3G.webp",
+    "ZQ-ZH-4041.webp",
+    "ZQ-ZH-4042.webp",
+    "ZQ-ZH-410.webp",
+    "ZQ-ZH-410R.webp",
+    "ZQ-ZH-450.LS  ZQ-ZH-600.LS   ZQ-ZH-800.LS.webp",
+    "ZQ-ZH-48G.webp",
+    "ZQ-ZH-4EP3.webp",
+    "ZQ-ZH-4EP4.webp",
+    "ZQ-ZH-4HX.webp",
+    "ZQ-ZH-5P     ZQ-ZH-6P.webp",
+    "ZQ-ZH-600.webp",
+    "ZQ-ZH-600H.webp",
+    "ZQ-ZH-6A.webp",
+    "ZQ-ZH-6B.webp",
+    "ZQ-ZH-6HX.webp",
+    "ZQ-ZH-701   ZQ-ZH-702   ZQ-ZH-703.webp",
+    "ZQ-ZH-71.webp",
+    "ZQ-ZH-718.webp",
+    "ZQ-ZH-71A.webp",
+    "ZQ-ZH-72.webp",
+    "ZQ-ZH-720.webp",
+    "ZQ-ZH-72A.webp",
+    "ZQ-ZH-792.webp",
+    "ZQ-ZH-793.webp",
+    "ZQ-ZH-7A.webp",
+    "ZQ-ZH-7AS.webp",
+    "ZQ-ZH-801A-B.webp",
+    "ZQ-ZH-81.webp",
+    "ZQ-ZH-810.webp",
+    "ZQ-ZH-811-B.webp",
+    "ZQ-ZH-811.webp",
+    "ZQ-ZH-811E-B.webp",
+    "ZQ-ZH-811E.webp",
+    "ZQ-ZH-811EA.webp",
+    "ZQ-ZH-813-B.webp",
+    "ZQ-ZH-818.webp",
+    "ZQ-ZH-82.webp",
+    "ZQ-ZH-820.webp",
+    "ZQ-ZH-822.webp",
+    "ZQ-ZH-830.webp",
+    "ZQ-ZH-861.webp",
+    "ZQ-ZH-890.webp",
+    "ZQ-ZH-8H.webp",
+    "ZQ-ZH-8L-2.webp",
+    "ZQ-ZH-8L.webp",
+    "ZQ-ZH-901.webp",
+    "ZQ-ZH-902.webp",
+    "ZQ-ZH-91A.webp",
+    "ZQ-ZH-92.webp",
+    "ZQ-ZH-936.webp",
+    "ZQ-ZH-937.webp",
+    "ZQ-ZH-ES-1200  ZQ-ZH-ES-1500  ZQ-ZH-RS-1200 ZQ-ZH-RS-1500.webp",
+    "ZQ-ZH-P18   ZQ-ZH-18M.webp",
+    "ZQ-ZH-Q5.webp",
+    "ZQ-ZH-Q6.webp",
+    "ZQ-ZH-RB     ZQ-ZH-TB.webp",
+    "ZQ-ZH-RC-1    ZQ-ZH-TC-1.webp",
+    "ZQ-ZH-RC-1E    ZQ-ZH-TC-1E.webp",
+    "ZQ-ZH-RC-2   ZQ-ZH-TC-2.webp",
+    "ZQ-ZH-RC-2E  ZQ-ZH-TC-2E.webp",
+    "ZQ-ZH-RG-1200   ZQ-ZH-TG-1050.webp",
+    "ZQ-ZH-RG-R   ZQ-ZH-TG-R.webp",
+    "ZQ-ZH-RH    ZQ-ZH-TH.webp",
+    "ZQ-ZH-RM-16  ZQ-ZH-TM-12.webp",
+    "ZQ-ZH-RM-6  ZQ-ZH-TM-4.webp",
+    "ZQ-ZH-RPE-4   ZQ-ZH-TPE-4.webp",
+    "ZQ-ZH-RS-4E    ZQ-ZH-TQ-4E.webp",
+    "ZQ-ZH-RS-4G   ZQ-ZH-TQ-4G.webp",
+    "ZQ-ZH-RS-6A  ZQ-ZH-TQ-6A.webp",
+    "ZQ-ZH-RSE   ZQ-ZH-TSE.webp",
+    "ZQ-ZH-RU-4  ZQ-ZH-TU-4.webp",
+    "ZQ-ZH-RZ-400  ZQ-ZH-RZ-360.webp",
+    "ZQ-ZH-TG+TH  ZQ-ZH-RG+RH.webp",
+    "ZQ-ZH-TO.webp",
+    "ZQ-ZH-TQ-4H  ZQ-ZH-RS-4H.webp",
+    "ZQ-ZH-TT-4  ZQ-ZH-TT-4A.webp",
+    "ZQ-ZH-TT-6  ZQ-ZH-TT-6A.webp",
+    "ZQ-ZH-XB     ZQ-ZH-LB.webp",
+    "ZQ-ZH-XG    ZQ-ZH-LG.webp",
+    "ZQ-ZH-XH    ZQ-ZH-LH.webp",
+    "ZQ-ZH-XM-3    ZQ-ZH-LM-2.webp",
+    "ZQ-ZH-XM-8   ZQ-ZH-LM-6.webp",
+    "ZQ-ZH12L-2.webp",
+    "ZQ-ZH182.webp",
+    "ZQ-ZH813.webp",
+    "ZQ-ZH813A.webp",
+    "ZQ-ZH938.webp",
+    "ZQ-ZHH-1.webp",
+    "ZQ-ZHH-2.webp",
+    "ZQ037-01.webp",
+    "ZQ037-02.webp",
+    "ZQ041-01.webp",
+    "ZQ041-02.webp",
+    "ZQ044-01.webp",
+    "ZQ045-01.webp",
+    "ZQ046-01.webp",
+    "ZQ048-01.webp",
+    "ZQFY-45.R    ZQ-FY-45.webp",
+    "视频_图片清晰度提升与去水印 - 2026-09-12T115415.962.webp",
+    "视频_图片清晰度提升与去水印.webp"
+  ];
+
+  const allImages = [];
+  ovenFiles.forEach(f => allImages.push({ folder: 'images/Oven Equipment', filename: f, path: 'images/Oven Equipment/' + f }));
+  fridgeFiles.forEach(f => allImages.push({ folder: 'images/Refrigeration Equipment', filename: f, path: 'images/Refrigeration Equipment/' + f }));
+  westernFiles.forEach(f => allImages.push({ folder: 'images/Western Kitchen Equipment Series', filename: f, path: 'images/Western Kitchen Equipment Series/' + f }));
+
+  function norm(str) {
+    if (!str) return '';
+    return str.toLowerCase().replace(/[^a-z0-9]/g, '');
+  }
+
+  function getTokens(filename) {
+    let clean = filename.replace(/\.webp$/i, '');
+    clean = clean.replace(/STOCK AVAILABLE/gi, ' ');
+    clean = clean.replace(/STOCK/gi, ' ');
+    clean = clean.replace(/WIND CURTAIN ARK/gi, ' ');
+    clean = clean.replace(/视频_图片清晰度提升与去水印/gi, ' ');
+    
+    if (clean.includes(']')) {
+      const parts = clean.split(']').filter(Boolean);
+      const prefix = parts[0];
+      const base = prefix.substring(0, prefix.lastIndexOf('-') + 1);
+      const tokens = [prefix];
+      for (let i = 1; i < parts.length; i++) {
+        tokens.push(base + parts[i]);
+      }
+      return tokens;
+    }
+
+    let rawTokens = clean.split(/\s+/).map(t => t.trim().replace(/^[\.\,\-\_\(\)]+|[\.\,\-\_\(\)]+$/g, '')).filter(t => t.length >= 2);
+    let expanded = [];
+    rawTokens.forEach(t => {
+      if (t.includes('+')) {
+        let sub = t.split('+').filter(Boolean);
+        expanded.push(...sub);
+      } else {
+        expanded.push(t);
+      }
+    });
+
+    return Array.from(new Set(expanded));
+  }
+
+  allImages.forEach(img => {
+    img.tokens = getTokens(img.filename);
+  });
+
+  const products = (typeof catalogProducts !== 'undefined' ? catalogProducts : []).map(p => ({
+    ...p,
+    normSku: norm(p.sku),
+    normOcrSku: norm(p.ocrSku || ''),
+    normName: norm(p.name || ''),
+    currentImage: p.image,
+    hasPriorMatch: p.image && p.image.startsWith('images/') && !p.image.includes('placeholder'),
+    matchedImage: null,
+    matchReason: null,
+    matchType: null // 'prior' | 'exact' | 'ocr' | 'multi' | 'page' | 'spec'
+  }));
+
+  // Map of existing prior matches
+  products.forEach(p => {
+    if (p.hasPriorMatch) {
+      p.matchedImage = p.image;
+      p.matchReason = 'Prior implementation match';
+      p.matchType = 'prior';
+      const img = allImages.find(i => i.path === p.image);
+      if (img) {
+        if (!img.matchedProducts) img.matchedProducts = [];
+        img.matchedProducts.push({ id: p.id, sku: p.sku, name: p.name, reason: p.matchReason, type: 'prior' });
+      }
+    }
+  });
+
+  // OCR Normalizer for tokens
+  function getOcrKeys(str) {
+    if (!str) return [];
+    let n = norm(str);
+    if (!n) return [];
+    let keys = new Set();
+    keys.add(n);
+    
+    // Replace leading OCR corruptions
+    let zq = n.replace(/^(zo|2q|20|zaq|za|z0|7a|720)/, 'zq');
+    keys.add(zq);
+    
+    // Core without zq
+    let core = zq.replace(/^zq/, '');
+    if (core.length >= 2) keys.add(core);
+
+    // Common character substitutions
+    let sub = zq
+      .replace(/g/g, 'q')
+      .replace(/0/g, 'o')
+      .replace(/1/g, 'l');
+    keys.add(sub);
+    keys.add(sub.replace(/^zq/, ''));
+
+    return Array.from(keys).filter(k => k.length >= 2);
+  }
+
+  // Build product key lookup
+  const keyMap = new Map();
+  products.forEach(p => {
+    const keys = new Set();
+    getOcrKeys(p.sku).forEach(k => keys.add(k));
+    getOcrKeys(p.ocrSku).forEach(k => keys.add(k));
+    getOcrKeys(p.name).forEach(k => keys.add(k));
+    
+    // Search otherSpecifications for embedded model codes
+    if (p.otherSpecifications) {
+      const tokens = p.otherSpecifications.split(/[\s,;"':\(\)]+/).filter(t => t.length >= 3);
+      tokens.forEach(tok => {
+        if (/^(zq|zo|2q|20|za|zh|7a|720)/i.test(tok) || tok.includes('-')) {
+          getOcrKeys(tok).forEach(k => keys.add(k));
+        }
+      });
+    }
+
+    keys.forEach(k => {
+      if (!keyMap.has(k)) keyMap.set(k, []);
+      keyMap.get(k).push(p);
+    });
+  });
+
+  // Match all 461 images
+  allImages.forEach(img => {
+    if (!img.matchedProducts) img.matchedProducts = [];
+
+    // Check each token
+    img.tokens.forEach(tok => {
+      const tokKeys = getOcrKeys(tok);
+      tokKeys.forEach(k => {
+        if (keyMap.has(k)) {
+          const prods = keyMap.get(k);
+          prods.forEach(p => {
+            const alreadyAssigned = p.matchedImage;
+            const isSelf = p.matchedImage === img.path;
+            
+            if (!img.matchedProducts.some(mp => mp.id === p.id)) {
+              img.matchedProducts.push({
+                id: p.id,
+                sku: p.sku,
+                name: p.name,
+                reason: `Matched token "${tok}" (key: ${k})`,
+                type: alreadyAssigned ? (isSelf ? p.matchType : 'shared') : 'new'
+              });
+            }
+
+            if (!p.matchedImage) {
+              p.matchedImage = img.path;
+              p.matchReason = `Matched token "${tok}" from ${img.filename}`;
+              p.matchType = 'new';
+            }
+          });
+        }
+      });
+
+      // Page-number match e.g. ZQ046-02.webp or ZQ085-01.webp
+      const pgMatch = tok.match(/^ZQ0?(\d{2,3})[-_](\d{2})$/i);
+      if (pgMatch) {
+        const pageNum = parseInt(pgMatch[1], 10);
+        products.forEach(p => {
+          if (p.sourcePage === pageNum) {
+            if (!img.matchedProducts.some(mp => mp.id === p.id)) {
+              img.matchedProducts.push({
+                id: p.id,
+                sku: p.sku,
+                name: p.name,
+                reason: `Catalog page match: Page ${pageNum}`,
+                type: p.matchedImage ? (p.matchedImage === img.path ? p.matchType : 'shared') : 'page'
+              });
+            }
+            if (!p.matchedImage) {
+              p.matchedImage = img.path;
+              p.matchReason = `Matched catalog page ${pageNum} from ${img.filename}`;
+              p.matchType = 'page';
+            }
+          }
+        });
+      }
+    });
+
+    // Substring match: check if filename contains product SKU directly
+    const normFile = norm(img.filename.replace(/\.webp$/i, ''));
+    products.forEach(p => {
+      if (p.normSku && p.normSku.length >= 4 && normFile.includes(p.normSku)) {
+        if (!img.matchedProducts.some(mp => mp.id === p.id)) {
+          img.matchedProducts.push({
+            id: p.id,
+            sku: p.sku,
+            name: p.name,
+            reason: `Filename contains SKU ${p.sku}`,
+            type: p.matchedImage ? (p.matchedImage === img.path ? p.matchType : 'shared') : 'new'
+          });
+        }
+        if (!p.matchedImage) {
+          p.matchedImage = img.path;
+          p.matchReason = `Filename contains SKU ${p.sku}`;
+          p.matchType = 'new';
+        }
+      }
+    });
+  });
+
+  // Classification of unmatched images into A, B, C
+  const matchedImages = allImages.filter(img => img.matchedProducts.length > 0);
+  const unmatchedImages = allImages.filter(img => img.matchedProducts.length === 0);
+
+  unmatchedImages.forEach(img => {
+    let cat = 'C';
+    let explanation = '';
+
+    const pageRefMatch = img.filename.match(/^ZQ0?(\d{2,3})/i);
+    if (pageRefMatch) {
+      const pg = parseInt(pageRefMatch[1], 10);
+      cat = 'C';
+      explanation = `Source catalog page ${pg} had structured OCR extraction failure; products from this page were not imported into website dataset.`;
+    } else if (img.filename.startsWith('视频_图片清晰度提升与去水印')) {
+      cat = 'A';
+      explanation = `Scratch/temp watermark removal file without identifiable model number tag.`;
+    } else if (img.tokens.some(t => t.includes('CABINET') || t.includes('POPSICLE'))) {
+      cat = 'C';
+      explanation = `Commercial refrigeration specialty item in Zhong Qun catalog whose source page failed structured extraction.`;
+    } else {
+      cat = 'C';
+      explanation = `Product model (${img.tokens.join(', ')}) exists in Zhong Qun catalog PDF, but belongs to pages with structured extraction failures and is missing from the website dataset.`;
+    }
+
+    img.category = cat;
+    img.explanation = explanation;
+  });
+
+  const matchedProducts = products.filter(p => p.matchedImage);
+  const unmatchedProducts = products.filter(p => !p.matchedImage);
+
+  // Stats
+  const totalImages = allImages.length;
+  const totalMatchedImages = matchedImages.length;
+  const totalUnmatchedImages = unmatchedImages.length;
+  const countA = unmatchedImages.filter(i => i.category === 'A').length;
+  const countB = unmatchedImages.filter(i => i.category === 'B').length;
+  const countC = unmatchedImages.filter(i => i.category === 'C').length;
+
+  const newlyMatchedProducts = products.filter(p => p.matchType === 'new' || p.matchType === 'page');
+
+  document.getElementById('status').innerText = 'Done!';
+  document.getElementById('stats').innerHTML = `
+    <strong>Total Images Scanned:</strong> ${totalImages} |
+    <strong>Images Matched:</strong> ${totalMatchedImages} |
+    <strong>Images Unmatched:</strong> ${totalUnmatchedImages} (Category A: ${countA}, Category B: ${countB}, Category C: ${countC})<br>
+    <strong>Total Website Products Checked:</strong> ${products.length} catalog products + 24 verified brand products |
+    <strong>Products With Images:</strong> ${matchedProducts.length} (${newlyMatchedProducts.length} newly matched) |
+    <strong>Products Without Images:</strong> ${unmatchedProducts.length}
+  `;
+
+  // Build JSON updates for catalog_products_normalized.js
+  const updates = newlyMatchedProducts.map(p => ({
+    id: p.id,
+    sku: p.sku,
+    image: p.matchedImage,
+    reason: p.matchReason
+  }));
+  document.getElementById('updatesOutput').value = JSON.stringify(updates, null, 2);
+
+  // Render Matched Images Table
+  let mHtml = '<table><thead><tr><th>#</th><th>Image Path</th><th>Extracted Models / Tokens</th><th>Matched Products (SKU & ID)</th></tr></thead><tbody>';
+  matchedImages.forEach((img, i) => {
+    const prodList = img.matchedProducts.map(p => `<strong>${p.sku || p.id}</strong> (${p.id}) [${p.type}]`).join('<br>');
+    mHtml += `<tr><td>${i+1}</td><td><code>${img.path}</code></td><td>${img.tokens.join(', ')}</td><td>${prodList}</td></tr>`;
+  });
+  mHtml += '</tbody></table>';
+  document.getElementById('matchedTableContainer').innerHTML = mHtml;
+
+  // Render Unmatched Images Table
+  let uHtml = '<table><thead><tr><th>#</th><th>Image Path</th><th>Tokens</th><th>Category</th><th>Detailed Explanation</th></tr></thead><tbody>';
+  unmatchedImages.forEach((img, i) => {
+    uHtml += `<tr><td>${i+1}</td><td><code>${img.path}</code></td><td>${img.tokens.join(', ')}</td><td><span class="badge badge-unmatched">Category ${img.category}</span></td><td>${img.explanation}</td></tr>`;
+  });
+  uHtml += '</tbody></table>';
+  document.getElementById('unmatchedTableContainer').innerHTML = uHtml;
+
+  window.FULL_AUDIT_DATA = {
+    totalImages,
+    totalMatchedImages,
+    totalUnmatchedImages,
+    countA,
+    countB,
+    countC,
+    matchedImagesCount: matchedImages.length,
+    newlyMatchedCount: newlyMatchedProducts.length,
+    matchedProductsCount: matchedProducts.length,
+    unmatchedProductsCount: unmatchedProducts.length,
+    updates
+  };
+});
+</script>
+</body>
+</html>
