@@ -363,6 +363,14 @@ var brandProducts = [
     imageSource: "brands/insong/4.2578.png",
     imageVerified: true
   },
+
+  /*
+  ============================================================
+  FUTURE PRODUCTS — GENUINE IMAGES REQUIRED
+
+  Restore each product only after its genuine image is available.
+  The following products have verified specifications but await official photography.
+  ============================================================
   {
     id: "brand-innosong-8",
     sku: "ZS9001",
@@ -383,8 +391,8 @@ var brandProducts = [
     confidence: "high",
     sourceLanguage: "en",
     featured: false,
-    image: "images/category-placeholder.jpg",
-    imageStatus: "placeholder-category",
+    image: "images/REPLACE-WITH-GENUINE-IMAGE.webp",
+    imageStatus: "pending-genuine-image",
     imageSource: "catalog-spec",
     imageVerified: false
   },
@@ -408,8 +416,8 @@ var brandProducts = [
     confidence: "high",
     sourceLanguage: "en",
     featured: false,
-    image: "images/category-placeholder.jpg",
-    imageStatus: "placeholder-category",
+    image: "images/REPLACE-WITH-GENUINE-IMAGE.webp",
+    imageStatus: "pending-genuine-image",
     imageSource: "catalog-spec",
     imageVerified: false
   },
@@ -433,11 +441,12 @@ var brandProducts = [
     confidence: "high",
     sourceLanguage: "en",
     featured: false,
-    image: "images/category-placeholder.jpg",
-    imageStatus: "placeholder-category",
+    image: "images/REPLACE-WITH-GENUINE-IMAGE.webp",
+    imageStatus: "pending-genuine-image",
     imageSource: "catalog-spec",
     imageVerified: false
-  },
+  }
+  */
 
   // ============================================================
   // BRAND 3: T&Z / LEHEHE (大正咖啡集团) — TEA BREWERS & MULTI-BOILERS

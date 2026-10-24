@@ -24,42 +24,61 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   /* ----------------------------------------------------------
      IMAGE HELPER
-     All records from the normalized catalog use the category
-     placeholder.  We never assign Unsplash or stock photos.
+     Returns genuine verified product image path.
+     No placeholder SVGs or dummy images are assigned.
   ---------------------------------------------------------- */
   function getProductImage(product) {
-    if (product && product.image && product.image.trim() !== '' && !product.image.includes('category-placeholder.jpg')) {
-      return product.image;
+    if (product && product.image && typeof product.image === 'string') {
+      var img = product.image.trim();
+      if (
+        img &&
+        img.indexOf('placeholder') === -1 &&
+        img.indexOf('category-placeholder') === -1 &&
+        img.indexOf('REPLACE-WITH') === -1
+      ) {
+        if (!img.startsWith('http') && !img.startsWith('/') && !img.startsWith('../')) {
+          if (window.location.pathname.includes('/equipment') || window.location.pathname.includes('/portal')) {
+            return '../' + img;
+          }
+        }
+        return img;
+      }
     }
-    const cat = (product && product.category) ? product.category.trim() : '';
-    const CATEGORY_MAP = {
-      'Cooking Equipment':              'images/placeholder-cooking.svg',
-      'Baking and Bakery':              'images/placeholder-bakery.svg',
-      'Warewashing':                    'images/placeholder-warewashing.svg',
-      'Refrigeration and Cold Storage': 'images/placeholder-refrigeration.svg',
-      'Ice Machines and Ice Storage':   'images/placeholder-ice.svg',
-      'Stainless Fabrication':          'images/placeholder-stainless.svg',
-      'Food Preparation':               'images/placeholder-foodprep.svg',
-      'Other Commercial Equipment':     'images/placeholder-commercial.svg'
-    };
-    return CATEGORY_MAP[cat] || 'images/category-placeholder.svg';
+    return '';
   }
 
   /* ----------------------------------------------------------
      LOAD BASE PRODUCTS + LOCAL ADMIN OVERRIDES
+     Strictly filters for eligible products with genuine images.
   ---------------------------------------------------------- */
-  const baseProducts   = window.SIP_PRODUCTS;
+  const baseProducts   = Array.isArray(window.SIP_PRODUCTS) ? window.SIP_PRODUCTS : [];
   const customProducts = JSON.parse(localStorage.getItem('sip_custom_products') || '[]');
   const deletedIds     = JSON.parse(localStorage.getItem('sip_deleted_ids')     || '[]');
 
-  let allProducts = baseProducts.filter(p => !deletedIds.includes(p.id));
-  customProducts.forEach(c => {
-    const idx = allProducts.findIndex(p => p.id === c.id);
-    if (idx > -1) { allProducts[idx] = c; } else { allProducts.unshift(c); }
+  // Only products with valid names and genuine verified images are allowed on the live website
+  let allProducts = baseProducts.filter(p => {
+    if (!p || deletedIds.includes(p.id)) return false;
+    var name = (p.name || '').trim();
+    if (!name) return false;
+    if (p.imageVerified !== true) return false;
+    var img = getProductImage(p);
+    return Boolean(img);
   });
 
-  // Resolve image for every product (normalise placeholder)
+  customProducts.forEach(c => {
+    if (c && c.name && c.name.trim() && c.imageVerified !== false) {
+      const img = getProductImage(c);
+      if (img) {
+        c.image = img;
+        const idx = allProducts.findIndex(p => p.id === c.id);
+        if (idx > -1) { allProducts[idx] = c; } else { allProducts.unshift(c); }
+      }
+    }
+  });
+
+  // Ensure all active products have genuine images resolved
   allProducts.forEach(p => { p.image = getProductImage(p); });
+  allProducts = allProducts.filter(p => Boolean(p.image && p.name && p.name.trim()));
 
   /* ----------------------------------------------------------
      OPTIONAL SUPABASE CLOUD SYNC (unchanged from original)
@@ -70,22 +89,24 @@ document.addEventListener('DOMContentLoaded', async () => {
       try {
         const { data, error } = await client.from('products').select('*').order('id', { ascending: false });
         if (!error && data && data.length > 0) {
-          allProducts = data.map(d => ({
-            id:          d.id,
-            sku:         d.sku,
-            name:        d.name,
-            brand:       d.brand,
-            category:    d.category,
-            subCategory: d.sub_category || d.category,
-            power:       d.power,
-            powerKw:     d.power_kw,
-            dimensions:  d.dimensions,
-            origin:      d.origin,
-            material:    d.material || '',
-            description: d.description,
-            image:       d.image || getProductImage(d),
-            featured:    Boolean(d.featured)
-          }));
+          allProducts = data
+            .map(d => ({
+              id:          d.id,
+              sku:         d.sku,
+              name:        (d.name || '').trim(),
+              brand:       d.brand,
+              category:    d.category,
+              subCategory: d.sub_category || d.category,
+              power:       d.power,
+              powerKw:     d.power_kw,
+              dimensions:  d.dimensions,
+              origin:      d.origin,
+              material:    d.material || '',
+              description: d.description,
+              image:       getProductImage(d),
+              featured:    Boolean(d.featured)
+            }))
+            .filter(p => Boolean(p.name && p.image));
         }
       } catch (err) {
         console.warn('[SIP] Supabase sync notice, using local cache:', err);
@@ -349,7 +370,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       card.innerHTML = `
         <div class="cat-card__img-wrap" style="position:relative; width:100%; aspect-ratio:4/3; overflow:hidden; background:var(--ink-charcoal);">
-          <img class="cat-card__img" src="${imgSrc}" alt="${displayName}" loading="lazy" onerror="this.onerror=null; this.src='images/category-placeholder.svg';" style="width:100%; height:100%; object-fit:cover; transition:transform var(--slow) var(--ease-editorial);" />
+          <img class="cat-card__img" src="${imgSrc}" alt="${displayName}" loading="lazy" decoding="async" onerror="this.onerror=null; this.style.display='none';" style="width:100%; height:100%; object-fit:cover; transition:transform var(--slow) var(--ease-editorial);" />
           <span class="cat-card__sku" style="position:absolute; top:1rem; left:1rem; background:var(--ink-pure); color:var(--paper-ivory); font-family:var(--font-mono); font-size:0.7rem; padding:0.2rem 0.5rem; letter-spacing:0.1em;">${p.sku}</span>
           ${p.confidence === 'low' ? '<span style="position:absolute; bottom:0.5rem; right:0.5rem; background:rgba(0,0,0,0.6); color:#f0a500; font-family:var(--font-mono); font-size:0.6rem; padding:0.15rem 0.4rem; letter-spacing:0.08em;">REVIEW</span>' : ''}
           ${p.featured ? '<span class="cat-card__featured" style="position:absolute; top:1rem; right:1rem; background:var(--stone-light); color:var(--ink-pure); font-family:var(--font-mono); font-size:0.7rem; padding:0.2rem 0.5rem; letter-spacing:0.1em; font-weight:700;">FEATURED</span>' : ''}
@@ -506,7 +527,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       modalRow('CONFIDENCE',        p.confidence, false),
       modalRow('IMAGE STATUS',      p.imageStatus || '', false),
       modalRow('IMAGE SOURCE',      p.imageSource || '', false),
-      modalRow('IMAGE VERIFIED',    p.imageVerified !== undefined ? (p.imageVerified ? (p.imageStatus === 'manufacturer-verified' ? 'Yes (Manufacturer Verified)' : 'Yes (Verified PDF Crop)') : 'No (Category Placeholder)') : '', false)
+      modalRow('IMAGE VERIFIED',    p.imageVerified ? (p.imageStatus === 'manufacturer-verified' ? 'Yes (Manufacturer Verified)' : 'Yes (Verified Authentic Photography)') : 'Pending Genuine Photography', false)
     ].join('');
 
     // otherSpecifications is shown separately if non-empty
@@ -525,7 +546,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         <div class="modal-spec-grid">
           <div class="modal-spec-media">
-            <img src="${image}" alt="${name}" class="modal-spec-img" onerror="this.onerror=null; this.src='images/category-placeholder.svg';" />
+            <img src="${image}" alt="${name}" class="modal-spec-img" decoding="async" onerror="this.onerror=null; this.style.display='none';" />
             ${sku ? `<div class="modal-spec-badge">SKU: ${sku}</div>` : ''}
           </div>
 
@@ -543,7 +564,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         </div>
 
         <div class="modal-spec-ctas">
-          <a class="btn btn--primary" href="contact.html?item=${encodeURIComponent(sku || name)}#quote">
+          <a class="btn btn--primary" href="${(window.location.pathname.includes('/equipment') || window.location.pathname.includes('/portal')) ? '../contact/' : 'contact/'}?item=${encodeURIComponent(sku || name)}#quote">
             Request Quotation for this Unit <span class="arrow">→</span>
           </a>
           <button class="btn btn--outline" id="modalAddScheduleBtn">

@@ -20,10 +20,18 @@
 <h1>Sip &amp; Play Comprehensive Product Image Matcher</h1>
 <div id="status">Running match engine...</div>
 <div id="stats" style="font-size: 16px; margin: 15px 0;"></div>
-<div id="actions" style="margin-bottom: 20px;">
+<div id="actions" style="margin-bottom: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
   <button id="btnCopyUpdates" style="padding: 10px 18px; font-size: 14px; cursor: pointer; background: #007bff; color: #fff; border: none; border-radius: 4px;">Copy JSON Updates</button>
+  <button id="btnDownloadReport" style="padding: 10px 18px; font-size: 14px; cursor: pointer; background: #28a745; color: #fff; border: none; border-radius: 4px;">Download Full Audit Report (.md)</button>
+  <button id="btnCopyAllMarkdown" style="padding: 10px 18px; font-size: 14px; cursor: pointer; background: #17a2b8; color: #fff; border: none; border-radius: 4px;">Copy All Added Images Markdown</button>
 </div>
-<textarea id="updatesOutput" style="width: 100%; height: 250px; font-family: monospace;"></textarea>
+<textarea id="updatesOutput" style="width: 100%; height: 180px; font-family: monospace; margin-bottom: 20px;"></textarea>
+<textarea id="reportChunk1" style="display:none;"></textarea>
+<textarea id="reportChunk2" style="display:none;"></textarea>
+<textarea id="reportChunk3" style="display:none;"></textarea>
+
+<h2>Category Image Audit Breakdown</h2>
+<div id="categoryTableContainer"></div>
 
 <h2>Matched Images Details</h2>
 <div id="matchedTableContainer"></div>
@@ -509,10 +517,423 @@ window.addEventListener('DOMContentLoaded', () => {
     "视频_图片清晰度提升与去水印.webp"
   ];
 
+  const barFiles = [
+    "ZQ-0391.webp",
+    "ZQ-10.webp",
+    "ZQ-11.webp",
+    "ZQ-12.webp",
+    "ZQ-168.webp",
+    "ZQ-176.webp",
+    "ZQ-180.webp",
+    "ZQ-200-2      ZQ-200-1.webp",
+    "ZQ-2000E-1.webp",
+    "ZQ-2000E-2.webp",
+    "ZQ-2000E-3.webp",
+    "ZQ-2000E-4.webp",
+    "ZQ-300.webp",
+    "ZQ-300D01.webp",
+    "ZQ-300D02.webp",
+    "ZQ-4116.webp",
+    "ZQ-45L.webp",
+    "ZQ-767.webp",
+    "ZQ-800AQ.webp",
+    "ZQ-818.webp",
+    "ZQ-999SN-75.webp",
+    "ZQ-9EN.webp",
+    "ZQ-A109.webp",
+    "ZQ-A2000    ZQ-A3000.webp",
+    "ZQ-BL-018.webp",
+    "ZQ-BUNN.webp",
+    "ZQ-CD-202C.webp",
+    "ZQ-CJ-850S.webp",
+    "ZQ-CS-767-5D.webp",
+    "ZQ-D6.webp",
+    "ZQ-D7.webp",
+    "ZQ-D9.webp",
+    "ZQ-DQ-A.webp",
+    "ZQ-DRS11-01A    ZQ-DRS23-02C.webp",
+    "ZQ-DS-K1.webp",
+    "ZQ-ET-200.webp",
+    "ZQ-H-120.webp",
+    "ZQ-HA-3168.webp",
+    "ZQ-HBB250S.webp",
+    "ZQ-HP-101.webp",
+    "ZQ-JS-602.webp",
+    "ZQ-M-6,9,12,15.webp",
+    "ZQ-N45A.webp",
+    "ZQ-OB..webp",
+    "ZQ-OB.webp",
+    "ZQ-RIC100.webp",
+    "ZQ-SB114.webp",
+    "ZQ-SH-22L.webp",
+    "ZQ-SK-08A,B.webp",
+    "ZQ-SLG01       ZQ-SLG02       ZQ-SLG03.webp",
+    "ZQ-ST-120     ZQ-ST-210    ZQ-ST-260.webp",
+    "ZQ-STT-1.webp",
+    "ZQ-STT-2.webp",
+    "ZQ-STT-3.webp",
+    "ZQ-STT-5.webp",
+    "ZQ-XC-2000C.webp",
+    "ZQ-XRJ15LX2.webp",
+    "ZQ109-01.webp",
+    "ZQ109-02.webp",
+    "ZQ109-03.webp",
+    "ZQ109-04.webp",
+    "ZQ109-05.webp",
+    "ZQ109-06.webp",
+    "ZQ111-01.webp",
+    "ZQ111-02            1200[1500   [1800MM.webp",
+    "ZQ116-02.webp",
+    "ZQ116-03.webp",
+    "ZQNX-500A.webp",
+    "视频_图片清晰度提升与去水印 (13).webp",
+    "视频_图片清晰度提升与去水印 (14).webp"
+  ];
+
+  const foodMachineryFiles = [
+    "ZQ-02A         ZQ-04A.webp",
+    "ZQ-04B          ZQ-10B.webp",
+    "ZQ-063-02.webp",
+    "ZQ-121B.webp",
+    "ZQ-150-3.webp",
+    "ZQ-160.webp",
+    "ZQ-180.webp",
+    "ZQ-198.webp",
+    "ZQ-22AC.webp",
+    "ZQ-241B.webp",
+    "ZQ-250.webp",
+    "ZQ-280.webp",
+    "ZQ-300ES-12A.webp",
+    "ZQ-320 VERTICAL.webp",
+    "ZQ-320.webp",
+    "ZQ-330.webp",
+    "ZQ-333.webp",
+    "ZQ-400         ZQ-500.webp",
+    "ZQ-6             ZQ-9.webp",
+    "ZQ-900.webp",
+    "ZQ-B250A-1.webp",
+    "ZQ-BX-450.webp",
+    "ZQ-CD-800.webp",
+    "ZQ-CG55SH.webp",
+    "ZQ-DZ400.webp",
+    "ZQ-F100       ZQ-F135.webp",
+    "ZQ-FC-301.webp",
+    "ZQ-GD-100.webp",
+    "ZQ-GW1.webp",
+    "ZQ-HF-100    ZQ-HF-130.webp",
+    "ZQ-HLC-300.webp",
+    "ZQ-HSS-18.webp",
+    "ZQ-HT-5.5.webp",
+    "ZQ-IS350.webp",
+    "ZQ-J-210        ZQ-J-310.webp",
+    "ZQ-J22.webp",
+    "ZQ-J32           ZQ-J42.webp",
+    "ZQ-JMS-110.webp",
+    "ZQ-JQD400-A.webp",
+    "ZQ-JQD400-B.webp",
+    "ZQ-JS.webp",
+    "ZQ-JT42.webp",
+    "ZQ-JT62.webp",
+    "ZQ-LZ100      ZQ-LZ180      ZQ-LZ200.webp",
+    "ZQ-MFS-100    ZQ-MFS-120   ZQ-MFS-150.webp",
+    "ZQ-MG32ID.webp",
+    "ZQ-MJ-150.webp",
+    "ZQ-MJ-35.webp",
+    "ZQ-PP15.webp",
+    "ZQ-Q300..webp",
+    "ZQ-Q300.webp",
+    "ZQ-QJH-100B.webp",
+    "ZQ-QJH-J300.webp",
+    "ZQ-QJH-J600.webp",
+    "ZQ-QJH-L100A.webp",
+    "ZQ-QJH-L160.webp",
+    "ZQ-QJH-QS1A.webp",
+    "ZQ-QJH-W300E   ZQ-QJH-W400E.webp",
+    "ZQ-QJH-X8C ZQ-QJH-X15C  ZQ-QJH-X20C.webp",
+    "ZQ-QY-87L.webp",
+    "ZQ-QY-Z200.webp",
+    "ZQ-R3           ZQ-R6           ZQ-R9.webp",
+    "ZQ-SF-150            ZQ-SF-260            ZQ-SF-350.webp",
+    "ZQ-SF-200D  ZQ-SF-300D  ZQ-SF-400D.webp",
+    "ZQ-SL-300C.webp",
+    "ZQ-SL300B.webp",
+    "ZQ-SP-750W ZQ-SP-750    ZQ-L-350W   ZQ-L-350.webp",
+    "ZQ-SQC-60.webp",
+    "ZQ-SY-12-80.webp",
+    "ZQ-SY-140    ZQ-SY-150.webp",
+    "ZQ-SY-220.webp",
+    "ZQ-TB-22.webp",
+    "ZQ-TB-32.webp",
+    "ZQ-TM-750   ZQ-TM-1100    ZQ-TM-1500.webp",
+    "ZQ-TS-100.webp",
+    "ZQ-TS15.webp",
+    "ZQ-TV-3         ZQ-TV-5         ZQ-TV-7.webp",
+    "ZQ-VC20MF.webp",
+    "ZQ-VC60MS.webp",
+    "ZQ-W-3mm.webp",
+    "ZQ-WQ30    ZQ-WQ40.webp",
+    "ZQ-YL10A.webp",
+    "ZQ-YQC600    ZQ-YQC1000.webp",
+    "ZQ-YQP17K.webp",
+    "ZQ-YQP25K.webp",
+    "ZQ-ZF-260.webp",
+    "ZQ062-01.webp",
+    "ZQ062-02.webp",
+    "ZQ063-01.webp",
+    "ZQ068-01.webp",
+    "视频_图片清晰度提升与去水印 (41).webp",
+    "视频_图片清晰度提升与去水印 (42).webp",
+    "视频_图片清晰度提升与去水印 (87).webp"
+  ];
+
+  const kitchenFiles = [
+    "CIRCULAR SUNKEN STEEL RING.webp",
+    "CYLINDER PIPE FAN.webp",
+    "FAN RIVER..webp",
+    "FAN RIVER.webp",
+    "ROUND FLAT SET STEEL RING.webp",
+    "SQUARE FLUSH STEEL RING.webp",
+    "SQUARE SUNKEN STEEL RING.webp",
+    "ZQ-(2[4)MZG.webp",
+    "ZQ-1150F.webp",
+    "ZQ-1C.webp",
+    "ZQ-380-80AH.webp",
+    "ZQ-500M-1GB.webp",
+    "ZQ-6A.webp",
+    "ZQ-6B.webp",
+    "ZQ-6C.webp",
+    "ZQ-7132-01.webp",
+    "ZQ-8R.webp",
+    "ZQ-900F-2GB.webp",
+    "ZQ-9_   ZQ-10_  ZQ-12_.webp",
+    "ZQ-9_]ZQ-10_]ZQ-12_.webp",
+    "ZQ-BJO101.webp",
+    "ZQ-BS-216J-4K[6K.webp",
+    "ZQ-DMG-4M.webp",
+    "ZQ-DZY500-A3.webp",
+    "ZQ-E-CS94[121[140[165.webp",
+    "ZQ-ECOSTAR530F-M.webp",
+    "ZQ-GL-1A.webp",
+    "ZQ-GL-2A.webp",
+    "ZQ-GL-2B.webp",
+    "ZQ-GT-1C.webp",
+    "ZQ-GT-2C.webp",
+    "ZQ-GTJQR-2.5.webp",
+    "ZQ-HIGHT-C180.webp",
+    "ZQ-HIGHT-C380    ZQ-HIGHT-C450.webp",
+    "ZQ-HIGHT-C88.webp",
+    "ZQ-HIGHT-C90  ZQ-HIGHT-C100.webp",
+    "ZQ-KT-RTD-60A..webp",
+    "ZQ-KT-RTD-60A.webp",
+    "ZQ-KT-RTD-88A..webp",
+    "ZQ-KT-RTD-88A.webp",
+    "ZQ-LEY-40P   ZQ-LEY-45P   ZQ-LEY-50P   ZQ-LEY-60P.webp",
+    "ZQ-RTD18A.webp",
+    "ZQ-RTD36A.webp",
+    "ZQ-RTD50A.webp",
+    "ZQ-RTP-700FC.webp",
+    "ZQ-RTP350FC.webp",
+    "ZQ-RTP698A-2.webp",
+    "ZQ-RX-20[24.webp",
+    "ZQ-RX-6[8[10[12.webp",
+    "ZQ-SMK-RQGT[40.webp",
+    "ZQ-SMK-ZCL.webp",
+    "ZQ-T-2.webp",
+    "ZQ-T-7.webp",
+    "ZQ-TZL3VDC.webp",
+    "ZQ-W65-D01.webp",
+    "ZQ-X5.webp",
+    "ZQ-XWJ-B-42.webp",
+    "ZQ-YDCX-3A...webp",
+    "ZQ-YDCX-3A..webp",
+    "ZQ-YTD380A-2.webp",
+    "ZQ-YTD750B   ZQ-YTD950B.webp",
+    "ZQ-ZMT-50.webp",
+    "ZQ-ZMT-50[50.webp",
+    "ZQ-ZZL-50[60[70[80.webp",
+    "ZQ001-01[02.webp",
+    "ZQ001-03.webp",
+    "ZQ001-04.webp",
+    "ZQ001-05.webp",
+    "ZQ001-06.webp",
+    "ZQ001-07.webp",
+    "ZQ002-01[02.webp",
+    "ZQ002-03.webp",
+    "ZQ002-04.webp",
+    "ZQ002-05.webp",
+    "ZQ002-06.webp",
+    "ZQ002-07.webp",
+    "ZQ003-01.webp",
+    "ZQ004-01[02[03.webp",
+    "ZQ004-04[05[06[07.webp",
+    "ZQ004-08[09[10[11.webp",
+    "ZQ004-12.webp",
+    "ZQ004-13[14[15.webp",
+    "ZQ005-01      ZQ005-02        ZQ005-03      ZQ005-04.webp",
+    "ZQ005-05.webp",
+    "ZQ005-06.webp",
+    "ZQ007-01.webp",
+    "ZQ007-02.webp",
+    "ZQ007-03.webp",
+    "ZQ009-01.webp",
+    "ZQ013-01.webp",
+    "ZQ013-02.webp",
+    "ZQ014-01.webp",
+    "ZQ016-01.webp",
+    "ZQ016-02.webp",
+    "ZQ220-20QJ4.webp",
+    "ZQ220-35PC.webp",
+    "ZQ220-35QE4.webp",
+    "ZQ220-50AB.webp",
+    "ZQ380-12AA.webp",
+    "ZQ380-12QA    ZQ380-15QA   ZQ380-20QA  ZQ380-25QA  ZQ380-30QA.webp",
+    "ZQ380-15QC   ZQ380-20QC  ZQ380-25QC  ZQ380-30QC.webp",
+    "ZQ380-15QD  ZQ380-25QD  ZQ380-350QD  ZQ380-500QD.webp",
+    "ZQ380-20AG.webp",
+    "ZQ380-20PC   ZQ380-25PC   ZQ380-30PC.webp",
+    "ZQ380-20QG4   ZQ380-20QG6  ZQ380-20QG8.webp",
+    "ZQ380-80AHB.webp",
+    "ZQ380-80PH.webp",
+    "ZQ380-8AC.webp",
+    "ZQ380-8AD2.webp",
+    "ZQ380-8AJ.webp",
+    "ZQ380-8PA.webp",
+    "ZQ380-8PB2.webp",
+    "ZQAVK-120.webp",
+    "ZQAVK-80.webp",
+    "ZQAVK-D-200.webp",
+    "ZQRTP350A-2.webp",
+    "视频_图片清晰度提升与去水印 - 2026-09-17T114345.406.webp",
+    "视频_图片清晰度提升与去水印 - 2026-09-17T123532.634.webp"
+  ];
+
+  const steelFiles = [
+    "ZQ-159-11    ZQ-159-12.webp",
+    "ZQ-BLMDG-120,150,180,200.webp",
+    "ZQ-CTGZT-1280,1580,1880.webp",
+    "ZQ-DDX-100,120,150.webp",
+    "ZQ-DXWDT-160  ZQ-DXWDT-180.webp",
+    "ZQ-ECGQJ-1035.webp",
+    "ZQ-ECGZT-2070,2270,2470,2670,2870.webp",
+    "ZQ-ECPBGZT-8050,1050,1060,1260,1560.webp",
+    "ZQ-ECSCJ-120   ZQ-ECSCJ-150   ZQ-ECSCJ-180..webp",
+    "ZQ-ECSCJ-120   ZQ-ECSCJ-150   ZQ-ECSCJ-180.webp",
+    "ZQ-GOGT-6030.webp",
+    "ZQ-GQB-1830.webp",
+    "ZQ-GQB-6030.webp",
+    "ZQ-GSBWTC-1270,ZQ-GSBWTC-1570.webp",
+    "ZQ-GSBWTCSJ-1270,ZQ-GSBWTCSJ-1570.webp",
+    "ZQ-GSDXDYT-120               ZQ-GSDXDYT-110.webp",
+    "ZQ-GSEXDT-180 ZQ-GSEXDT-165..webp",
+    "ZQ-KTGQJ-1030.webp",
+    "ZQ-LMDG-120,150,180,200.webp",
+    "ZQ-LSDX-70  ZQ-LSDX-65.webp",
+    "ZQ-LSDXY-120  ZQ-LSDXY-110.webp",
+    "ZQ-LSEX-120  ZQ-LSEX-110.webp",
+    "ZQ-LSSX-180  ZQ-LSSX-165.webp",
+    "ZQ-LSSXZ-180  ZQ-LSSXZ-165.webp",
+    "ZQ-LSSXZ-180 ZQ-LSSXZ-165..webp",
+    "ZQ-LSSXZ-180 ZQ-LSSXZ-165.webp",
+    "ZQ-NDDG-120,150,180,200.webp",
+    "ZQ-NDT-1560  ZQ-NDT-1860.webp",
+    "ZQ-PT-CT-3.webp",
+    "ZQ-PT-CT-4.webp",
+    "ZQ-QFSN1992  ZQ-QFSN1994.webp",
+    "ZQ-SCGZTDDC-1280,1580,1880.webp",
+    "ZQ-SCSCJ-120   ZQ-SCSCJ-150   ZQ-SCSCJ-180..webp",
+    "ZQ-SCSCJ-120   ZQ-SCSCJ-150   ZQ-SCSCJ-180.webp",
+    "ZQ-SFMDG-120,150,180,200.webp",
+    "ZQ-SXWDT-160 ZQ-SXWDT-180.webp",
+    "ZQ-W19-A01.webp",
+    "ZQ-W19-A02.webp",
+    "ZQ-W28-01   ZQ-W28-02.webp",
+    "ZQ-W46-01.webp",
+    "ZQ-W46-A05 ZQ-W46-A06.webp",
+    "ZQ-W48-A01 ZQ-W48-A02 ZQ-W48-A03 ZQ-W48-A04..webp",
+    "ZQ-W48-A01 ZQ-W48-A02 ZQ-W48-A03 ZQ-W48-A04.webp",
+    "ZQ-W49-A05  ZQ-W49-A06.webp",
+    "ZQ-W50-01   ZQ-W50-02.webp",
+    "ZQ-W50-05  ZQ-W50-06.webp",
+    "ZQ-W50-09   ZQ-W50-10.webp",
+    "ZQ-W50-A01  ZQ-W50-A02.webp",
+    "ZQ-W50-A03.webp",
+    "ZQ-W52-A06.webp",
+    "ZQ-W52-A07.webp",
+    "ZQ-W53-A01  ZQ-W53-A02  ZQ-W53-A03.webp",
+    "ZQ-W53-A04  ZQ-W53-A05 ZQ-W53-A06.webp",
+    "ZQ-W53-A07  ZQ-W53-A08  ZQ-W53-A09.webp",
+    "ZQ-W54-05.webp",
+    "ZQ-W54-A10.webp",
+    "ZQ-W59-04.webp",
+    "ZQ-W73-01 ZQ-W73-02  ZQ-W73-03.webp",
+    "ZQ-W79-01,02.webp",
+    "ZQ-W79-03.webp",
+    "ZQ-WBGZTTWJ.webp",
+    "ZQ-WCCK-180  ZQ-WCCK-200.webp",
+    "ZQ-WCPB-150  ZQ-WCPB-180.webp",
+    "ZQ-WCST-180  ZQ-WCST-200.webp",
+    "ZQ-WCST-180,200.webp",
+    "ZQ-WMDG-120,150,180,200.webp",
+    "ZQ-XKGS-120  ZQ-XKGS-150  ZQ-XKGS-180 ZQ-XKGS-210.webp",
+    "ZQ-XKGS-180 ZQ-XKGS-181 ZQ-XKGS-182 ZQ-XKGS-183.webp",
+    "ZQ-XKJYTC-1270 ZQ-XKJYTC-1570 ZQ-XKJYTC-1870 ZQ-XKJYTC-2170.webp",
+    "ZQ-XSC-150,180,200,220,240.webp",
+    "ZQ-YMDG-120,150,180,200.webp",
+    "ZQ-YYXSC-120,150,180.webp",
+    "ZQ-ZH-2V.webp",
+    "ZQ-ZH-3[ZH-3V.webp",
+    "ZQ-ZH-4[ZH4V.webp",
+    "ZQ-ZZJDT-60  ZQ-ZZJDT-80.webp",
+    "ZQ147-01.webp",
+    "ZQ147-02.webp",
+    "ZQ147-03,04,05.webp",
+    "ZQ149-01 ZQ149-02.webp",
+    "ZQ149-03  ZQ149-04.webp",
+    "ZQ149-05  ZQ149-06.webp",
+    "ZQ149-07   ZQ149-08.webp",
+    "ZQ150-01.webp",
+    "ZQ150-03  ZQ150-04.webp",
+    "ZQ150-05.webp",
+    "ZQ151-01 ZQ151-02.webp",
+    "ZQ151-03 ZQ151-04.webp",
+    "ZQ151-05 ZQ151-06.webp",
+    "ZQ151-07,08,09,10.webp",
+    "ZQ151-11,12,13,14.webp",
+    "ZQ152-01  ZQ152-02.webp",
+    "ZQ152-03  ZQ152-04.webp",
+    "ZQ152-05  ZQ152-06 ZQ152-07.webp",
+    "ZQ152-08   ZQ152-09  ZQ152-10.webp",
+    "ZQ152-11  ZQ152-12.webp",
+    "ZQ152-13   ZQ152-14.webp",
+    "ZQ155-01  ZQ155-02.webp",
+    "ZQ157-01 ZQ157-02.webp",
+    "ZQ157-03   ZQ157-04.webp",
+    "ZQ157-05  ZQ157-06.webp",
+    "ZQ157-07  ZQ157-08.webp",
+    "ZQ158-01  ZQ158-02.webp",
+    "ZQ158-03  ZQ158-04.webp",
+    "ZQ158-07.webp",
+    "ZQ159-01.webp",
+    "ZQ159-02.webp",
+    "ZQ159-04  ZQ159-05.webp",
+    "ZQ159-06.webp",
+    "ZQ159-07   ZQ159-08.webp",
+    "ZQ159-09  ZQ159-10.webp",
+    "ZQ159-13   ZQ159-14.webp",
+    "视频_图片清晰度提升与去水印 (28).webp",
+    "视频_图片清晰度提升与去水印 (87).webp",
+    "视频_图片清晰度提升与去水印 - 2026-09-21T180455.911.webp",
+    "视频_图片清晰度提升与去水印.webp"
+  ];
+
   const allImages = [];
   ovenFiles.forEach(f => allImages.push({ folder: 'images/Oven Equipment', filename: f, path: 'images/Oven Equipment/' + f }));
   fridgeFiles.forEach(f => allImages.push({ folder: 'images/Refrigeration Equipment', filename: f, path: 'images/Refrigeration Equipment/' + f }));
   westernFiles.forEach(f => allImages.push({ folder: 'images/Western Kitchen Equipment Series', filename: f, path: 'images/Western Kitchen Equipment Series/' + f }));
+  barFiles.forEach(f => allImages.push({ folder: 'images/Bar Equipments', filename: f, path: 'images/Bar Equipments/' + f }));
+  foodMachineryFiles.forEach(f => allImages.push({ folder: 'images/Food Machinery', filename: f, path: 'images/Food Machinery/' + f }));
+  kitchenFiles.forEach(f => allImages.push({ folder: 'images/Kitchen', filename: f, path: 'images/Kitchen/' + f }));
+  steelFiles.forEach(f => allImages.push({ folder: 'images/Steel Items', filename: f, path: 'images/Steel Items/' + f }));
 
   function norm(str) {
     if (!str) return '';
@@ -771,6 +1192,52 @@ window.addEventListener('DOMContentLoaded', () => {
     reason: p.matchReason
   }));
   document.getElementById('updatesOutput').value = JSON.stringify(updates, null, 2);
+
+  // Render Category Breakdown Table
+  const categoryStats = {};
+  products.forEach(p => {
+    const cat = p.category && p.category.trim() ? p.category.trim() : 'Uncategorized';
+    if (!categoryStats[cat]) {
+      categoryStats[cat] = { total: 0, added: 0, missing: 0 };
+    }
+    categoryStats[cat].total++;
+    if (p.hasPriorMatch || p.matchedImage) {
+      categoryStats[cat].added++;
+    } else {
+      categoryStats[cat].missing++;
+    }
+  });
+
+  if (typeof brandProducts !== 'undefined' && Array.isArray(brandProducts)) {
+    brandProducts.forEach(bp => {
+      const cat = bp.category && bp.category.trim() ? bp.category.trim() : 'Specialty Beverage Equipment';
+      if (!categoryStats[cat]) {
+        categoryStats[cat] = { total: 0, added: 0, missing: 0 };
+      }
+      categoryStats[cat].total++;
+      if (bp.image && !bp.image.includes('placeholder')) {
+        categoryStats[cat].added++;
+      } else {
+        categoryStats[cat].missing++;
+      }
+    });
+  }
+
+  let catHtml = '<table><thead><tr><th>#</th><th>Category Name</th><th>Total Products</th><th>Added / Real Images</th><th>Missing Images (Placeholders)</th><th>Coverage %</th></tr></thead><tbody>';
+  let catIndex = 1;
+  let sumTotal = 0, sumAdded = 0, sumMissing = 0;
+  Object.keys(categoryStats).sort().forEach(cat => {
+    const s = categoryStats[cat];
+    const pct = s.total > 0 ? ((s.added / s.total) * 100).toFixed(1) + '%' : '0%';
+    sumTotal += s.total;
+    sumAdded += s.added;
+    sumMissing += s.missing;
+    catHtml += `<tr><td>${catIndex++}</td><td><strong>${cat}</strong></td><td>${s.total}</td><td style="color:#28a745;font-weight:bold;">${s.added}</td><td style="color:#dc3545;font-weight:bold;">${s.missing}</td><td><strong>${pct}</strong></td></tr>`;
+  });
+  const sumPct = sumTotal > 0 ? ((sumAdded / sumTotal) * 100).toFixed(1) + '%' : '0%';
+  catHtml += `<tr style="background:#e9ecef;font-weight:bold;"><td>-</td><td>TOTAL</td><td>${sumTotal}</td><td style="color:#28a745;">${sumAdded}</td><td style="color:#dc3545;">${sumMissing}</td><td>${sumPct}</td></tr>`;
+  catHtml += '</tbody></table>';
+  document.getElementById('categoryTableContainer').innerHTML = catHtml;
 
   // Render Matched Images Table
   let mHtml = '<table><thead><tr><th>#</th><th>Image Path</th><th>Extracted Models / Tokens</th><th>Matched Products (SKU & ID)</th></tr></thead><tbody>';

@@ -14,25 +14,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100);
   }
 
-  // 2. Scroll Progress Bar & Sticky Header
+  // 2. Scroll Progress Bar & Sticky Header (rAF-throttled to avoid layout thrashing)
   const progressBar = document.getElementById('scrollProgress');
-  const nav = document.getElementById('siteHeader'); // FIXED: was 'nav'
+  const nav = document.getElementById('siteHeader');
 
+  let isScrolling = false;
   window.addEventListener('scroll', () => {
-    const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
+    if (!isScrolling) {
+      window.requestAnimationFrame(() => {
+        const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
 
-    if (progressBar) {
-      progressBar.style.width = scrolled + '%';
-    }
+        if (progressBar) {
+          progressBar.style.width = scrolled + '%';
+        }
 
-    if (nav) {
-      if (winScroll > 40) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
+        if (nav) {
+          if (winScroll > 40) {
+            nav.classList.add('scrolled');
+          } else {
+            nav.classList.remove('scrolled');
+          }
+        }
+        isScrolling = false;
+      });
+      isScrolling = true;
     }
   }, { passive: true });
 
@@ -162,17 +169,13 @@ document.addEventListener('DOMContentLoaded', () => {
     window.requestAnimationFrame(step);
   }
 
-});
-
-
-// Dynamically set active state on navigation links
-document.addEventListener('DOMContentLoaded', () => {
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  // Dynamically set active state on navigation links (supports clean URLs and root paths)
+  const locHref = window.location.href.split('#')[0].split('?')[0].replace(/\/+$/, '');
   const navLinks = document.querySelectorAll('.nav-link, .mob-nav__link');
   
   navLinks.forEach(link => {
-    const linkPath = link.getAttribute('href');
-    if (linkPath === currentPath) {
+    const linkHref = (link.href || '').split('#')[0].split('?')[0].replace(/\/+$/, '');
+    if (linkHref && linkHref === locHref) {
       link.classList.add('active');
     } else {
       link.classList.remove('active');
@@ -190,8 +193,18 @@ document.addEventListener('DOMContentLoaded', () => {
   links.forEach(link => {
     link.addEventListener('click', function(e) {
       const href = this.getAttribute('href');
-      // Only transition on internal HTML links, not anchors or absolute external urls
-      if (href && href.endsWith('.html') && !href.startsWith('http') && !href.startsWith('#')) {
+      // Only transition on internal navigation links, not anchors, protocols, or external URLs
+      if (
+        href &&
+        !href.startsWith('http://') &&
+        !href.startsWith('https://') &&
+        !href.startsWith('//') &&
+        !href.startsWith('#') &&
+        !href.startsWith('mailto:') &&
+        !href.startsWith('tel:') &&
+        !this.hasAttribute('target') &&
+        !this.hasAttribute('download')
+      ) {
         e.preventDefault();
         document.body.classList.add('fade-out');
         setTimeout(() => {
