@@ -5,6 +5,39 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // 0. Universal Ampersand Normalization
+  // Normalizes the ampersand (&) in headings, display titles, and card headers
+  // across all pages so it always renders with the clean standard modern ampersand.
+  const ampersandTargets = document.querySelectorAll(
+    'h1, h2, h3, h4, h5, h6, .arch-card__title, .legal-section-title, .brand-matrix__label, .cat-card__title, .section-tag, .headline-editorial'
+  );
+  ampersandTargets.forEach((el) => {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+    const nodesToReplace = [];
+    let node;
+    while ((node = walker.nextNode())) {
+      if (node.parentElement && !node.parentElement.classList.contains('amp') && node.nodeValue && node.nodeValue.includes('&')) {
+        nodesToReplace.push(node);
+      }
+    }
+    nodesToReplace.forEach((textNode) => {
+      const parts = textNode.nodeValue.split('&');
+      const fragment = document.createDocumentFragment();
+      parts.forEach((part, index) => {
+        if (index > 0) {
+          const span = document.createElement('span');
+          span.className = 'amp';
+          span.textContent = '&';
+          fragment.appendChild(span);
+        }
+        if (part) {
+          fragment.appendChild(document.createTextNode(part));
+        }
+      });
+      textNode.parentNode.replaceChild(fragment, textNode);
+    });
+  });
+
   // 1. Hero Entrance Animation Sequence
   const heroSection = document.getElementById('heroSection');
   if (heroSection) {

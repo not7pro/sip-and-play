@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sip & Play — Equipment Duplicate Audit & Diagnostic Scanner</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #181b20;
+      --border: #2a2e36;
+      --text: #e6e8ec;
+      --text-muted: #8b929e;
+      --accent: #d4a373;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+      --success: #10b981;
+      --info: #3b82f6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    h1 { font-size: 1.8rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .subtitle { color: var(--text-muted); font-size: 0.95rem; }
+    .grid-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .stat-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 1.25rem;
+      border-radius: 6px;
+    }
+    .stat-num { font-size: 2rem; font-weight: 700; color: var(--accent); }
+    .stat-num.danger { color: var(--danger); }
+    .stat-num.warning { color: var(--warning); }
+    .stat-num.success { color: var(--success); }
+    .stat-label { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.25rem; }
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+    .section-header {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255,255,255,0.02);
+    }
+    .section-title { font-size: 1.1rem; font-weight: 600; }
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: var(--border);
+      color: var(--text);
+    }
+    .badge.danger { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); }
+    .badge.warning { background: rgba(245, 158, 11, 0.2); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.4); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      text-align: left;
+    }
+    th, td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      background: rgba(0,0,0,0.2);
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+    tr:hover { background: rgba(255,255,255,0.02); }
+    .img-thumb {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 4px;
+      background: #000;
+      border: 1px solid var(--border);
+    }
+    .code-tag {
+      font-family: monospace;
+      font-size: 0.8rem;
+      background: rgba(0,0,0,0.3);
+      padding: 0.15rem 0.4rem;
+      border-radius: 3px;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Sip &amp; Play — Full Equipment Duplicate Audit &amp; Diagnostic Scan</h1>
+    <p class="subtitle">Deep structural analysis of live catalog dataset (<span id="totalScanned">Scanning...</span> active products scanned across catalog &amp; brands)</p>
+  </div>
+
+  <div class="grid-stats">
+    <div class="stat-card">
+      <div class="stat-num" id="statTotalActive">...</div>
+      <div class="stat-label">Total Active Products Loaded</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num danger" id="statSkuDups">...</div>
+      <div class="stat-label">Duplicate SKU Collisions</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num warning" id="statNameImgDups">...</div>
+      <div class="stat-label">Identical Name + Image Pairs</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num warning" id="statNameDups">...</div>
+      <div class="stat-label">Identical Product Names</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num success" id="statCleanUnique">...</div>
+      <div class="stat-label">Clean Deduplicated Count</div>
+    </div>
+  </div>
+
+  <!-- SECTION 1: DUPLICATE SKUS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-title">1. Exact Duplicate SKU Collisions (Same SKU assigned multiple times)</div>
+      <span class="badge danger" id="badgeSkuCount">0 found</span>
+    </div>
+    <table id="tableSkuDups">
+      <thead>
+        <tr>
+          <th>SKU</th>
+          <th>Count</th>
+          <th>Products / Records Involved</th>
+          <th>Recommendation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td colspan="4" style="text-align:center; color:var(--text-muted); padding:2rem;">Scanning dataset...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SECTION 2: IDENTICAL NAME + IMAGE -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-title">2. Identical Name + Identical Image Collisions (Cards that look identical on website)</div>
+      <span class="badge warning" id="badgeNameImgCount">0 found</span>
+    </div>
+    <table id="tableNameImgDups">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Product Name</th>
+          <th>Category</th>
+          <th>Occurrences &amp; SKUs</th>
+          <th>Cause / Analysis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td colspan="5" style="text-align:center; color:var(--text-muted); padding:2rem;">Scanning dataset...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SECTION 3: SHARED IMAGES ACROSS DIFFERENT PRODUCTS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-title">3. High-Frequency Shared Images (Same image file assigned to 3+ different products)</div>
+      <span class="badge" id="badgeSharedImgCount">0 found</span>
+    </div>
+    <table id="tableSharedImages">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Image Path</th>
+          <th>Total Products Sharing Image</th>
+          <th>Sample Product Names</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td colspan="4" style="text-align:center; color:var(--text-muted); padding:2rem;">Scanning dataset...</td></tr>
+      </tbody>
+    </table>
+  <!-- SECTION 4: AUDIT LOG OF REMOVED DUPLICATES -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-title">4. Action Audit Log: Duplicate Products Removed &amp; Merged into Canonical Records</div>
+      <span class="badge danger" id="badgeRemovedCount">0 duplicates removed</span>
+    </div>
+    <table id="tableRemovedDuplicates">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Removed Product</th>
+          <th>Removed SKU / ID</th>
+          <th>Deduplication Reason</th>
+          <th>Merged Into Canonical Product</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td colspan="5" style="text-align:center; color:var(--text-muted); padding:2rem;">Scanning dataset...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="brands_products_data.js"></script>
+  <script src="catalog_products_normalized.js"></script>
+  <script src="products-data.js"></script>
+
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const products = Array.isArray(window.SIP_PRODUCTS) ? window.SIP_PRODUCTS : [];
+    document.getElementById('totalScanned').textContent = products.length;
+    document.getElementById('statTotalActive').textContent = products.length;
+
+    // 1. Group by Normalized SKU
+    const skuMap = new Map();
+    products.forEach((p, idx) => {
+      const rawSku = (p.sku || '').trim();
+      const normSku = rawSku.toLowerCase().replace(/[^a-z0-9]/g, '');
+      if (!normSku) return;
+      if (!skuMap.has(normSku)) skuMap.set(normSku, { rawSku, items: [] });
+      skuMap.get(normSku).items.push({ p, index: idx });
+    });
+
+    const duplicateSkus = Array.from(skuMap.values()).filter(g => g.items.length > 1);
+    document.getElementById('statSkuDups').textContent = duplicateSkus.length;
+    document.getElementById('badgeSkuCount').textContent = `${duplicateSkus.length} SKU groups duplicated`;
+
+    const tableSkuBody = document.querySelector('#tableSkuDups tbody');
+    if (duplicateSkus.length === 0) {
+      tableSkuBody.innerHTML = '<tr><td colspan="4" style="text-align:center; color:var(--success); padding:1.5rem;">✓ No duplicate SKUs detected in active catalog dataset.</td></tr>';
+    } else {
+      tableSkuBody.innerHTML = duplicateSkus.map(g => `
+        <tr>
+          <td><span class="code-tag">${g.rawSku}</span></td>
+          <td><span class="badge danger">${g.items.length}x duplicates</span></td>
+          <td>
+            ${g.items.map(it => `
+              <div style="margin-bottom:0.4rem;">
+                <strong>${it.p.name}</strong> <span style="color:var(--text-muted); font-size:0.8rem;">(ID: ${it.p.id}, Brand: ${it.p.brand || 'None'}, Cat: ${it.p.category || 'None'})</span>
+              </div>
+            `).join('')}
+          </td>
+          <td style="color:var(--text-muted); font-size:0.8rem;">Keep most complete record (or brand priority); discard redundant OCR clone.</td>
+        </tr>
+      `).join('');
+    }
+
+    // 2. Group by Name + Image (Look identical on public frontend)
+    const nameImgMap = new Map();
+    products.forEach((p, idx) => {
+      const normName = (p.name || '').trim().toLowerCase();
+      const img = (p.image || '').trim();
+      if (!normName) return;
+      const key = `${normName}:::${img}`;
+      if (!nameImgMap.has(key)) nameImgMap.set(key, { name: p.name, image: img, category: p.category, items: [] });
+      nameImgMap.get(key).items.push(p);
+    });
+
+    const duplicateNameImgs = Array.from(nameImgMap.values()).filter(g => g.items.length > 1);
+    document.getElementById('statNameImgDups').textContent = duplicateNameImgs.length;
+    document.getElementById('badgeNameImgCount').textContent = `${duplicateNameImgs.length} identical visual pairs`;
+
+    const tableNameImgBody = document.querySelector('#tableNameImgDups tbody');
+    if (duplicateNameImgs.length === 0) {
+      tableNameImgBody.innerHTML = '<tr><td colspan="5" style="text-align:center; color:var(--success); padding:1.5rem;">✓ No identical name + image duplicates found.</td></tr>';
+    } else {
+      tableNameImgBody.innerHTML = duplicateNameImgs.slice(0, 50).map(g => `
+        <tr>
+          <td><img src="${g.image || 'images/category-placeholder.jpg'}" class="img-thumb" alt="" onerror="this.src='images/category-placeholder.jpg';" /></td>
+          <td><strong>${g.name}</strong></td>
+          <td>${g.category || '—'}</td>
+          <td>
+            <span class="badge warning" style="margin-bottom:0.3rem;">${g.items.length} copies</span>
+            <div style="font-size:0.78rem; color:var(--text-muted); margin-top:0.3rem;">
+              SKUs: ${g.items.map(it => `<span class="code-tag">${it.sku || it.id}</span>`).join(' ')}
+            </div>
+          </td>
+          <td style="color:var(--text-muted); font-size:0.8rem;">
+            ${g.items.some(it => it.dimensions) ? 'Different dimensions or specs sharing the same generic name. Disambiguate title with model/dimension.' : 'Exact duplicate record derived from OCR.'}
+          </td>
+        </tr>
+      `).join('');
+      if (duplicateNameImgs.length > 50) {
+        tableNameImgBody.innerHTML += `<tr><td colspan="5" style="text-align:center; color:var(--text-muted); padding:1rem;">... and ${duplicateNameImgs.length - 50} more identical name+image groups</td></tr>`;
+      }
+    }
+
+    // 3. Name-only duplicates
+    const nameMap = new Map();
+    products.forEach(p => {
+      const normName = (p.name || '').trim().toLowerCase();
+      if (!normName) return;
+      if (!nameMap.has(normName)) nameMap.set(normName, []);
+      nameMap.get(normName).push(p);
+    });
+    const duplicateNames = Array.from(nameMap.values()).filter(g => g.length > 1);
+    document.getElementById('statNameDups').textContent = duplicateNames.length;
+
+    // 4. Shared Images (3+ products)
+    const imgMap = new Map();
+    products.forEach(p => {
+      const img = (p.image || '').trim();
+      if (!img) return;
+      if (!imgMap.has(img)) imgMap.set(img, []);
+      imgMap.get(img).push(p);
+    });
+    const sharedImgs = Array.from(imgMap.entries())
+      .filter(([img, list]) => list.length >= 3)
+      .sort((a, b) => b[1].length - a[1].length);
+
+    document.getElementById('badgeSharedImgCount').textContent = `${sharedImgs.length} images shared by 3+ items`;
+    const tableSharedBody = document.querySelector('#tableSharedImages tbody');
+    tableSharedBody.innerHTML = sharedImgs.slice(0, 30).map(([img, list]) => `
+      <tr>
+        <td><img src="${img}" class="img-thumb" alt="" onerror="this.src='images/category-placeholder.jpg';" /></td>
+        <td><span class="code-tag" style="word-break:break-all;">${img}</span></td>
+        <td><span class="badge">${list.length} products</span></td>
+        <td style="font-size:0.8rem; color:var(--text-muted);">
+          ${list.slice(0, 3).map(p => p.name).join('; ')}${list.length > 3 ? ` ... (+${list.length - 3} more)` : ''}
+        </td>
+      </tr>
+    `).join('');
+
+    // 5. Populate Section 4: Audit Log of Removed Duplicates
+    const removedList = Array.isArray(window.SIP_REMOVED_DUPLICATES) ? window.SIP_REMOVED_DUPLICATES : [];
+    document.getElementById('badgeRemovedCount').textContent = `${removedList.length} duplicate items eliminated`;
+    const tableRemovedBody = document.querySelector('#tableRemovedDuplicates tbody');
+
+    if (removedList.length === 0) {
+      tableRemovedBody.innerHTML = '<tr><td colspan="5" style="text-align:center; color:var(--success); padding:1.5rem;">✓ No duplicates required removal; dataset is 100% clean.</td></tr>';
+    } else {
+      tableRemovedBody.innerHTML = removedList.map(item => `
+        <tr>
+          <td><img src="${item.image || 'images/category-placeholder.jpg'}" class="img-thumb" alt="" onerror="this.src='images/category-placeholder.jpg';" /></td>
+          <td>
+            <strong>${item.name}</strong>
+            <div style="font-size:0.75rem; color:var(--text-muted);">${item.category || ''} | Dims: ${item.dimensions || '—'}</div>
+          </td>
+          <td>
+            <span class="code-tag">${item.sku || 'N/A'}</span>
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:0.2rem;">ID: ${item.id}</div>
+          </td>
+          <td><span class="badge danger">${item.reason}</span></td>
+          <td>
+            <strong>${item.mergedIntoName}</strong>
+            <div style="font-size:0.75rem; color:var(--text-muted);">
+              Preserved in: <span class="code-tag">${item.mergedIntoSku}</span> (ID: ${item.mergedIntoId})
+            </div>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    document.getElementById('statCleanUnique').textContent = products.length;
+  });
+  </script>
+</body>
+</html>

@@ -76,9 +76,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   });
 
-  // Ensure all active products have genuine images resolved
+  // Ensure all active products have genuine images resolved and deduplicated
   allProducts.forEach(p => { p.image = getProductImage(p); });
-  allProducts = allProducts.filter(p => Boolean(p.image && p.name && p.name.trim()));
+  const seenCatalogSkus = new Set();
+  const seenCatalogNameImgs = new Set();
+  allProducts = allProducts.filter(p => {
+    if (!p.image || !p.name || !p.name.trim()) return false;
+    const rawSku = (p.sku || '').trim().toLowerCase().replace(/[^a-z0-9]/g, '');
+    const normName = (p.name || '').trim().toLowerCase();
+    const nameImgKey = `${normName}:::${p.image}`;
+    if (rawSku && seenCatalogSkus.has(rawSku)) return false;
+    if (seenCatalogNameImgs.has(nameImgKey)) return false;
+    if (rawSku) seenCatalogSkus.add(rawSku);
+    seenCatalogNameImgs.add(nameImgKey);
+    return true;
+  });
 
   /* ----------------------------------------------------------
      OPTIONAL SUPABASE CLOUD SYNC (unchanged from original)
@@ -142,14 +154,29 @@ document.addEventListener('DOMContentLoaded', async () => {
   const specModalBody    = document.getElementById('specModalBody');
   const specModalClose   = document.getElementById('specModalClose');
 
-  // Schedule / enquiry drawer
-  let projectSchedule      = JSON.parse(localStorage.getItem('sip_project_schedule') || '[]');
-  const enquiryBar         = document.getElementById('enquiryBar');
-  const enquiryCountTop    = document.getElementById('enquiryCountTop');
-  const enquiryDrawer      = document.getElementById('enquiryDrawer');
-  const enquiryItemsList   = document.getElementById('enquiryItemsList');
-  const enquiryDrawerClose = document.getElementById('enquiryDrawerClose');
-  const enquiryForm        = document.getElementById('enquiryForm');
+  // Schedule Cart & Drawer DOM References
+  let projectSchedule          = JSON.parse(localStorage.getItem('sip_project_schedule') || '[]');
+  const navScheduleBtn         = document.getElementById('navScheduleBtn');
+  const navScheduleBadge       = document.getElementById('navScheduleBadge');
+  const scheduleDrawer         = document.getElementById('scheduleDrawer');
+  const scheduleDrawerBackdrop = document.getElementById('scheduleDrawerBackdrop');
+  const scheduleDrawerClose    = document.getElementById('scheduleDrawerClose');
+  const scheduleItemsList      = document.getElementById('scheduleItemsList');
+  const scheduleTotalCount     = document.getElementById('scheduleTotalCount');
+  const btnOpenCustomerModal   = document.getElementById('btnOpenCustomerModal');
+  const btnClearSchedule       = document.getElementById('btnClearSchedule');
+
+  // Customer Details Modal DOM References
+  const customerModalBackdrop  = document.getElementById('customerModalBackdrop');
+  const customerModalClose     = document.getElementById('customerModalClose');
+  const customerRfqForm        = document.getElementById('customerRfqForm');
+  const rfqClientName          = document.getElementById('rfqClientName');
+  const rfqClientEmail         = document.getElementById('rfqClientEmail');
+  const rfqClientPhone         = document.getElementById('rfqClientPhone');
+  const rfqClientVenue         = document.getElementById('rfqClientVenue');
+  const rfqClientLocation      = document.getElementById('rfqClientLocation');
+  const rfqClientNotes         = document.getElementById('rfqClientNotes');
+  const btnSubmitWhatsapp      = document.getElementById('btnSubmitWhatsapp');
 
   /* ----------------------------------------------------------
      DYNAMIC BRAND SELECT
@@ -313,11 +340,12 @@ document.addEventListener('DOMContentLoaded', async () => {
      Spec rows are only rendered when the value is non-empty.
   ---------------------------------------------------------- */
   function specRow(label, value) {
-    if (!value || value.trim() === '') return '';
+    if (!value || typeof value !== 'string' || value.trim() === '') return '';
+    const cleanVal = value.trim();
     return `
-      <div class="cat-card__spec-item" style="display:flex; justify-content:space-between; font-size:0.85rem; font-family:var(--font-sans); border-bottom:1px dashed var(--border-dark); padding-bottom:0.2rem;">
-        <span class="cat-card__spec-label" style="color:var(--stone-light); font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.1em;">${label}</span>
-        <span class="cat-card__spec-val" style="font-weight:500;">${value}</span>
+      <div class="cat-card__spec-item">
+        <span class="cat-card__spec-label">${label}</span>
+        <span class="cat-card__spec-val" title="${cleanVal}">${cleanVal}</span>
       </div>`;
   }
 
@@ -361,29 +389,27 @@ document.addEventListener('DOMContentLoaded', async () => {
       card.className = 'cat-card';
       const imgSrc = getProductImage(p);
 
-      // Derive a display label for brand / subcategory meta line
+      // Derive clean display labels
       const brandDisplay = (p.brand || '').trim();
       const subCatDisplay = (p.subCategory || p.category || '').trim();
-
-      // Name fallback: if name is empty, show SKU as a description stub
-      const displayName = (p.name || '').trim() || `SKU ${p.sku}`;
+      const displayName = p.displayName || (p.name || '').trim() || `SKU ${p.sku}`;
 
       card.innerHTML = `
-        <div class="cat-card__img-wrap" style="position:relative; width:100%; aspect-ratio:4/3; overflow:hidden; background:var(--ink-charcoal);">
-          <img class="cat-card__img" src="${imgSrc}" alt="${displayName}" loading="lazy" decoding="async" onerror="this.onerror=null; this.style.display='none';" style="width:100%; height:100%; object-fit:cover; transition:transform var(--slow) var(--ease-editorial);" />
-          <span class="cat-card__sku" style="position:absolute; top:1rem; left:1rem; background:var(--ink-pure); color:var(--paper-ivory); font-family:var(--font-mono); font-size:0.7rem; padding:0.2rem 0.5rem; letter-spacing:0.1em;">${p.sku}</span>
-          ${p.confidence === 'low' ? '<span style="position:absolute; bottom:0.5rem; right:0.5rem; background:rgba(0,0,0,0.6); color:#f0a500; font-family:var(--font-mono); font-size:0.6rem; padding:0.15rem 0.4rem; letter-spacing:0.08em;">REVIEW</span>' : ''}
-          ${p.featured ? '<span class="cat-card__featured" style="position:absolute; top:1rem; right:1rem; background:var(--stone-light); color:var(--ink-pure); font-family:var(--font-mono); font-size:0.7rem; padding:0.2rem 0.5rem; letter-spacing:0.1em; font-weight:700;">FEATURED</span>' : ''}
+        <div class="cat-card__img-wrap" title="Click to view specifications">
+          <img class="cat-card__img" src="${imgSrc}" alt="${displayName}" loading="lazy" decoding="async" onerror="this.onerror=null; this.style.display='none';" />
+          <span class="cat-card__sku">${p.sku}</span>
+          ${p.confidence === 'low' ? '<span class="cat-card__tag cat-card__tag--review">REVIEW</span>' : ''}
+          ${p.featured ? '<span class="cat-card__tag cat-card__tag--featured">FEATURED</span>' : ''}
         </div>
-        <div class="cat-card__body" style="padding:1.5rem; display:flex; flex-direction:column; justify-content:space-between; flex-grow:1; background:var(--ink-deep); color:var(--paper-ivory);">
-          <div>
-            <div class="cat-card__meta" style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.1em; color:var(--stone-light); text-transform:uppercase; margin-bottom:1rem; border-bottom:1px solid var(--border-dark); padding-bottom:0.5rem;">
-              <span class="cat-card__brand" style="color:var(--paper-ivory); font-weight:600;">${brandDisplay}</span>
-              <span class="cat-card__cat">${subCatDisplay}</span>
+        <div class="cat-card__body">
+          <div class="cat-card__content">
+            <div class="cat-card__meta">
+              <span class="cat-card__brand">${brandDisplay}</span>
+              ${subCatDisplay ? `<span class="cat-card__meta-dot">•</span><span class="cat-card__cat">${subCatDisplay}</span>` : ''}
             </div>
-            <h3 class="cat-card__title" style="font-family:var(--font-display); font-size:1.1rem; font-weight:600; letter-spacing:-0.02em; color:var(--paper-ivory); margin-bottom:1.5rem; line-height:1.3;">${displayName}</h3>
+            <h3 class="cat-card__title" title="${displayName}">${displayName}</h3>
 
-            <div class="cat-card__specs" style="display:flex; flex-direction:column; gap:0.5rem; margin-bottom:1.5rem;">
+            <div class="cat-card__specs">
               ${specRow('POWER', p.power)}
               ${specRow('DIMENSIONS', p.dimensions)}
               ${specRow('CAPACITY', p.capacity)}
@@ -391,17 +417,22 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
           </div>
 
-          <div class="cat-card__actions" style="display:grid; grid-template-columns:1fr; gap:0.5rem; margin-top:auto;">
-            <button class="cat-card__btn-spec" data-id="${p.id}" style="width:100%; background:transparent; border:1px solid var(--border-dark); color:var(--paper-ivory); padding:0.75rem; font-family:var(--font-sans); font-size:0.8rem; font-weight:600; cursor:pointer; transition:all var(--fast);">View Specifications ↗</button>
-            <button class="cat-card__btn-add ${isScheduled ? 'added' : ''}" data-id="${p.id}" style="width:100%; background:${isScheduled ? 'var(--paper-ivory)' : 'transparent'}; border:1px solid var(--paper-ivory); color:${isScheduled ? 'var(--ink-pure)' : 'var(--paper-ivory)'}; padding:0.75rem; font-family:var(--font-sans); font-size:0.8rem; font-weight:600; cursor:pointer; transition:all var(--fast);">
-              ${isScheduled ? '✓ Scheduled' : '+ Add to Schedule'}
+          <div class="cat-card__actions">
+            <button class="cat-card__btn-spec" data-id="${p.id}" type="button">Specs ↗</button>
+            <button class="cat-card__btn-add ${isScheduled ? 'added' : ''}" data-id="${p.id}" type="button">
+              ${isScheduled ? '✓ Scheduled' : '+ Schedule'}
             </button>
           </div>
         </div>
       `;
 
+      card.querySelector('.cat-card__img-wrap').addEventListener('click', () => { openSpecModal(p); });
+      card.querySelector('.cat-card__title').addEventListener('click', () => { openSpecModal(p); });
       card.querySelector('.cat-card__btn-spec').addEventListener('click', () => { openSpecModal(p); });
-      card.querySelector('.cat-card__btn-add').addEventListener('click', e => { toggleScheduleItem(p, e.currentTarget); });
+      card.querySelector('.cat-card__btn-add').addEventListener('click', e => {
+        e.stopPropagation();
+        toggleScheduleItem(p, e.currentTarget);
+      });
 
       catGrid.appendChild(card);
     });
@@ -601,87 +632,251 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSpecModal(); });
 
   /* ----------------------------------------------------------
-     PROJECT SCHEDULE (QUOTE BASKET)
-     Duplicate-prevention: a product can only appear once.
+     PROJECT SCHEDULE CART & DRAWER SYSTEM
   ---------------------------------------------------------- */
+  function openScheduleDrawer() {
+    if (scheduleDrawer) scheduleDrawer.classList.add('open');
+    if (scheduleDrawerBackdrop) scheduleDrawerBackdrop.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeScheduleDrawer() {
+    if (scheduleDrawer) scheduleDrawer.classList.remove('open');
+    if (scheduleDrawerBackdrop) scheduleDrawerBackdrop.classList.remove('active');
+    if (!customerModalBackdrop || !customerModalBackdrop.classList.contains('active')) {
+      document.body.style.overflow = '';
+    }
+  }
+
+  function openCustomerModal() {
+    if (!projectSchedule || projectSchedule.length === 0) {
+      alert('Your equipment schedule is currently empty. Please add items to request a quote.');
+      return;
+    }
+    if (customerModalBackdrop) customerModalBackdrop.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if (rfqClientName) {
+      setTimeout(() => rfqClientName.focus(), 150);
+    }
+  }
+
+  function closeCustomerModal() {
+    if (customerModalBackdrop) customerModalBackdrop.classList.remove('active');
+    if (!scheduleDrawer || !scheduleDrawer.classList.contains('open')) {
+      document.body.style.overflow = '';
+    }
+  }
+
+  function updateItemQuantity(productId, delta) {
+    const item = projectSchedule.find(i => i.id === productId);
+    if (!item) return;
+    item.quantity = (item.quantity || 1) + delta;
+    if (item.quantity <= 0) {
+      projectSchedule = projectSchedule.filter(i => i.id !== productId);
+    }
+    localStorage.setItem('sip_project_schedule', JSON.stringify(projectSchedule));
+    updateScheduleUI();
+    renderGrid();
+  }
+
   function toggleScheduleItem(product, btnElement) {
     const index = projectSchedule.findIndex(i => i.id === product.id);
     if (index > -1) {
       projectSchedule.splice(index, 1);
-      if (btnElement) { btnElement.classList.remove('added'); btnElement.textContent = '+ Add to Schedule'; }
+      if (btnElement) {
+        btnElement.classList.remove('added');
+        btnElement.textContent = '+ Schedule';
+        btnElement.style.background = '';
+        btnElement.style.color = '';
+      }
     } else {
-      projectSchedule.push(product);
-      if (btnElement) { btnElement.classList.add('added');    btnElement.textContent = '✓ Scheduled'; }
+      const scheduleProduct = { ...product, quantity: product.quantity || 1 };
+      projectSchedule.push(scheduleProduct);
+      if (btnElement) {
+        btnElement.classList.add('added');
+        btnElement.textContent = '✓ Scheduled';
+        btnElement.style.background = '';
+        btnElement.style.color = '';
+      }
+      if (navScheduleBadge) {
+        navScheduleBadge.classList.add('pulse');
+        setTimeout(() => navScheduleBadge.classList.remove('pulse'), 350);
+      }
     }
     localStorage.setItem('sip_project_schedule', JSON.stringify(projectSchedule));
     updateScheduleUI();
   }
 
   function updateScheduleUI() {
-    if (!enquiryBar || !enquiryCountTop) return;
-    const count = projectSchedule.length;
-    enquiryCountTop.textContent = count;
-    if (count > 0) {
-      enquiryBar.classList.add('visible');
-    } else {
-      enquiryBar.classList.remove('visible');
-      if (enquiryDrawer) enquiryDrawer.classList.remove('open');
+    const totalUnits = projectSchedule.reduce((sum, item) => sum + (Number(item.quantity) || 1), 0);
+    if (navScheduleBadge) {
+      navScheduleBadge.textContent = totalUnits;
+    }
+    if (scheduleTotalCount) {
+      scheduleTotalCount.textContent = `${totalUnits} ${totalUnits === 1 ? 'unit' : 'units'} (${projectSchedule.length} model${projectSchedule.length === 1 ? '' : 's'})`;
     }
     renderScheduleDrawerItems();
   }
 
   function renderScheduleDrawerItems() {
-    if (!enquiryItemsList) return;
-    enquiryItemsList.innerHTML = '';
+    if (!scheduleItemsList) return;
+    scheduleItemsList.innerHTML = '';
+
     if (projectSchedule.length === 0) {
-      enquiryItemsList.innerHTML = '<p class="schedule-empty">No equipment items in project schedule.</p>';
+      scheduleItemsList.innerHTML = `
+        <div class="schedule-empty">
+          <p style="margin:0 0 0.5rem 0; font-weight:600; color:var(--paper-ivory);">Your Project Schedule is Empty</p>
+          <p style="margin:0; font-size:0.75rem; color:var(--stone-light);">Click <strong>"+ Add to Schedule"</strong> on any commercial kitchen equipment item to create a quote specification list.</p>
+        </div>
+      `;
       return;
     }
+
     projectSchedule.forEach(item => {
-      const li = document.createElement('div');
-      li.className = 'schedule-item';
-      li.innerHTML = `
+      const qty = Number(item.quantity) || 1;
+      const imgSrc = getProductImage(item);
+      const displayName = item.displayName || (item.name || '').trim() || `SKU ${item.sku}`;
+      const meta = [item.brand, item.power, item.dimensions].filter(Boolean).slice(0, 2).join(' • ');
+
+      const el = document.createElement('div');
+      el.className = 'schedule-item';
+      el.innerHTML = `
+        <img class="schedule-item__thumb" src="${imgSrc}" alt="${displayName}" onerror="this.onerror=null; this.style.opacity='0.2';" />
         <div class="schedule-item__info">
-          <span class="schedule-item__sku">${item.sku || ''}</span>
-          <h4 class="schedule-item__name">${(item.name || '').trim() || `SKU ${item.sku}`}</h4>
-          <span class="schedule-item__meta">${[item.brand, item.power].filter(Boolean).join(' • ')}</span>
+          <span class="schedule-item__sku">${item.sku || 'COMMERCIAL SPEC'}</span>
+          <h4 class="schedule-item__name">${displayName}</h4>
+          ${meta ? `<span class="schedule-item__meta">${meta}</span>` : ''}
+          <div class="schedule-item__qty-row">
+            <button class="schedule-qty-btn" data-action="dec" type="button" aria-label="Decrease quantity">−</button>
+            <span class="schedule-qty-val">${qty}</span>
+            <button class="schedule-qty-btn" data-action="inc" type="button" aria-label="Increase quantity">+</button>
+          </div>
         </div>
-        <button class="schedule-item__remove" data-id="${item.id}" title="Remove Item">✕</button>
+        <button class="schedule-item__remove" type="button" title="Remove Item" aria-label="Remove item">✕</button>
       `;
-      li.querySelector('.schedule-item__remove').addEventListener('click', () => {
-        toggleScheduleItem(item);
+
+      el.querySelector('[data-action="dec"]').addEventListener('click', () => updateItemQuantity(item.id, -1));
+      el.querySelector('[data-action="inc"]').addEventListener('click', () => updateItemQuantity(item.id, 1));
+      el.querySelector('.schedule-item__remove').addEventListener('click', () => {
+        projectSchedule = projectSchedule.filter(i => i.id !== item.id);
+        localStorage.setItem('sip_project_schedule', JSON.stringify(projectSchedule));
+        updateScheduleUI();
         renderGrid();
       });
-      enquiryItemsList.appendChild(li);
+
+      scheduleItemsList.appendChild(el);
     });
   }
 
-  if (enquiryBar)         { enquiryBar.addEventListener('click', () => { if (enquiryDrawer) enquiryDrawer.classList.toggle('open'); }); }
-  if (enquiryDrawerClose) { enquiryDrawerClose.addEventListener('click', () => { if (enquiryDrawer) enquiryDrawer.classList.remove('open'); }); }
+  // Schedule Drawer Listeners
+  if (navScheduleBtn)         { navScheduleBtn.addEventListener('click', openScheduleDrawer); }
+  if (scheduleDrawerClose)    { scheduleDrawerClose.addEventListener('click', closeScheduleDrawer); }
+  if (scheduleDrawerBackdrop) { scheduleDrawerBackdrop.addEventListener('click', closeScheduleDrawer); }
 
-  if (enquiryForm) {
-    enquiryForm.addEventListener('submit', e => {
-      e.preventDefault();
-      const submitBtn = enquiryForm.querySelector('[type="submit"]');
-      if (!submitBtn) return;
-      submitBtn.innerHTML = 'PROCESSING RFQ <span class="arrow">→</span>';
-      submitBtn.disabled = true;
-      setTimeout(() => {
-        submitBtn.innerHTML = '✓ SCHEDULE SUBMITTED — WE\'LL BE IN TOUCH';
-        submitBtn.style.background = '#FFFFFF';
-        submitBtn.style.color = '#000000';
+  if (btnClearSchedule) {
+    btnClearSchedule.addEventListener('click', () => {
+      if (confirm('Are you sure you want to clear your entire equipment schedule?')) {
         projectSchedule = [];
         localStorage.removeItem('sip_project_schedule');
         updateScheduleUI();
         renderGrid();
-        setTimeout(() => {
-          if (enquiryDrawer) enquiryDrawer.classList.remove('open');
-          submitBtn.innerHTML = 'Complete Quotation Request <span class="arrow">→</span>';
-          submitBtn.style.background = '';
-          submitBtn.style.color = '';
-          submitBtn.disabled = false;
-        }, 3000);
-      }, 1200);
+      }
+    });
+  }
+
+  // Customer RFQ Modal Listeners
+  if (btnOpenCustomerModal)   { btnOpenCustomerModal.addEventListener('click', openCustomerModal); }
+  if (customerModalClose)     { customerModalClose.addEventListener('click', closeCustomerModal); }
+  if (customerModalBackdrop)  {
+    customerModalBackdrop.addEventListener('click', e => {
+      if (e.target === customerModalBackdrop) closeCustomerModal();
+    });
+  }
+
+  // Global ESC key listener to close active modals/drawers
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      if (customerModalBackdrop && customerModalBackdrop.classList.contains('active')) {
+        closeCustomerModal();
+      } else if (scheduleDrawer && scheduleDrawer.classList.contains('open')) {
+        closeScheduleDrawer();
+      }
+    }
+  });
+
+  // Customer Form Submission -> WhatsApp Dispatch with Customer Details FIRST
+  if (customerRfqForm) {
+    customerRfqForm.addEventListener('submit', e => {
+      e.preventDefault();
+
+      if (!projectSchedule || projectSchedule.length === 0) {
+        alert('Your equipment schedule is currently empty. Please add items to request a quote.');
+        return;
+      }
+
+      const clientName = (rfqClientName && rfqClientName.value.trim()) || 'Prospective Client';
+      const clientEmail = (rfqClientEmail && rfqClientEmail.value.trim()) || 'Not Provided';
+      const clientPhone = (rfqClientPhone && rfqClientPhone.value.trim()) || 'Not Provided';
+      const clientVenue = (rfqClientVenue && rfqClientVenue.value.trim()) || 'Not Specified';
+      const clientLocation = (rfqClientLocation && rfqClientLocation.value.trim()) || 'Not Specified';
+      const clientNotes = (rfqClientNotes && rfqClientNotes.value.trim()) || 'None';
+
+      const totalUnits = projectSchedule.reduce((sum, item) => sum + (Number(item.quantity) || 1), 0);
+
+      // Structure WhatsApp message starting with customer details
+      let msg = `*COMMERCIAL EQUIPMENT SCHEDULE & QUOTE REQUEST*\n`;
+      msg += `*Sip & Play Kitchen Systems (Pvt) Ltd*\n`;
+      msg += `────────────────────────────\n`;
+      msg += `👤 *CUSTOMER & PROJECT DETAILS:*\n`;
+      msg += `• *Full Name:* ${clientName}\n`;
+      msg += `• *Email / Gmail:* ${clientEmail}\n`;
+      msg += `• *Phone / WhatsApp:* ${clientPhone}\n`;
+      msg += `• *Venue / Establishment:* ${clientVenue}\n`;
+      msg += `• *Project Location:* ${clientLocation}\n`;
+      if (clientNotes && clientNotes !== 'None') {
+        msg += `• *Client Notes:* ${clientNotes}\n`;
+      }
+      msg += `────────────────────────────\n`;
+      msg += `📋 *SCHEDULED EQUIPMENT (${totalUnits} total unit${totalUnits > 1 ? 's' : ''} / ${projectSchedule.length} model${projectSchedule.length > 1 ? 's' : ''}):*\n\n`;
+
+      projectSchedule.forEach((item, index) => {
+        const qty = Number(item.quantity) || 1;
+        const name = (item.displayName || item.name || '').trim() || `SKU ${item.sku}`;
+        msg += `${index + 1}. *${name}*\n`;
+        msg += `   • *Quantity:* ${qty} unit${qty > 1 ? 's' : ''}\n`;
+        if (item.sku) msg += `   • *Model / SKU:* ${item.sku}\n`;
+        if (item.brand) msg += `   • *Brand:* ${item.brand}\n`;
+        if (item.power) msg += `   • *Power / Spec:* ${item.power}\n`;
+        if (item.dimensions) msg += `   • *Dimensions:* ${item.dimensions}\n`;
+        msg += `\n`;
+      });
+
+      msg += `────────────────────────────\n`;
+      msg += `Please provide a formal commercial quotation including current availability, pricing, warranty terms, and delivery lead time.`;
+
+      const whatsappUrl = `https://wa.me/94702700500?text=${encodeURIComponent(msg)}`;
+
+      if (btnSubmitWhatsapp) {
+        btnSubmitWhatsapp.innerHTML = '✓ Redirecting to WhatsApp...';
+        btnSubmitWhatsapp.style.background = '#15803d';
+        btnSubmitWhatsapp.disabled = true;
+      }
+
+      window.open(whatsappUrl, '_blank');
+
+      setTimeout(() => {
+        if (btnSubmitWhatsapp) {
+          btnSubmitWhatsapp.innerHTML = `
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Send Quotation Request via WhatsApp
+          `;
+          btnSubmitWhatsapp.style.background = '';
+          btnSubmitWhatsapp.disabled = false;
+        }
+        closeCustomerModal();
+      }, 1500);
     });
   }
 
