@@ -627,9 +627,14 @@ img:hover,
 .overlap-composition:hover img,
 .overlap-primary:hover img,
 .overlap-secondary:hover img,
-.hero-cinematic:hover .hero-cinematic__img,
 a:hover img {
   filter: grayscale(0) contrast(1) !important;
+}
+
+/* Keep hero background image dark even when hovered */
+.hero-cinematic:hover .hero-cinematic__img,
+.hero-cinematic__img:hover {
+  filter: contrast(108%) brightness(58%) !important;
 }
 
 /* Background watermark image stays subtle */
