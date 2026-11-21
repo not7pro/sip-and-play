@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Dynamically set active state on navigation links (supports clean URLs and root paths)
   const locHref = window.location.href.split('#')[0].split('?')[0].replace(/\/+$/, '');
   const navLinks = document.querySelectorAll('.nav-link, .mob-nav__link');
-  
+
   navLinks.forEach(link => {
     const linkHref = (link.href || '').split('#')[0].split('?')[0].replace(/\/+$/, '');
     if (linkHref && linkHref === locHref) {
@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // LUXURY UPGRADES
-  
+
   // 1. Smooth Page Transitions (Delegated single event listener)
   window.addEventListener('pageshow', () => {
     document.body.classList.remove('fade-out');
@@ -291,20 +291,20 @@ document.addEventListener('DOMContentLoaded', () => {
   editorialHeadings.forEach(heading => {
     // Basic word split for demo purposes. In production, a proper line-splitter like GSAP SplitText is preferred.
     const text = heading.innerHTML;
-    if(!text.includes('<span class="split-word">')) {
-       // We only split if not already split
-       const words = text.split(/(<[^>]+>|\s+)/).filter(Boolean);
-       let newHTML = '';
-       let delay = 0;
-       words.forEach(word => {
-         if(word.startsWith('<') || word.trim() === '') {
-           newHTML += word;
-         } else {
-           newHTML += `<span class="split-line" style="display:inline-block;"><span class="split-word" style="transition-delay:${delay}s">${word}</span></span>`;
-           delay += 0.04; // stagger delay
-         }
-       });
-       heading.innerHTML = newHTML;
+    if (!text.includes('<span class="split-word">')) {
+      // We only split if not already split
+      const words = text.split(/(<[^>]+>|\s+)/).filter(Boolean);
+      let newHTML = '';
+      let delay = 0;
+      words.forEach(word => {
+        if (word.startsWith('<') || word.trim() === '') {
+          newHTML += word;
+        } else {
+          newHTML += `<span class="split-line" style="display:inline-block;"><span class="split-word" style="transition-delay:${delay}s">${word}</span></span>`;
+          delay += 0.04; // stagger delay
+        }
+      });
+      heading.innerHTML = newHTML;
     }
   });
 
@@ -340,8 +340,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 /* ==========================================
-   SIP & PLAY — AI CONCIERGE AUTO-INJECTOR
-   ========================================== */
+   SIP & PLAY — AI CONCIERGE AUTO-INJECTOR (DISABLED / COMMENTED OUT)
+   ==========================================
 (function initSipAndPlayChatbot() {
   function mountChatbot() {
     if (document.getElementById("snpChatRoot")) return;
@@ -534,7 +534,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       const saved = sessionStorage.getItem(STORAGE_KEY);
       if (saved) history = JSON.parse(saved);
-    } catch (e) {}
+    } catch (e) { }
 
     function appendMessage(text, sender, scroll = true) {
       const div = document.createElement("div");
@@ -589,7 +589,7 @@ document.addEventListener('DOMContentLoaded', () => {
         appendMessage(reply, "bot");
 
         history.push({ role: "model", parts: [{ text: reply }] });
-        try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify(history)); } catch (e) {}
+        try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify(history)); } catch (e) { }
       } catch (err) {
         typingEl.remove();
         appendMessage("Connection hiccup—please try again or visit our Contact page.", "bot");
@@ -625,3 +625,4 @@ document.addEventListener('DOMContentLoaded', () => {
     mountChatbot();
   }
 })();
+*/
