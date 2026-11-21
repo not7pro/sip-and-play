@@ -47,27 +47,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100);
   }
 
-  // 2. Scroll Progress Bar & Sticky Header (rAF-throttled to avoid layout thrashing)
+  // 2. Scroll Progress Bar & Sticky Header (rAF-throttled & cached geometry to avoid layout thrashing)
   const progressBar = document.getElementById('scrollProgress');
   const nav = document.getElementById('siteHeader');
 
   let isScrolling = false;
+  let isHeaderScrolled = false;
+  let cachedMaxScroll = 0;
+
+  const updateScrollHeight = () => {
+    cachedMaxScroll = Math.max(0, document.documentElement.scrollHeight - document.documentElement.clientHeight);
+  };
+
+  updateScrollHeight();
+  window.addEventListener('resize', updateScrollHeight, { passive: true });
+  window.addEventListener('load', updateScrollHeight, { passive: true });
+
   window.addEventListener('scroll', () => {
     if (!isScrolling) {
       window.requestAnimationFrame(() => {
-        const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+        const winScroll = window.scrollY || document.documentElement.scrollTop;
 
         if (progressBar) {
-          progressBar.style.width = scrolled + '%';
+          if (cachedMaxScroll <= 0) updateScrollHeight();
+          const ratio = cachedMaxScroll > 0 ? Math.min(1, Math.max(0, winScroll / cachedMaxScroll)) : 0;
+          progressBar.style.transform = `scaleX(${ratio})`;
         }
 
         if (nav) {
-          if (winScroll > 40) {
-            nav.classList.add('scrolled');
-          } else {
-            nav.classList.remove('scrolled');
+          const shouldBeScrolled = winScroll > 40;
+          if (shouldBeScrolled !== isHeaderScrolled) {
+            isHeaderScrolled = shouldBeScrolled;
+            nav.classList.toggle('scrolled', shouldBeScrolled);
           }
         }
         isScrolling = false;
@@ -217,50 +228,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // LUXURY UPGRADES
   
-  // 1. Smooth Page Transitions
+  // 1. Smooth Page Transitions (Delegated single event listener)
   window.addEventListener('pageshow', () => {
     document.body.classList.remove('fade-out');
   });
 
-  const links = document.querySelectorAll('a[href]');
-  links.forEach(link => {
-    link.addEventListener('click', function(e) {
-      const href = this.getAttribute('href');
-      // Only transition on internal navigation links, not anchors, protocols, or external URLs
-      if (
-        href &&
-        !href.startsWith('http://') &&
-        !href.startsWith('https://') &&
-        !href.startsWith('//') &&
-        !href.startsWith('#') &&
-        !href.startsWith('mailto:') &&
-        !href.startsWith('tel:') &&
-        !this.hasAttribute('target') &&
-        !this.hasAttribute('download')
-      ) {
-        e.preventDefault();
-        document.body.classList.add('fade-out');
-        setTimeout(() => {
-          window.location.href = href;
-        }, 350); // Wait for fade out
-      }
-    });
+  document.addEventListener('click', (e) => {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const link = e.target.closest('a[href]');
+    if (!link) return;
+    const href = link.getAttribute('href');
+    // Only transition on internal navigation links, not anchors, protocols, or external URLs
+    if (
+      href &&
+      !href.startsWith('http://') &&
+      !href.startsWith('https://') &&
+      !href.startsWith('//') &&
+      !href.startsWith('#') &&
+      !href.startsWith('mailto:') &&
+      !href.startsWith('tel:') &&
+      !link.hasAttribute('target') &&
+      !link.hasAttribute('download')
+    ) {
+      e.preventDefault();
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = href;
+      }, 280);
+    }
   });
 
 
 
-  // 3. Magnetic Navigation Links
+  // 3. Magnetic Navigation Links (Cached bounding rect on mouseenter + rAF)
   const magneticLinks = document.querySelectorAll('.nav-link');
   magneticLinks.forEach(link => {
-    link.addEventListener('mousemove', function(e) {
-      const position = link.getBoundingClientRect();
-      const x = e.clientX - position.left - position.width / 2;
-      const y = e.clientY - position.top - position.height / 2;
-      link.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
-    });
-    link.addEventListener('mouseout', function(e) {
-      link.style.transform = 'translate(0px, 0px)';
-    });
+    let rect = null;
+    let rafId = null;
+    link.addEventListener('mouseenter', () => {
+      rect = link.getBoundingClientRect();
+    }, { passive: true });
+    link.addEventListener('mousemove', (e) => {
+      if (!rect) rect = link.getBoundingClientRect();
+      const clientX = e.clientX;
+      const clientY = e.clientY;
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => {
+        const x = clientX - rect.left - rect.width / 2;
+        const y = clientY - rect.top - rect.height / 2;
+        link.style.transform = `translate3d(${(x * 0.15).toFixed(2)}px, ${(y * 0.15).toFixed(2)}px, 0)`;
+      });
+    }, { passive: true });
+    link.addEventListener('mouseleave', () => {
+      if (rafId) cancelAnimationFrame(rafId);
+      rect = null;
+      link.style.transform = 'translate3d(0px, 0px, 0)';
+    }, { passive: true });
   });
 
   // 4. Line-by-Line Text Reveals (SplitText alternative)

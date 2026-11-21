@@ -54,10 +54,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   const baseProducts   = Array.isArray(window.SIP_PRODUCTS) ? window.SIP_PRODUCTS : [];
   const customProducts = JSON.parse(localStorage.getItem('sip_custom_products') || '[]');
   const deletedIds     = JSON.parse(localStorage.getItem('sip_deleted_ids')     || '[]');
+  const deletedIdSet   = new Set(deletedIds);
 
   // Only products with valid names and genuine verified images are allowed on the live website
   let allProducts = baseProducts.filter(p => {
-    if (!p || deletedIds.includes(p.id)) return false;
+    if (!p || deletedIdSet.has(p.id)) return false;
     var name = (p.name || '').trim();
     if (!name) return false;
     if (p.imageVerified !== true) return false;
@@ -76,11 +77,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   });
 
-  // Ensure all active products have genuine images resolved and deduplicated
-  allProducts.forEach(p => { p.image = getProductImage(p); });
+  // Ensure all active products have genuine images resolved, deduplicated, and pre-indexed for O(1) search
   const seenCatalogSkus = new Set();
   const seenCatalogNameImgs = new Set();
+  const productById = new Map();
+
   allProducts = allProducts.filter(p => {
+    p.image = getProductImage(p);
     if (!p.image || !p.name || !p.name.trim()) return false;
     const rawSku = (p.sku || '').trim().toLowerCase().replace(/[^a-z0-9]/g, '');
     const normName = (p.name || '').trim().toLowerCase();
@@ -91,6 +94,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     seenCatalogNameImgs.add(nameImgKey);
     return true;
   });
+
+  function indexProducts(productsList) {
+    productById.clear();
+    productsList.forEach(p => {
+      p._haystack = [
+        p.name, p.sku, p.brand, p.category, p.subCategory,
+        p.origin, p.power, p.description, p.otherSpecifications
+      ].filter(Boolean).join(' ').toLowerCase();
+      productById.set(String(p.id), p);
+    });
+  }
+
+  indexProducts(allProducts);
 
   /* ----------------------------------------------------------
      OPTIONAL SUPABASE CLOUD SYNC (unchanged from original)
@@ -119,6 +135,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               featured:    Boolean(d.featured)
             }))
             .filter(p => Boolean(p.name && p.image));
+          indexProducts(allProducts);
         }
       } catch (err) {
         console.warn('[SIP] Supabase sync notice, using local cache:', err);
@@ -265,22 +282,29 @@ document.addEventListener('DOMContentLoaded', async () => {
       btn.className = `cat-pill ${id === currentCategory ? 'active' : ''}`;
       btn.dataset.category = id;
       btn.innerHTML = `${label} <span class="cat-pill__count">(${count})</span>`;
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.cat-pill').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        currentCategory = id;
-        currentPage = 1;
-        applyFilters();
-      });
       return btn;
     }
 
+    const frag = document.createDocumentFragment();
     // "All Equipment" pill first
-    catFiltersWrap.appendChild(makePill('all', 'All Equipment', allProducts.length));
+    frag.appendChild(makePill('all', 'All Equipment', allProducts.length));
 
     // One pill per real category (skip zero-count, already excluded by construction)
     sortedCategories.forEach(cat => {
-      catFiltersWrap.appendChild(makePill(cat, cat, categoryCounts[cat]));
+      frag.appendChild(makePill(cat, cat, categoryCounts[cat]));
+    });
+    catFiltersWrap.appendChild(frag);
+  }
+
+  if (catFiltersWrap) {
+    catFiltersWrap.addEventListener('click', (e) => {
+      const btn = e.target.closest('.cat-pill');
+      if (!btn) return;
+      catFiltersWrap.querySelectorAll('.cat-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentCategory = btn.dataset.category;
+      currentPage = 1;
+      applyFilters();
     });
   }
 
@@ -309,12 +333,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       }
 
-      // Text search
+      // Text search (uses pre-computed lowercase haystack for instant filtering)
       if (q) {
-        const haystack = [
-          p.name, p.sku, p.brand, p.category, p.subCategory,
-          p.origin, p.power, p.description, p.otherSpecifications
-        ].join(' ').toLowerCase();
+        const haystack = p._haystack || '';
         if (!haystack.includes(q)) return false;
       }
 
@@ -382,21 +403,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex   = Math.min(startIndex + itemsPerPage, filteredProducts.length);
     const pageItems  = filteredProducts.slice(startIndex, endIndex);
+    const scheduledIds = new Set(projectSchedule.map(item => item.id));
+    const fragment = document.createDocumentFragment();
 
-    pageItems.forEach(p => {
-      const isScheduled = projectSchedule.some(item => item.id === p.id);
+    pageItems.forEach((p, idx) => {
+      const isScheduled = scheduledIds.has(p.id);
       const card = document.createElement('article');
       card.className = 'cat-card';
-      const imgSrc = getProductImage(p);
+      card.dataset.id = p.id;
+      const imgSrc = p.image || getProductImage(p);
 
       // Derive clean display labels
       const brandDisplay = (p.brand || '').trim();
       const subCatDisplay = (p.subCategory || p.category || '').trim();
       const displayName = p.displayName || (p.name || '').trim() || `SKU ${p.sku}`;
+      // Eager load the first 3 above-the-fold cards for fast initial visual paint; lazy load the rest
+      const loadingAttr = idx < 3 ? 'eager' : 'lazy';
 
       card.innerHTML = `
-        <div class="cat-card__img-wrap" title="Click to view specifications">
-          <img class="cat-card__img" src="${imgSrc}" alt="${displayName}" loading="lazy" decoding="async" onerror="this.onerror=null; this.style.display='none';" />
+        <div class="cat-card__img-wrap" data-action="spec" title="Click to view specifications">
+          <img class="cat-card__img" src="${imgSrc}" alt="${displayName}" width="400" height="300" loading="${loadingAttr}" decoding="async" onerror="this.onerror=null; this.style.display='none';" />
           <span class="cat-card__sku">${p.sku}</span>
           ${p.confidence === 'low' ? '<span class="cat-card__tag cat-card__tag--review">REVIEW</span>' : ''}
           ${p.featured ? '<span class="cat-card__tag cat-card__tag--featured">FEATURED</span>' : ''}
@@ -407,7 +433,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               <span class="cat-card__brand">${brandDisplay}</span>
               ${subCatDisplay ? `<span class="cat-card__meta-dot">•</span><span class="cat-card__cat">${subCatDisplay}</span>` : ''}
             </div>
-            <h3 class="cat-card__title" title="${displayName}">${displayName}</h3>
+            <h3 class="cat-card__title" data-action="spec" title="${displayName}">${displayName}</h3>
 
             <div class="cat-card__specs">
               ${specRow('POWER', p.power)}
@@ -418,23 +444,38 @@ document.addEventListener('DOMContentLoaded', async () => {
           </div>
 
           <div class="cat-card__actions">
-            <button class="cat-card__btn-spec" data-id="${p.id}" type="button">Specs ↗</button>
-            <button class="cat-card__btn-add ${isScheduled ? 'added' : ''}" data-id="${p.id}" type="button">
+            <button class="cat-card__btn-spec" data-action="spec" data-id="${p.id}" type="button">Specs ↗</button>
+            <button class="cat-card__btn-add ${isScheduled ? 'added' : ''}" data-action="schedule" data-id="${p.id}" type="button">
               ${isScheduled ? '✓ Scheduled' : '+ Schedule'}
             </button>
           </div>
         </div>
       `;
 
-      card.querySelector('.cat-card__img-wrap').addEventListener('click', () => { openSpecModal(p); });
-      card.querySelector('.cat-card__title').addEventListener('click', () => { openSpecModal(p); });
-      card.querySelector('.cat-card__btn-spec').addEventListener('click', () => { openSpecModal(p); });
-      card.querySelector('.cat-card__btn-add').addEventListener('click', e => {
-        e.stopPropagation();
-        toggleScheduleItem(p, e.currentTarget);
-      });
+      fragment.appendChild(card);
+    });
 
-      catGrid.appendChild(card);
+    catGrid.appendChild(fragment);
+  }
+
+  // Single delegated event listener on catGrid instead of 96 per-render listeners
+  if (catGrid) {
+    catGrid.addEventListener('click', (e) => {
+      const actionEl = e.target.closest('[data-action]');
+      if (!actionEl) return;
+      const card = actionEl.closest('.cat-card');
+      if (!card) return;
+      const prodId = card.dataset.id;
+      const product = productById.get(String(prodId));
+      if (!product) return;
+
+      const action = actionEl.dataset.action;
+      if (action === 'spec') {
+        openSpecModal(product);
+      } else if (action === 'schedule') {
+        e.stopPropagation();
+        toggleScheduleItem(product, actionEl);
+      }
     });
   }
 
@@ -611,7 +652,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         toggleScheduleItem(product);
         const nowScheduled = projectSchedule.some(i => i.id === product.id);
         modalAddBtn.textContent = nowScheduled ? '✓ In Project Schedule' : '+ Add to Schedule';
-        renderGrid();
+        syncCardScheduleState(product.id);
       });
     }
 
@@ -667,6 +708,25 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
+  function syncCardScheduleState(productId) {
+    if (!catGrid) return;
+    if (productId !== undefined) {
+      const isScheduled = projectSchedule.some(i => String(i.id) === String(productId));
+      const btn = catGrid.querySelector(`.cat-card__btn-add[data-id="${CSS.escape(String(productId))}"]`);
+      if (btn) {
+        btn.classList.toggle('added', isScheduled);
+        btn.textContent = isScheduled ? '✓ Scheduled' : '+ Schedule';
+      }
+    } else {
+      const scheduledIds = new Set(projectSchedule.map(i => String(i.id)));
+      catGrid.querySelectorAll('.cat-card__btn-add').forEach(btn => {
+        const isScheduled = scheduledIds.has(String(btn.dataset.id));
+        btn.classList.toggle('added', isScheduled);
+        btn.textContent = isScheduled ? '✓ Scheduled' : '+ Schedule';
+      });
+    }
+  }
+
   function updateItemQuantity(productId, delta) {
     const item = projectSchedule.find(i => i.id === productId);
     if (!item) return;
@@ -676,7 +736,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     localStorage.setItem('sip_project_schedule', JSON.stringify(projectSchedule));
     updateScheduleUI();
-    renderGrid();
+    syncCardScheduleState(productId);
   }
 
   function toggleScheduleItem(product, btnElement) {
@@ -761,7 +821,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectSchedule = projectSchedule.filter(i => i.id !== item.id);
         localStorage.setItem('sip_project_schedule', JSON.stringify(projectSchedule));
         updateScheduleUI();
-        renderGrid();
+        syncCardScheduleState(item.id);
       });
 
       scheduleItemsList.appendChild(el);
@@ -779,7 +839,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectSchedule = [];
         localStorage.removeItem('sip_project_schedule');
         updateScheduleUI();
-        renderGrid();
+        syncCardScheduleState();
       }
     });
   }
