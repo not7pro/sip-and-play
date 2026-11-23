@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /portal/
+Disallow: /admin.html
+Disallow: /login.html
+Disallow: /audit_tool.html
+
+Sitemap: https://not7pro.github.io/sip-and-play/sitemap.xml

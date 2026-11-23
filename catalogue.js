@@ -362,7 +362,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   ---------------------------------------------------------- */
   function specRow(label, value) {
     if (!value || typeof value !== 'string' || value.trim() === '') return '';
-    const cleanVal = value.trim();
+    const cleanVal = value.trim()
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
     return `
       <div class="cat-card__spec-item">
         <span class="cat-card__spec-label">${label}</span>
@@ -406,24 +410,35 @@ document.addEventListener('DOMContentLoaded', async () => {
     const scheduledIds = new Set(projectSchedule.map(item => item.id));
     const fragment = document.createDocumentFragment();
 
+    // Escape HTML helper to prevent XSS in DOM attributes and text injection
+    function escHtml(str) {
+      return String(str == null ? '' : str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
     pageItems.forEach((p, idx) => {
       const isScheduled = scheduledIds.has(p.id);
       const card = document.createElement('article');
       card.className = 'cat-card';
       card.dataset.id = p.id;
-      const imgSrc = p.image || getProductImage(p);
+      const imgSrc = escHtml(p.image || getProductImage(p));
 
       // Derive clean display labels
-      const brandDisplay = (p.brand || '').trim();
-      const subCatDisplay = (p.subCategory || p.category || '').trim();
-      const displayName = p.displayName || (p.name || '').trim() || `SKU ${p.sku}`;
+      const brandDisplay = escHtml((p.brand || '').trim());
+      const subCatDisplay = escHtml((p.subCategory || p.category || '').trim());
+      const displayName = escHtml(p.displayName || (p.name || '').trim() || `SKU ${p.sku}`);
+      const safeSku = escHtml(p.sku);
       // Eager load the first 3 above-the-fold cards for fast initial visual paint; lazy load the rest
       const loadingAttr = idx < 3 ? 'eager' : 'lazy';
 
       card.innerHTML = `
         <div class="cat-card__img-wrap" data-action="spec" title="Click to view specifications">
           <img class="cat-card__img" src="${imgSrc}" alt="${displayName}" width="400" height="300" loading="${loadingAttr}" decoding="async" onerror="this.onerror=null; this.style.display='none';" />
-          <span class="cat-card__sku">${p.sku}</span>
+          <span class="cat-card__sku">${safeSku}</span>
           ${p.confidence === 'low' ? '<span class="cat-card__tag cat-card__tag--review">REVIEW</span>' : ''}
           ${p.featured ? '<span class="cat-card__tag cat-card__tag--featured">FEATURED</span>' : ''}
         </div>
@@ -444,8 +459,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           </div>
 
           <div class="cat-card__actions">
-            <button class="cat-card__btn-spec" data-action="spec" data-id="${p.id}" type="button">Specs ↗</button>
-            <button class="cat-card__btn-add ${isScheduled ? 'added' : ''}" data-action="schedule" data-id="${p.id}" type="button">
+            <button class="cat-card__btn-spec" data-action="spec" data-id="${escHtml(p.id)}" type="button">Specs ↗</button>
+            <button class="cat-card__btn-add ${isScheduled ? 'added' : ''}" data-action="schedule" data-id="${escHtml(p.id)}" type="button">
               ${isScheduled ? '✓ Scheduled' : '+ Schedule'}
             </button>
           </div>

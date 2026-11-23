@@ -334,7 +334,82 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }, observerOptions);
 
+    // Sections are already visible now; clean up observer
     legalSections.forEach(sec => sectionObserver.observe(sec));
+  }
+
+  // 7. Contact / Project Quotation Form Conversion & URL Pre-fill Handler
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const itemParam = (urlParams.get('item') || '').trim();
+    const brandParam = (urlParams.get('brand') || '').trim();
+    const scopeSelect = contactForm.querySelector('select[name="scope"]');
+    const detailsTextarea = contactForm.querySelector('textarea[name="details"]');
+
+    if (brandParam && scopeSelect) {
+      for (let i = 0; i < scopeSelect.options.length; i++) {
+        if (scopeSelect.options[i].value.includes('Authorized Brand') || scopeSelect.options[i].text.includes('Authorized Brand')) {
+          scopeSelect.selectedIndex = i;
+          break;
+        }
+      }
+      if (detailsTextarea && !detailsTextarea.value) {
+        detailsTextarea.value = `Inquiring about Authorized Brand Equipment: ${brandParam}\n`;
+      }
+    } else if (itemParam && scopeSelect) {
+      for (let i = 0; i < scopeSelect.options.length; i++) {
+        if (scopeSelect.options[i].value.includes('Equipment Sourcing') || scopeSelect.options[i].text.includes('Equipment Sourcing')) {
+          scopeSelect.selectedIndex = i;
+          break;
+        }
+      }
+      if (detailsTextarea && !detailsTextarea.value) {
+        detailsTextarea.value = `Requesting commercial quotation & specification sheet for unit: ${itemParam}\n`;
+      }
+    }
+
+    contactForm.addEventListener('submit', (e) => {
+      const action = contactForm.getAttribute('action') || '';
+      if (action.includes('placeholder') || action === '#' || action === '') {
+        e.preventDefault();
+        const name = (contactForm.querySelector('[name="name"]')?.value || '').trim();
+        const phone = (contactForm.querySelector('[name="phone"]')?.value || '').trim();
+        const email = (contactForm.querySelector('[name="email"]')?.value || '').trim();
+        const scope = (contactForm.querySelector('[name="scope"]')?.value || '').trim();
+        const details = (contactForm.querySelector('[name="details"]')?.value || '').trim();
+
+        let msg = `*PROJECT QUOTATION & CONSULTATION REQUEST*\n`;
+        msg += `*Sip & Play Commercial Culinary Engineering*\n`;
+        msg += `────────────────────────────\n`;
+        msg += `• *Client / Group:* ${name}\n`;
+        msg += `• *Phone:* ${phone}\n`;
+        msg += `• *Email:* ${email}\n`;
+        msg += `• *Project Scope:* ${scope}\n`;
+        if (details) {
+          msg += `• *Project Details:* ${details}\n`;
+        }
+        msg += `────────────────────────────\n`;
+        msg += `Please connect me with an engineering director regarding this project.`;
+
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const origText = submitBtn ? submitBtn.innerHTML : '';
+        if (submitBtn) {
+          submitBtn.innerHTML = '✓ Opening Official WhatsApp Desk...';
+          submitBtn.disabled = true;
+        }
+
+        const waUrl = `https://wa.me/94702700500?text=${encodeURIComponent(msg)}`;
+        window.open(waUrl, '_blank', 'noopener,noreferrer');
+
+        setTimeout(() => {
+          if (submitBtn) {
+            submitBtn.innerHTML = origText;
+            submitBtn.disabled = false;
+          }
+        }, 2200);
+      }
+    });
   }
 });
 

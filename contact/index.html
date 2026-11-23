@@ -7,6 +7,7 @@
   <meta name="description"
     content="Contact Sip & Play — Official Office: 11A/1 Rathnawali Road, Dehiwela. Phone: +94 702 700 500. Request a commercial kitchen quote or arrange a project consultation." />
   <title>Contact Us — Sip &amp; Play | Commercial Culinary Engineering</title>
+  <link rel="canonical" href="https://not7pro.github.io/sip-and-play/contact/" />
   <link rel="stylesheet" href="../style.css" />
   <style>
     .rfq-dark-card {
@@ -95,13 +96,15 @@
       "addressLocality": "Colombo",
       "addressCountry": "LK"
     },
-    "telephone": "+94112000000",
+    "telephone": "+94702700500",
+    "openingHours": "Mo-Sa 10:00-19:00",
     "url": "https://not7pro.github.io/sip-and-play/contact/"
   }
   </script>
 </head>
 
 <body class="theme-paper">
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
 
   <!-- Scroll Progress Indicator Line -->
   <div id="scrollProgress"></div>
@@ -111,7 +114,7 @@
     <div class="container header-inner">
       <a class="logo" href="../">Sip <span class="amp">&amp;</span> Play</a>
 
-      <nav class="nav-desktop">
+      <nav class="nav-desktop" aria-label="Primary Navigation">
         <a class="nav-link" href="../">Home</a>
         <a class="nav-link" href="../about/">About</a>
         <a class="nav-link" href="../services/">Services</a>
@@ -124,7 +127,7 @@
       <div class="header-actions">
         <a class="btn-premium btn-premium--primary" href="../contact/#quote">Request a Quote <span
             class="arrow-icon">→</span></a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobMenu">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -136,7 +139,7 @@
   <!-- MOBILE NAVIGATION OVERLAY -->
   <div class="mob-menu" id="mobMenu">
     <div class="mob-menu-inner container">
-      <nav class="mob-nav-links">
+      <nav class="mob-nav-links" aria-label="Mobile Navigation">
         <a class="mob-nav__link reveal-fade-up stagger-1" href="../">Home</a>
         <a class="mob-nav__link reveal-fade-up stagger-2" href="../about/">About</a>
         <a class="mob-nav__link reveal-fade-up stagger-3" href="../services/">Services</a>
@@ -149,12 +152,12 @@
         <a class="btn-premium btn-premium--primary" style="width: 100%; margin-bottom: 1rem;"
           href="../contact/#quote">Request a Quote <span class="arrow-icon">→</span></a>
         <a class="btn-premium btn-premium--secondary" style="width: 100%; border-color: #25D366; color: #25D366;"
-          href="https://wa.me/94770000000?text=Hi%20Sip%20%26%20Play,%20I'd%20like%20to%20request%20a%20commercial%20kitchen%20consultation."
-          target="_blank">Chat on WhatsApp</a>
+          href="https://wa.me/94702700500?text=Hi%20Sip%20%26%20Play,%20I'd%20like%20to%20request%20a%20commercial%20kitchen%20consultation."
+          target="_blank" rel="noopener">Chat on WhatsApp</a>
       </div>
     </div>
   </div>
-  <main>
+  <main id="mainContent">
 
     <!-- SECTION 01 — HERO & CONTACT HEADER -->
     <section class="section-pad theme-charcoal" style="padding-top:150px;">
@@ -186,7 +189,7 @@
                   11A/1 Rathnawali Road,<br>Dehiwela, Sri Lanka
                 </p>
                 <p style="font-size:0.85rem; ">
-                  Open Mon – Sat: 8:30 AM – 6:00 PM<br>Site visits by appointment.
+                  Open Mon – Sat: 10:00 AM – 7:00 PM<br>Site visits by appointment.
                 </p>
               </div>
 
@@ -194,11 +197,11 @@
                 <span class="arch-card__num">DIRECT COMMUNICATIONS</span>
                 <h3 class="arch-card__title">Phone <span class="amp">&amp;</span> Email</h3>
                 <div
-                  style="display:flex; flex-direction:column; gap:0.5rem; font-family:var(--font-mono); font-size:0.95rem; font-weight:600;  margin-bottom:var(--sp-4);">
+                  style="display:flex; flex-direction:column; gap:0.5rem; font-family:var(--font-sans); font-size:1.05rem; line-height:1.6; margin-bottom:var(--sp-4);">
                   <a href="tel:+94702700500">+94 702 700 500</a>
                   <a href="https://wa.me/94702700500" target="_blank">WhatsApp: +94 702 700 500</a>
                   <a href="https://www.sipandplay.co" target="_blank"
-                    style="font-size:0.85rem;  font-weight:400;">www.sipandplay.co</a>
+                    style="font-size:0.85rem; font-weight:400;">www.sipandplay.co</a>
                 </div>
               </div>
 
@@ -228,35 +231,35 @@
               <form id="contactForm" action="https://formspree.io/f/placeholder" method="POST"
                 style="display:flex; flex-direction:column; gap:var(--sp-4);">
                 <div>
-                  <label
+                  <label for="contactName"
                     style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color: var(--stone-light); display:block; margin-bottom:6px;">Your
                     Name / Hospitality Group <span style="color:var(--accent-brand);">*</span></label>
-                  <input type="text" name="name" required placeholder="e.g. John Perera / Ceylon Hospitality Group"
+                  <input type="text" id="contactName" name="name" required autocomplete="name" placeholder="e.g. John Perera / Ceylon Hospitality Group"
                     style="width:100%; padding:0.95rem 1rem; border:1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: var(--paper-ivory); font-family:var(--font-sans); font-size:0.92rem; border-radius: 2px;" />
                 </div>
 
                 <div class="grid-12" style="gap:var(--sp-4);">
                   <div class="col-6">
-                    <label
+                    <label for="contactPhone"
                       style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color: var(--stone-light); display:block; margin-bottom:6px;">Contact
                       Phone <span style="color:var(--accent-brand);">*</span></label>
-                    <input type="tel" name="phone" required pattern="[\+0-9\-\s]+" placeholder="+94 7X XXX XXXX"
+                    <input type="tel" id="contactPhone" name="phone" required autocomplete="tel" pattern="[\+0-9\-\s]+" placeholder="+94 7X XXX XXXX"
                       style="width:100%; padding:0.95rem 1rem; border:1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: var(--paper-ivory); font-family:var(--font-sans); font-size:0.92rem; border-radius: 2px;" />
                   </div>
                   <div class="col-6">
-                    <label
+                    <label for="contactEmail"
                       style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color: var(--stone-light); display:block; margin-bottom:6px;">Email
                       Address <span style="color:var(--accent-brand);">*</span></label>
-                    <input type="email" name="email" required placeholder="director@hospitality.com"
+                    <input type="email" id="contactEmail" name="email" required autocomplete="email" placeholder="director@hospitality.com"
                       style="width:100%; padding:0.95rem 1rem; border:1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: var(--paper-ivory); font-family:var(--font-sans); font-size:0.92rem; border-radius: 2px;" />
                   </div>
                 </div>
 
                 <div>
-                  <label
+                  <label for="contactScope"
                     style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color: var(--stone-light); display:block; margin-bottom:6px;">Project
                     Scope &amp; Service Required</label>
-                  <select name="scope"
+                  <select id="contactScope" name="scope"
                     style="width:100%; padding:0.95rem 1rem; border:1px solid rgba(255,255,255,0.18); background: #14171d; color: var(--paper-ivory); font-family:var(--font-sans); font-size:0.92rem; border-radius: 2px;">
                     <option style="background:#14171d; color:#ffffff;">Full Commercial Kitchen Turnkey Design &amp; Build</option>
                     <option style="background:#14171d; color:#ffffff;">Commercial Kitchen Layout Planning (2D/3D CAD)</option>
@@ -268,10 +271,10 @@
                 </div>
 
                 <div>
-                  <label
+                  <label for="contactDetails"
                     style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color: var(--stone-light); display:block; margin-bottom:6px;">Project
                     Details / Approximate Space Dimensions</label>
-                  <textarea name="details" rows="4"
+                  <textarea id="contactDetails" name="details" rows="4"
                     placeholder="Describe your venue, expected daily meals/covers, location, and key equipment requirements..."
                     style="width:100%; padding:0.95rem 1rem; border:1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: var(--paper-ivory); font-family:var(--font-sans); font-size:0.92rem; resize:vertical; border-radius: 2px;"></textarea>
                 </div>
@@ -327,10 +330,10 @@
         </div>
         <div class="footer-col">
           <h5 class="footer-title">Contact</h5>
-          <a href="tel:+94112000000">Phone: +94 11 200 0000</a>
+          <a href="tel:+94702700500">Phone: +94 702 700 500</a>
           <a
-            href="https://wa.me/94770000000?text=Hi%20Sip%20%26%20Play,%20I'd%20like%20to%20request%20a%20commercial%20kitchen%20consultation.">WhatsApp:
-            +94 77 000 0000</a>
+            href="https://wa.me/94702700500?text=Hi%20Sip%20%26%20Play,%20I'd%20like%20to%20request%20a%20commercial%20kitchen%20consultation.">WhatsApp:
+            +94 702 700 500</a>
           <a href="mailto:info@sipandplay.lk">Email: info@sipandplay.lk</a>
           <p>11A/1 Rathnawali Rd, Dehiwela</p>
           <div class="social-links">
