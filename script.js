@@ -369,15 +369,38 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
+    let lastContactSubmitTs = 0;
     contactForm.addEventListener('submit', (e) => {
       const action = contactForm.getAttribute('action') || '';
       if (action.includes('placeholder') || action === '#' || action === '') {
         e.preventDefault();
+        if (typeof contactForm.checkValidity === 'function' && !contactForm.checkValidity()) {
+          return;
+        }
         const name = (contactForm.querySelector('[name="name"]')?.value || '').trim();
         const phone = (contactForm.querySelector('[name="phone"]')?.value || '').trim();
         const email = (contactForm.querySelector('[name="email"]')?.value || '').trim();
         const scope = (contactForm.querySelector('[name="scope"]')?.value || '').trim();
         const details = (contactForm.querySelector('[name="details"]')?.value || '').trim();
+
+        // Prevent empty or invalid submissions from counting as leads
+        if (!name || !phone || !email) {
+          return;
+        }
+
+        // Track genuine validated lead submission (Zero PII transmitted)
+        const nowTs = Date.now();
+        if (nowTs - lastContactSubmitTs > 3000 && window.SipAnalytics) {
+          lastContactSubmitTs = nowTs;
+          window.SipAnalytics.track('generate_lead', {
+            page_type: 'contact',
+            content_category: scope || 'general_consultation',
+            equipment_name: itemParam || undefined,
+            brand_name: brandParam || undefined,
+            cta_location: 'contact_page_rfq_form',
+            contact_method: 'form_to_whatsapp'
+          });
+        }
 
         let msg = `*PROJECT QUOTATION & CONSULTATION REQUEST*\n`;
         msg += `*Sip & Play Commercial Culinary Engineering*\n`;
@@ -412,6 +435,569 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+/* ============================================================
+   SIP & PLAY — GOOGLE ANALYTICS 4 (G-6J443GNZ4J) & CONSENT ENGINE
+   Advanced B2B Inquiry, Catalogue, Brand & Blog Attribution
+   Strictly Non-PII • Google Consent Mode v2 • Zero Duplicates
+   ============================================================ */
+(function initSipAndPlayAnalytics() {
+  if (window.__SIP_ANALYTICS_INIT__) return;
+  window.__SIP_ANALYTICS_INIT__ = true;
+
+  const MEASUREMENT_ID = 'G-6J443GNZ4J';
+  const CONSENT_KEY = 'sip_analytics_consent';
+
+  // Exclude private administration / portal pages
+  const rawPath = window.location.pathname || '/';
+  if (rawPath.includes('/portal')) {
+    return;
+  }
+
+  // Detect development / localhost environment vs explicit debug mode (?ga_debug=1)
+  const isLocalEnv = /^(localhost|127\.0\.0\.1)$/.test(window.location.hostname) || window.location.protocol === 'file:';
+  if (/[?&]ga_debug=1/.test(window.location.search)) {
+    try { sessionStorage.setItem('sip_ga_debug', '1'); } catch (e) {}
+  }
+  const isDebugMode = (() => {
+    try { return sessionStorage.getItem('sip_ga_debug') === '1' || window.__SIP_GA_DEBUG__ === true; } catch (e) { return false; }
+  })();
+
+  function getConsentState() {
+    try {
+      return localStorage.getItem(CONSENT_KEY); // 'granted' | 'denied' | null
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function hasAnalyticsConsent() {
+    return getConsentState() === 'granted';
+  }
+
+  function clearAnalyticsCookies() {
+    const cookieNames = ['_ga', '_ga_' + MEASUREMENT_ID.replace('G-', ''), '_gid', '_gat'];
+    const hostParts = (window.location.hostname || '').split('.');
+    const domains = ['', window.location.hostname, '.' + window.location.hostname];
+    if (hostParts.length >= 2) {
+      domains.push('.' + hostParts.slice(-2).join('.'));
+    }
+    cookieNames.forEach((name) => {
+      domains.forEach((dom) => {
+        const domPart = dom ? `; domain=${dom}` : '';
+        document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/${domPart}`;
+      });
+    });
+  }
+
+  // Classify current page type and metadata without any PII
+  function getPageContext() {
+    const p = rawPath.toLowerCase();
+    let pageType = 'page';
+    let contentCategory = 'general';
+    let articleTitle = undefined;
+
+    if (p === '/' || p.endsWith('/sip-and-play/') || p.endsWith('/index.html') && !p.includes('/about') && !p.includes('/services') && !p.includes('/projects') && !p.includes('/equipment') && !p.includes('/brands') && !p.includes('/contact') && !p.includes('/terms') && !p.includes('/privacy') && !p.includes('/blog')) {
+      pageType = 'homepage';
+      contentCategory = 'commercial_kitchen_solutions';
+    } else if (p.includes('/blog/')) {
+      const afterBlog = p.split('/blog/')[1] || '';
+      const slug = afterBlog.replace(/index\.html$/, '').replace(/\/+$/, '');
+      if (!slug) {
+        pageType = 'blog_hub';
+        contentCategory = 'insights_index';
+      } else {
+        pageType = 'blog_article';
+        const bcSpans = document.querySelectorAll('.article-breadcrumb span');
+        const lastBc = bcSpans.length > 0 ? bcSpans[bcSpans.length - 1].textContent.trim() : '';
+        contentCategory = lastBc || 'engineering_guide';
+        const h1 = document.querySelector('h1');
+        articleTitle = h1 ? h1.textContent.replace(/\s+/g, ' ').trim().slice(0, 120) : slug;
+      }
+    } else if (p.includes('/equipment')) {
+      pageType = 'equipment_catalogue';
+      contentCategory = 'commercial_equipment';
+    } else if (p.includes('/brands')) {
+      pageType = 'authorized_brands';
+      contentCategory = 'beverage_and_printing_brands';
+    } else if (p.includes('/services')) {
+      pageType = 'services';
+      contentCategory = 'kitchen_design_and_engineering';
+    } else if (p.includes('/projects')) {
+      pageType = 'projects_portfolio';
+      contentCategory = 'hospitality_case_studies';
+    } else if (p.includes('/contact')) {
+      pageType = 'contact';
+      contentCategory = 'project_quotation_desk';
+    } else if (p.includes('/about')) {
+      pageType = 'about';
+      contentCategory = 'company_leadership';
+    } else if (p.includes('/terms') || p.includes('/privacy')) {
+      pageType = 'legal';
+      contentCategory = 'compliance_and_governance';
+    }
+
+    return { pageType, contentCategory, articleTitle };
+  }
+
+  // Strict PII redaction & parameter sanitizer
+  const FORBIDDEN_PARAM_KEYS = new Set([
+    'name', 'client_name', 'fullname', 'email', 'phone', 'telephone', 'tel',
+    'whatsapp', 'message', 'msg', 'details', 'notes', 'address', 'token', 'password', 'auth'
+  ]);
+
+  function redactPIIString(val) {
+    if (typeof val !== 'string') return val;
+    let cleaned = val.trim();
+    // Redact email addresses
+    cleaned = cleaned.replace(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g, '[redacted_email]');
+    // Redact phone sequences (7+ digits)
+    cleaned = cleaned.replace(/(?:\+?\d[\d\s\-().]{6,}\d)/g, '[redacted_phone]');
+    return cleaned.slice(0, 120);
+  }
+
+  function sanitizeParams(rawParams) {
+    const ctx = getPageContext();
+    const base = {
+      page_type: ctx.pageType,
+      content_category: ctx.contentCategory
+    };
+    if (ctx.articleTitle) {
+      base.article_title = redactPIIString(ctx.articleTitle);
+    }
+    const merged = Object.assign(base, rawParams || {});
+    const clean = {};
+
+    Object.keys(merged).forEach((key) => {
+      const lowerKey = key.toLowerCase();
+      if (FORBIDDEN_PARAM_KEYS.has(lowerKey)) return;
+      const v = merged[key];
+      if (v === undefined || v === null || v === '') return;
+      clean[key] = typeof v === 'string' ? redactPIIString(v) : v;
+    });
+
+    if (isDebugMode) {
+      clean.debug_mode = true;
+    }
+    clean.transport_type = 'beacon';
+    return clean;
+  }
+
+  // Deduplication cache for rapid identical events (e.g. double clicks within 600ms)
+  let lastEventKey = '';
+  let lastEventTime = 0;
+
+  function trackEvent(eventName, params) {
+    if (!eventName) return;
+    const cleanPayload = sanitizeParams(params);
+    const dedupeKey = `${eventName}:::${cleanPayload.cta_location || ''}:::${cleanPayload.equipment_name || ''}:::${cleanPayload.brand_name || ''}`;
+    const now = Date.now();
+    if (dedupeKey === lastEventKey && now - lastEventTime < 600) {
+      return;
+    }
+    lastEventKey = dedupeKey;
+    lastEventTime = now;
+
+    if (isDebugMode) {
+      console.info(`[SipAnalytics GA4] Event: ${eventName}`, cleanPayload);
+    }
+
+    if (!hasAnalyticsConsent()) {
+      return;
+    }
+
+    if (isLocalEnv && !isDebugMode) {
+      return;
+    }
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, cleanPayload);
+    }
+  }
+
+  // Initial page-specific custom context events (catalogue_view & blog_article_view)
+  let initialContextFired = false;
+  function fireInitialPageContextEvents() {
+    if (initialContextFired || !hasAnalyticsConsent()) return;
+    initialContextFired = true;
+
+    const ctx = getPageContext();
+    const urlParams = new URLSearchParams(window.location.search);
+
+    if (ctx.pageType === 'equipment_catalogue') {
+      const initCat = (urlParams.get('category') || 'all').trim();
+      const initBrand = (urlParams.get('brand') || 'all').trim();
+      trackEvent('catalogue_view', {
+        page_type: 'equipment_catalogue',
+        content_category: 'commercial_equipment',
+        equipment_category: initCat,
+        brand_name: initBrand
+      });
+    } else if (ctx.pageType === 'blog_article') {
+      trackEvent('blog_article_view', {
+        page_type: 'blog_article',
+        content_category: ctx.contentCategory,
+        article_title: ctx.articleTitle
+      });
+    }
+  }
+
+  function applyConsentDecision(decision) {
+    try {
+      localStorage.setItem(CONSENT_KEY, decision);
+    } catch (e) {}
+
+    if (decision === 'granted') {
+      window['ga-disable-' + MEASUREMENT_ID] = (isLocalEnv && !isDebugMode);
+      if (typeof window.gtag === 'function') {
+        window.gtag('consent', 'update', {
+          'analytics_storage': 'granted',
+          'ad_storage': 'denied',
+          'ad_user_data': 'denied',
+          'ad_personalization': 'denied'
+        });
+      }
+      fireInitialPageContextEvents();
+    } else {
+      if (typeof window.gtag === 'function') {
+        window.gtag('consent', 'update', {
+          'analytics_storage': 'denied',
+          'ad_storage': 'denied',
+          'ad_user_data': 'denied',
+          'ad_personalization': 'denied'
+        });
+      }
+      window['ga-disable-' + MEASUREMENT_ID] = true;
+      clearAnalyticsCookies();
+    }
+  }
+
+  // Expose Public API for catalogue.js and interactive components
+  window.SipAnalytics = {
+    track: trackEvent,
+    hasConsent: hasAnalyticsConsent,
+    getConsentState: getConsentState,
+    setConsent: applyConsentDecision,
+    getPageContext: getPageContext,
+    openConsentPreferences: function () {
+      const banner = document.getElementById('sipCookieBanner');
+      if (banner) {
+        banner.hidden = false;
+        const acceptBtn = banner.querySelector('.cookie-consent-btn--accept');
+        if (acceptBtn) acceptBtn.focus();
+      }
+    }
+  };
+
+  // Helper to determine where on the page a clicked link/button resides
+  function detectCtaLocation(el) {
+    if (!el) return 'page_body';
+    if (el.closest('#siteHeader, .site-header')) return 'header_nav';
+    if (el.closest('#mobMenu, .mob-menu')) return 'mobile_menu';
+    if (el.closest('.article-cta-box')) return 'article_cta_box';
+    if (el.closest('.legal-sidebar')) return 'sticky_sidebar';
+    if (el.closest('.blog-featured-card')) return 'blog_featured_card';
+    if (el.closest('.blog-card')) return 'blog_grid_card';
+    if (el.closest('#specModal, .spec-modal')) return 'equipment_spec_modal';
+    if (el.closest('#scheduleDrawer, .schedule-drawer')) return 'equipment_schedule_drawer';
+    if (el.closest('#customerModalBackdrop, .customer-modal')) return 'equipment_schedule_modal';
+    if (el.closest('#heroSection, .hero, .legal-header')) return 'hero_section';
+    if (el.closest('footer, .site-footer')) return 'footer';
+    if (el.closest('.legal-content, article')) return 'article_inline_prose';
+    return 'page_body';
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Mount Accessible Cookie Consent Banner & Footer "Cookie Preferences" Control
+    const privacyHref = (() => {
+      if (rawPath.includes('/blog/') && rawPath.split('/blog/')[1] && rawPath.split('/blog/')[1].replace(/index\.html$/, '').replace(/\/+$/, '') !== '') {
+        return '../../privacy/#section-9';
+      }
+      if (rawPath.includes('/about') || rawPath.includes('/services') || rawPath.includes('/projects') || rawPath.includes('/equipment') || rawPath.includes('/brands') || rawPath.includes('/contact') || rawPath.includes('/terms') || rawPath.includes('/privacy') || rawPath.includes('/blog')) {
+        return '../privacy/#section-9';
+      }
+      return 'privacy/#section-9';
+    })();
+
+    if (!document.getElementById('sipCookieBanner')) {
+      const banner = document.createElement('aside');
+      banner.id = 'sipCookieBanner';
+      banner.className = 'cookie-consent-banner';
+      banner.setAttribute('role', 'region');
+      banner.setAttribute('aria-label', 'Cookie and analytics privacy consent');
+      if (getConsentState() !== null) {
+        banner.hidden = true;
+      }
+      banner.innerHTML = `
+        <span class="cookie-consent-banner__tag">Privacy &amp; Telemetry Controls</span>
+        <p class="cookie-consent-banner__text">
+          We use essential functional storage and anonymized Google Analytics 4 telemetry to measure culinary guide readership and equipment inquiry performance. No personal data or third-party ad pixels are shared. Review our <a href="${privacyHref}">Cookie &amp; Privacy Policy</a>.
+        </p>
+        <div class="cookie-consent-banner__actions">
+          <button type="button" class="cookie-consent-btn cookie-consent-btn--accept" id="sipConsentAccept">Accept Analytics</button>
+          <button type="button" class="cookie-consent-btn cookie-consent-btn--decline" id="sipConsentDecline">Essential Only</button>
+        </div>
+      `;
+      document.body.appendChild(banner);
+
+      const acceptBtn = document.getElementById('sipConsentAccept');
+      const declineBtn = document.getElementById('sipConsentDecline');
+      if (acceptBtn) {
+        acceptBtn.addEventListener('click', () => {
+          banner.hidden = true;
+          applyConsentDecision('granted');
+        });
+      }
+      if (declineBtn) {
+        declineBtn.addEventListener('click', () => {
+          banner.hidden = true;
+          applyConsentDecision('denied');
+        });
+      }
+    }
+
+    // Add accessible "Cookie Preferences" withdrawal/review button into .footer-bottom p
+    const footerBottomP = document.querySelector('.footer-bottom p');
+    if (footerBottomP && !footerBottomP.querySelector('.footer-cookie-btn')) {
+      const sep = document.createTextNode(' • ');
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'footer-cookie-btn';
+      btn.textContent = 'Cookie Preferences';
+      btn.setAttribute('aria-label', 'Manage cookie and analytics consent preferences');
+      btn.addEventListener('click', () => {
+        window.SipAnalytics.openConsentPreferences();
+      });
+      footerBottomP.appendChild(sep);
+      footerBottomP.appendChild(btn);
+    }
+
+    // 2. Fire initial page-specific context events if consent is already granted
+    if (hasAnalyticsConsent()) {
+      fireInitialPageContextEvents();
+    }
+
+    // 3. Global Delegated Click Listener (Capture Phase so it runs before 280ms page transitions)
+    document.addEventListener('click', (e) => {
+      const target = e.target;
+      if (!target || typeof target.closest !== 'function') return;
+
+      // A. Print / Save PDF or Downloadable Catalogue Button -> catalogue_download
+      const printBtn = target.closest('.btn-legal-action[onclick*="print"], [data-analytics="catalogue_download"]');
+      if (printBtn) {
+        trackEvent('catalogue_download', {
+          cta_location: detectCtaLocation(printBtn),
+          link_type: 'pdf_export'
+        });
+        return;
+      }
+
+      // B. Schedule Drawer "Request Quote" button on /equipment/ -> quote_request_click
+      const scheduleQuoteBtn = target.closest('#btnOpenCustomerModal');
+      if (scheduleQuoteBtn) {
+        trackEvent('quote_request_click', {
+          page_type: 'equipment_catalogue',
+          content_category: 'equipment_schedule_drawer',
+          cta_location: 'equipment_schedule_drawer',
+          contact_method: 'schedule_modal_trigger',
+          link_type: 'internal_cta'
+        });
+        return;
+      }
+
+      const link = target.closest('a[href]');
+      if (!link) return;
+
+      const rawHref = (link.getAttribute('href') || '').trim();
+      if (!rawHref) return;
+      const lowerHref = rawHref.toLowerCase();
+      const ctaLoc = detectCtaLocation(link);
+      const ctx = getPageContext();
+
+      // C. Downloadable PDF / Catalogue file links -> catalogue_download
+      if (link.hasAttribute('download') || lowerHref.endsWith('.pdf')) {
+        trackEvent('catalogue_download', {
+          cta_location: ctaLoc,
+          link_type: 'file_download'
+        });
+        return;
+      }
+
+      // D. WhatsApp Contact Links -> whatsapp_click
+      if (lowerHref.includes('wa.me/') || lowerHref.includes('whatsapp.com/')) {
+        trackEvent('whatsapp_click', {
+          cta_location: ctaLoc,
+          contact_method: 'whatsapp',
+          link_type: 'outbound_contact'
+        });
+        return;
+      }
+
+      // E. Telephone Links -> phone_click
+      if (lowerHref.startsWith('tel:')) {
+        trackEvent('phone_click', {
+          cta_location: ctaLoc,
+          contact_method: 'phone',
+          link_type: 'telephone'
+        });
+        return;
+      }
+
+      // F. Email Contact Links -> email_click
+      if (lowerHref.startsWith('mailto:')) {
+        trackEvent('email_click', {
+          cta_location: ctaLoc,
+          contact_method: 'email',
+          link_type: 'email'
+        });
+        return;
+      }
+
+      // G. Brand Anchor / Filter Links -> brand_view
+      if (lowerHref === '#evebot' || lowerHref === '#innosong' || lowerHref === '#tz' || lowerHref === '#lehehe' || lowerHref.includes('?brand=')) {
+        let brandName = '';
+        if (lowerHref === '#evebot') brandName = 'EVEBOT';
+        else if (lowerHref === '#innosong') brandName = 'INNOSONG';
+        else if (lowerHref === '#tz') brandName = 'T&Z Galaxy';
+        else if (lowerHref === '#lehehe') brandName = 'LEHEHE';
+        else {
+          const match = rawHref.match(/[?&]brand=([^&#]+)/i);
+          if (match && match[1]) brandName = decodeURIComponent(match[1]);
+        }
+        if (brandName && !lowerHref.includes('#quote')) {
+          trackEvent('brand_view', {
+            brand_name: brandName,
+            cta_location: ctaLoc,
+            link_type: 'brand_navigation'
+          });
+        }
+      }
+
+      // H. Blog Article Commercial CTA Clicks -> blog_cta_click
+      if (ctx.pageType === 'blog_article' || ctx.pageType === 'blog_hub') {
+        let commercialLinkType = '';
+        if (lowerHref.includes('services/')) commercialLinkType = 'to_services';
+        else if (lowerHref.includes('equipment/')) commercialLinkType = 'to_equipment';
+        else if (lowerHref.includes('brands/')) commercialLinkType = 'to_brands';
+        else if (lowerHref.includes('projects/')) commercialLinkType = 'to_projects';
+        else if (lowerHref.includes('contact/')) commercialLinkType = 'to_contact_quote';
+
+        if (commercialLinkType && ctaLoc !== 'header_nav' && ctaLoc !== 'mobile_menu' && ctaLoc !== 'footer') {
+          trackEvent('blog_cta_click', {
+            cta_location: ctaLoc,
+            link_type: commercialLinkType
+          });
+        }
+      }
+
+      // I. Quotation Request CTAs -> quote_request_click
+      const linkText = (link.textContent || '').toLowerCase();
+      const isQuoteHref = lowerHref.includes('#quote') || (lowerHref.includes('contact') && (link.classList.contains('btn') || link.classList.contains('btn-premium') || link.classList.contains('arch-card__action')));
+      const isQuoteText = /quote|quotation|consult|walkthrough|site visit|proposal|tender|boq|schedule/.test(linkText);
+
+      if (isQuoteHref || (lowerHref.includes('contact') && isQuoteText)) {
+        let eqName = undefined;
+        let brName = undefined;
+        const itemMatch = rawHref.match(/[?&]item=([^&#]+)/i);
+        const brandMatch = rawHref.match(/[?&]brand=([^&#]+)/i);
+        if (itemMatch && itemMatch[1]) eqName = decodeURIComponent(itemMatch[1]);
+        if (brandMatch && brandMatch[1]) brName = decodeURIComponent(brandMatch[1]);
+
+        trackEvent('quote_request_click', {
+          equipment_name: eqName,
+          brand_name: brName,
+          cta_location: ctaLoc,
+          contact_method: 'online_quote_form',
+          link_type: 'quote_cta'
+        });
+      }
+    }, { capture: true });
+
+    // 4. Viewport Tracking for Brand Showcase Sections on /brands/ -> brand_view
+    const ctx = getPageContext();
+    if (ctx.pageType === 'authorized_brands' && 'IntersectionObserver' in window) {
+      const seenBrands = new Set();
+      const brandMap = {
+        'evebot': 'EVEBOT',
+        'innosong': 'INNOSONG',
+        'tz': 'T&Z Galaxy',
+        'lehehe': 'LEHEHE'
+      };
+      const brandObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            const bName = brandMap[id];
+            if (bName && !seenBrands.has(bName)) {
+              seenBrands.add(bName);
+              trackEvent('brand_view', {
+                page_type: 'authorized_brands',
+                content_category: 'brand_showcase_section',
+                brand_name: bName,
+                cta_location: 'brand_section_viewport'
+              });
+            }
+          }
+        });
+      }, { threshold: 0.35 });
+
+      Object.keys(brandMap).forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) brandObserver.observe(el);
+      });
+    }
+
+    // 5. Viewport & Click Tracking for Project Case Studies on /projects/ -> project_view
+    if (ctx.pageType === 'projects_portfolio' && 'IntersectionObserver' in window) {
+      const seenProjects = new Set();
+      const projectPanels = document.querySelectorAll('.arch-panel');
+      const projObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const titleEl = entry.target.querySelector('.arch-card__title, h3');
+            const projName = titleEl ? titleEl.textContent.trim() : '';
+            if (projName && !seenProjects.has(projName)) {
+              seenProjects.add(projName);
+              trackEvent('project_view', {
+                page_type: 'projects_portfolio',
+                content_category: 'case_study',
+                article_title: projName,
+                cta_location: 'project_case_study_card'
+              });
+            }
+          }
+        });
+      }, { threshold: 0.45 });
+
+      projectPanels.forEach((panel) => projObserver.observe(panel));
+    }
+
+    // 6. Internal Site Search Tracking on Blog Hub (#blogSearchInput) -> site_search
+    const blogSearchInput = document.getElementById('blogSearchInput');
+    if (blogSearchInput) {
+      let blogSearchTimer = null;
+      let lastBlogSearchTerm = '';
+      blogSearchInput.addEventListener('input', () => {
+        clearTimeout(blogSearchTimer);
+        blogSearchTimer = setTimeout(() => {
+          const term = (blogSearchInput.value || '').trim();
+          if (term.length >= 2 && term.toLowerCase() !== lastBlogSearchTerm) {
+            lastBlogSearchTerm = term.toLowerCase();
+            const visibleCards = Array.from(document.querySelectorAll('#blogArticlesGrid .blog-card, #blogGrid .blog-card')).filter(c => c.style.display !== 'none').length;
+            trackEvent('site_search', {
+              page_type: 'blog_hub',
+              content_category: 'insights_search',
+              cta_location: 'blog_search_input',
+              search_term: term,
+              results_count: visibleCards
+            });
+          }
+        }, 1000);
+      });
+    }
+  });
+})();
 
 
 /* ==========================================

@@ -674,6 +674,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     specModal.classList.add('active');
     specModal.classList.add('open');
     document.body.style.overflow = 'hidden';
+
+    // Track GA4 equipment_view event (Non-PII)
+    if (window.SipAnalytics) {
+      window.SipAnalytics.track('equipment_view', {
+        page_type: 'equipment_catalogue',
+        content_category: 'equipment_specification',
+        equipment_category: category || p.subCategory || 'commercial_equipment',
+        equipment_name: sku ? `${name} (${sku})` : name,
+        brand_name: brand || 'Commercial OEM',
+        cta_location: 'equipment_spec_modal'
+      });
+    }
   }
 
   function closeSpecModal() {
@@ -881,6 +893,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Customer Form Submission -> WhatsApp Dispatch with Customer Details FIRST
   if (customerRfqForm) {
+    let lastScheduleSubmitTs = 0;
     customerRfqForm.addEventListener('submit', e => {
       e.preventDefault();
 
@@ -889,14 +902,45 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
       }
 
-      const clientName = (rfqClientName && rfqClientName.value.trim()) || 'Prospective Client';
-      const clientEmail = (rfqClientEmail && rfqClientEmail.value.trim()) || 'Not Provided';
-      const clientPhone = (rfqClientPhone && rfqClientPhone.value.trim()) || 'Not Provided';
+      if (typeof customerRfqForm.checkValidity === 'function' && !customerRfqForm.checkValidity()) {
+        return;
+      }
+
+      const rawName = (rfqClientName && rfqClientName.value.trim()) || '';
+      const rawEmail = (rfqClientEmail && rfqClientEmail.value.trim()) || '';
+      const rawPhone = (rfqClientPhone && rfqClientPhone.value.trim()) || '';
+
+      // Prevent failed or empty submissions from counting as leads
+      if (!rawName || !rawEmail || !rawPhone) {
+        return;
+      }
+
+      const clientName = rawName;
+      const clientEmail = rawEmail;
+      const clientPhone = rawPhone;
       const clientVenue = (rfqClientVenue && rfqClientVenue.value.trim()) || 'Not Specified';
       const clientLocation = (rfqClientLocation && rfqClientLocation.value.trim()) || 'Not Specified';
       const clientNotes = (rfqClientNotes && rfqClientNotes.value.trim()) || 'None';
 
       const totalUnits = projectSchedule.reduce((sum, item) => sum + (Number(item.quantity) || 1), 0);
+
+      // Track GA4 generate_lead event (Strictly Non-PII: no client name, email, phone, or notes sent)
+      const nowTs = Date.now();
+      if (nowTs - lastScheduleSubmitTs > 3000 && window.SipAnalytics) {
+        lastScheduleSubmitTs = nowTs;
+        const primaryCat = (projectSchedule[0] && projectSchedule[0].category) || 'multi_category';
+        const primaryBrand = (projectSchedule[0] && projectSchedule[0].brand) || 'multi_brand';
+        window.SipAnalytics.track('generate_lead', {
+          page_type: 'equipment_catalogue',
+          content_category: 'equipment_schedule_rfq',
+          equipment_category: primaryCat,
+          brand_name: primaryBrand,
+          cta_location: 'equipment_schedule_modal',
+          contact_method: 'schedule_form_to_whatsapp',
+          scheduled_models_count: projectSchedule.length,
+          scheduled_units_count: totalUnits
+        });
+      }
 
       // Structure WhatsApp message starting with customer details
       let msg = `*COMMERCIAL EQUIPMENT SCHEDULE & QUOTE REQUEST*\n`;
@@ -960,6 +1004,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   ---------------------------------------------------------- */
   if (searchInput) {
     let timeout;
+    let analyticsSearchTimeout;
+    let lastTrackedSearch = '';
     searchInput.addEventListener('input', () => {
       clearTimeout(timeout);
       timeout = setTimeout(() => {
@@ -967,6 +1013,23 @@ document.addEventListener('DOMContentLoaded', async () => {
         currentPage = 1;
         applyFilters();
       }, 150);
+
+      clearTimeout(analyticsSearchTimeout);
+      analyticsSearchTimeout = setTimeout(() => {
+        const cleanQ = (searchInput.value || '').trim();
+        if (cleanQ.length >= 2 && cleanQ.toLowerCase() !== lastTrackedSearch && window.SipAnalytics) {
+          lastTrackedSearch = cleanQ.toLowerCase();
+          window.SipAnalytics.track('site_search', {
+            page_type: 'equipment_catalogue',
+            content_category: currentCategory || 'all',
+            equipment_category: currentCategory || 'all',
+            brand_name: currentBrand || 'all',
+            cta_location: 'catalogue_search_input',
+            search_term: cleanQ,
+            results_count: filteredProducts.length
+          });
+        }
+      }, 1000);
     });
 
     // Update placeholder to show actual count
@@ -981,6 +1044,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       currentBrand = brandSelect.value;
       currentPage  = 1;
       applyFilters();
+      if (currentBrand && currentBrand !== 'all' && window.SipAnalytics) {
+        window.SipAnalytics.track('brand_view', {
+          page_type: 'equipment_catalogue',
+          content_category: 'catalogue_brand_filter',
+          brand_name: currentBrand,
+          cta_location: 'catalogue_brand_dropdown'
+        });
+      }
     });
   }
 

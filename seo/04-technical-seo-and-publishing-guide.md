@@ -145,6 +145,7 @@ Inside `blog/<new-article-slug>/index.html`, update:
 - `<link rel="canonical" href="https://sipandplaylk.co/blog/<new-article-slug>/" />`
 - `og:title`, `og:description`, `og:url`, `og:image`, and Twitter card tags
 - The `BlogPosting` and `BreadcrumbList` JSON-LD block (`@id`, `headline`, `description`, `datePublished`, `dateModified`).
+- Keep the Google Analytics 4 (`G-6J443GNZ4J`) `<head>` snippet and `<script src="../../script.js" defer></script>` intact—the new article will automatically inherit `blog_article_view`, `blog_cta_click`, `whatsapp_click`, `quote_request_click`, `catalogue_download`, and Consent Mode v2 tracking with zero extra code!
 
 ### Step 3: Write Sections Using the Built-In Scrollspy Layout
 Each article automatically inherits the sticky Table of Contents and live scrollspy from `script.js` by pairing `.legal-toc-link` anchors with `.legal-section` IDs:

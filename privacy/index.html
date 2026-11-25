@@ -61,6 +61,38 @@
     ]
   }
   </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    (function(){
+      var c = null;
+      try { c = localStorage.getItem('sip_analytics_consent'); } catch(e) {}
+      var isDev = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
+      var isDebug = /[?&]ga_debug=1/.test(location.search);
+      if ((isDev && !isDebug) || c === 'denied') {
+        window['ga-disable-G-6J443GNZ4J'] = true;
+      }
+      if (location.search && /(?:[?&])(name|email|phone|tel|whatsapp|msg|message|token|password)=/i.test(location.search)) {
+        try {
+          var u = new URL(location.href);
+          ['name','email','phone','tel','whatsapp','msg','message','token','password'].forEach(function(k){ u.searchParams.delete(k); });
+          history.replaceState(null, '', u.pathname + u.search + u.hash);
+        } catch(e) {}
+      }
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': c === 'granted' ? 'granted' : 'denied',
+        'wait_for_update': 500
+      });
+    })();
+    gtag('js', new Date());
+    gtag('config', 'G-6J443GNZ4J');
+  </script>
 </head>
 <body class="theme-paper">
   <a href="#mainContent" class="skip-link">Skip to main content</a>
@@ -386,12 +418,12 @@
               <h2 class="legal-section-title">Cookie Policy &amp; Tracking Technologies</h2>
               <div class="legal-prose">
                 <p>
-                  Our digital platforms use minimal, privacy-respecting cookies and local storage tokens:
+                  Our digital platforms use minimal, privacy-respecting cookies, local storage tokens, and consent-gated analytics:
                 </p>
                 <ul>
-                  <li><strong>Essential Functional Cookies:</strong> Necessary to store your preferred visual theme (e.g. Light/Dark mode state) and maintain active Client Portal login sessions.</li>
-                  <li><strong>Performance Telemetry:</strong> Aggregated, anonymized page view statistics used solely to optimize website load speeds and user experience.</li>
-                  <li><strong>No Third-Party Advertising Trackers:</strong> We do not deploy cross-site behavioral tracking cookies or third-party marketing pixels on our consultation platform.</li>
+                  <li><strong>Essential Functional Storage:</strong> Necessary to store your equipment schedule selections (`sip_project_schedule`), your cookie consent choice (`sip_analytics_consent`), and active Client Portal sessions.</li>
+                  <li><strong>Consent-Gated Performance Telemetry (Google Analytics 4):</strong> When you explicitly click <em>"Accept Analytics"</em> on our consent banner, we use Google Analytics 4 (`G-6J443GNZ4J`) with Google Consent Mode v2 to measure aggregated page popularity, culinary engineering guide readership, and non-personal inquiry actions. Analytics storage (`analytics_storage`) remains denied by default prior to your consent, and you may withdraw consent or clear `_ga` cookies at any time by clicking <strong>"Cookie Preferences"</strong> in the website footer.</li>
+                  <li><strong>Strict Zero-PII &amp; No Advertising Pixels:</strong> We never transmit customer names, email addresses, telephone numbers, or inquiry message contents to Google Analytics, and all advertising/remarketing storage (`ad_storage`, `ad_user_data`, `ad_personalization`) is permanently disabled.</li>
                 </ul>
               </div>
             </section>
