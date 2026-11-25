@@ -63,14 +63,14 @@
   <!-- Google tag (gtag.js) — Basic Consent Mode (G-6J443GNZ4J) -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('consent', 'default', {
       'ad_storage': 'denied',
       'ad_user_data': 'denied',
       'ad_personalization': 'denied',
       'analytics_storage': 'denied'
     });
-    window.__loadSipGA4 = function() {
+    window.__loadSipGA4 = function () {
       if (window.__sipGA4Loaded) return;
       var isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
       var isDebug = /[?&]ga_debug=1/.test(location.search);
@@ -91,14 +91,14 @@
       try {
         var u = new URL(location.href);
         var kept = [];
-        ['category', 'brand', 'item'].forEach(function(k) {
+        ['category', 'brand', 'item'].forEach(function (k) {
           var v = u.searchParams.get(k);
           if (v && /^[A-Za-z0-9\-_ ]{1,45}$/.test(v) && !/\d{7,}/.test(v)) {
             kept.push(encodeURIComponent(k) + '=' + encodeURIComponent(v.trim()));
           }
         });
         if (kept.length) cleanUrl += '?' + kept.join('&');
-      } catch (e) {}
+      } catch (e) { }
       var cleanRef = document.referrer ? document.referrer.split('?')[0] : '';
       gtag('js', new Date());
       gtag('config', 'G-6J443GNZ4J', {
@@ -113,7 +113,7 @@
       if (localStorage.getItem('sip_analytics_consent') === 'granted') {
         window.__loadSipGA4();
       }
-    } catch (e) {}
+    } catch (e) { }
   </script>
 </head>
 
@@ -329,11 +329,15 @@
                     </div>
                   </div>
 
-                  <p class="arch-card__desc" style="font-size:1.05rem; line-height:1.7;">
+                  <p class="arch-card__desc" style="font-size:1.05rem; line-height:1.7; margin-bottom:1rem;">
                     Sip &amp; Play is currently engineering and building one of Sri Lanka's largest commercial mega
-                    kitchens in Colombo. A landmark culinary engineering project featuring custom multi-station cooking
+                    kitchens in Colombo (status: <strong>Under Build</strong>). A landmark culinary engineering project featuring custom multi-station cooking
                     suites, automated walk-in refrigeration lines, and heavy-duty ventilation manifolds.
                   </p>
+                  <ul style="font-size:0.88rem; line-height:1.6; padding-left:1.1rem; margin-bottom:1.25rem; opacity:0.9;">
+                    <li><strong>Requirements &amp; Challenge:</strong> Coordinate 6,000 daily meal output across 33,000 sq ft while balancing high-BTU thermal extraction and bulk cold-chain turnover.</li>
+                    <li><strong>Engineering &amp; Equipment Scope:</strong> <a href="../commercial-kitchen-design/" style="text-decoration:underline;">2D/3D CAD &amp; MEP schematics</a>, parallel <a href="../commercial-cooking-equipment/" style="text-decoration:underline;">multi-station cooking suites</a>, <a href="../commercial-refrigeration/" style="text-decoration:underline;">walk-in cold rooms</a>, and <a href="../stainless-steel-kitchen-fabrication/" style="text-decoration:underline;">SUS304 exhaust manifolds</a>. See our <a href="../blog/high-volume-catering-industrial-kitchen-design/" style="text-decoration:underline;">Industrial Kitchen Design Guide</a>.</li>
+                  </ul>
                 </div>
 
                 <div
@@ -383,10 +387,14 @@
                     </div>
                   </div>
 
-                  <p class="arch-card__desc" style="font-size:1.05rem; line-height:1.7;">
-                    A gourmet kitchen in the heart of Colombo. Sip &amp; Play planned the kitchen layout and sourced the
-                    commercial kitchen equipment required to support the concept.
+                  <p class="arch-card__desc" style="font-size:1.05rem; line-height:1.7; margin-bottom:1rem;">
+                    A gourmet kitchen in the heart of Colombo (status: <strong>Launching</strong>). Sip &amp; Play planned the kitchen layout and sourced the
+                    commercial kitchen equipment required to support a 2,000-pax capacity operation across a 2,500 sq ft culinary footprint.
                   </p>
+                  <ul style="font-size:0.88rem; line-height:1.6; padding-left:1.1rem; margin-bottom:1.25rem; opacity:0.9;">
+                    <li><strong>Workflow &amp; Design Approach:</strong> Unidirectional HACCP zoning separating bulk preparation from fast-turn hot service passes and dish-return loops via <a href="../commercial-kitchen-design/" style="text-decoration:underline;">2D AutoCAD &amp; 3D spatial modeling</a>.</li>
+                    <li><strong>Equipment Selection:</strong> Direct factory procurement of <a href="../commercial-cooking-equipment/" style="text-decoration:underline;">commercial cooking lines</a>, point-of-use <a href="../commercial-refrigeration/" style="text-decoration:underline;">under-counter refrigeration</a>, and custom <a href="../stainless-steel-kitchen-fabrication/" style="text-decoration:underline;">AISI 304 prep stations</a>. Read our <a href="../blog/restaurant-kitchen-workflow-optimization-guide/" style="text-decoration:underline;">Workflow Optimization Analysis</a>.</li>
+                  </ul>
                 </div>
 
                 <div
@@ -436,10 +444,14 @@
                     </div>
                   </div>
 
-                  <p class="arch-card__desc" style="font-size:1.05rem; line-height:1.7;">
-                    A cloud kitchen in Dehiwela. Sip &amp; Play is expanding the commercial kitchen to support
+                  <p class="arch-card__desc" style="font-size:1.05rem; line-height:1.7; margin-bottom:1rem;">
+                    A cloud kitchen and central bakery hub in Dehiwela (status: <strong>Expanding</strong>). Sip &amp; Play is expanding the commercial kitchen across a 2,000 sq ft footprint to support
                     production of up to 10,000 donuts per day.
                   </p>
+                  <ul style="font-size:0.88rem; line-height:1.6; padding-left:1.1rem; margin-bottom:1.25rem; opacity:0.9;">
+                    <li><strong>Engineering Challenge &amp; Workflow:</strong> Configure a linear assembly line (mixing &rarr; sheeting &rarr; humidity proofing &rarr; thermal frying/baking &rarr; cooling &amp; glazing &rarr; rider dispatch) inside 2,000 sq ft without cross-traffic bottlenecks.</li>
+                    <li><strong>Equipment &amp; Installation Scope:</strong> <a href="../commercial-bakery-equipment/" style="text-decoration:underline;">High-capacity spiral mixers, proofers &amp; bakery lines</a>, <a href="../stainless-steel-kitchen-fabrication/" style="text-decoration:underline;">SUS304 finishing tables</a>, and Type-I exhaust extraction. Read our <a href="../blog/cloud-kitchen-bakery-production-facility-planning/" style="text-decoration:underline;">Cloud Kitchen &amp; Bakery Production Guide</a>.</li>
+                  </ul>
                 </div>
 
                 <div
@@ -564,19 +576,19 @@
         </div>
         <div class="footer-col">
           <h5 class="footer-title">Equipment</h5>
-          <a href="../equipment/?category=coffee">Coffee &amp; Espresso</a>
-          <a href="../equipment/?category=cooking">Cooking</a>
-          <a href="../equipment/?category=refrigeration">Refrigeration</a>
-          <a href="../equipment/?category=bakery">Bakery</a>
-          <a href="../equipment/?category=preparation">Preparation</a>
-          <a href="../equipment/">Catalogue</a>
+          <a href="../commercial-coffee-machines/">Coffee &amp; Espresso</a>
+          <a href="../commercial-cooking-equipment/">Cooking</a>
+          <a href="../commercial-refrigeration/">Refrigeration</a>
+          <a href="../commercial-bakery-equipment/">Bakery</a>
+          <a href="../stainless-steel-kitchen-fabrication/">Stainless Steel Fabrication</a>
+          <a href="../equipment/">Full Catalogue</a>
         </div>
         <div class="footer-col">
           <h5 class="footer-title">Services</h5>
-          <a href="../services/#design">Kitchen Design</a>
+          <a href="../commercial-kitchen-design/">Commercial Kitchen Design</a>
           <a href="../services/#workflow">Workflow Optimization</a>
           <a href="../services/#interiors">Restaurant Interiors</a>
-          <a href="../services/#espresso">Espresso Machines</a>
+          <a href="../commercial-coffee-machines/">Espresso Machines</a>
         </div>
         <div class="footer-col">
           <h5 class="footer-title">Contact</h5>
