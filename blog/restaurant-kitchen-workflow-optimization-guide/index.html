@@ -19,7 +19,8 @@
   <!-- Standard SEO Meta Tags -->
   <meta property="og:site_name" content="Sip &amp; Play" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="Restaurant Kitchen Workflow Optimization: Reducing Ticket Times &amp; Labor Friction" />
+  <meta property="og:title"
+    content="Restaurant Kitchen Workflow Optimization: Reducing Ticket Times &amp; Labor Friction" />
   <meta property="og:description"
     content="How chef-led ergonomics, zero-step cold storage, and unidirectional HACCP flow transform kitchen productivity." />
   <meta property="og:image" content="https://sipandplaylk.co/images/blueprint_flow_3d.jpg" />
@@ -77,36 +78,60 @@
   }
   </script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J"></script>
+  <!-- Google tag (gtag.js) — Basic Consent Mode (G-6J443GNZ4J) -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    (function(){
-      var c = null;
-      try { c = localStorage.getItem('sip_analytics_consent'); } catch(e) {}
-      var isDev = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+    window.__loadSipGA4 = function() {
+      if (window.__sipGA4Loaded) return;
+      var isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
       var isDebug = /[?&]ga_debug=1/.test(location.search);
-      if ((isDev && !isDebug) || c === 'denied') {
-        window['ga-disable-G-6J443GNZ4J'] = true;
-      }
-      if (location.search && /(?:[?&])(name|email|phone|tel|whatsapp|msg|message|token|password)=/i.test(location.search)) {
-        try {
-          var u = new URL(location.href);
-          ['name','email','phone','tel','whatsapp','msg','message','token','password'].forEach(function(k){ u.searchParams.delete(k); });
-          history.replaceState(null, '', u.pathname + u.search + u.hash);
-        } catch(e) {}
-      }
-      gtag('consent', 'default', {
+      if (isLocal && !isDebug) return;
+      window.__sipGA4Loaded = true;
+      window['ga-disable-G-6J443GNZ4J'] = false;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J';
+      document.head.appendChild(s);
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted',
         'ad_storage': 'denied',
         'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': c === 'granted' ? 'granted' : 'denied',
-        'wait_for_update': 500
+        'ad_personalization': 'denied'
       });
-    })();
-    gtag('js', new Date());
-    gtag('config', 'G-6J443GNZ4J');
+      var cleanUrl = location.origin + location.pathname;
+      try {
+        var u = new URL(location.href);
+        var kept = [];
+        ['category', 'brand', 'item'].forEach(function(k) {
+          var v = u.searchParams.get(k);
+          if (v && /^[A-Za-z0-9\-_ ]{1,45}$/.test(v) && !/\d{7,}/.test(v)) {
+            kept.push(encodeURIComponent(k) + '=' + encodeURIComponent(v.trim()));
+          }
+        });
+        if (kept.length) cleanUrl += '?' + kept.join('&');
+      } catch (e) {}
+      var cleanRef = document.referrer ? document.referrer.split('?')[0] : '';
+      gtag('js', new Date());
+      gtag('config', 'G-6J443GNZ4J', {
+        'anonymize_ip': true,
+        'allow_google_signals': false,
+        'allow_ad_personalization_signals': false,
+        'page_location': cleanUrl,
+        'page_referrer': cleanRef
+      });
+    };
+    try {
+      if (localStorage.getItem('sip_analytics_consent') === 'granted') {
+        window.__loadSipGA4();
+      }
+    } catch (e) {}
   </script>
 </head>
 
@@ -130,7 +155,8 @@
       <div class="header-actions">
         <a class="btn-premium btn-premium--primary" href="../../contact/#quote">Request a Quote <span
             class="arrow-icon">→</span></a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobMenu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="mobMenu">
           <span class="bar"></span><span class="bar"></span><span class="bar"></span>
         </button>
       </div>
@@ -224,7 +250,8 @@
                   Chef Footsteps</a>
                 <a href="#sec-2" class="legal-toc-link"><span class="legal-toc-num">02.</span> Zero-Step Cockpits on the
                   Hot Line</a>
-                <a href="#sec-3" class="legal-toc-link"><span class="legal-toc-num">03.</span> Decoupling the Dish Return
+                <a href="#sec-3" class="legal-toc-link"><span class="legal-toc-num">03.</span> Decoupling the Dish
+                  Return
                   Loop</a>
                 <a href="#sec-4" class="legal-toc-link"><span class="legal-toc-num">04.</span> Case Study: The Mustard
                   Gourmet</a>
@@ -262,7 +289,8 @@
                   gridlock, spilled sauces, delayed tickets, and high staff turnover.
                 </p>
                 <p>
-                  As part of our comprehensive <a href="../commercial-kitchen-design-complete-planning-guide/">Commercial
+                  As part of our comprehensive <a
+                    href="../commercial-kitchen-design-complete-planning-guide/">Commercial
                     Kitchen Design &amp; Planning framework</a>, Sip &amp; Play's <a
                     href="../../services/#workflow">Kitchen Workflow Optimization</a> service applies motion-economy
                   principles developed by CEO Isham Nayeem across 20+ years of international culinary operations.
@@ -287,7 +315,8 @@
                       href="../stainless-steel-commercial-kitchen-fabrication-guide/">SUS304 double overshelves</a>,
                     wall-mounted salamanders, and magnetic utensil rails keeps worktops clear for active plating.</li>
                   <li><strong>Ergonomic Aisle Clearances:</strong> Maintaining 1,200mm to 1,350mm between the hot
-                    cooking line and the chef's plating counter allows one chef to work at the range while another passes
+                    cooking line and the chef's plating counter allows one chef to work at the range while another
+                    passes
                     behind with hot pans safely.</li>
                 </ul>
               </div>
@@ -299,7 +328,8 @@
               <h2 class="legal-section-title">Decoupling the Dish Return Loop &amp; Beverage Station</h2>
               <div class="legal-prose">
                 <p>
-                  Two traffic collisions account for most front-of-house/back-of-house accidents: waiters carrying soiled
+                  Two traffic collisions account for most front-of-house/back-of-house accidents: waiters carrying
+                  soiled
                   plates colliding with runners carrying hot food, and servers walking into the hot cooking zone to
                   prepare coffee or cold drinks.
                 </p>
@@ -323,7 +353,8 @@
                       <tr>
                         <td><strong>Clean Plate Restocking</strong></td>
                         <td>Stewards carry heavy plate stacks through the cooking aisle</td>
-                        <td>Clean exit racks of the hood dishwasher open directly toward the back of the plating pass</td>
+                        <td>Clean exit racks of the hood dishwasher open directly toward the back of the plating pass
+                        </td>
                       </tr>
                       <tr>
                         <td><strong>Coffee, Tea &amp; Mocktails</strong></td>
@@ -340,7 +371,8 @@
             <!-- SECTION 04 -->
             <section id="sec-4" class="legal-section">
               <span class="legal-section-tag">Section 04</span>
-              <h2 class="legal-section-title">Case Application: High-Volume Flow at The Mustard Gourmet &amp; Oh Donuts</h2>
+              <h2 class="legal-section-title">Case Application: High-Volume Flow at The Mustard Gourmet &amp; Oh Donuts
+              </h2>
               <div class="legal-prose">
                 <p>
                   In our 2,500 sq ft project for <a href="../../projects/">The Mustard Gourmet in Central Colombo</a>

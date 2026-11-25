@@ -78,36 +78,7 @@
   </script>
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    (function(){
-      var c = null;
-      try { c = localStorage.getItem('sip_analytics_consent'); } catch(e) {}
-      var isDev = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
-      var isDebug = /[?&]ga_debug=1/.test(location.search);
-      if ((isDev && !isDebug) || c === 'denied') {
-        window['ga-disable-G-6J443GNZ4J'] = true;
-      }
-      if (location.search && /(?:[?&])(name|email|phone|tel|whatsapp|msg|message|token|password)=/i.test(location.search)) {
-        try {
-          var u = new URL(location.href);
-          ['name','email','phone','tel','whatsapp','msg','message','token','password'].forEach(function(k){ u.searchParams.delete(k); });
-          history.replaceState(null, '', u.pathname + u.search + u.hash);
-        } catch(e) {}
-      }
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': c === 'granted' ? 'granted' : 'denied',
-        'wait_for_update': 500
-      });
-    })();
-    gtag('js', new Date());
-    gtag('config', 'G-6J443GNZ4J');
-  </script>
+  <script src="../../analytics-init.js"></script>
 </head>
 
 <body class="theme-paper">
@@ -130,7 +101,8 @@
       <div class="header-actions">
         <a class="btn-premium btn-premium--primary" href="../../contact/#quote">Request a Quote <span
             class="arrow-icon">→</span></a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobMenu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="mobMenu">
           <span class="bar"></span><span class="bar"></span><span class="bar"></span>
         </button>
       </div>
@@ -253,7 +225,8 @@
               <h2 class="legal-section-title">Why You Must Size for Your Peak 15-Minute Rush, Not Daily Averages</h2>
               <div class="legal-prose">
                 <p>
-                  A restaurant or café selling 90 coffees across a 10-hour day averages only 9 cups per hour—which sounds
+                  A restaurant or café selling 90 coffees across a 10-hour day averages only 9 cups per hour—which
+                  sounds
                   effortless for any single-group machine. However, if 55 of those 90 cups are ordered between 8:15 AM
                   and 9:15 AM, or immediately after a 40-guest conference break, a single brew group and 1.0-liter steam
                   boiler will create a 20-minute ticket backlog.
@@ -327,7 +300,8 @@
             <!-- SECTION 03 -->
             <section id="sec-3" class="legal-section">
               <span class="legal-section-tag">Section 03</span>
-              <h2 class="legal-section-title">The Modular Hybrid Alternative: 1-Group Espresso + LEHEHE Under-Counter Steam</h2>
+              <h2 class="legal-section-title">The Modular Hybrid Alternative: 1-Group Espresso + LEHEHE Under-Counter
+                Steam</h2>
               <div class="legal-prose">
                 <p>
                   What if your counter width is limited to 550mm, yet your menu features high volumes of steamed-milk
@@ -365,7 +339,8 @@
                 <div class="article-faq-item">
                   <h4>Does the 1-Group INNOSONG ZS3105 use the same commercial rotary pump as the 2-Group ZS3202?</h4>
                   <p>
-                    Yes. Unlike domestic vibration-pump machines, the INNOSONG ZS3101, ZS3102, and ZS3105 utilize commercial
+                    Yes. Unlike domestic vibration-pump machines, the INNOSONG ZS3101, ZS3102, and ZS3105 utilize
+                    commercial
                     9-bar rotary vane pumps and 58mm saturated brew groups for true commercial extraction quality.
                   </p>
                 </div>
@@ -373,7 +348,8 @@
                   <h4>Can one barista operate a 2-group machine effectively?</h4>
                   <p>
                     Absolutely. A single skilled barista on a 2-group machine can pull four shots simultaneously across
-                    two double portafilters while steaming a large milk pitcher, doubling peak hourly output compared to a
+                    two double portafilters while steaming a large milk pitcher, doubling peak hourly output compared to
+                    a
                     single grouphead.
                   </p>
                 </div>

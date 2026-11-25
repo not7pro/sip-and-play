@@ -871,6 +871,52 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
+  // Genuine Equipment Schedule CSV File Download -> fires catalogue_download ONLY after actual file generation
+  const btnDownloadScheduleCsv = document.getElementById('btnDownloadScheduleCsv');
+  if (btnDownloadScheduleCsv) {
+    btnDownloadScheduleCsv.addEventListener('click', () => {
+      if (!projectSchedule || projectSchedule.length === 0) {
+        alert('Your equipment schedule is currently empty. Add items before downloading a specification schedule.');
+        return;
+      }
+      const csvEscape = (val) => `"${String(val == null ? '' : val).replace(/"/g, '""')}"`;
+      const headers = ['SKU', 'Product Name', 'Brand', 'Category', 'Power / Electrical', 'Dimensions', 'Quantity'];
+      const rows = projectSchedule.map(item => [
+        csvEscape(item.sku || ''),
+        csvEscape(item.displayName || item.name || ''),
+        csvEscape(item.brand || ''),
+        csvEscape(item.category || ''),
+        csvEscape(item.power || ''),
+        csvEscape(item.dimensions || ''),
+        csvEscape(Number(item.quantity) || 1)
+      ].join(','));
+      const csvContent = [headers.map(csvEscape).join(','), ...rows].join('\r\n');
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.setAttribute('download', 'sip-and-play-equipment-schedule.csv');
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+
+      const totalUnits = projectSchedule.reduce((sum, item) => sum + (Number(item.quantity) || 1), 0);
+      const primaryCat = (projectSchedule[0] && projectSchedule[0].category) || 'multi_category';
+      if (window.SipAnalytics) {
+        window.SipAnalytics.track('catalogue_download', {
+          page_type: 'equipment_catalogue',
+          content_category: 'equipment_schedule_csv',
+          equipment_category: primaryCat,
+          cta_location: 'equipment_schedule_drawer',
+          link_type: 'csv_schedule_download',
+          scheduled_models_count: projectSchedule.length,
+          scheduled_units_count: totalUnits
+        });
+      }
+    });
+  }
+
   // Customer RFQ Modal Listeners
   if (btnOpenCustomerModal)   { btnOpenCustomerModal.addEventListener('click', openCustomerModal); }
   if (customerModalClose)     { customerModalClose.addEventListener('click', closeCustomerModal); }
@@ -894,7 +940,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Customer Form Submission -> WhatsApp Dispatch with Customer Details FIRST
   if (customerRfqForm) {
     let lastScheduleSubmitTs = 0;
-    customerRfqForm.addEventListener('submit', e => {
+    customerRfqForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       if (!projectSchedule || projectSchedule.length === 0) {
@@ -910,7 +956,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const rawEmail = (rfqClientEmail && rfqClientEmail.value.trim()) || '';
       const rawPhone = (rfqClientPhone && rfqClientPhone.value.trim()) || '';
 
-      // Prevent failed or empty submissions from counting as leads
+      // Prevent failed or empty submissions from counting
       if (!rawName || !rawEmail || !rawPhone) {
         return;
       }
@@ -923,23 +969,54 @@ document.addEventListener('DOMContentLoaded', async () => {
       const clientNotes = (rfqClientNotes && rfqClientNotes.value.trim()) || 'None';
 
       const totalUnits = projectSchedule.reduce((sum, item) => sum + (Number(item.quantity) || 1), 0);
+      const primaryCat = (projectSchedule[0] && projectSchedule[0].category) || 'multi_category';
+      const primaryBrand = (projectSchedule[0] && projectSchedule[0].brand) || 'multi_brand';
 
-      // Track GA4 generate_lead event (Strictly Non-PII: no client name, email, phone, or notes sent)
+      // Check if an HTTP backend endpoint is configured on customerRfqForm for confirmed server lead capture
+      const endpoint = (customerRfqForm.getAttribute('data-endpoint') || customerRfqForm.getAttribute('action') || '').trim();
+      let backendConfirmed = false;
+      if (endpoint.startsWith('https://') && !endpoint.includes('placeholder')) {
+        try {
+          const resp = await fetch(endpoint, {
+            method: 'POST',
+            body: new FormData(customerRfqForm),
+            headers: { 'Accept': 'application/json' }
+          });
+          backendConfirmed = resp.ok;
+        } catch (err) {
+          backendConfirmed = false;
+        }
+      }
+
       const nowTs = Date.now();
       if (nowTs - lastScheduleSubmitTs > 3000 && window.SipAnalytics) {
         lastScheduleSubmitTs = nowTs;
-        const primaryCat = (projectSchedule[0] && projectSchedule[0].category) || 'multi_category';
-        const primaryBrand = (projectSchedule[0] && projectSchedule[0].brand) || 'multi_brand';
-        window.SipAnalytics.track('generate_lead', {
-          page_type: 'equipment_catalogue',
-          content_category: 'equipment_schedule_rfq',
-          equipment_category: primaryCat,
-          brand_name: primaryBrand,
-          cta_location: 'equipment_schedule_modal',
-          contact_method: 'schedule_form_to_whatsapp',
-          scheduled_models_count: projectSchedule.length,
-          scheduled_units_count: totalUnits
-        });
+        if (backendConfirmed) {
+          // Confirmed server-side lead response received -> fire generate_lead
+          window.SipAnalytics.track('generate_lead', {
+            page_type: 'equipment_catalogue',
+            content_category: 'equipment_schedule_rfq',
+            equipment_category: primaryCat,
+            brand_name: primaryBrand,
+            cta_location: 'equipment_schedule_modal',
+            contact_method: 'confirmed_schedule_post',
+            scheduled_models_count: projectSchedule.length,
+            scheduled_units_count: totalUnits
+          });
+        } else {
+          // WhatsApp redirect without a confirmed backend submission response -> track as inquiry intent
+          window.SipAnalytics.track('quote_request_click', {
+            page_type: 'equipment_catalogue',
+            content_category: 'equipment_schedule_rfq',
+            equipment_category: primaryCat,
+            brand_name: primaryBrand,
+            cta_location: 'equipment_schedule_modal',
+            contact_method: 'schedule_form_whatsapp_handoff',
+            link_type: 'inquiry_intent',
+            scheduled_models_count: projectSchedule.length,
+            scheduled_units_count: totalUnits
+          });
+        }
       }
 
       // Structure WhatsApp message starting with customer details
@@ -1019,13 +1096,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         const cleanQ = (searchInput.value || '').trim();
         if (cleanQ.length >= 2 && cleanQ.toLowerCase() !== lastTrackedSearch && window.SipAnalytics) {
           lastTrackedSearch = cleanQ.toLowerCase();
+          const matchedTopic = typeof window.SipAnalytics.classifySearchTopic === 'function'
+            ? window.SipAnalytics.classifySearchTopic(cleanQ)
+            : 'catalog_keyword_query';
           window.SipAnalytics.track('site_search', {
             page_type: 'equipment_catalogue',
-            content_category: currentCategory || 'all',
+            content_category: matchedTopic,
             equipment_category: currentCategory || 'all',
             brand_name: currentBrand || 'all',
             cta_location: 'catalogue_search_input',
-            search_term: cleanQ,
             results_count: filteredProducts.length
           });
         }

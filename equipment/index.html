@@ -62,36 +62,60 @@
   }
   </script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J"></script>
+  <!-- Google tag (gtag.js) — Basic Consent Mode (G-6J443GNZ4J) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    (function(){
-      var c = null;
-      try { c = localStorage.getItem('sip_analytics_consent'); } catch(e) {}
-      var isDev = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+    window.__loadSipGA4 = function() {
+      if (window.__sipGA4Loaded) return;
+      var isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
       var isDebug = /[?&]ga_debug=1/.test(location.search);
-      if ((isDev && !isDebug) || c === 'denied') {
-        window['ga-disable-G-6J443GNZ4J'] = true;
-      }
-      if (location.search && /(?:[?&])(name|email|phone|tel|whatsapp|msg|message|token|password)=/i.test(location.search)) {
-        try {
-          var u = new URL(location.href);
-          ['name','email','phone','tel','whatsapp','msg','message','token','password'].forEach(function(k){ u.searchParams.delete(k); });
-          history.replaceState(null, '', u.pathname + u.search + u.hash);
-        } catch(e) {}
-      }
-      gtag('consent', 'default', {
+      if (isLocal && !isDebug) return;
+      window.__sipGA4Loaded = true;
+      window['ga-disable-G-6J443GNZ4J'] = false;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J';
+      document.head.appendChild(s);
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted',
         'ad_storage': 'denied',
         'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': c === 'granted' ? 'granted' : 'denied',
-        'wait_for_update': 500
+        'ad_personalization': 'denied'
       });
-    })();
-    gtag('js', new Date());
-    gtag('config', 'G-6J443GNZ4J');
+      var cleanUrl = location.origin + location.pathname;
+      try {
+        var u = new URL(location.href);
+        var kept = [];
+        ['category', 'brand', 'item'].forEach(function(k) {
+          var v = u.searchParams.get(k);
+          if (v && /^[A-Za-z0-9\-_ ]{1,45}$/.test(v) && !/\d{7,}/.test(v)) {
+            kept.push(encodeURIComponent(k) + '=' + encodeURIComponent(v.trim()));
+          }
+        });
+        if (kept.length) cleanUrl += '?' + kept.join('&');
+      } catch (e) {}
+      var cleanRef = document.referrer ? document.referrer.split('?')[0] : '';
+      gtag('js', new Date());
+      gtag('config', 'G-6J443GNZ4J', {
+        'anonymize_ip': true,
+        'allow_google_signals': false,
+        'allow_ad_personalization_signals': false,
+        'page_location': cleanUrl,
+        'page_referrer': cleanRef
+      });
+    };
+    try {
+      if (localStorage.getItem('sip_analytics_consent') === 'granted') {
+        window.__loadSipGA4();
+      }
+    } catch (e) {}
   </script>
 </head>
 
@@ -323,6 +347,7 @@
         </svg>
         Request Quote
       </button>
+      <button class="btn-schedule-clear" id="btnDownloadScheduleCsv" data-catalogue-download="true" type="button" style="border-color:rgba(197, 160, 89, 0.45); color:var(--accent-brand);">Download Schedule (CSV)</button>
       <button class="btn-schedule-clear" id="btnClearSchedule" type="button">Clear Schedule</button>
     </div>
   </aside>

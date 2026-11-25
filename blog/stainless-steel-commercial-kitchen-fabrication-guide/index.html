@@ -78,36 +78,7 @@
   </script>
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    (function(){
-      var c = null;
-      try { c = localStorage.getItem('sip_analytics_consent'); } catch(e) {}
-      var isDev = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
-      var isDebug = /[?&]ga_debug=1/.test(location.search);
-      if ((isDev && !isDebug) || c === 'denied') {
-        window['ga-disable-G-6J443GNZ4J'] = true;
-      }
-      if (location.search && /(?:[?&])(name|email|phone|tel|whatsapp|msg|message|token|password)=/i.test(location.search)) {
-        try {
-          var u = new URL(location.href);
-          ['name','email','phone','tel','whatsapp','msg','message','token','password'].forEach(function(k){ u.searchParams.delete(k); });
-          history.replaceState(null, '', u.pathname + u.search + u.hash);
-        } catch(e) {}
-      }
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': c === 'granted' ? 'granted' : 'denied',
-        'wait_for_update': 500
-      });
-    })();
-    gtag('js', new Date());
-    gtag('config', 'G-6J443GNZ4J');
-  </script>
+  <script src="../../analytics-init.js"></script>
 </head>
 
 <body class="theme-paper">

@@ -19,7 +19,8 @@
   <!-- Standard SEO Meta Tags -->
   <meta property="og:site_name" content="Sip &amp; Play" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="Commercial Kitchen Design in Sri Lanka: The Complete Engineering &amp; Layout Guide" />
+  <meta property="og:title"
+    content="Commercial Kitchen Design in Sri Lanka: The Complete Engineering &amp; Layout Guide" />
   <meta property="og:description"
     content="A technical engineering handbook covering 2D AutoCAD spatial layouts, 3D BIM modeling, HACCP flow zoning, MEP rough-in coordination, and exhaust ventilation." />
   <meta property="og:image" content="https://sipandplaylk.co/images/blueprint_design_2d.jpg" />
@@ -77,36 +78,60 @@
   }
   </script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J"></script>
+  <!-- Google tag (gtag.js) — Basic Consent Mode (G-6J443GNZ4J) -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    (function(){
-      var c = null;
-      try { c = localStorage.getItem('sip_analytics_consent'); } catch(e) {}
-      var isDev = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+    window.__loadSipGA4 = function() {
+      if (window.__sipGA4Loaded) return;
+      var isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
       var isDebug = /[?&]ga_debug=1/.test(location.search);
-      if ((isDev && !isDebug) || c === 'denied') {
-        window['ga-disable-G-6J443GNZ4J'] = true;
-      }
-      if (location.search && /(?:[?&])(name|email|phone|tel|whatsapp|msg|message|token|password)=/i.test(location.search)) {
-        try {
-          var u = new URL(location.href);
-          ['name','email','phone','tel','whatsapp','msg','message','token','password'].forEach(function(k){ u.searchParams.delete(k); });
-          history.replaceState(null, '', u.pathname + u.search + u.hash);
-        } catch(e) {}
-      }
-      gtag('consent', 'default', {
+      if (isLocal && !isDebug) return;
+      window.__sipGA4Loaded = true;
+      window['ga-disable-G-6J443GNZ4J'] = false;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J';
+      document.head.appendChild(s);
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted',
         'ad_storage': 'denied',
         'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': c === 'granted' ? 'granted' : 'denied',
-        'wait_for_update': 500
+        'ad_personalization': 'denied'
       });
-    })();
-    gtag('js', new Date());
-    gtag('config', 'G-6J443GNZ4J');
+      var cleanUrl = location.origin + location.pathname;
+      try {
+        var u = new URL(location.href);
+        var kept = [];
+        ['category', 'brand', 'item'].forEach(function(k) {
+          var v = u.searchParams.get(k);
+          if (v && /^[A-Za-z0-9\-_ ]{1,45}$/.test(v) && !/\d{7,}/.test(v)) {
+            kept.push(encodeURIComponent(k) + '=' + encodeURIComponent(v.trim()));
+          }
+        });
+        if (kept.length) cleanUrl += '?' + kept.join('&');
+      } catch (e) {}
+      var cleanRef = document.referrer ? document.referrer.split('?')[0] : '';
+      gtag('js', new Date());
+      gtag('config', 'G-6J443GNZ4J', {
+        'anonymize_ip': true,
+        'allow_google_signals': false,
+        'allow_ad_personalization_signals': false,
+        'page_location': cleanUrl,
+        'page_referrer': cleanRef
+      });
+    };
+    try {
+      if (localStorage.getItem('sip_analytics_consent') === 'granted') {
+        window.__loadSipGA4();
+      }
+    } catch (e) {}
   </script>
 </head>
 
@@ -130,7 +155,8 @@
       <div class="header-actions">
         <a class="btn-premium btn-premium--primary" href="../../contact/#quote">Request a Quote <span
             class="arrow-icon">→</span></a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobMenu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="mobMenu">
           <span class="bar"></span><span class="bar"></span><span class="bar"></span>
         </button>
       </div>
@@ -267,12 +293,13 @@
                   One of the costliest mistakes hospitality investors in Sri Lanka make is purchasing cooking ranges,
                   walk-in chillers, or espresso machines before completing a comprehensive spatial and mechanical
                   engineering blueprint. When hardware arrives on site without coordinated floor drainage, 3-phase power
-                  distribution, LPG manifold pressure calculations, or exhaust canopy static-pressure balancing, projects
+                  distribution, LPG manifold pressure calculations, or exhaust canopy static-pressure balancing,
+                  projects
                   suffer severe civil rework delays and chronic operational bottlenecks.
                 </p>
                 <p>
                   At <strong>Sip &amp; Play</strong>, our methodology merges over 20 years of frontline chef experience
-                   across the Middle East, Maldives, and Sri Lanka with dedicated mechanical and equipment engineering.
+                  across the Middle East, Maldives, and Sri Lanka with dedicated mechanical and equipment engineering.
                   Whether designing a 2,000 sq ft high-output bakery production facility like our <a
                     href="../../projects/">Oh Donuts Facility in Dehiwela</a>, a 2,500 sq ft gourmet restaurant like <a
                     href="../../projects/">The Mustard Gourmet in Central Colombo</a>, or a 33,000 sq ft industrial
@@ -349,8 +376,10 @@
                   </li>
                   <li><strong>Cold, Dry &amp; Frozen Storage (20% &ndash; 25%):</strong> Walk-in chillers/freezers,
                     reach-in cabinets, and climate-controlled dry stores.</li>
-                  <li><strong>Mise en Place &amp; Food Preparation (20% &ndash; 24%):</strong> Segregated raw meat/seafood
-                    butchery tables, vegetable prep sinks, planetary/spiral dough mixers, and cold garde manger stations.
+                  <li><strong>Mise en Place &amp; Food Preparation (20% &ndash; 24%):</strong> Segregated raw
+                    meat/seafood
+                    butchery tables, vegetable prep sinks, planetary/spiral dough mixers, and cold garde manger
+                    stations.
                   </li>
                   <li><strong>Warewashing &amp; Pot Wash (12% &ndash; 15%):</strong> Soiled drop-off table, pre-rinse
                     spray sink, hood-type or conveyor dishwasher, clean drying racks, and 3-compartment pot sink.</li>
@@ -368,7 +397,8 @@
                 <p>
                   International food safety standards (HACCP) and municipal health regulations require a strict
                   <strong>forward-moving, unidirectional product flow</strong> so that raw deliveries and soiled plates
-                  never intersect with finished dishes leaving the pass. For a deep dive into motion ergonomics, read our
+                  never intersect with finished dishes leaving the pass. For a deep dive into motion ergonomics, read
+                  our
                   companion guide on <a href="../restaurant-kitchen-workflow-optimization-guide/">Restaurant Kitchen
                     Workflow Optimization</a>.
                 </p>
@@ -376,12 +406,14 @@
                   <li><strong>01. Receiving &amp; Decanting Zone:</strong> Positioned directly adjacent to the service
                     entrance. Equipped with heavy-duty platform scales, washdown hose reels, and decanting tables so
                     cardboard shipping cartons (which harbor pests) are stripped before ingredients enter storage.</li>
-                  <li><strong>02. Segregated Cold &amp; Dry Storage Zone:</strong> Immediate transfer from receiving into
+                  <li><strong>02. Segregated Cold &amp; Dry Storage Zone:</strong> Immediate transfer from receiving
+                    into
                     dry racking, produce chillers (+2&deg;C to +4&deg;C), dairy chillers, and protein freezers
                     (&minus;18&deg;C to &minus;22&deg;C). See our <a
                       href="../commercial-refrigeration-cold-storage-planning-guide/">Commercial Refrigeration &amp;
                       Cold Storage Planning Guide</a>.</li>
-                  <li><strong>03. Primary Preparation Zone:</strong> Physically separated stainless steel workbenches and
+                  <li><strong>03. Primary Preparation Zone:</strong> Physically separated stainless steel workbenches
+                    and
                     dedicated sinks for raw poultry/meat, raw seafood, and washed vegetables to prevent
                     cross-contamination.</li>
                   <li><strong>04. Thermal Cooking &amp; Baking Zone:</strong> High-BTU gas and high-kilowatt electric
@@ -390,12 +422,14 @@
                   <li><strong>05. Plating, Expedition &amp; Service Pass:</strong> The bridge between BOH chefs and FOH
                     runners, equipped with overhead infrared heat lamps, refrigerated garnish rails, and plate warmers.
                   </li>
-                  <li><strong>06. Beverage &amp; Espresso Architecture:</strong> Ideally located in the FOH or dry service
+                  <li><strong>06. Beverage &amp; Espresso Architecture:</strong> Ideally located in the FOH or dry
+                    service
                     corridor so servers and baristas can pull espresso shots, steam milk, and dispense tea without
                     entering the hot kitchen core. Explore our <a
                       href="../commercial-espresso-machine-buying-guide-sri-lanka/">Commercial Espresso Machine Buying
                       Guide</a>.</li>
-                  <li><strong>07. Return Dish Pit &amp; Waste Management:</strong> Soiled crockery enters via a dedicated
+                  <li><strong>07. Return Dish Pit &amp; Waste Management:</strong> Soiled crockery enters via a
+                    dedicated
                     drop-off window near the dining room entrance, moves through pre-rinse and high-temp sanitization,
                     and returns directly to the plating line. Read our <a
                       href="../commercial-dishwashing-warewashing-area-design/">Commercial Dishwashing &amp; Warewashing
@@ -455,7 +489,8 @@
                         <td><strong>5. Open / Theater Kitchen</strong></td>
                         <td>Interactive fine dining, specialty cafés, artisan bakeries</td>
                         <td>1,200mm + glass/counter buffer</td>
-                        <td>Showcases culinary craftsmanship; requires ultra-quiet exhaust &amp; flush under-counter gear</td>
+                        <td>Showcases culinary craftsmanship; requires ultra-quiet exhaust &amp; flush under-counter
+                          gear</td>
                       </tr>
                     </tbody>
                   </table>
@@ -466,7 +501,8 @@
             <!-- SECTION 05 -->
             <section id="sec-5" class="legal-section">
               <span class="legal-section-tag">Section 05</span>
-              <h2 class="legal-section-title">2D AutoCAD Blueprints, 3D BIM Visualization &amp; MEP Rough-In Coordination</h2>
+              <h2 class="legal-section-title">2D AutoCAD Blueprints, 3D BIM Visualization &amp; MEP Rough-In
+                Coordination</h2>
               <div class="legal-prose">
                 <p>
                   A professional kitchen design deliverable is far more than a furniture furniture plan. In accordance
@@ -477,15 +513,20 @@
                 <ul class="article-checklist">
                   <li><strong>01. Equipment Layout &amp; Schedule (2D AutoCAD):</strong> Exact millimeter-accurate
                     placement of every numbered equipment item, door swing clearance, and aisle dimension.</li>
-                  <li><strong>02. Electrical Load &amp; Point Plan:</strong> Specification of single-phase (220&ndash;230V,
+                  <li><strong>02. Electrical Load &amp; Point Plan:</strong> Specification of single-phase
+                    (220&ndash;230V,
                     50Hz) and three-phase (380&ndash;400V, 50Hz) rotary isolators, IP65 waterproof sockets, total kW
                     diversified load calculations, and voltage stabilizer requirements.</li>
                   <li><strong>03. Plumbing, Water Treatment &amp; Drainage Plan:</strong> Cold/hot potable water supply
-                    points (minimum 2.5 bar line pressure), multi-stage filtration manifolds for combi ovens and espresso
-                    machines, SUS304 floor drainage gullies with removable silt baskets, and under-sink or central grease
+                    points (minimum 2.5 bar line pressure), multi-stage filtration manifolds for combi ovens and
+                    espresso
+                    machines, SUS304 floor drainage gullies with removable silt baskets, and under-sink or central
+                    grease
                     interceptors.</li>
-                  <li><strong>04. LPG / Natural Gas Manifold Schematic:</strong> BTU/hr thermal demand schedule, gas pipe
-                    sizing, solenoid emergency shut-off valves interlocked with the hood fire suppression system, and gas
+                  <li><strong>04. LPG / Natural Gas Manifold Schematic:</strong> BTU/hr thermal demand schedule, gas
+                    pipe
+                    sizing, solenoid emergency shut-off valves interlocked with the hood fire suppression system, and
+                    gas
                     leak detection sensors.</li>
                   <li><strong>05. 3D Spatial Visualization &amp; Elevation Views:</strong> Photorealistic 3D models
                     allowing chefs and project owners to verify sightlines, shelf heights, and pass-through ergonomics
@@ -532,7 +573,8 @@
               <h2 class="legal-section-title">Sip &amp; Play's 8-Step Turnkey Execution Roadmap</h2>
               <div class="legal-prose">
                 <p>
-                  Every turnkey project executed by Sip &amp; Play follows our structured 8-phase engineering protocol to
+                  Every turnkey project executed by Sip &amp; Play follows our structured 8-phase engineering protocol
+                  to
                   eliminate cost overruns and commissioning delays:
                 </p>
                 <ol>
@@ -552,7 +594,8 @@
                     ductwork integration led by Engineer Ilham Nayeem.</li>
                   <li><strong>07. Live Load Testing &amp; Handover:</strong> Thermal calibration, gas pressure testing,
                     water hardness verification, and chef/barista operational training.</li>
-                  <li><strong>08. Warranty &amp; Lifecycle Support:</strong> Comprehensive 12-to-36-month warranty coverage
+                  <li><strong>08. Warranty &amp; Lifecycle Support:</strong> Comprehensive 12-to-36-month warranty
+                    coverage
                     and preventative maintenance SLAs.</li>
                 </ol>
 
@@ -581,7 +624,8 @@
                   <h4>How early in a construction project should a commercial kitchen designer be engaged?</h4>
                   <p>
                     Ideally before the architectural floor slab and underground drainage trenches are poured. Commercial
-                    kitchens require depressed floor slabs for flush walk-in cold room insulated floors, perimeter SUS304
+                    kitchens require depressed floor slabs for flush walk-in cold room insulated floors, perimeter
+                    SUS304
                     drainage channels, grease trap excavations, and vertical exhaust duct shafts that are expensive to
                     retrofit once concrete curing is complete.
                   </p>

@@ -19,7 +19,8 @@
   <!-- Standard SEO Meta Tags -->
   <meta property="og:site_name" content="Sip &amp; Play" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="Commercial Kitchen Equipment Buying Guide for Sri Lanka, Maldives &amp; Thailand" />
+  <meta property="og:title"
+    content="Commercial Kitchen Equipment Buying Guide for Sri Lanka, Maldives &amp; Thailand" />
   <meta property="og:description"
     content="How to specify, source, import, and commission commercial cooking, refrigeration, bakery, and stainless steel equipment." />
   <meta property="og:image" content="https://sipandplaylk.co/images/kitchen_1.jpg" />
@@ -77,36 +78,60 @@
   }
   </script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J"></script>
+  <!-- Google tag (gtag.js) — Basic Consent Mode (G-6J443GNZ4J) -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    (function(){
-      var c = null;
-      try { c = localStorage.getItem('sip_analytics_consent'); } catch(e) {}
-      var isDev = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+    window.__loadSipGA4 = function() {
+      if (window.__sipGA4Loaded) return;
+      var isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
       var isDebug = /[?&]ga_debug=1/.test(location.search);
-      if ((isDev && !isDebug) || c === 'denied') {
-        window['ga-disable-G-6J443GNZ4J'] = true;
-      }
-      if (location.search && /(?:[?&])(name|email|phone|tel|whatsapp|msg|message|token|password)=/i.test(location.search)) {
-        try {
-          var u = new URL(location.href);
-          ['name','email','phone','tel','whatsapp','msg','message','token','password'].forEach(function(k){ u.searchParams.delete(k); });
-          history.replaceState(null, '', u.pathname + u.search + u.hash);
-        } catch(e) {}
-      }
-      gtag('consent', 'default', {
+      if (isLocal && !isDebug) return;
+      window.__sipGA4Loaded = true;
+      window['ga-disable-G-6J443GNZ4J'] = false;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J';
+      document.head.appendChild(s);
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted',
         'ad_storage': 'denied',
         'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': c === 'granted' ? 'granted' : 'denied',
-        'wait_for_update': 500
+        'ad_personalization': 'denied'
       });
-    })();
-    gtag('js', new Date());
-    gtag('config', 'G-6J443GNZ4J');
+      var cleanUrl = location.origin + location.pathname;
+      try {
+        var u = new URL(location.href);
+        var kept = [];
+        ['category', 'brand', 'item'].forEach(function(k) {
+          var v = u.searchParams.get(k);
+          if (v && /^[A-Za-z0-9\-_ ]{1,45}$/.test(v) && !/\d{7,}/.test(v)) {
+            kept.push(encodeURIComponent(k) + '=' + encodeURIComponent(v.trim()));
+          }
+        });
+        if (kept.length) cleanUrl += '?' + kept.join('&');
+      } catch (e) {}
+      var cleanRef = document.referrer ? document.referrer.split('?')[0] : '';
+      gtag('js', new Date());
+      gtag('config', 'G-6J443GNZ4J', {
+        'anonymize_ip': true,
+        'allow_google_signals': false,
+        'allow_ad_personalization_signals': false,
+        'page_location': cleanUrl,
+        'page_referrer': cleanRef
+      });
+    };
+    try {
+      if (localStorage.getItem('sip_analytics_consent') === 'granted') {
+        window.__loadSipGA4();
+      }
+    } catch (e) {}
   </script>
 </head>
 
@@ -130,7 +155,8 @@
       <div class="header-actions">
         <a class="btn-premium btn-premium--primary" href="../../contact/#quote">Request a Quote <span
             class="arrow-icon">→</span></a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobMenu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="mobMenu">
           <span class="bar"></span><span class="bar"></span><span class="bar"></span>
         </button>
       </div>
@@ -261,7 +287,8 @@
               <div class="legal-prose">
                 <p>
                   When procuring commercial kitchen equipment in Sri Lanka, comparing quotations purely on sticker price
-                  is hazardous. A low-cost reach-in chiller built with thin insulation, non-tropicalized capillary tubes,
+                  is hazardous. A low-cost reach-in chiller built with thin insulation, non-tropicalized capillary
+                  tubes,
                   and ferritic stainless steel will consume 35% more electricity in a 38&deg;C Colombo kitchen and
                   suffer compressor burnout within 14 months. Similarly, importing uncertified grey-market machinery
                   without local spare parts inventory or engineering backing leaves a restaurant crippled when a heating
@@ -301,7 +328,8 @@
                     <tbody>
                       <tr>
                         <td><strong>1. Commercial Cooking</strong></td>
-                        <td>4/6-Burner gas ranges, high-BTU wok suites, combi ovens, deep fat fryers, tilting bratt pans,
+                        <td>4/6-Burner gas ranges, high-BTU wok suites, combi ovens, deep fat fryers, tilting bratt
+                          pans,
                           griddles, salamanders</td>
                         <td>Heavy-duty cast-iron grates, flame-failure thermocouples, rapid thermal recovery</td>
                         <td><a href="../../equipment/?category=cooking">Cooking Equipment →</a></td>
@@ -318,7 +346,8 @@
                         <td><strong>3. Bakery &amp; Pastry</strong></td>
                         <td>1/2/3-deck modular ovens, rotary rack ovens, convection ovens, spiral &amp; planetary dough
                           mixers, dough sheeters, proofer cabinets</td>
-                        <td>Dual-speed spiral kneading, independent top/bottom infrared deck heat control, steam injection</td>
+                        <td>Dual-speed spiral kneading, independent top/bottom infrared deck heat control, steam
+                          injection</td>
                         <td><a href="../../equipment/?category=bakery">Bakery Equipment →</a></td>
                       </tr>
                       <tr>
@@ -333,7 +362,8 @@
                         <td><strong>5. Coffee, Tea &amp; Beverage Systems</strong></td>
                         <td>INNOSONG &amp; T&amp;Z multi-boiler espresso machines, T&amp;Z VK-1/VK-2 under-counter tea
                           brewers, LEHEHE steam stations, EVEBOT food printers</td>
-                        <td>Multi-boiler PID thermal stability (&plusmn;1&deg;C), Italian 9-bar rotary vane pumps, copper/SS
+                        <td>Multi-boiler PID thermal stability (&plusmn;1&deg;C), Italian 9-bar rotary vane pumps,
+                          copper/SS
                           boilers</td>
                         <td><a href="../../equipment/?category=coffee">Coffee &amp; Beverage →</a></td>
                       </tr>
@@ -360,9 +390,11 @@
                   building transformer capacity, and fire safety regulations:
                 </p>
                 <ul class="article-checklist">
-                  <li><strong>Commercial LPG Gas (Open Burners, Woks, Deck Ovens, Fryers):</strong> Delivers instant visual
+                  <li><strong>Commercial LPG Gas (Open Burners, Woks, Deck Ovens, Fryers):</strong> Delivers instant
+                    visual
                     flame response and high BTU output independent of electrical grid load limits. Requires an external
-                    ventilated cylinder bank with automatic changeover regulators, high/low pressure stages, and solenoid
+                    ventilated cylinder bank with automatic changeover regulators, high/low pressure stages, and
+                    solenoid
                     gas interlocks connected to the exhaust hood.</li>
                   <li><strong>Three-Phase Electric (380&ndash;400V, 50Hz):</strong> Mandatory for combi steamer ovens,
                     high-capacity deck and rotary ovens, spiral dough mixers, hood/conveyor dishwashers, and high-output
@@ -389,12 +421,15 @@
                 </p>
                 <ol>
                   <li><strong>Stage 1 &mdash; 50% Design &amp; Procurement Deposit:</strong> Payable upon contract
-                    execution and 2D/3D CAD sign-off to initiate raw SUS304 material allocation and OEM factory production
+                    execution and 2D/3D CAD sign-off to initiate raw SUS304 material allocation and OEM factory
+                    production
                     slotting.</li>
-                  <li><strong>Stage 2 &mdash; 40% Factory Dispatch &amp; Bill of Lading:</strong> Payable upon completion
+                  <li><strong>Stage 2 &mdash; 40% Factory Dispatch &amp; Bill of Lading:</strong> Payable upon
+                    completion
                     of factory QA inspection, electrical/thermal burn-in testing, and issuance of the marine Bill of
                     Lading prior to vessel departure.</li>
-                  <li><strong>Stage 3 &mdash; 10% Handover &amp; Commissioning:</strong> Payable immediately upon physical
+                  <li><strong>Stage 3 &mdash; 10% Handover &amp; Commissioning:</strong> Payable immediately upon
+                    physical
                     delivery, mechanical positioning, utility hookup, and successful wet/thermal commissioning at your
                     site.</li>
                 </ol>
@@ -419,13 +454,15 @@
                 <ul class="article-checklist">
                   <li>Finished, level non-slip quarry tile or epoxy resin flooring capable of bearing heavy concentrated
                     equipment point loads.</li>
-                  <li>Dedicated single-phase (220&ndash;230V) and 3-phase (380&ndash;400V) electrical isolators terminated
+                  <li>Dedicated single-phase (220&ndash;230V) and 3-phase (380&ndash;400V) electrical isolators
+                    terminated
                     within <strong>1.0 meter</strong> of each designated equipment footprint.</li>
                   <li>Potable water supply lines delivering a minimum of <strong>2.5 bar</strong> dynamic pressure with
                     isolation ball valves within 1.0 meter of wet appliances.</li>
                   <li>Floor drainage gullies, grease traps, and tested LPG gas manifolds terminated within 1.0 meter of
                     appliance connection points.</li>
-                  <li>Unobstructed corridors, doorways, and freight elevator access from the unloading bay to the kitchen
+                  <li>Unobstructed corridors, doorways, and freight elevator access from the unloading bay to the
+                    kitchen
                     floor.</li>
                 </ul>
                 <p>
@@ -506,11 +543,13 @@
                   </p>
                 </div>
                 <div class="article-faq-item">
-                  <h4>Can Sip &amp; Play consolidate an entire hotel or restaurant equipment package into a single shipment?</h4>
+                  <h4>Can Sip &amp; Play consolidate an entire hotel or restaurant equipment package into a single
+                    shipment?</h4>
                   <p>
                     Yes. Through our direct factory supply chain infrastructure, we consolidate cooking suites,
                     refrigeration, bakery machinery, custom SUS304 stainless steel fabrication, and authorized beverage
-                    brands (EVEBOT, INNOSONG, T&amp;Z, LEHEHE) into coordinated container shipments for turnkey delivery.
+                    brands (EVEBOT, INNOSONG, T&amp;Z, LEHEHE) into coordinated container shipments for turnkey
+                    delivery.
                   </p>
                 </div>
               </div>

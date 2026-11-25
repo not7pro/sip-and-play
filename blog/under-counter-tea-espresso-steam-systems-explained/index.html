@@ -7,7 +7,8 @@
   <meta name="description"
     content="Technical guide to under-counter commercial tea brewers and continuous steam systems. Compare T&Z VK-1, VK-2, U8-DECK, and LEHEHE DZ23-2Y & DZ23-1Y specifications." />
   <meta name="robots" content="index, follow" />
-  <title>Under-Counter Commercial Tea, Espresso &amp; Steam Systems Explained (T&amp;Z &amp; LEHEHE) | Sip &amp; Play</title>
+  <title>Under-Counter Commercial Tea, Espresso &amp; Steam Systems Explained (T&amp;Z &amp; LEHEHE) | Sip &amp; Play
+  </title>
   <link rel="canonical" href="https://sipandplaylk.co/blog/under-counter-tea-espresso-steam-systems-explained/" />
   <link rel="stylesheet" href="../../style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -77,36 +78,60 @@
   }
   </script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J"></script>
+  <!-- Google tag (gtag.js) — Basic Consent Mode (G-6J443GNZ4J) -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    (function(){
-      var c = null;
-      try { c = localStorage.getItem('sip_analytics_consent'); } catch(e) {}
-      var isDev = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+    window.__loadSipGA4 = function() {
+      if (window.__sipGA4Loaded) return;
+      var isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
       var isDebug = /[?&]ga_debug=1/.test(location.search);
-      if ((isDev && !isDebug) || c === 'denied') {
-        window['ga-disable-G-6J443GNZ4J'] = true;
-      }
-      if (location.search && /(?:[?&])(name|email|phone|tel|whatsapp|msg|message|token|password)=/i.test(location.search)) {
-        try {
-          var u = new URL(location.href);
-          ['name','email','phone','tel','whatsapp','msg','message','token','password'].forEach(function(k){ u.searchParams.delete(k); });
-          history.replaceState(null, '', u.pathname + u.search + u.hash);
-        } catch(e) {}
-      }
-      gtag('consent', 'default', {
+      if (isLocal && !isDebug) return;
+      window.__sipGA4Loaded = true;
+      window['ga-disable-G-6J443GNZ4J'] = false;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J';
+      document.head.appendChild(s);
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted',
         'ad_storage': 'denied',
         'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': c === 'granted' ? 'granted' : 'denied',
-        'wait_for_update': 500
+        'ad_personalization': 'denied'
       });
-    })();
-    gtag('js', new Date());
-    gtag('config', 'G-6J443GNZ4J');
+      var cleanUrl = location.origin + location.pathname;
+      try {
+        var u = new URL(location.href);
+        var kept = [];
+        ['category', 'brand', 'item'].forEach(function(k) {
+          var v = u.searchParams.get(k);
+          if (v && /^[A-Za-z0-9\-_ ]{1,45}$/.test(v) && !/\d{7,}/.test(v)) {
+            kept.push(encodeURIComponent(k) + '=' + encodeURIComponent(v.trim()));
+          }
+        });
+        if (kept.length) cleanUrl += '?' + kept.join('&');
+      } catch (e) {}
+      var cleanRef = document.referrer ? document.referrer.split('?')[0] : '';
+      gtag('js', new Date());
+      gtag('config', 'G-6J443GNZ4J', {
+        'anonymize_ip': true,
+        'allow_google_signals': false,
+        'allow_ad_personalization_signals': false,
+        'page_location': cleanUrl,
+        'page_referrer': cleanRef
+      });
+    };
+    try {
+      if (localStorage.getItem('sip_analytics_consent') === 'granted') {
+        window.__loadSipGA4();
+      }
+    } catch (e) {}
   </script>
 </head>
 
@@ -130,7 +155,8 @@
       <div class="header-actions">
         <a class="btn-premium btn-premium--primary" href="../../contact/#quote">Request a Quote <span
             class="arrow-icon">→</span></a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobMenu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="mobMenu">
           <span class="bar"></span><span class="bar"></span><span class="bar"></span>
         </button>
       </div>
@@ -242,7 +268,8 @@
                 style="font-size:0.78rem; padding:0.45rem 0.9rem; text-align:center; display:block; margin-bottom:0.5rem;">View
                 T&amp;Z &amp; LEHEHE →</a>
               <a href="../../contact/#quote" class="btn-premium btn-premium--primary"
-                style="font-size:0.78rem; padding:0.45rem 0.9rem; text-align:center; display:block;">Request Pricing →</a>
+                style="font-size:0.78rem; padding:0.45rem 0.9rem; text-align:center; display:block;">Request Pricing
+                →</a>
             </div>
           </aside>
 
@@ -257,11 +284,13 @@
                 <p>
                   Traditional bulky tabletop boilers block customer sightlines, radiate heat into the barista's working
                   zone, and consume valuable counter real estate. By relocating the heavy copper and stainless steel
-                  boilers into an under-counter cabinet while leaving only sculpted chrome group towers and steam pillars
+                  boilers into an under-counter cabinet while leaving only sculpted chrome group towers and steam
+                  pillars
                   above the stone slab, cafés and hotel lounges achieve an open, theatrical bar aesthetic.
                 </p>
                 <p>
-                  As part of our <a href="../commercial-espresso-machine-buying-guide-sri-lanka/">Commercial Espresso &amp;
+                  As part of our <a href="../commercial-espresso-machine-buying-guide-sri-lanka/">Commercial Espresso
+                    &amp;
                     Beverage Systems ecosystem</a>, Sip &amp; Play is the authorized distributor for <a
                     href="../../brands/">T&amp;Z (Dazheng Coffee Group)</a> and <a href="../../brands/">LEHEHE</a>
                   under-counter platforms across Sri Lanka, the Maldives, and Thailand.
@@ -272,12 +301,14 @@
             <!-- SECTION 02 -->
             <section id="sec-2" class="legal-section">
               <span class="legal-section-tag">Section 02</span>
-              <h2 class="legal-section-title">T&amp;Z Galaxy VK-1 &amp; VK-2: 6-Stage Segmented Pulse Tea Extraction</h2>
+              <h2 class="legal-section-title">T&amp;Z Galaxy VK-1 &amp; VK-2: 6-Stage Segmented Pulse Tea Extraction
+              </h2>
               <div class="legal-prose">
                 <p>
                   In Sri Lanka—the home of Ceylon tea—and across high-volume bubble tea and specialty tea lounges in
                   Thailand, steeping tea manually in jugs results in oxidized, inconsistent batches. The
-                  <strong>T&amp;Z VK-1 (Single-Head)</strong> and <strong>T&amp;Z VK-2 (Dual-Head)</strong> revolutionize
+                  <strong>T&amp;Z VK-1 (Single-Head)</strong> and <strong>T&amp;Z VK-2 (Dual-Head)</strong>
+                  revolutionize
                   fresh-leaf tea extraction:
                 </p>
                 <ul class="article-checklist">
@@ -285,7 +316,8 @@
                     volume (with 1-gram precision), and steeping pause intervals across 6 extraction pulses via the
                     2.8-inch grouphead touchscreen to extract fresh loose-leaf tea in under 60 seconds.</li>
                   <li><strong>Multi-Boiler T3 Thermal Engine:</strong> The VK-1 pairs a 1.0L extraction boiler with a
-                    6.6L heat-exchange boiler (3500W), while the dual-head VK-2 features dual 1.0L independent extraction
+                    6.6L heat-exchange boiler (3500W), while the dual-head VK-2 features dual 1.0L independent
+                    extraction
                     boilers plus an 11.0L steam boiler (6200W) with dual steam wands and a central hot water tap.</li>
                   <li><strong>Flush U8-DECK Integration:</strong> Paired with the AISI 304 stainless steel <a
                       href="../../brands/">T&amp;Z U8-DECK</a> (830&times;536&times;35mm), the extraction towers mount
@@ -297,7 +329,8 @@
             <!-- SECTION 03 -->
             <section id="sec-3" class="legal-section">
               <span class="legal-section-tag">Section 03</span>
-              <h2 class="legal-section-title">LEHEHE DZ23-2Y &amp; DZ23-1Y: In-Wand Temperature Probe &amp; Auto-Stop Steam</h2>
+              <h2 class="legal-section-title">LEHEHE DZ23-2Y &amp; DZ23-1Y: In-Wand Temperature Probe &amp; Auto-Stop
+                Steam</h2>
               <div class="legal-prose">
                 <p>
                   During peak rush hours, milk steaming is the primary bottleneck on an espresso bar. Furthermore,
@@ -307,9 +340,11 @@
                 <p>
                   The <strong>LEHEHE DZ23-2Y (Dual-Head, 3000W, 8.0L boiler)</strong> and <strong>DZ23-1Y (Single-Head,
                     2200W, 5.0L boiler)</strong> solve this by embedding a high-precision digital temperature probe
-                  directly inside the 360&deg; articulating steam wand tip. Baristas select one of <strong>4 programmable
+                  directly inside the 360&deg; articulating steam wand tip. Baristas select one of <strong>4
+                    programmable
                     temperature preset keys</strong>, place the pitcher beneath the wand, and the station automatically
-                  cuts off steam the instant the target temperature (e.g., 60&deg;C for dairy or 55&deg;C for plant milk)
+                  cuts off steam the instant the target temperature (e.g., 60&deg;C for dairy or 55&deg;C for plant
+                  milk)
                   is reached.
                 </p>
               </div>
@@ -396,7 +431,8 @@
                   <h4>How do you ventilate the cabinet beneath an under-counter boiler?</h4>
                   <p>
                     The under-counter cabinet housing the T&amp;Z or LEHEHE boiler chassis must include front/rear
-                    louvered ventilation grilles (minimum 200 sq cm free airflow area) so radiant heat does not accumulate
+                    louvered ventilation grilles (minimum 200 sq cm free airflow area) so radiant heat does not
+                    accumulate
                     inside the millwork.
                   </p>
                 </div>

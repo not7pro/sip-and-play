@@ -369,78 +369,133 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
+    const ALLOWED_SCOPES = new Set([
+      'Full Commercial Kitchen Turnkey Design & Build',
+      'Commercial Kitchen Layout Planning (2D/3D CAD)',
+      '500+ Item Equipment Sourcing & Procurement',
+      'Authorized Brand Equipment (EVEBOT / INNOSONG / T&Z / LEHEHE)',
+      'Restaurant Interiors & Front-of-House Pass',
+      'Cloud Kitchen Expansion / Production Plant'
+    ]);
+    const safeToken = (val) => (/^[A-Za-z0-9\-_ ]{1,45}$/.test(val || '') && !/\d{7,}/.test(val || '')) ? val : undefined;
+
     let lastContactSubmitTs = 0;
-    contactForm.addEventListener('submit', (e) => {
-      const action = contactForm.getAttribute('action') || '';
-      if (action.includes('placeholder') || action === '#' || action === '') {
-        e.preventDefault();
-        if (typeof contactForm.checkValidity === 'function' && !contactForm.checkValidity()) {
-          return;
-        }
-        const name = (contactForm.querySelector('[name="name"]')?.value || '').trim();
-        const phone = (contactForm.querySelector('[name="phone"]')?.value || '').trim();
-        const email = (contactForm.querySelector('[name="email"]')?.value || '').trim();
-        const scope = (contactForm.querySelector('[name="scope"]')?.value || '').trim();
-        const details = (contactForm.querySelector('[name="details"]')?.value || '').trim();
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (typeof contactForm.checkValidity === 'function' && !contactForm.checkValidity()) {
+        return;
+      }
+      const name = (contactForm.querySelector('[name="name"]')?.value || '').trim();
+      const phone = (contactForm.querySelector('[name="phone"]')?.value || '').trim();
+      const email = (contactForm.querySelector('[name="email"]')?.value || '').trim();
+      const scope = (contactForm.querySelector('[name="scope"]')?.value || '').trim();
+      const details = (contactForm.querySelector('[name="details"]')?.value || '').trim();
 
-        // Prevent empty or invalid submissions from counting as leads
-        if (!name || !phone || !email) {
-          return;
-        }
+      if (!name || !phone || !email) {
+        return;
+      }
 
-        // Track genuine validated lead submission (Zero PII transmitted)
-        const nowTs = Date.now();
-        if (nowTs - lastContactSubmitTs > 3000 && window.SipAnalytics) {
-          lastContactSubmitTs = nowTs;
-          window.SipAnalytics.track('generate_lead', {
-            page_type: 'contact',
-            content_category: scope || 'general_consultation',
-            equipment_name: itemParam || undefined,
-            brand_name: brandParam || undefined,
-            cta_location: 'contact_page_rfq_form',
-            contact_method: 'form_to_whatsapp'
-          });
-        }
+      const safeScope = ALLOWED_SCOPES.has(scope) ? scope : 'general_consultation';
+      const safeItem = safeToken(itemParam);
+      const safeBrand = safeToken(brandParam);
+      const action = (contactForm.getAttribute('action') || '').trim();
+      const isConfirmedBackendEndpoint = action.startsWith('https://') && !action.includes('placeholder');
 
-        let msg = `*PROJECT QUOTATION & CONSULTATION REQUEST*\n`;
-        msg += `*Sip & Play Commercial Culinary Engineering*\n`;
-        msg += `────────────────────────────\n`;
-        msg += `• *Client / Group:* ${name}\n`;
-        msg += `• *Phone:* ${phone}\n`;
-        msg += `• *Email:* ${email}\n`;
-        msg += `• *Project Scope:* ${scope}\n`;
-        if (details) {
-          msg += `• *Project Details:* ${details}\n`;
-        }
-        msg += `────────────────────────────\n`;
-        msg += `Please connect me with an engineering director regarding this project.`;
-
+      const nowTs = Date.now();
+      if (isConfirmedBackendEndpoint) {
+        // Confirmed HTTP backend submission mode: fire generate_lead ONLY after HTTP 2xx response.ok
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const origText = submitBtn ? submitBtn.innerHTML : '';
         if (submitBtn) {
-          submitBtn.innerHTML = '✓ Opening Official WhatsApp Desk...';
+          submitBtn.innerHTML = 'Submitting Request...';
           submitBtn.disabled = true;
         }
-
-        const waUrl = `https://wa.me/94702700500?text=${encodeURIComponent(msg)}`;
-        window.open(waUrl, '_blank', 'noopener,noreferrer');
-
-        setTimeout(() => {
+        try {
+          const response = await fetch(action, {
+            method: 'POST',
+            body: new FormData(contactForm),
+            headers: { 'Accept': 'application/json' }
+          });
+          if (response.ok) {
+            if (nowTs - lastContactSubmitTs > 3000 && window.SipAnalytics) {
+              lastContactSubmitTs = nowTs;
+              window.SipAnalytics.track('generate_lead', {
+                page_type: 'contact',
+                content_category: safeScope,
+                equipment_name: safeItem,
+                brand_name: safeBrand,
+                cta_location: 'contact_page_rfq_form',
+                contact_method: 'confirmed_form_post'
+              });
+            }
+            contactForm.reset();
+            if (submitBtn) submitBtn.innerHTML = '✓ Inquiry Confirmed & Received';
+          } else if (submitBtn) {
+            submitBtn.innerHTML = origText;
+            submitBtn.disabled = false;
+          }
+        } catch (err) {
           if (submitBtn) {
             submitBtn.innerHTML = origText;
             submitBtn.disabled = false;
           }
-        }, 2200);
+        }
+        return;
       }
+
+      // WhatsApp handoff mode (no confirmed server submission response):
+      // Track strictly as inquiry intent (quote_request_click), NOT as a confirmed generate_lead
+      if (nowTs - lastContactSubmitTs > 3000 && window.SipAnalytics) {
+        lastContactSubmitTs = nowTs;
+        window.SipAnalytics.track('quote_request_click', {
+          page_type: 'contact',
+          content_category: safeScope,
+          equipment_name: safeItem,
+          brand_name: safeBrand,
+          cta_location: 'contact_page_rfq_form',
+          contact_method: 'rfq_form_whatsapp_handoff',
+          link_type: 'inquiry_intent'
+        });
+      }
+
+      let msg = `*PROJECT QUOTATION & CONSULTATION REQUEST*\n`;
+      msg += `*Sip & Play Commercial Culinary Engineering*\n`;
+      msg += `────────────────────────────\n`;
+      msg += `• *Client / Group:* ${name}\n`;
+      msg += `• *Phone:* ${phone}\n`;
+      msg += `• *Email:* ${email}\n`;
+      msg += `• *Project Scope:* ${scope}\n`;
+      if (details) {
+        msg += `• *Project Details:* ${details}\n`;
+      }
+      msg += `────────────────────────────\n`;
+      msg += `Please connect me with an engineering director regarding this project.`;
+
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const origText = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) {
+        submitBtn.innerHTML = '✓ Opening Official WhatsApp Desk...';
+        submitBtn.disabled = true;
+      }
+
+      const waUrl = `https://wa.me/94702700500?text=${encodeURIComponent(msg)}`;
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+
+      setTimeout(() => {
+        if (submitBtn) {
+          submitBtn.innerHTML = origText;
+          submitBtn.disabled = false;
+        }
+      }, 2200);
     });
   }
 });
 
 
 /* ============================================================
-   SIP & PLAY — GOOGLE ANALYTICS 4 (G-6J443GNZ4J) & CONSENT ENGINE
-   Advanced B2B Inquiry, Catalogue, Brand & Blog Attribution
-   Strictly Non-PII • Google Consent Mode v2 • Zero Duplicates
+   SIP & PLAY — GOOGLE ANALYTICS 4 (G-6J443GNZ4J) & BASIC CONSENT ENGINE
+   Strict Basic Consent Mode (Zero GA4 Network Requests Before Opt-In)
+   Zero Arbitrary User Text • Allowlisted Parameters • Confirmed Lead Separation
    ============================================================ */
 (function initSipAndPlayAnalytics() {
   if (window.__SIP_ANALYTICS_INIT__) return;
@@ -491,6 +546,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Map any internal search query to a fixed, non-personal domain taxonomy (never transmits raw user text)
+  function classifySearchTopic(rawQuery) {
+    const q = String(rawQuery || '').toLowerCase().trim();
+    if (!q) return 'empty_query';
+    if (/evebot|printpen|eb-fc1|eb-pro|eb-ft4|eb-fm1|latte art|printer/.test(q)) return 'brand_evebot_printers';
+    if (/innosong|zs3202|zs3201|zs3101|zs3105|zs3102/.test(q)) return 'brand_innosong_espresso';
+    if (/t&z|tz|vk-1|vk-2|kt3-2a|u8-deck|tea brewer/.test(q)) return 'brand_tz_tea_espresso';
+    if (/lehehe|dz23|steam/.test(q)) return 'brand_lehehe_steam';
+    if (/coffee|espresso|barista|cafe|grinder/.test(q)) return 'category_coffee_beverage';
+    if (/fridge|chiller|freezer|cold room|walk-in|ice|blast|refrigerat/.test(q)) return 'category_refrigeration';
+    if (/oven|mixer|dough|sheeter|proofer|bakery|pastry|deck|rotary/.test(q)) return 'category_bakery';
+    if (/wok|burner|range|fryer|griddle|combi|bratt|kettle|cook/.test(q)) return 'category_cooking';
+    if (/dishwasher|warewash|glasswasher|sink|grease trap/.test(q)) return 'category_warewashing';
+    if (/stainless|sus304|304|table|fabrication|hood|exhaust|mep|ventilation/.test(q)) return 'category_fabrication_mep';
+    if (/hotel|resort|cloud kitchen|catering|industrial|layout|design/.test(q)) return 'topic_kitchen_design_projects';
+    return 'catalog_keyword_query';
+  }
+
   // Classify current page type and metadata without any PII
   function getPageContext() {
     const p = rawPath.toLowerCase();
@@ -498,7 +571,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let contentCategory = 'general';
     let articleTitle = undefined;
 
-    if (p === '/' || p.endsWith('/sip-and-play/') || p.endsWith('/index.html') && !p.includes('/about') && !p.includes('/services') && !p.includes('/projects') && !p.includes('/equipment') && !p.includes('/brands') && !p.includes('/contact') && !p.includes('/terms') && !p.includes('/privacy') && !p.includes('/blog')) {
+    if (p === '/' || p.endsWith('/sip-and-play/') || (p.endsWith('/index.html') && !p.includes('/about') && !p.includes('/services') && !p.includes('/projects') && !p.includes('/equipment') && !p.includes('/brands') && !p.includes('/contact') && !p.includes('/terms') && !p.includes('/privacy') && !p.includes('/blog'))) {
       pageType = 'homepage';
       contentCategory = 'commercial_kitchen_solutions';
     } else if (p.includes('/blog/')) {
@@ -541,19 +614,27 @@ document.addEventListener('DOMContentLoaded', () => {
     return { pageType, contentCategory, articleTitle };
   }
 
-  // Strict PII redaction & parameter sanitizer
-  const FORBIDDEN_PARAM_KEYS = new Set([
-    'name', 'client_name', 'fullname', 'email', 'phone', 'telephone', 'tel',
-    'whatsapp', 'message', 'msg', 'details', 'notes', 'address', 'token', 'password', 'auth'
+  // Strict allowlist of permitted GA4 event parameter keys (blocks arbitrary user-entered fields)
+  const ALLOWED_EVENT_PARAM_KEYS = new Set([
+    'page_type',
+    'content_category',
+    'article_title',
+    'equipment_category',
+    'equipment_name',
+    'brand_name',
+    'cta_location',
+    'contact_method',
+    'link_type',
+    'results_count',
+    'scheduled_models_count',
+    'scheduled_units_count'
   ]);
 
   function redactPIIString(val) {
     if (typeof val !== 'string') return val;
     let cleaned = val.trim();
-    // Redact email addresses
-    cleaned = cleaned.replace(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g, '[redacted_email]');
-    // Redact phone sequences (7+ digits)
-    cleaned = cleaned.replace(/(?:\+?\d[\d\s\-().]{6,}\d)/g, '[redacted_phone]');
+    cleaned = cleaned.replace(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g, '[redacted]');
+    cleaned = cleaned.replace(/(?:\+?\d[\d\s\-().]{6,}\d)/g, '[redacted]');
     return cleaned.slice(0, 120);
   }
 
@@ -569,9 +650,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const merged = Object.assign(base, rawParams || {});
     const clean = {};
 
+    // If caller passed search_term, classify it into content_category and discard raw search_term
+    if (merged.search_term) {
+      merged.content_category = classifySearchTopic(merged.search_term);
+      delete merged.search_term;
+    }
+
     Object.keys(merged).forEach((key) => {
-      const lowerKey = key.toLowerCase();
-      if (FORBIDDEN_PARAM_KEYS.has(lowerKey)) return;
+      if (!ALLOWED_EVENT_PARAM_KEYS.has(key)) return;
       const v = merged[key];
       if (v === undefined || v === null || v === '') return;
       clean[key] = typeof v === 'string' ? redactPIIString(v) : v;
@@ -600,9 +686,10 @@ document.addEventListener('DOMContentLoaded', () => {
     lastEventTime = now;
 
     if (isDebugMode) {
-      console.info(`[SipAnalytics GA4] Event: ${eventName}`, cleanPayload);
+      console.info(`[SipAnalytics GA4] (Consent: ${getConsentState() || 'unset'}) Event: ${eventName}`, cleanPayload);
     }
 
+    // Strict Basic Consent Mode: zero analytics dispatches unless consent === 'granted'
     if (!hasAnalyticsConsent()) {
       return;
     }
@@ -611,7 +698,11 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    if (typeof window.gtag === 'function') {
+    if (typeof window.__loadSipGA4 === 'function' && !window.__sipGA4Loaded) {
+      window.__loadSipGA4();
+    }
+
+    if (typeof window.gtag === 'function' && !window['ga-disable-' + MEASUREMENT_ID]) {
       window.gtag('event', eventName, cleanPayload);
     }
   }
@@ -624,10 +715,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const ctx = getPageContext();
     const urlParams = new URLSearchParams(window.location.search);
+    const safeParam = (val) => (/^[A-Za-z0-9\-_ ]{1,40}$/.test(val || '') && !/\d{7,}/.test(val || '')) ? val.trim() : 'all';
 
     if (ctx.pageType === 'equipment_catalogue') {
-      const initCat = (urlParams.get('category') || 'all').trim();
-      const initBrand = (urlParams.get('brand') || 'all').trim();
+      const initCat = safeParam(urlParams.get('category'));
+      const initBrand = safeParam(urlParams.get('brand'));
       trackEvent('catalogue_view', {
         page_type: 'equipment_catalogue',
         content_category: 'commercial_equipment',
@@ -643,14 +735,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function updateFooterConsentToggleUI() {
+    const btns = document.querySelectorAll('[data-sip-consent-toggle]');
+    const granted = hasAnalyticsConsent();
+    btns.forEach((btn) => {
+      btn.textContent = granted ? 'Analytics: On (Withdraw)' : 'Analytics: Off (Opt In)';
+      btn.setAttribute('aria-pressed', granted ? 'true' : 'false');
+    });
+  }
+
   function applyConsentDecision(decision) {
+    const normalized = decision === 'granted' ? 'granted' : 'denied';
     try {
-      localStorage.setItem(CONSENT_KEY, decision);
+      localStorage.setItem(CONSENT_KEY, normalized);
     } catch (e) {}
 
-    if (decision === 'granted') {
+    if (normalized === 'granted') {
       window['ga-disable-' + MEASUREMENT_ID] = (isLocalEnv && !isDebugMode);
-      if (typeof window.gtag === 'function') {
+      if (typeof window.__loadSipGA4 === 'function') {
+        window.__loadSipGA4();
+      } else if (typeof window.gtag === 'function') {
         window.gtag('consent', 'update', {
           'analytics_storage': 'granted',
           'ad_storage': 'denied',
@@ -660,6 +764,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       fireInitialPageContextEvents();
     } else {
+      // Strict withdrawal: immediately halt collection and purge all GA cookies
+      window['ga-disable-' + MEASUREMENT_ID] = true;
       if (typeof window.gtag === 'function') {
         window.gtag('consent', 'update', {
           'analytics_storage': 'denied',
@@ -668,29 +774,21 @@ document.addEventListener('DOMContentLoaded', () => {
           'ad_personalization': 'denied'
         });
       }
-      window['ga-disable-' + MEASUREMENT_ID] = true;
       clearAnalyticsCookies();
     }
+    updateFooterConsentToggleUI();
   }
 
-  // Expose Public API for catalogue.js and interactive components
+  // Expose Public API for catalogue.js, Privacy Policy controls, and QA verification
   window.SipAnalytics = {
     track: trackEvent,
     hasConsent: hasAnalyticsConsent,
     getConsentState: getConsentState,
     setConsent: applyConsentDecision,
-    getPageContext: getPageContext,
-    openConsentPreferences: function () {
-      const banner = document.getElementById('sipCookieBanner');
-      if (banner) {
-        banner.hidden = false;
-        const acceptBtn = banner.querySelector('.cookie-consent-btn--accept');
-        if (acceptBtn) acceptBtn.focus();
-      }
-    }
+    classifySearchTopic: classifySearchTopic,
+    getPageContext: getPageContext
   };
 
-  // Helper to determine where on the page a clicked link/button resides
   function detectCtaLocation(el) {
     if (!el) return 'page_body';
     if (el.closest('#siteHeader, .site-header')) return 'header_nav';
@@ -709,86 +807,39 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    // 1. Mount Accessible Cookie Consent Banner & Footer "Cookie Preferences" Control
-    const privacyHref = (() => {
-      if (rawPath.includes('/blog/') && rawPath.split('/blog/')[1] && rawPath.split('/blog/')[1].replace(/index\.html$/, '').replace(/\/+$/, '') !== '') {
-        return '../../privacy/#section-9';
-      }
-      if (rawPath.includes('/about') || rawPath.includes('/services') || rawPath.includes('/projects') || rawPath.includes('/equipment') || rawPath.includes('/brands') || rawPath.includes('/contact') || rawPath.includes('/terms') || rawPath.includes('/privacy') || rawPath.includes('/blog')) {
-        return '../privacy/#section-9';
-      }
-      return 'privacy/#section-9';
-    })();
-
-    if (!document.getElementById('sipCookieBanner')) {
-      const banner = document.createElement('aside');
-      banner.id = 'sipCookieBanner';
-      banner.className = 'cookie-consent-banner';
-      banner.setAttribute('role', 'region');
-      banner.setAttribute('aria-label', 'Cookie and analytics privacy consent');
-      if (getConsentState() !== null) {
-        banner.hidden = true;
-      }
-      banner.innerHTML = `
-        <span class="cookie-consent-banner__tag">Privacy &amp; Telemetry Controls</span>
-        <p class="cookie-consent-banner__text">
-          We use essential functional storage and anonymized Google Analytics 4 telemetry to measure culinary guide readership and equipment inquiry performance. No personal data or third-party ad pixels are shared. Review our <a href="${privacyHref}">Cookie &amp; Privacy Policy</a>.
-        </p>
-        <div class="cookie-consent-banner__actions">
-          <button type="button" class="cookie-consent-btn cookie-consent-btn--accept" id="sipConsentAccept">Accept Analytics</button>
-          <button type="button" class="cookie-consent-btn cookie-consent-btn--decline" id="sipConsentDecline">Essential Only</button>
-        </div>
-      `;
-      document.body.appendChild(banner);
-
-      const acceptBtn = document.getElementById('sipConsentAccept');
-      const declineBtn = document.getElementById('sipConsentDecline');
-      if (acceptBtn) {
-        acceptBtn.addEventListener('click', () => {
-          banner.hidden = true;
-          applyConsentDecision('granted');
-        });
-      }
-      if (declineBtn) {
-        declineBtn.addEventListener('click', () => {
-          banner.hidden = true;
-          applyConsentDecision('denied');
-        });
-      }
-    }
-
-    // Add accessible "Cookie Preferences" withdrawal/review button into .footer-bottom p
+    // 1. Mount subtle inline footer consent toggle (Zero floating popup overlay covering content)
     const footerBottomP = document.querySelector('.footer-bottom p');
-    if (footerBottomP && !footerBottomP.querySelector('.footer-cookie-btn')) {
+    if (footerBottomP && !footerBottomP.querySelector('[data-sip-consent-toggle]')) {
       const sep = document.createTextNode(' • ');
       const btn = document.createElement('button');
       btn.type = 'button';
-      btn.className = 'footer-cookie-btn';
-      btn.textContent = 'Cookie Preferences';
-      btn.setAttribute('aria-label', 'Manage cookie and analytics consent preferences');
+      btn.className = 'footer-legal-link';
+      btn.setAttribute('data-sip-consent-toggle', 'true');
+      btn.style.cssText = 'background:none;border:none;padding:0;color:inherit;font:inherit;text-decoration:underline;cursor:pointer;';
       btn.addEventListener('click', () => {
-        window.SipAnalytics.openConsentPreferences();
+        applyConsentDecision(hasAnalyticsConsent() ? 'denied' : 'granted');
       });
       footerBottomP.appendChild(sep);
       footerBottomP.appendChild(btn);
+      updateFooterConsentToggleUI();
     }
 
-    // 2. Fire initial page-specific context events if consent is already granted
+    // 2. Fire initial page context events only if prior opt-in consent is granted
     if (hasAnalyticsConsent()) {
       fireInitialPageContextEvents();
     }
 
-    // 3. Global Delegated Click Listener (Capture Phase so it runs before 280ms page transitions)
+    // 3. Global Delegated Click Listener (Capture Phase)
     document.addEventListener('click', (e) => {
       const target = e.target;
       if (!target || typeof target.closest !== 'function') return;
 
-      // A. Print / Save PDF or Downloadable Catalogue Button -> catalogue_download
-      const printBtn = target.closest('.btn-legal-action[onclick*="print"], [data-analytics="catalogue_download"]');
-      if (printBtn) {
+      // A. Verified Equipment Catalogue Download action ONLY (never triggered by window.print() or arbitrary PDFs)
+      const dlTrigger = target.closest('[data-catalogue-download="true"]');
+      if (dlTrigger && dlTrigger.id !== 'btnDownloadScheduleCsv') {
         trackEvent('catalogue_download', {
-          cta_location: detectCtaLocation(printBtn),
-          link_type: 'pdf_export'
+          cta_location: detectCtaLocation(dlTrigger),
+          link_type: 'catalogue_file_download'
         });
         return;
       }
@@ -815,26 +866,19 @@ document.addEventListener('DOMContentLoaded', () => {
       const ctaLoc = detectCtaLocation(link);
       const ctx = getPageContext();
 
-      // C. Downloadable PDF / Catalogue file links -> catalogue_download
-      if (link.hasAttribute('download') || lowerHref.endsWith('.pdf')) {
-        trackEvent('catalogue_download', {
-          cta_location: ctaLoc,
-          link_type: 'file_download'
-        });
-        return;
-      }
-
-      // D. WhatsApp Contact Links -> whatsapp_click
+      // C. WhatsApp Contact Links -> whatsapp_click (Intercept & open via window.open with stripped link_url so GA4 Enhanced Measurement never logs ?text= parameters)
       if (lowerHref.includes('wa.me/') || lowerHref.includes('whatsapp.com/')) {
+        e.preventDefault();
         trackEvent('whatsapp_click', {
           cta_location: ctaLoc,
           contact_method: 'whatsapp',
           link_type: 'outbound_contact'
         });
+        window.open(rawHref, '_blank', 'noopener,noreferrer');
         return;
       }
 
-      // E. Telephone Links -> phone_click
+      // D. Telephone Links -> phone_click
       if (lowerHref.startsWith('tel:')) {
         trackEvent('phone_click', {
           cta_location: ctaLoc,
@@ -844,7 +888,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // F. Email Contact Links -> email_click
+      // E. Email Contact Links -> email_click
       if (lowerHref.startsWith('mailto:')) {
         trackEvent('email_click', {
           cta_location: ctaLoc,
@@ -854,7 +898,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // G. Brand Anchor / Filter Links -> brand_view
+      // F. Brand Anchor / Filter Links -> brand_view
       if (lowerHref === '#evebot' || lowerHref === '#innosong' || lowerHref === '#tz' || lowerHref === '#lehehe' || lowerHref.includes('?brand=')) {
         let brandName = '';
         if (lowerHref === '#evebot') brandName = 'EVEBOT';
@@ -862,7 +906,7 @@ document.addEventListener('DOMContentLoaded', () => {
         else if (lowerHref === '#tz') brandName = 'T&Z Galaxy';
         else if (lowerHref === '#lehehe') brandName = 'LEHEHE';
         else {
-          const match = rawHref.match(/[?&]brand=([^&#]+)/i);
+          const match = rawHref.match(/[?&]brand=([A-Za-z0-9\-_]+)/i);
           if (match && match[1]) brandName = decodeURIComponent(match[1]);
         }
         if (brandName && !lowerHref.includes('#quote')) {
@@ -874,7 +918,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
-      // H. Blog Article Commercial CTA Clicks -> blog_cta_click
+      // G. Blog Article Commercial CTA Clicks -> blog_cta_click
       if (ctx.pageType === 'blog_article' || ctx.pageType === 'blog_hub') {
         let commercialLinkType = '';
         if (lowerHref.includes('services/')) commercialLinkType = 'to_services';
@@ -891,7 +935,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
-      // I. Quotation Request CTAs -> quote_request_click
+      // H. Quotation Request CTAs -> quote_request_click
       const linkText = (link.textContent || '').toLowerCase();
       const isQuoteHref = lowerHref.includes('#quote') || (lowerHref.includes('contact') && (link.classList.contains('btn') || link.classList.contains('btn-premium') || link.classList.contains('arch-card__action')));
       const isQuoteText = /quote|quotation|consult|walkthrough|site visit|proposal|tender|boq|schedule/.test(linkText);
@@ -899,10 +943,16 @@ document.addEventListener('DOMContentLoaded', () => {
       if (isQuoteHref || (lowerHref.includes('contact') && isQuoteText)) {
         let eqName = undefined;
         let brName = undefined;
-        const itemMatch = rawHref.match(/[?&]item=([^&#]+)/i);
-        const brandMatch = rawHref.match(/[?&]brand=([^&#]+)/i);
-        if (itemMatch && itemMatch[1]) eqName = decodeURIComponent(itemMatch[1]);
-        if (brandMatch && brandMatch[1]) brName = decodeURIComponent(brandMatch[1]);
+        const itemMatch = rawHref.match(/[?&]item=([A-Za-z0-9\-_%]+)/i);
+        const brandMatch = rawHref.match(/[?&]brand=([A-Za-z0-9\-_%]+)/i);
+        if (itemMatch && itemMatch[1]) {
+          const decoded = decodeURIComponent(itemMatch[1]);
+          if (/^[A-Za-z0-9\-_ ]{1,45}$/.test(decoded) && !/\d{7,}/.test(decoded)) eqName = decoded;
+        }
+        if (brandMatch && brandMatch[1]) {
+          const decodedB = decodeURIComponent(brandMatch[1]);
+          if (/^[A-Za-z0-9\-_ ]{1,45}$/.test(decodedB) && !/\d{7,}/.test(decodedB)) brName = decodedB;
+        }
 
         trackEvent('quote_request_click', {
           equipment_name: eqName,
@@ -973,7 +1023,7 @@ document.addEventListener('DOMContentLoaded', () => {
       projectPanels.forEach((panel) => projObserver.observe(panel));
     }
 
-    // 6. Internal Site Search Tracking on Blog Hub (#blogSearchInput) -> site_search
+    // 6. Internal Site Search Tracking on Blog Hub (#blogSearchInput) -> site_search (Zero raw user text transmitted)
     const blogSearchInput = document.getElementById('blogSearchInput');
     if (blogSearchInput) {
       let blogSearchTimer = null;
@@ -987,9 +1037,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const visibleCards = Array.from(document.querySelectorAll('#blogArticlesGrid .blog-card, #blogGrid .blog-card')).filter(c => c.style.display !== 'none').length;
             trackEvent('site_search', {
               page_type: 'blog_hub',
-              content_category: 'insights_search',
+              content_category: classifySearchTopic(term),
               cta_location: 'blog_search_input',
-              search_term: term,
               results_count: visibleCards
             });
           }

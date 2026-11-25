@@ -78,36 +78,7 @@
   </script>
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    (function(){
-      var c = null;
-      try { c = localStorage.getItem('sip_analytics_consent'); } catch(e) {}
-      var isDev = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
-      var isDebug = /[?&]ga_debug=1/.test(location.search);
-      if ((isDev && !isDebug) || c === 'denied') {
-        window['ga-disable-G-6J443GNZ4J'] = true;
-      }
-      if (location.search && /(?:[?&])(name|email|phone|tel|whatsapp|msg|message|token|password)=/i.test(location.search)) {
-        try {
-          var u = new URL(location.href);
-          ['name','email','phone','tel','whatsapp','msg','message','token','password'].forEach(function(k){ u.searchParams.delete(k); });
-          history.replaceState(null, '', u.pathname + u.search + u.hash);
-        } catch(e) {}
-      }
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': c === 'granted' ? 'granted' : 'denied',
-        'wait_for_update': 500
-      });
-    })();
-    gtag('js', new Date());
-    gtag('config', 'G-6J443GNZ4J');
-  </script>
+  <script src="../../analytics-init.js"></script>
 </head>
 
 <body class="theme-paper">
@@ -130,7 +101,8 @@
       <div class="header-actions">
         <a class="btn-premium btn-premium--primary" href="../../contact/#quote">Request a Quote <span
             class="arrow-icon">→</span></a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobMenu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="mobMenu">
           <span class="bar"></span><span class="bar"></span><span class="bar"></span>
         </button>
       </div>
@@ -240,7 +212,8 @@
                 style="font-size:0.78rem; padding:0.45rem 0.9rem; text-align:center; display:block; margin-bottom:0.5rem;">View
                 Chillers &amp; Cold Rooms →</a>
               <a href="../../contact/#quote" class="btn-premium btn-premium--primary"
-                style="font-size:0.78rem; padding:0.45rem 0.9rem; text-align:center; display:block;">Request Sizing Audit
+                style="font-size:0.78rem; padding:0.45rem 0.9rem; text-align:center; display:block;">Request Sizing
+                Audit
                 →</a>
             </div>
           </aside>
@@ -257,14 +230,16 @@
                   A standard 4-door upright commercial chiller holds approximately 1,000 to 1,200 liters of net usable
                   shelf volume. Once a restaurant, hotel, or catering facility requires more than <strong>three 4-door
                     upright cabinets (3,600+ liters)</strong> for bulk storage, a modular cam-lock walk-in cold room
-                  delivers double the storage volume on the same floor footprint while rejecting zero compressor heat into
+                  delivers double the storage volume on the same floor footprint while rejecting zero compressor heat
+                  into
                   the kitchen workspace.
                 </p>
                 <p>
                   In high-throughput commercial kitchens—even those anchored by walk-in cold rooms like our 33,000 sq ft
                   <a href="../../projects/">Chinese Mega Kitchen</a>—both systems work together: <strong>walk-in cold
                     rooms</strong> store bulk crates at the receiving bay, while <strong>upright reach-in and
-                    under-counter chillers</strong> store portioned daily mise en place on the prep and hot lines. See our
+                    under-counter chillers</strong> store portioned daily mise en place on the prep and hot lines. See
+                  our
                   parent <a href="../commercial-refrigeration-cold-storage-planning-guide/">Commercial Refrigeration
                     Planning Guide</a> for complete HACCP temperature targets.
                 </p>
@@ -274,7 +249,8 @@
             <!-- SECTION 02 -->
             <section id="sec-2" class="legal-section">
               <span class="legal-section-tag">Section 02</span>
-              <h2 class="legal-section-title">Technical Comparison: Walk-In Cold Rooms vs. Upright Reach-In Cabinets</h2>
+              <h2 class="legal-section-title">Technical Comparison: Walk-In Cold Rooms vs. Upright Reach-In Cabinets
+              </h2>
               <div class="legal-prose">
                 <div class="legal-table-container">
                   <table class="legal-table">
@@ -323,7 +299,8 @@
               <h2 class="legal-section-title">Civil Slab Preparation &amp; Combination Chiller-Freezer Rooms</h2>
               <div class="legal-prose">
                 <p>
-                  For space-constrained urban Colombo properties, Sip &amp; Play frequently engineers <strong>shared-wall
+                  For space-constrained urban Colombo properties, Sip &amp; Play frequently engineers
+                  <strong>shared-wall
                     combination walk-in rooms</strong> where a +2&deg;C chiller ante-room leads directly into a
                   &minus;20&deg;C deep freezer chamber. This reduces total insulated wall panels and prevents warm humid
                   kitchen air from rushing directly into the sub-zero freezer whenever the door opens.
@@ -332,7 +309,8 @@
                 <div class="article-cta-box">
                   <h3>Get a Custom Walk-In Cold Room or Chiller BOQ</h3>
                   <p>
-                    Send us your storage volume requirements or available room dimensions. Our engineers will size the PU
+                    Send us your storage volume requirements or available room dimensions. Our engineers will size the
+                    PU
                     panel layout, evaporator capacity, and tropicalized condensing unit.
                   </p>
                   <div class="cta-actions">

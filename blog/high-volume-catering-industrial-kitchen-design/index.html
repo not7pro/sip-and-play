@@ -78,36 +78,7 @@
   </script>
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6J443GNZ4J"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    (function(){
-      var c = null;
-      try { c = localStorage.getItem('sip_analytics_consent'); } catch(e) {}
-      var isDev = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
-      var isDebug = /[?&]ga_debug=1/.test(location.search);
-      if ((isDev && !isDebug) || c === 'denied') {
-        window['ga-disable-G-6J443GNZ4J'] = true;
-      }
-      if (location.search && /(?:[?&])(name|email|phone|tel|whatsapp|msg|message|token|password)=/i.test(location.search)) {
-        try {
-          var u = new URL(location.href);
-          ['name','email','phone','tel','whatsapp','msg','message','token','password'].forEach(function(k){ u.searchParams.delete(k); });
-          history.replaceState(null, '', u.pathname + u.search + u.hash);
-        } catch(e) {}
-      }
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': c === 'granted' ? 'granted' : 'denied',
-        'wait_for_update': 500
-      });
-    })();
-    gtag('js', new Date());
-    gtag('config', 'G-6J443GNZ4J');
-  </script>
+  <script src="../../analytics-init.js"></script>
 </head>
 
 <body class="theme-paper">
@@ -130,7 +101,8 @@
       <div class="header-actions">
         <a class="btn-premium btn-premium--primary" href="../../contact/#quote">Request a Quote <span
             class="arrow-icon">→</span></a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobMenu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="mobMenu">
           <span class="bar"></span><span class="bar"></span><span class="bar"></span>
         </button>
       </div>
@@ -251,12 +223,15 @@
             <!-- SECTION 01 -->
             <section id="sec-1" class="legal-section">
               <span class="legal-section-tag">Section 01</span>
-              <h2 class="legal-section-title">Benchmark Case Study: The 33,000 Sq Ft Chinese Mega Kitchen in Colombo</h2>
+              <h2 class="legal-section-title">Benchmark Case Study: The 33,000 Sq Ft Chinese Mega Kitchen in Colombo
+              </h2>
               <div class="legal-prose">
                 <p>
-                  When meal output scales from 200 covers a night to <strong>6,000+ meals per day</strong>, restaurant-grade
+                  When meal output scales from 200 covers a night to <strong>6,000+ meals per day</strong>,
+                  restaurant-grade
                   pans and domestic workflows collapse. In our flagship industrial build—<a href="../../projects/">The
-                    Chinese Mega Kitchen in Colombo</a> spanning <strong>33,000 sq ft</strong>—Sip &amp; Play engineered a
+                    Chinese Mega Kitchen in Colombo</a> spanning <strong>33,000 sq ft</strong>—Sip &amp; Play engineered
+                  a
                   custom multi-station culinary infrastructure built around three core industrial systems:
                 </p>
                 <ul class="article-checklist">
@@ -265,8 +240,10 @@
                     thermal islands.</li>
                   <li><strong>Automated Walk-In Refrigeration Corridors:</strong> Dedicated receiving dock walk-in cold
                     rooms and deep freezers sized for palletized and trolley-based raw ingredient turnover.</li>
-                  <li><strong>Heavy-Duty Exhaust &amp; Make-Up Air Manifolds:</strong> High-volume SUS304 exhaust canopies
-                    with balanced fresh air replacement engineered to evacuate intense thermal and steam loads continuously.
+                  <li><strong>Heavy-Duty Exhaust &amp; Make-Up Air Manifolds:</strong> High-volume SUS304 exhaust
+                    canopies
+                    with balanced fresh air replacement engineered to evacuate intense thermal and steam loads
+                    continuously.
                   </li>
                 </ul>
               </div>
@@ -332,7 +309,8 @@
               <div class="legal-prose">
                 <p>
                   In an industrial kitchen, food moves on wheels—not in a chef's arms. As part of our <a
-                    href="../commercial-kitchen-design-complete-planning-guide/">2D/3D CAD and MEP engineering scope</a>,
+                    href="../commercial-kitchen-design-complete-planning-guide/">2D/3D CAD and MEP engineering
+                    scope</a>,
                   industrial facilities are designed with:
                 </p>
                 <ul class="article-checklist">
@@ -350,7 +328,8 @@
                   <h3>Engineering a Large-Scale Catering or Institutional Kitchen?</h3>
                   <p>
                     From 2,000-meal corporate canteens to 33,000+ sq ft mega kitchens, Sip &amp; Play delivers turnkey
-                    architectural CAD design, direct factory container procurement, and on-site engineering commissioning.
+                    architectural CAD design, direct factory container procurement, and on-site engineering
+                    commissioning.
                   </p>
                   <div class="cta-actions">
                     <a href="../../contact/#quote" class="btn-premium btn-premium--primary">Consult Our Industrial
@@ -368,7 +347,8 @@
               <h2 class="legal-section-title">Frequently Asked Questions: Industrial Kitchen Engineering</h2>
               <div class="legal-prose">
                 <div class="article-faq-item">
-                  <h4>How do industrial catering kitchens prevent foodborne illness when transporting meals off-site?</h4>
+                  <h4>How do industrial catering kitchens prevent foodborne illness when transporting meals off-site?
+                  </h4>
                   <p>
                     Either via a <strong>Cook-Chill loop</strong> (blast chilling cooked GN pans from +90&deg;C to
                     +3&deg;C within 90 minutes and transporting in refrigerated trucks for on-site regeneration) or via
@@ -377,10 +357,12 @@
                   </p>
                 </div>
                 <div class="article-faq-item">
-                  <h4>Can Sip &amp; Play custom-fabricate industrial cooking suites and oversized exhaust manifolds?</h4>
+                  <h4>Can Sip &amp; Play custom-fabricate industrial cooking suites and oversized exhaust manifolds?
+                  </h4>
                   <p>
                     Yes. Through our direct manufacturing supply chain and custom <a
-                      href="../stainless-steel-commercial-kitchen-fabrication-guide/">SUS304 fabrication capabilities</a>,
+                      href="../stainless-steel-commercial-kitchen-fabrication-guide/">SUS304 fabrication
+                      capabilities</a>,
                     we engineer bespoke island suites, drainage trenches, and ventilation manifolds tailored to your
                     building's structural grid.
                   </p>
