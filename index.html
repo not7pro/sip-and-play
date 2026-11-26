@@ -20,16 +20,19 @@
   <!-- Standard SEO Meta Tags -->
   <meta property="og:site_name" content="Sip &amp; Play" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="Sip &amp; Play | Commercial Kitchen Design, Engineering &amp; Equipment Solutions" />
+  <meta property="og:title"
+    content="Sip &amp; Play | Commercial Kitchen Design, Engineering &amp; Equipment Solutions" />
   <meta property="og:description"
     content="Designing, supplying, and building high-performance commercial kitchens for hotels, resorts, and restaurants across Sri Lanka, Maldives, and Thailand. Authorized Agent for EVEBOT, INNOSONG, T&amp;Z, and LEHEHE." />
   <meta property="og:image" content="https://sipandplaylk.co/images/factory_3.jpg" />
-  <meta property="og:image:alt" content="Commercial kitchen architecture and stainless steel engineering by Sip &amp; Play" />
+  <meta property="og:image:alt"
+    content="Commercial kitchen architecture and stainless steel engineering by Sip &amp; Play" />
   <meta property="og:url" content="https://sipandplaylk.co/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sip &amp; Play | Commercial Kitchen Design &amp; Engineering" />
-  <meta name="twitter:description" content="Designing, supplying, and building high-performance commercial kitchens across Sri Lanka, Maldives, and Thailand." />
+  <meta name="twitter:description"
+    content="Designing, supplying, and building high-performance commercial kitchens across Sri Lanka, Maldives, and Thailand." />
   <meta name="twitter:image" content="https://sipandplaylk.co/images/factory_3.jpg" />
 
   <!-- Schema.org JSON-LD -->
@@ -41,6 +44,7 @@
         "@type": "ProfessionalService",
         "@id": "https://sipandplaylk.co/#organization",
         "name": "Sip & Play",
+        "legalName": "Sip & Play Commercial Culinary Engineering",
         "url": "https://sipandplaylk.co/",
         "image": "https://sipandplaylk.co/images/factory_3.jpg",
         "description": "Designing, supplying, and building high-performance commercial culinary facilities across Sri Lanka, Maldives, and Thailand. Authorized regional partner for EVEBOT, INNOSONG, T&Z Galaxy, and LEHEHE.",
@@ -58,10 +62,16 @@
           { "@type": "Country", "name": "Maldives" },
           { "@type": "Country", "name": "Thailand" }
         ],
-        "sameAs": [
-          "https://instagram.com/sipandplay",
-          "https://facebook.com/sipandplay",
-          "https://linkedin.com/company/sipandplay"
+        "knowsAbout": [
+          "Commercial Kitchen Design",
+          "2D AutoCAD & 3D BIM Kitchen Blueprinting",
+          "Commercial Kitchen MEP Engineering",
+          "HACCP Kitchen Workflow Optimization",
+          "Commercial Espresso Machines & Coffee Bar Systems",
+          "Commercial Refrigeration & Walk-In Cold Rooms",
+          "Commercial Cooking Equipment",
+          "Commercial Bakery Equipment",
+          "AISI 304 Stainless Steel Kitchen Fabrication"
         ]
       },
       {
@@ -78,14 +88,14 @@
   <!-- Google tag (gtag.js) — Basic Consent Mode (G-6J443GNZ4J) -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('consent', 'default', {
       'ad_storage': 'denied',
       'ad_user_data': 'denied',
       'ad_personalization': 'denied',
       'analytics_storage': 'denied'
     });
-    window.__loadSipGA4 = function() {
+    window.__loadSipGA4 = function () {
       if (window.__sipGA4Loaded) return;
       var isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
       var isDebug = /[?&]ga_debug=1/.test(location.search);
@@ -106,14 +116,14 @@
       try {
         var u = new URL(location.href);
         var kept = [];
-        ['category', 'brand', 'item'].forEach(function(k) {
+        ['category', 'brand', 'item'].forEach(function (k) {
           var v = u.searchParams.get(k);
           if (v && /^[A-Za-z0-9\-_ ]{1,45}$/.test(v) && !/\d{7,}/.test(v)) {
             kept.push(encodeURIComponent(k) + '=' + encodeURIComponent(v.trim()));
           }
         });
         if (kept.length) cleanUrl += '?' + kept.join('&');
-      } catch (e) {}
+      } catch (e) { }
       var cleanRef = document.referrer ? document.referrer.split('?')[0] : '';
       gtag('js', new Date());
       gtag('config', 'G-6J443GNZ4J', {
@@ -128,7 +138,7 @@
       if (localStorage.getItem('sip_analytics_consent') === 'granted') {
         window.__loadSipGA4();
       }
-    } catch (e) {}
+    } catch (e) { }
   </script>
 </head>
 
@@ -722,7 +732,8 @@
           </a>
 
           <!-- Card 6: Stainless Fabrication -->
-          <a href="stainless-steel-kitchen-fabrication/" class="cat-card arch-panel arch-card--dark" style="padding:1rem;">
+          <a href="stainless-steel-kitchen-fabrication/" class="cat-card arch-panel arch-card--dark"
+            style="padding:1rem;">
             <div class="img-frame img-frame--4-3">
               <img src="images/stainless_fabrication.jpg" loading="lazy" decoding="async"
                 alt="Stainless Modular Fabrication" />

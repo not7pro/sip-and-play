@@ -1,6 +1,52 @@
+# ============================================================
+# SIP & PLAY — ROBOTS.TXT & AI SEARCH CRAWLER CONFIGURATION
+# Production Website: https://sipandplaylk.co/
+#
+# Policy Architecture:
+# 1. Traditional Search & AI Answer Engine Indexers / Live User
+#    Retrieval Agents (Googlebot, Bingbot, OAI-SearchBot,
+#    ChatGPT-User, PerplexityBot, Perplexity-User,
+#    Claude-SearchBot, Claude-User, Applebot) are explicitly
+#    permitted to crawl public pages while blocked from /portal/
+#    and internal files.
+# 2. Foundation Model Pre-Training Crawlers (GPTBot, ClaudeBot,
+#    Google-Extended, CCBot, Applebot-Extended, Bytespider,
+#    meta-externalagent) are disabled by default pending
+#    explicit client approval for model training.
+# ============================================================
+
+# 1. Search Engine & AI Answer Engine Indexers + User Fetchers
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Applebot
+Allow: /
+Disallow: /portal/
+Disallow: /seo/
+Disallow: /admin.html
+Disallow: /login.html
+Disallow: /audit_tool.html
+
+# 2. AI Foundation Model Training Crawlers (Opted Out by Default)
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: CCBot
+User-agent: Applebot-Extended
+User-agent: Bytespider
+User-agent: meta-externalagent
+Disallow: /
+
+# 3. Default Fallback for All Other Standard Crawlers
 User-agent: *
 Allow: /
 Disallow: /portal/
+Disallow: /seo/
 Disallow: /admin.html
 Disallow: /login.html
 Disallow: /audit_tool.html

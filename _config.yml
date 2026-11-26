@@ -1,0 +1,5 @@
+# Exclude internal SEO, AEO, and GEO strategy documentation and development files from GitHub Pages published output
+exclude:
+  - seo/
+  - seo
+  - README.md

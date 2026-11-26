@@ -1,0 +1,97 @@
+name: Deploy Sip & Play to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Assemble clean public deployment artifact
+        run: |
+          rm -rf _site
+          mkdir -p _site
+
+          # Root public files & assets (explicit allowlist)
+          for file in \
+            CNAME \
+            .nojekyll \
+            index.html \
+            robots.txt \
+            sitemap.xml \
+            llms.txt \
+            style.css \
+            script.js \
+            analytics-init.js \
+            catalogue.js \
+            products-data.js \
+            brands_products_data.js \
+            catalog_products_normalized.js
+          do
+            if [ -f "$file" ]; then
+              cp "$file" "_site/$file"
+            fi
+          done
+
+          # Public canonical directories, assets & legacy redirect directories
+          for dir in \
+            about \
+            blog \
+            brands \
+            commercial-bakery-equipment \
+            commercial-coffee-machines \
+            commercial-cooking-equipment \
+            commercial-kitchen-design \
+            commercial-kitchen-equipment \
+            commercial-refrigeration \
+            contact \
+            equipment \
+            espresso-machines \
+            images \
+            privacy \
+            projects \
+            restaurant-equipment \
+            restaurant-kitchen-design \
+            services \
+            solutions \
+            stainless-steel-kitchen-fabrication \
+            terms
+          do
+            if [ -d "$dir" ]; then
+              cp -R "$dir" "_site/$dir"
+            fi
+          done
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
