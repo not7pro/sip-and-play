@@ -4030,9 +4030,54 @@ body.menu-open .site-header,
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 2rem;
-  text-align: center;
   font-size: 0.85rem;
   font-family: var(--font-mono);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.5rem;
+  text-align: left;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-agency {
+  margin: 0;
+  color: var(--stone-light);
+  letter-spacing: 0.04em;
+}
+
+.footer-agency-link {
+  color: var(--accent-brand);
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.footer-agency-link:hover {
+  color: var(--paper-ivory);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer-agency-link:focus-visible {
+  outline: 2px solid var(--accent-brand);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.65rem;
+  }
 }
 
 /* ============================================================

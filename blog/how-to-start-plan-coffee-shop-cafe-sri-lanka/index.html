@@ -80,14 +80,14 @@
   <!-- Google tag (gtag.js) — Basic Consent Mode (G-6J443GNZ4J) -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('consent', 'default', {
       'ad_storage': 'denied',
       'ad_user_data': 'denied',
       'ad_personalization': 'denied',
       'analytics_storage': 'denied'
     });
-    window.__loadSipGA4 = function() {
+    window.__loadSipGA4 = function () {
       if (window.__sipGA4Loaded) return;
       var isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
       var isDebug = /[?&]ga_debug=1/.test(location.search);
@@ -108,14 +108,14 @@
       try {
         var u = new URL(location.href);
         var kept = [];
-        ['category', 'brand', 'item'].forEach(function(k) {
+        ['category', 'brand', 'item'].forEach(function (k) {
           var v = u.searchParams.get(k);
           if (v && /^[A-Za-z0-9\-_ ]{1,45}$/.test(v) && !/\d{7,}/.test(v)) {
             kept.push(encodeURIComponent(k) + '=' + encodeURIComponent(v.trim()));
           }
         });
         if (kept.length) cleanUrl += '?' + kept.join('&');
-      } catch (e) {}
+      } catch (e) { }
       var cleanRef = document.referrer ? document.referrer.split('?')[0] : '';
       gtag('js', new Date());
       gtag('config', 'G-6J443GNZ4J', {
@@ -130,7 +130,7 @@
       if (localStorage.getItem('sip_analytics_consent') === 'granted') {
         window.__loadSipGA4();
       }
-    } catch (e) {}
+    } catch (e) { }
   </script>
 </head>
 
@@ -154,7 +154,8 @@
       <div class="header-actions">
         <a class="btn-premium btn-premium--primary" href="../../contact/#quote">Request a Quote <span
             class="arrow-icon">→</span></a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobMenu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="mobMenu">
           <span class="bar"></span><span class="bar"></span><span class="bar"></span>
         </button>
       </div>
@@ -266,7 +267,8 @@
                 style="font-size:0.78rem; padding:0.45rem 0.9rem; text-align:center; display:block; margin-bottom:0.5rem;">Café
                 &amp; Interior Design →</a>
               <a href="../../contact/#quote" class="btn-premium btn-premium--primary"
-                style="font-size:0.78rem; padding:0.45rem 0.9rem; text-align:center; display:block;">Request Café Package
+                style="font-size:0.78rem; padding:0.45rem 0.9rem; text-align:center; display:block;">Request Café
+                Package
                 →</a>
             </div>
           </aside>
@@ -281,14 +283,17 @@
               <div class="legal-prose">
                 <p>
                   In a profitable specialty café, the front bar is both the theatrical focal point of your <a
-                    href="../../services/#interiors">restaurant interior</a> and a high-speed beverage assembly line. The
+                    href="../../services/#interiors">restaurant interior</a> and a high-speed beverage assembly line.
+                  The
                   counter layout must follow the natural directional movement of the customer queue:
                 </p>
                 <ol>
-                  <li><strong>01. Refrigerated Pastry &amp; Viennoiserie Showcase + POS Register:</strong> Customers view
+                  <li><strong>01. Refrigerated Pastry &amp; Viennoiserie Showcase + POS Register:</strong> Customers
+                    view
                     chilled cakes and croissants while waiting to order, driving a 25%&ndash;35% impulse food attachment
                     rate before reaching the cashier.</li>
-                  <li><strong>02. Grinding, Dosing &amp; Tamping Zone:</strong> Positioned immediately next to the POS so
+                  <li><strong>02. Grinding, Dosing &amp; Tamping Zone:</strong> Positioned immediately next to the POS
+                    so
                     the barista pulling shots receives tickets in order without crossing paths with the milk-steaming
                     barista.</li>
                   <li><strong>03. Multi-Boiler Espresso Extraction Center:</strong> Featuring a low-profile machine like
@@ -296,7 +301,8 @@
                     baristas maintain direct eye contact with guests.</li>
                   <li><strong>04. Finishing, Edible Latte Printing &amp; Pickup Zone:</strong> Equipped with an <a
                       href="../../brands/">EVEBOT EB-FC1 or EB-Pro</a> coffee printer, pitcher rinsers embedded in a <a
-                      href="../../brands/">T&amp;Z U8-DECK</a> drainage tray, and a dedicated customer pickup ledge.</li>
+                      href="../../brands/">T&amp;Z U8-DECK</a> drainage tray, and a dedicated customer pickup ledge.
+                  </li>
                 </ol>
               </div>
             </section>
@@ -341,7 +347,8 @@
                         <td><strong>Tier 3: Flagship Destination Café &amp; Tea Lab (80+ Seats)</strong></td>
                         <td><a href="../../brands/">T&amp;Z KT3-2A</a> (6200W T3) + <a href="../../brands/">T&amp;Z
                             VK-2</a> Dual Under-Counter Tea Brewer + <a href="../../brands/">LEHEHE DZ23-2Y</a></td>
-                        <td><a href="../../brands/">T&amp;Z U8-DECK</a> flush drainage deck, <a href="../../brands/">EVEBOT
+                        <td><a href="../../brands/">T&amp;Z U8-DECK</a> flush drainage deck, <a
+                            href="../../brands/">EVEBOT
                             EB-Pro</a> + <a href="../../brands/">EB-FC1</a>, 3-door bar counter chillers, under-counter
                           glasswasher</td>
                       </tr>
@@ -365,9 +372,11 @@
                   <li>A 4-tray or 5-tray <a href="../../equipment/?category=bakery">commercial convection oven</a> and
                     holding proofer for baking frozen laminated croissants and Danish pastries on demand.</li>
                   <li>A compact <a href="../../equipment/?category=cooking">commercial induction line, panini grill, and
-                      flat griddle</a> beneath a low-noise SUS304 exhaust hood for eggs benedict, sourdough toasties, and
+                      flat griddle</a> beneath a low-noise SUS304 exhaust hood for eggs benedict, sourdough toasties,
+                    and
                     hot brunch plates.</li>
-                  <li>A refrigerated saladette prep table with GN pans for rapid sandwich and smoothie bowl assembly.</li>
+                  <li>A refrigerated saladette prep table with GN pans for rapid sandwich and smoothie bowl assembly.
+                  </li>
                 </ul>
               </div>
             </section>
@@ -383,7 +392,8 @@
                 </p>
                 <ul class="article-checklist">
                   <li><strong>Espresso Plumbing &amp; Drain Port:</strong> A 50mm&ndash;60mm core hole directly beneath
-                    the espresso machine chassis for the braided water inlet hose, rotary pump line, and reinforced waste
+                    the espresso machine chassis for the braided water inlet hose, rotary pump line, and reinforced
+                    waste
                     drain tube sloping into a trapped floor gully.</li>
                   <li><strong>T&amp;Z U8-DECK / VK-2 Flush Cut-Out:</strong> 810mm &times; 490mm countertop opening (or
                     405mm &times; 500mm for the <a href="../../brands/">T&amp;Z VK-1</a> single-head tea brewer).</li>
@@ -416,7 +426,8 @@
                 <div class="article-faq-item">
                   <h4>What is the optimal height and depth for a commercial espresso bar counter?</h4>
                   <p>
-                    Standard barista ergonomic counter height is 850mm to 900mm from finished floor level, with a minimum
+                    Standard barista ergonomic counter height is 850mm to 900mm from finished floor level, with a
+                    minimum
                     countertop depth of 750mm to 800mm to accommodate commercial espresso machines (516mm&ndash;595mm
                     deep) plus rear cable/hose clearance and front knock-box space.
                   </p>
@@ -490,6 +501,7 @@
         <p>&copy; 2026 Sip &amp; Play. All rights reserved. &bull; <a href="../../terms/"
             class="footer-legal-link">Terms &amp; Conditions</a> &bull; <a href="../../privacy/"
             class="footer-legal-link">Privacy Policy</a></p>
+        <p class="footer-agency">Designed and Developed by <a href="https://universalcode.site/" target="_blank" rel="noopener sponsored nofollow" class="footer-agency-link">UCODE</a></p>
       </div>
     </div>
   </footer>
