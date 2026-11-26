@@ -24,7 +24,8 @@
     content="Master commercial kitchen exhaust CFM calculations, make-up air balancing, 3-phase electrical loads, LPG manifolds, and drainage gullies." />
   <meta property="og:image" content="https://sipandplaylk.co/images/blueprint_mep_schematic.jpg" />
   <meta property="og:image:alt" content="Commercial Kitchen MEP Engineering Schematic by Sip &amp; Play" />
-  <meta property="og:url" content="https://sipandplaylk.co/blog/commercial-kitchen-mep-engineering-ventilation-guide/" />
+  <meta property="og:url"
+    content="https://sipandplaylk.co/blog/commercial-kitchen-mep-engineering-ventilation-guide/" />
   <meta property="og:type" content="article" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Commercial Kitchen MEP Engineering &amp; Ventilation Guide | Sip &amp; Play" />
@@ -80,14 +81,14 @@
   <!-- Google tag (gtag.js) — Basic Consent Mode (G-6J443GNZ4J) -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('consent', 'default', {
       'ad_storage': 'denied',
       'ad_user_data': 'denied',
       'ad_personalization': 'denied',
       'analytics_storage': 'denied'
     });
-    window.__loadSipGA4 = function() {
+    window.__loadSipGA4 = function () {
       if (window.__sipGA4Loaded) return;
       var isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
       var isDebug = /[?&]ga_debug=1/.test(location.search);
@@ -108,14 +109,14 @@
       try {
         var u = new URL(location.href);
         var kept = [];
-        ['category', 'brand', 'item'].forEach(function(k) {
+        ['category', 'brand', 'item'].forEach(function (k) {
           var v = u.searchParams.get(k);
           if (v && /^[A-Za-z0-9\-_ ]{1,45}$/.test(v) && !/\d{7,}/.test(v)) {
             kept.push(encodeURIComponent(k) + '=' + encodeURIComponent(v.trim()));
           }
         });
         if (kept.length) cleanUrl += '?' + kept.join('&');
-      } catch (e) {}
+      } catch (e) { }
       var cleanRef = document.referrer ? document.referrer.split('?')[0] : '';
       gtag('js', new Date());
       gtag('config', 'G-6J443GNZ4J', {
@@ -130,7 +131,7 @@
       if (localStorage.getItem('sip_analytics_consent') === 'granted') {
         window.__loadSipGA4();
       }
-    } catch (e) {}
+    } catch (e) { }
   </script>
 </head>
 
@@ -154,7 +155,8 @@
       <div class="header-actions">
         <a class="btn-premium btn-premium--primary" href="../../contact/#quote">Request a Quote <span
             class="arrow-icon">→</span></a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobMenu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="mobMenu">
           <span class="bar"></span><span class="bar"></span><span class="bar"></span>
         </button>
       </div>
@@ -248,7 +250,8 @@
                   Rough-In Rule</a>
                 <a href="#sec-2" class="legal-toc-link"><span class="legal-toc-num">02.</span> Exhaust Canopy &amp;
                   Make-Up Air</a>
-                <a href="#sec-3" class="legal-toc-link"><span class="legal-toc-num">03.</span> 3-Phase &amp; Single-Phase
+                <a href="#sec-3" class="legal-toc-link"><span class="legal-toc-num">03.</span> 3-Phase &amp;
+                  Single-Phase
                   Electrical</a>
                 <a href="#sec-4" class="legal-toc-link"><span class="legal-toc-num">04.</span> Water Pressure,
                   Filtration &amp; Drainage</a>
@@ -320,7 +323,8 @@
                       </tr>
                       <tr>
                         <td><strong>Filtration &amp; Construction</strong></td>
-                        <td>1.2mm&ndash;1.5mm SUS304 welded hood with 45&deg; stainless baffle grease filters &amp; collection cup</td>
+                        <td>1.2mm&ndash;1.5mm SUS304 welded hood with 45&deg; stainless baffle grease filters &amp;
+                          collection cup</td>
                         <td>Condensate gutter baffle without grease filters; directs steam vapor away from ceilings</td>
                       </tr>
                       <tr>
@@ -345,17 +349,20 @@
               <h2 class="legal-section-title">Electrical Distribution: Single-Phase vs. 3-Phase Load Balancing</h2>
               <div class="legal-prose">
                 <p>
-                  Sri Lankan commercial facilities operate on a 230V single-phase / 400V three-phase 50Hz grid. High-draw
+                  Sri Lankan commercial facilities operate on a 230V single-phase / 400V three-phase 50Hz grid.
+                  High-draw
                   thermal machinery must never share undersized domestic circuits:
                 </p>
                 <ul class="article-checklist">
                   <li><strong>Three-Phase (380&ndash;400V, 50Hz, 5-Pin Rotary Isolators):</strong> Required for electric
-                    deck ovens, combi steamers (12kW&ndash;35kW), conveyor/hood dishwashers with booster heaters, walk-in
+                    deck ovens, combi steamers (12kW&ndash;35kW), conveyor/hood dishwashers with booster heaters,
+                    walk-in
                     cold room condensing units, and heavy spiral mixers.</li>
                   <li><strong>High-Amperage Single-Phase (220&ndash;230V, 32A Commando/Rotary Isolators):</strong>
                     Required for commercial multi-boiler espresso machines such as the 4200W <a
                       href="../../brands/">INNOSONG ZS3202</a> and 6200W <a href="../../brands/">T&amp;Z KT3-2A</a> or
-                    <a href="../../brands/">T&amp;Z VK-2</a> dual-head tea systems.</li>
+                    <a href="../../brands/">T&amp;Z VK-2</a> dual-head tea systems.
+                  </li>
                   <li><strong>Standard 13A/16A IP65 Splash-Proof Sockets:</strong> Used for upright reach-in chillers,
                     under-counter counters, <a href="../../brands/">INNOSONG ZS3101/ZS3105</a> (2400W), <a
                       href="../../brands/">LEHEHE DZ23-1Y</a> (2200W), and <a href="../../brands/">EVEBOT EB-FC1</a>
@@ -393,7 +400,8 @@
               <div class="legal-prose">
                 <p>
                   Commercial gas cooking lines require an external, ventilated LPG cylinder manifold room with duty and
-                  standby cylinder banks, automatic changeover valves, and a two-stage pressure regulation system. Inside
+                  standby cylinder banks, automatic changeover valves, and a two-stage pressure regulation system.
+                  Inside
                   the kitchen, the main gas line must pass through an <strong>electromagnetic solenoid shut-off
                     valve</strong> interlocked with both the exhaust hood fan (so gas cannot flow unless the exhaust fan
                   is running) and low-level LPG gas leak detectors mounted 150mm above floor level.
@@ -466,19 +474,19 @@
         </div>
         <div class="footer-col">
           <h5 class="footer-title">Equipment</h5>
-          <a href="../../equipment/?category=coffee">Coffee &amp; Espresso</a>
-          <a href="../../equipment/?category=cooking">Cooking</a>
-          <a href="../../equipment/?category=refrigeration">Refrigeration</a>
-          <a href="../../equipment/?category=bakery">Bakery</a>
-          <a href="../../equipment/?category=preparation">Preparation</a>
+          <a href="../../commercial-coffee-machines/">Coffee &amp; Espresso</a>
+          <a href="../../commercial-cooking-equipment/">Cooking</a>
+          <a href="../../commercial-refrigeration/">Refrigeration</a>
+          <a href="../../commercial-bakery-equipment/">Bakery</a>
+          <a href="../../stainless-steel-kitchen-fabrication/">Stainless Steel Fabrication</a>
           <a href="../../equipment/">Full Catalogue</a>
         </div>
         <div class="footer-col">
           <h5 class="footer-title">Services</h5>
-          <a href="../../services/#design">Kitchen Design</a>
+          <a href="../../commercial-kitchen-design/">Commercial Kitchen Design</a>
           <a href="../../services/#workflow">Workflow Optimization</a>
           <a href="../../services/#interiors">Restaurant Interiors</a>
-          <a href="../../services/#espresso">Espresso Machines</a>
+          <a href="../../commercial-coffee-machines/">Espresso Machines</a>
         </div>
         <div class="footer-col">
           <h5 class="footer-title">Contact</h5>

@@ -88,7 +88,7 @@
       'ad_personalization': 'denied',
       'analytics_storage': 'denied'
     });
-    window.__loadSipGA4 = function() {
+    window.__loadSipGA4 = function () {
       if (window.__sipGA4Loaded) return;
       var isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
       var isDebug = /[?&]ga_debug=1/.test(location.search);
@@ -109,14 +109,14 @@
       try {
         var u = new URL(location.href);
         var kept = [];
-        ['category', 'brand', 'item'].forEach(function(k) {
+        ['category', 'brand', 'item'].forEach(function (k) {
           var v = u.searchParams.get(k);
           if (v && /^[A-Za-z0-9\-_ ]{1,45}$/.test(v) && !/\d{7,}/.test(v)) {
             kept.push(encodeURIComponent(k) + '=' + encodeURIComponent(v.trim()));
           }
         });
         if (kept.length) cleanUrl += '?' + kept.join('&');
-      } catch (e) {}
+      } catch (e) { }
       var cleanRef = document.referrer ? document.referrer.split('?')[0] : '';
       gtag('js', new Date());
       gtag('config', 'G-6J443GNZ4J', {
@@ -131,7 +131,7 @@
       if (localStorage.getItem('sip_analytics_consent') === 'granted') {
         window.__loadSipGA4();
       }
-    } catch (e) {}
+    } catch (e) { }
   </script>
 </head>
 
@@ -450,19 +450,19 @@
         </div>
         <div class="footer-col">
           <h5 class="footer-title">Equipment</h5>
-          <a href="../../equipment/?category=coffee">Coffee &amp; Espresso</a>
-          <a href="../../equipment/?category=cooking">Cooking</a>
-          <a href="../../equipment/?category=refrigeration">Refrigeration</a>
-          <a href="../../equipment/?category=bakery">Bakery</a>
-          <a href="../../equipment/?category=preparation">Preparation</a>
+          <a href="../../commercial-coffee-machines/">Coffee &amp; Espresso</a>
+          <a href="../../commercial-cooking-equipment/">Cooking</a>
+          <a href="../../commercial-refrigeration/">Refrigeration</a>
+          <a href="../../commercial-bakery-equipment/">Bakery</a>
+          <a href="../../stainless-steel-kitchen-fabrication/">Stainless Steel Fabrication</a>
           <a href="../../equipment/">Full Catalogue</a>
         </div>
         <div class="footer-col">
           <h5 class="footer-title">Services</h5>
-          <a href="../../services/#design">Kitchen Design</a>
+          <a href="../../commercial-kitchen-design/">Commercial Kitchen Design</a>
           <a href="../../services/#workflow">Workflow Optimization</a>
           <a href="../../services/#interiors">Restaurant Interiors</a>
-          <a href="../../services/#espresso">Espresso Machines</a>
+          <a href="../../commercial-coffee-machines/">Espresso Machines</a>
         </div>
         <div class="footer-col">
           <h5 class="footer-title">Contact</h5>

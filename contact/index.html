@@ -17,20 +17,25 @@
       border: 1px solid var(--border-dark) !important;
       box-shadow: 0 24px 50px rgba(0, 0, 0, 0.45) !important;
     }
+
     .rfq-dark-card .arch-card__num {
       color: var(--accent-brand) !important;
     }
+
     .rfq-dark-card .badge {
       background: rgba(197, 160, 89, 0.12) !important;
       color: var(--accent-brand) !important;
       border: 1px solid rgba(197, 160, 89, 0.35) !important;
     }
+
     .rfq-dark-card h2.editorial {
       color: var(--paper-ivory) !important;
     }
+
     .rfq-dark-card label {
       color: var(--stone-light) !important;
     }
+
     .rfq-dark-card input,
     .rfq-dark-card select,
     .rfq-dark-card textarea {
@@ -39,10 +44,12 @@
       color: var(--paper-ivory) !important;
       transition: border-color 0.25s ease, background 0.25s ease;
     }
+
     .rfq-dark-card input::placeholder,
     .rfq-dark-card textarea::placeholder {
       color: rgba(255, 255, 255, 0.42) !important;
     }
+
     .rfq-dark-card input:focus,
     .rfq-dark-card select:focus,
     .rfq-dark-card textarea:focus {
@@ -50,15 +57,18 @@
       background: rgba(255, 255, 255, 0.09) !important;
       outline: none !important;
     }
+
     .rfq-dark-card select option {
       background: #14171d !important;
       color: #ffffff !important;
     }
+
     .rfq-dark-card .btn--primary {
       background: transparent !important;
       color: #ffffff !important;
       border: 1px solid rgba(255, 255, 255, 0.5) !important;
     }
+
     .rfq-dark-card .btn--primary:hover {
       background: var(--paper-ivory) !important;
       border-color: #ffffff !important;
@@ -74,16 +84,19 @@
   <!-- Standard SEO Meta Tags -->
   <meta property="og:site_name" content="Sip &amp; Play" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="Contact Us &amp; Request a Quote — Sip &amp; Play | Commercial Culinary Engineering" />
+  <meta property="og:title"
+    content="Contact Us &amp; Request a Quote — Sip &amp; Play | Commercial Culinary Engineering" />
   <meta property="og:description"
     content="Contact Sip &amp; Play at 11A/1 Rathnawali Road, Dehiwela (+94 702 700 500). Request a commercial kitchen CAD layout proposal or equipment quotation across Sri Lanka, Maldives, and Thailand." />
   <meta property="og:image" content="https://sipandplaylk.co/images/factory_2.jpg" />
-  <meta property="og:image:alt" content="Contact Sip &amp; Play Commercial Culinary Engineering in Colombo, Sri Lanka" />
+  <meta property="og:image:alt"
+    content="Contact Sip &amp; Play Commercial Culinary Engineering in Colombo, Sri Lanka" />
   <meta property="og:url" content="https://sipandplaylk.co/contact/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Contact Us &amp; Request a Quote — Sip &amp; Play" />
-  <meta name="twitter:description" content="Connect with our culinary engineering team in Colombo (+94 702 700 500) for project quotes and equipment procurement." />
+  <meta name="twitter:description"
+    content="Connect with our culinary engineering team in Colombo (+94 702 700 500) for project quotes and equipment procurement." />
   <meta name="twitter:image" content="https://sipandplaylk.co/images/factory_2.jpg" />
 
   <!-- Schema.org JSON-LD -->
@@ -126,14 +139,14 @@
   <!-- Google tag (gtag.js) — Basic Consent Mode (G-6J443GNZ4J) -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('consent', 'default', {
       'ad_storage': 'denied',
       'ad_user_data': 'denied',
       'ad_personalization': 'denied',
       'analytics_storage': 'denied'
     });
-    window.__loadSipGA4 = function() {
+    window.__loadSipGA4 = function () {
       if (window.__sipGA4Loaded) return;
       var isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.protocol === 'file:';
       var isDebug = /[?&]ga_debug=1/.test(location.search);
@@ -154,14 +167,14 @@
       try {
         var u = new URL(location.href);
         var kept = [];
-        ['category', 'brand', 'item'].forEach(function(k) {
+        ['category', 'brand', 'item'].forEach(function (k) {
           var v = u.searchParams.get(k);
           if (v && /^[A-Za-z0-9\-_ ]{1,45}$/.test(v) && !/\d{7,}/.test(v)) {
             kept.push(encodeURIComponent(k) + '=' + encodeURIComponent(v.trim()));
           }
         });
         if (kept.length) cleanUrl += '?' + kept.join('&');
-      } catch (e) {}
+      } catch (e) { }
       var cleanRef = document.referrer ? document.referrer.split('?')[0] : '';
       gtag('js', new Date());
       gtag('config', 'G-6J443GNZ4J', {
@@ -176,7 +189,7 @@
       if (localStorage.getItem('sip_analytics_consent') === 'granted') {
         window.__loadSipGA4();
       }
-    } catch (e) {}
+    } catch (e) { }
   </script>
 </head>
 
@@ -204,7 +217,8 @@
       <div class="header-actions">
         <a class="btn-premium btn-premium--primary" href="../contact/#quote">Request a Quote <span
             class="arrow-icon">→</span></a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobMenu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="mobMenu">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -276,9 +290,9 @@
                 <div
                   style="display:flex; flex-direction:column; gap:0.5rem; font-family:var(--font-sans); font-size:1.05rem; line-height:1.6; margin-bottom:var(--sp-4);">
                   <a href="tel:+94702700500">+94 702 700 500</a>
-                  <a href="https://wa.me/94702700500" target="_blank">WhatsApp: +94 702 700 500</a>
-                  <a href="https://www.sipandplay.co" target="_blank"
-                    style="font-size:0.85rem; font-weight:400;">www.sipandplay.co</a>
+                  <a href="https://wa.me/94702700500" target="_blank" rel="noopener">WhatsApp: +94 702 700 500</a>
+                  <a href="https://sipandplaylk.co/"
+                    style="font-size:0.85rem; font-weight:400;">sipandplaylk.co</a>
                 </div>
               </div>
 
@@ -297,11 +311,13 @@
 
           <!-- Column Right: Structured RFQ Proposal Form -->
           <div class="col-7">
-            <div class="arch-card theme-charcoal rfq-dark-card" style="padding:clamp(2rem, 4vw, 3.5rem); background-color: var(--ink-deep); color: var(--paper-ivory); border: 1px solid var(--border-dark); box-shadow: 0 24px 50px rgba(0,0,0,0.45);">
+            <div class="arch-card theme-charcoal rfq-dark-card"
+              style="padding:clamp(2rem, 4vw, 3.5rem); background-color: var(--ink-deep); color: var(--paper-ivory); border: 1px solid var(--border-dark); box-shadow: 0 24px 50px rgba(0,0,0,0.45);">
               <div class="arch-card__top">
                 <span class="arch-card__num" style="color: var(--accent-brand);">ONLINE INQUIRY</span>
               </div>
-              <h2 class="editorial" style="font-size:var(--t-3xl); color: var(--paper-ivory); margin-bottom:var(--sp-6);">
+              <h2 class="editorial"
+                style="font-size:var(--t-3xl); color: var(--paper-ivory); margin-bottom:var(--sp-6);">
                 Request a project quotation.
               </h2>
 
@@ -311,7 +327,8 @@
                   <label for="contactName"
                     style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color: var(--stone-light); display:block; margin-bottom:6px;">Your
                     Name / Hospitality Group <span style="color:var(--accent-brand);">*</span></label>
-                  <input type="text" id="contactName" name="name" required autocomplete="name" placeholder="e.g. John Perera / Ceylon Hospitality Group"
+                  <input type="text" id="contactName" name="name" required autocomplete="name"
+                    placeholder="e.g. John Perera / Ceylon Hospitality Group"
                     style="width:100%; padding:0.95rem 1rem; border:1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: var(--paper-ivory); font-family:var(--font-sans); font-size:0.92rem; border-radius: 2px;" />
                 </div>
 
@@ -320,14 +337,16 @@
                     <label for="contactPhone"
                       style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color: var(--stone-light); display:block; margin-bottom:6px;">Contact
                       Phone <span style="color:var(--accent-brand);">*</span></label>
-                    <input type="tel" id="contactPhone" name="phone" required autocomplete="tel" pattern="[\+0-9\-\s]+" placeholder="+94 7X XXX XXXX"
+                    <input type="tel" id="contactPhone" name="phone" required autocomplete="tel" pattern="[\+0-9\-\s]+"
+                      placeholder="+94 7X XXX XXXX"
                       style="width:100%; padding:0.95rem 1rem; border:1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: var(--paper-ivory); font-family:var(--font-sans); font-size:0.92rem; border-radius: 2px;" />
                   </div>
                   <div class="col-6">
                     <label for="contactEmail"
                       style="font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color: var(--stone-light); display:block; margin-bottom:6px;">Email
                       Address <span style="color:var(--accent-brand);">*</span></label>
-                    <input type="email" id="contactEmail" name="email" required autocomplete="email" placeholder="director@hospitality.com"
+                    <input type="email" id="contactEmail" name="email" required autocomplete="email"
+                      placeholder="director@hospitality.com"
                       style="width:100%; padding:0.95rem 1rem; border:1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: var(--paper-ivory); font-family:var(--font-sans); font-size:0.92rem; border-radius: 2px;" />
                   </div>
                 </div>
@@ -338,12 +357,18 @@
                     Scope &amp; Service Required</label>
                   <select id="contactScope" name="scope"
                     style="width:100%; padding:0.95rem 1rem; border:1px solid rgba(255,255,255,0.18); background: #14171d; color: var(--paper-ivory); font-family:var(--font-sans); font-size:0.92rem; border-radius: 2px;">
-                    <option style="background:#14171d; color:#ffffff;">Full Commercial Kitchen Turnkey Design &amp; Build</option>
-                    <option style="background:#14171d; color:#ffffff;">Commercial Kitchen Layout Planning (2D/3D CAD)</option>
-                    <option style="background:#14171d; color:#ffffff;">500+ Item Equipment Sourcing &amp; Procurement</option>
-                    <option style="background:#14171d; color:#ffffff;">Authorized Brand Equipment (EVEBOT / INNOSONG / T&amp;Z / LEHEHE)</option>
-                    <option style="background:#14171d; color:#ffffff;">Restaurant Interiors &amp; Front-of-House Pass</option>
-                    <option style="background:#14171d; color:#ffffff;">Cloud Kitchen Expansion / Production Plant</option>
+                    <option style="background:#14171d; color:#ffffff;">Full Commercial Kitchen Turnkey Design &amp;
+                      Build</option>
+                    <option style="background:#14171d; color:#ffffff;">Commercial Kitchen Layout Planning (2D/3D CAD)
+                    </option>
+                    <option style="background:#14171d; color:#ffffff;">500+ Item Equipment Sourcing &amp; Procurement
+                    </option>
+                    <option style="background:#14171d; color:#ffffff;">Authorized Brand Equipment (EVEBOT / INNOSONG /
+                      T&amp;Z / LEHEHE)</option>
+                    <option style="background:#14171d; color:#ffffff;">Restaurant Interiors &amp; Front-of-House Pass
+                    </option>
+                    <option style="background:#14171d; color:#ffffff;">Cloud Kitchen Expansion / Production Plant
+                    </option>
                   </select>
                 </div>
 

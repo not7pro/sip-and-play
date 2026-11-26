@@ -513,7 +513,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Detect development / localhost environment vs explicit debug mode (?ga_debug=1)
   const isLocalEnv = /^(localhost|127\.0\.0\.1)$/.test(window.location.hostname) || window.location.protocol === 'file:';
   if (/[?&]ga_debug=1/.test(window.location.search)) {
-    try { sessionStorage.setItem('sip_ga_debug', '1'); } catch (e) {}
+    try { sessionStorage.setItem('sip_ga_debug', '1'); } catch (e) { }
   }
   const isDebugMode = (() => {
     try { return sessionStorage.getItem('sip_ga_debug') === '1' || window.__SIP_GA_DEBUG__ === true; } catch (e) { return false; }
@@ -588,6 +588,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const h1 = document.querySelector('h1');
         articleTitle = h1 ? h1.textContent.replace(/\s+/g, ' ').trim().slice(0, 120) : slug;
       }
+    } else if (p.includes('/commercial-kitchen-design')) {
+      pageType = 'commercial_landing_page';
+      contentCategory = 'commercial_kitchen_design';
+    } else if (p.includes('/commercial-coffee-machines')) {
+      pageType = 'commercial_landing_page';
+      contentCategory = 'commercial_coffee_machines';
+    } else if (p.includes('/commercial-refrigeration')) {
+      pageType = 'commercial_landing_page';
+      contentCategory = 'commercial_refrigeration';
+    } else if (p.includes('/commercial-cooking-equipment')) {
+      pageType = 'commercial_landing_page';
+      contentCategory = 'commercial_cooking_equipment';
+    } else if (p.includes('/commercial-bakery-equipment')) {
+      pageType = 'commercial_landing_page';
+      contentCategory = 'commercial_bakery_equipment';
+    } else if (p.includes('/stainless-steel-kitchen-fabrication')) {
+      pageType = 'commercial_landing_page';
+      contentCategory = 'stainless_steel_fabrication';
     } else if (p.includes('/equipment')) {
       pageType = 'equipment_catalogue';
       contentCategory = 'commercial_equipment';
@@ -748,7 +766,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const normalized = decision === 'granted' ? 'granted' : 'denied';
     try {
       localStorage.setItem(CONSENT_KEY, normalized);
-    } catch (e) {}
+    } catch (e) { }
 
     if (normalized === 'granted') {
       window['ga-disable-' + MEASUREMENT_ID] = (isLocalEnv && !isDebugMode);
@@ -921,7 +939,13 @@ document.addEventListener('DOMContentLoaded', () => {
       // G. Blog Article Commercial CTA Clicks -> blog_cta_click
       if (ctx.pageType === 'blog_article' || ctx.pageType === 'blog_hub') {
         let commercialLinkType = '';
-        if (lowerHref.includes('services/')) commercialLinkType = 'to_services';
+        if (lowerHref.includes('commercial-kitchen-design/')) commercialLinkType = 'to_commercial_kitchen_design';
+        else if (lowerHref.includes('commercial-coffee-machines/')) commercialLinkType = 'to_commercial_coffee_machines';
+        else if (lowerHref.includes('commercial-refrigeration/')) commercialLinkType = 'to_commercial_refrigeration';
+        else if (lowerHref.includes('commercial-cooking-equipment/')) commercialLinkType = 'to_commercial_cooking_equipment';
+        else if (lowerHref.includes('commercial-bakery-equipment/')) commercialLinkType = 'to_commercial_bakery_equipment';
+        else if (lowerHref.includes('stainless-steel-kitchen-fabrication/')) commercialLinkType = 'to_stainless_fabrication';
+        else if (lowerHref.includes('services/')) commercialLinkType = 'to_services';
         else if (lowerHref.includes('equipment/')) commercialLinkType = 'to_equipment';
         else if (lowerHref.includes('brands/')) commercialLinkType = 'to_brands';
         else if (lowerHref.includes('projects/')) commercialLinkType = 'to_projects';
